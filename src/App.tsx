@@ -86,8 +86,15 @@ export default function App() {
           // Fetch indicators
           const quote = resultItem?.indicators?.quote?.[0];
           if (quote) {
+            const source = meta.dataSource;
             setYahooAvailable(true);
-            setYahooStatusText('Yahoo Finance live data available');
+            setYahooStatusText(
+              source === 'last-known'
+                ? 'Backup BBCA market data available'
+                : source === 'stooq'
+                  ? 'BBCA market data fallback available'
+                  : 'Yahoo Finance live data available'
+            );
             const openVal = quote.open?.[0] || currentPrice;
             const highVal = quote.high?.[0] || currentPrice;
             const lowVal = quote.low?.[0] || currentPrice;

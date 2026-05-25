@@ -135,8 +135,8 @@ export default function StockChart({ data }: StockChartProps) {
       </div>
 
       {/* Actual Chart render box */}
-      <div className="h-80 md:h-96 w-full pt-4">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="h-80 min-h-80 md:h-96 md:min-h-96 w-full min-w-0 pt-4">
+        <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={320}>
           {chartView === 'area' ? (
             <AreaChart data={data} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
               <defs>
