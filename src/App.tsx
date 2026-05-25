@@ -21,6 +21,22 @@ import AboutSection from './components/AboutSection';
 // Icons
 import { Brain, Cpu, Sparkles, TrendingUp, Info, AlertOctagon } from 'lucide-react';
 
+const buildYahooProxyUrl = () => {
+  const configuredUrl = import.meta.env.VITE_YAHOO_PROXY_URL;
+  if (configuredUrl) return configuredUrl;
+
+  const params = 'symbol=BBCA.JK&interval=1d&range=1d';
+  if (typeof window !== 'undefined') {
+    const { hostname, origin, port } = window.location;
+    const isViteDevServer = (hostname === 'localhost' || hostname === '127.0.0.1') && port === '3000';
+    if (!isViteDevServer) {
+      return `${origin}/api/yahoo?${params}`;
+    }
+  }
+
+  return `http://127.0.0.1:3001/api/yahoo?${params}`;
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('landing');
   const [historyList, setHistoryList] = useState<PredictionHistoryItem[]>([]);
@@ -47,7 +63,7 @@ export default function App() {
   const [yahooAvailable, setYahooAvailable] = useState<boolean>(false);
   const [yahooStatusText, setYahooStatusText] = useState<string>('Checking Yahoo Finance availability...');
   const PREDICT_API_URL = import.meta.env.VITE_PREDICT_API_URL || 'http://127.0.0.1:5000/predict';
-  const YAHOO_PROXY_URL = import.meta.env.VITE_YAHOO_PROXY_URL || 'http://127.0.0.1:3001/api/yahoo?symbol=BBCA.JK&interval=1d&range=1d';
+  const YAHOO_PROXY_URL = buildYahooProxyUrl();
 
   const fetchBBCAActivePrice = useCallback(async () => {
     try {

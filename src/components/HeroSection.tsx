@@ -3,7 +3,7 @@ import { ArrowRight, BarChart3, ShieldCheck, Cpu, Zap, Coins } from 'lucide-reac
 import { ActiveTab, OHLCVInput } from '../types';
 
 // Configuration: Paste your research paper link/URL here when ready
-const RESEARCH_PAPER_URL = '/DAVERM%20(1).docx';
+const RESEARCH_PAPER_URL: string = '/DAVERM%20(1).docx';
 
 interface HeroSectionProps {
   onStart: (tab: ActiveTab) => void;

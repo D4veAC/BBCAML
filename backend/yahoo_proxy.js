@@ -1,7 +1,11 @@
 import express from 'express';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const distPath = path.resolve(__dirname, '..', 'dist');
 
 const YAHOO_HOSTS = [
   'https://query1.finance.yahoo.com',
@@ -122,7 +126,20 @@ app.get('/api/status', (_req, res) => {
   res.json({ status: 'ok', message: 'Yahoo Finance proxy running' });
 });
 
+app.use(express.static(distPath));
+
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'), (err) => {
+    if (err) {
+      res.status(404).json({
+        error: 'Frontend build not found',
+        details: 'Run npm run build before starting the production server.',
+      });
+    }
+  });
+});
+
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log(`Yahoo proxy server listening on http://127.0.0.1:${PORT}`);
+  console.log(`Yahoo proxy server listening on port ${PORT}`);
 });
