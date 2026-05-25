@@ -1,24 +1,109 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# BBCAML
 
-# Run and deploy your AI Studio app
+BBCAML is a BBCA stock prediction workspace built with React, Vite, and an XGBoost-based OHLCV prediction flow. The app shows a live BBCA ticker, lets users run price-direction predictions, and keeps recent prediction history in the browser.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/6e1800c6-d311-4718-805b-15fa7fa9a8a3
+- Live BBCA.JK market data through a server-side Yahoo Finance proxy
+- OHLCV prediction form with XGBoost-style output
+- Interactive stock chart and prediction result panel
+- Local prediction history saved in browser storage
+- Production-ready single-service setup for Railway
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- Vite
+- TypeScript
+- Tailwind CSS
+- Express
+- Python prediction server for the local model workflow
 
+## Local Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the Python prediction API server:
-   `npm run serve:api`
-4. Run the app:
-   `npm run dev`
+Install dependencies:
 
-If you’d like to use another backend address, set `VITE_PREDICT_API_URL` in your environment before starting the app.
+```bash
+npm install
+```
+
+Run the frontend:
+
+```bash
+npm run dev
+```
+
+Run the Yahoo Finance proxy:
+
+```bash
+npm run serve:proxy
+```
+
+Optional: run the local Python prediction API:
+
+```bash
+npm run serve:api
+```
+
+By default, local development uses:
+
+- Frontend: `http://127.0.0.1:3000`
+- Yahoo proxy: `http://127.0.0.1:3001/api/yahoo`
+- Prediction API: `http://127.0.0.1:5000/predict`
+
+## Environment Variables
+
+Set these only when you need to override the defaults:
+
+```bash
+VITE_YAHOO_PROXY_URL=
+VITE_PREDICT_API_URL=
+```
+
+For production on Railway, leave `VITE_YAHOO_PROXY_URL` unset if the frontend and proxy run from the same service. The app will automatically call:
+
+```text
+/api/yahoo?symbol=BBCA.JK&interval=1d&range=1d
+```
+
+## Production Build
+
+Build the app:
+
+```bash
+npm run build
+```
+
+Start the production server:
+
+```bash
+npm start
+```
+
+The Express server serves both:
+
+- the built frontend from `dist`
+- the Yahoo Finance proxy at `/api/yahoo`
+
+## Railway Deploy
+
+Use these Railway settings:
+
+- Build command: `npm run build`
+- Start command: `npm start`
+
+Current production URL:
+
+```text
+https://bbcaml-production.up.railway.app/
+```
+
+## Scripts
+
+- `npm run dev` - start the Vite development server
+- `npm run build` - create the production frontend build
+- `npm start` - serve the production app and Yahoo proxy
+- `npm run serve:proxy` - run only the Yahoo Finance proxy
+- `npm run serve:api` - run the local Python prediction API
+- `npm run lint` - run TypeScript checks
+
