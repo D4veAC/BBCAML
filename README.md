@@ -16,7 +16,7 @@ Vite forwards `/api` requests to the web server on port 3001. The web server for
 
 ## Model requirements
 
-The checked-in bundle is the BBCA-only quantitative slice adopted from AgenticBBCA. The current leakage-controlled benchmark selected XGBoost with OHLCV-only features, a 10-session window, and a next-session return target. Sentiment, retrieval, LLM reporting, broker-flow rules, other bank notebooks, and FX inputs are not part of this price endpoint.
+The checked-in bundle is the BBCA-only quantitative slice adopted from AgenticBBCA. The current leakage-controlled benchmark selected XGBoost with OHLCV-only features, a 20-session window, and a next-session return target. Sentiment, retrieval, LLM reporting, broker-flow rules, other bank notebooks, and FX inputs are not part of this price endpoint.
 
 The backend retrieves the prior BBCA sessions required by the selected window, appends the submitted OHLCV session, scales each row with the stored deployment scaler, and sends the flattened sequence to XGBoost. The server accepts only leakage-controlled bundle schema version 4. Return targets are trained in basis points and converted back at inference; bundles whose trees contain no feature splits are rejected. Missing input, incomplete market history, a missing bundle, or incompatible metadata stops inference and returns an error; there is no model or rule fallback.
 
@@ -32,7 +32,7 @@ The news panel requests current Google News RSS results for the latest session a
 
 Retraining benchmarks the AgenticBBCA OHLCV candidate grid across price/return targets and windows 1, 10, 20, and 30. Splits are chronological, the evaluation scaler is fit on training rows only, and one decision session is purged at each boundary so a next-session target cannot cross into the following split. Selection and early stopping use validation only. Test is evaluated once, then the deployment model is refit on all labelled history with the selected tree count fixed.
 
-Strategy tuning is quant-only and nested rolling-origin. Each inner window may choose an XGBoost price/return target, window 10/20, forecast threshold, two/three-session confirmation, 20-session breakout buffer, volume confirmation, trend regime, and ATR stop. A signal formed from complete day-t OHLCV executes at the day-(t+1) open. New entries do not receive the overnight return, and a gap below a known stop fills at the next open. The simulation applies 0.15% buy fees, 0.25% sell fees, and 0.05% slippage per execution. Every outer forward fold is isolated from its parameter-selection window and starts and ends flat; its benchmark follows the same next-open and fold-reset convention. A tuned rule is not activated unless forward results support it.
+Strategy tuning is quant-only and nested rolling-origin. Each inner window may choose an XGBoost price/return target, window 10/20, forecast threshold, two/three-session confirmation, 20-session breakout buffer, volume confirmation, trend regime, ATR stop, and an optional 3×/5× ATR take-profit. If stop and take-profit are both inside one daily candle, the simulation assumes the stop fills first. A signal formed from complete day-t OHLCV executes at the day-(t+1) open. New entries do not receive the overnight return, and a gap below a known stop fills at the next open. The simulation applies 0.15% buy fees, 0.25% sell fees, and 0.05% slippage per execution. Every outer forward fold is isolated from its parameter-selection window and starts and ends flat; its benchmark follows the same next-open and fold-reset convention. A tuned rule is not activated unless forward results support it.
 
 The experimental news overlay trains a hashed unigram/bigram logistic classifier on timestamp-safe news available in the current and previous four trading sessions. It acts only as an entry veto over quant signals. Its threshold and minimum article count are selected inside a 252-session inner window. Folds stay in cash when the inner window has no positive candidate with sufficient trades and drawdown no worse than 12%. Reports separate raw quant performance, the risk-off policy, and the incremental effect of the news veto.
 
@@ -46,9 +46,11 @@ npm run train:model
 
 For a fixed AgenticBBCA CSV snapshot, run `python backend/train_model.py --data <path>`.
 
-## Production
+## Vercel deployment
 
-Run `npm run build`, then `npm start` to serve the frontend and API routes. Deploy the Python model service separately or run it alongside the web server. Set `PREDICT_API_URL` to its reachable `/predict` URL. For a separately hosted Python service, configure `PREDICT_HOST` and `PREDICT_PORT` as required by that host. Starting the web server alone does not start the model.
+The checked-in `api/` functions provide quote lookup, XGBoost inference, news, backtest data, and status on the same Vercel deployment as the Vite frontend. Prediction uses the exported 85 KB tree model in `api/model.json`, so production does not need a persistent Python process or a second server. The local three-process setup remains available for research and retraining.
+
+After retraining, run `npm run export:model` and commit both `xgboost_ohlcv_bundle.pkl` and `api/model.json`. Set `GROQ_API_KEY` and optional `GROQ_API_KEYS`/`GROQ_MODELS` in Vercel Project Settings. Then import the repository in Vercel; `vercel.json` builds `dist` and keeps all browser requests on same-origin `/api/*` routes. Do not upload `.env`.
 
 ## Checks
 

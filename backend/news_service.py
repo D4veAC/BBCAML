@@ -5,9 +5,12 @@ import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta
-from dotenv import load_dotenv
-
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # Vercel injects environment variables directly; dotenv is local-only.
+    pass
 
 try:
     from backend.news_collector import QUERIES, WIB, fetch, key, parse

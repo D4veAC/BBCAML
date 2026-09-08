@@ -1,14 +1,15 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
-    "api/predict.py": {
-      "runtime": "python3.12",
-      "maxDuration": 60
-    },
     "api/news.py": {
-      "runtime": "python3.12",
-      "maxDuration": 60
+      "maxDuration": 60,
+      "includeFiles": "{backend/news_service.py,backend/news_collector.py,backend/news_retriever.py,data/news_corpus/**}",
+      "excludeFiles": "{backend/test_*.py,backend/train_model.py,backend/tune_*.py,backend/backtest.py,backend/compare_*.py,backend/audit_*.py,xgboost_ohlcv_bundle.pkl,*_report.json,dist/**,node_modules/**}"
+    },
+    "api/backtest.js": {
+      "includeFiles": "news_overlay_tuning_report.json"
     }
   },
   "rewrites": [
