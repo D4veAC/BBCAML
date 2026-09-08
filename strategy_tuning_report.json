@@ -1,6 +1,11 @@
 {
+  "evaluation_status": {
+    "deployable_alpha_claim": false,
+    "classification": "exploratory; historical outer folds were reused during iterative strategy development",
+    "required_confirmation": "pre-register the current rules and evaluate only sessions after the last inspected date"
+  },
   "protocol": {
-    "name": "nested rolling-origin strategy tuning",
+    "name": "nested rolling-origin XGBoost strategy with causal risk-off filter",
     "model": "XGBoost OHLCV; nested choice of next-session return/price targets and windows 10/20",
     "minimum_training_rows": 1000,
     "tuning_rows": 126,
@@ -9,6 +14,8 @@
     "sell_fee": 0.0025,
     "slippage_per_execution": 0.0005,
     "selection_score": "net_return - 0.50*abs(max_drawdown) - 0.00025*position_changes - 0.0025*early_stop_exits",
+    "risk_off_policy": "stay in cash for the next fold unless the prior tuning window has at least one trade, positive net return, and drawdown no worse than 12%",
+    "news_policy": "news is displayed as explanatory context and never gates a trade",
     "false_breakout_controls": "2-3 forecast confirmations; required prior-20-day-high ATR buffer with median-volume confirmation; SMA50 or SMA200 uptrend regime gate",
     "fold_boundary_policy": "flat at start and liquidated at end",
     "benchmark": "next-open buy-and-hold reset per fold with entry and exit fees",
@@ -19,34 +26,39 @@
   "source": {
     "kind": "yahoo",
     "name": "BBCA.JK",
-    "sha256": "0ddbc6dde0f47ff60a642efb3175b28ea93c19dc44873fdacc2bbb93efe5258e",
-    "excluded_partial_session": true
+    "sha256": "45399f8a25c3d6f4e9d01a20e9aff58d8718f333b7b79b3f95733b675b1c44d3",
+    "excluded_partial_session": false
   },
   "period": {
     "start": "2020-08-10",
-    "end": "2026-09-07"
+    "end": "2026-09-08"
   },
   "folds": 24,
-  "strategy_return": -0.20702439240248405,
-  "benchmark_return": -0.0708871685710436,
-  "alpha": -0.13613722383144045,
+  "strategy_return": -0.054157496412891026,
+  "raw_strategy_return": -0.20702439240248405,
+  "benchmark_return": -0.06387499625837201,
+  "alpha": 0.009717499845480981,
+  "forward_trades": 11,
+  "risk_off_folds": 13,
   "selected_configuration_counts": {
-    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
-    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 4,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 2,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
-    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
-    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 3,
-    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 20}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"risk_off\": false, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"risk_off\": false, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 4,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"risk_off\": false, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": false, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"risk_off\": false, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"risk_off\": true, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1
   },
   "fold_reports": [
     {
@@ -61,7 +73,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.03583161733579643,
@@ -75,6 +88,17 @@
         "score": 0.0014333122510507006
       },
       "forward": {
+        "net_return": 0.03215952584077297,
+        "max_drawdown": -0.022935779816513735,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.020191635932516105
+      },
+      "forward_raw": {
         "net_return": 0.03215952584077297,
         "max_drawdown": -0.022935779816513735,
         "trades": 1,
@@ -106,7 +130,8 @@
         "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.03136728127578725,
@@ -120,6 +145,17 @@
         "score": 0.02041874314019415
       },
       "forward": {
+        "net_return": -0.009277505791701945,
+        "max_drawdown": -0.009277505791701945,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.014416258687552919
+      },
+      "forward_raw": {
         "net_return": -0.009277505791701945,
         "max_drawdown": -0.009277505791701945,
         "trades": 1,
@@ -151,7 +187,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.25,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.12030993944367174,
@@ -165,6 +202,17 @@
         "score": 0.10240346462352795
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -196,7 +244,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -210,6 +259,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": -0.05761389266763384,
         "max_drawdown": -0.05761389266763384,
         "trades": 3,
@@ -241,7 +301,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -255,6 +316,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -286,7 +358,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 20
+        "window": 20,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.09440108605637576,
@@ -300,6 +373,17 @@
         "score": 0.09390108605637576
       },
       "forward": {
+        "net_return": -0.010482824755299713,
+        "max_drawdown": -0.04035713615411762,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 2,
+        "score": -0.031661392832358526
+      },
+      "forward_raw": {
         "net_return": -0.010482824755299713,
         "max_drawdown": -0.04035713615411762,
         "trades": 2,
@@ -331,7 +415,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 20
+        "window": 20,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.160815205371726,
@@ -345,6 +430,17 @@
         "score": 0.13937495379939885
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -376,7 +472,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.06068535581837842,
@@ -390,6 +487,17 @@
         "score": 0.03974510424605132
       },
       "forward": {
+        "net_return": 0.07683457985850928,
+        "max_drawdown": -0.012499999999999956,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0700845798585093
+      },
+      "forward_raw": {
         "net_return": 0.07683457985850928,
         "max_drawdown": -0.012499999999999956,
         "trades": 1,
@@ -421,7 +529,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.0833806867269502,
@@ -435,6 +544,17 @@
         "score": 0.07663068672695023
       },
       "forward": {
+        "net_return": -0.09606009540261873,
+        "max_drawdown": -0.09606009540261873,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 2,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 2,
+        "score": -0.1505901431039281
+      },
+      "forward_raw": {
         "net_return": -0.09606009540261873,
         "max_drawdown": -0.09606009540261873,
         "trades": 3,
@@ -466,7 +586,8 @@
         "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.14497767592918498,
@@ -480,6 +601,17 @@
         "score": 0.12381475458087055
       },
       "forward": {
+        "net_return": -0.02820725739207741,
+        "max_drawdown": -0.05074023044692755,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.054077372615541186
+      },
+      "forward_raw": {
         "net_return": -0.02820725739207741,
         "max_drawdown": -0.05074023044692755,
         "trades": 1,
@@ -511,7 +643,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.05359735752077999,
@@ -525,6 +658,17 @@
         "score": 0.0365482666271334
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -556,7 +700,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -570,6 +715,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -601,7 +757,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -615,6 +772,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0004158975030148504,
         "max_drawdown": -0.001999000499750103,
         "trades": 1,
@@ -646,7 +814,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -660,6 +829,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": -0.04632224998776835,
         "max_drawdown": -0.04632224998776835,
         "trades": 2,
@@ -691,7 +871,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.026586051173749237,
@@ -705,6 +886,17 @@
         "score": 0.0017151303395236414
       },
       "forward": {
+        "net_return": 0.01773685871372721,
+        "max_drawdown": -0.01749999999999996,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.00848685871372723
+      },
+      "forward_raw": {
         "net_return": 0.01773685871372721,
         "max_drawdown": -0.01749999999999996,
         "trades": 1,
@@ -736,7 +928,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "price",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -750,6 +943,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -781,7 +985,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "price",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -795,6 +1000,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -826,7 +1042,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 20
+        "window": 20,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -840,6 +1057,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -871,7 +1099,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -885,6 +1114,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -916,7 +1156,8 @@
         "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": false
       },
       "tuning": {
         "net_return": 0.06193439374843823,
@@ -930,6 +1171,17 @@
         "score": 0.055924751875159995
       },
       "forward": {
+        "net_return": -0.029045377494487212,
+        "max_drawdown": -0.029045377494487212,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 1,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.04656806624173082
+      },
+      "forward_raw": {
         "net_return": -0.029045377494487212,
         "max_drawdown": -0.029045377494487212,
         "trades": 1,
@@ -961,7 +1213,8 @@
         "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -975,6 +1228,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -1006,7 +1270,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -1020,6 +1285,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": 0.0,
         "max_drawdown": 0.0,
         "trades": 0,
@@ -1051,7 +1327,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -1065,6 +1342,17 @@
         "score": 0.0
       },
       "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_raw": {
         "net_return": -0.06754068383569423,
         "max_drawdown": -0.06754068383569423,
         "trades": 1,
@@ -1086,7 +1374,7 @@
     },
     {
       "start": "2026-08-19",
-      "end": "2026-09-07",
+      "end": "2026-09-08",
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
@@ -1096,7 +1384,8 @@
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
         "target_mode": "return",
-        "window": 10
+        "window": 10,
+        "risk_off": true
       },
       "tuning": {
         "net_return": 0.0,
@@ -1120,7 +1409,18 @@
         "invalidated_at_open": 0,
         "score": 0.0
       },
-      "benchmark_return": 0.03809915220785287,
+      "forward_raw": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.04593386279055389,
       "selector_best_iterations": {
         "return:10": 243,
         "return:20": 28,

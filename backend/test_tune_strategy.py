@@ -3,10 +3,16 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from backend.tune_strategy import BUY_FEE, SELL_FEE, SLIPPAGE, simulate
+from backend.tune_strategy import BUY_FEE, SELL_FEE, SLIPPAGE, should_risk_off, simulate
 
 
 class CausalExecutionTests(unittest.TestCase):
+    def test_risk_off_uses_only_prior_tuning_statistics(self):
+        self.assertFalse(should_risk_off({'trades': 1, 'net_return': 0.01, 'max_drawdown': -0.05}))
+        self.assertTrue(should_risk_off({'trades': 0, 'net_return': 0.01, 'max_drawdown': -0.05}))
+        self.assertTrue(should_risk_off({'trades': 2, 'net_return': -0.01, 'max_drawdown': -0.05}))
+        self.assertTrue(should_risk_off({'trades': 2, 'net_return': 0.01, 'max_drawdown': -0.13}))
+
     def test_entry_does_not_capture_overnight_gap(self):
         frame = pd.DataFrame({
             'open': [100.0, 200.0], 'high': [100.0, 201.0],

@@ -24,6 +24,26 @@ TREND_GATES = ['sma50', 'sma200_uptrend']
 CONFIRMATION_DAYS = [2, 3]
 BREAKOUT_ATR_BUFFERS = [0.0, 0.25, 0.5]
 TAKE_PROFIT_ATR_MULTIPLIERS = [None, 3.0, 5.0]
+MIN_TUNING_TRADES = 1
+MIN_TUNING_RETURN = 0.0
+MAX_TUNING_DRAWDOWN = -0.12
+
+
+def cash_result():
+    return {
+        'net_return': 0.0, 'max_drawdown': 0.0, 'trades': 0,
+        'position_changes': 0, 'early_stop_exits': 0,
+        'take_profit_exits': 0, 'blocked_entries': 0,
+        'invalidated_at_open': 0, 'score': 0.0,
+    }
+
+
+def should_risk_off(tuning_result):
+    return not (
+        tuning_result['trades'] >= MIN_TUNING_TRADES
+        and tuning_result['net_return'] > MIN_TUNING_RETURN
+        and tuning_result['max_drawdown'] >= MAX_TUNING_DRAWDOWN
+    )
 
 
 def technicals(frame):
@@ -232,6 +252,7 @@ def run(output_path):
     close = frame['close'].to_numpy(dtype=np.float64)
     fold_reports = []
     compounded_strategy = 1.0
+    compounded_raw_strategy = 1.0
     compounded_benchmark = 1.0
     selected_counts = Counter()
 
@@ -262,14 +283,18 @@ def run(output_path):
         forward_forecasts, live_iteration = fit_predict_before(
             frame, forward_start, forward_indices, selected['target_mode'], selected['window'],
         )
-        forward_result = simulate(frame, forward_indices, forward_forecasts, indicator_values, selected)
+        raw_forward_result = simulate(frame, forward_indices, forward_forecasts, indicator_values, selected)
+        risk_off = should_risk_off(tuning_result)
+        forward_result = cash_result() if risk_off else raw_forward_result
         benchmark_return = (
             frame['close'].iloc[forward_end] * (1.0 - SLIPPAGE)
             / (frame['open'].iloc[forward_start + 1] * (1.0 + SLIPPAGE))
             * (1.0 - BUY_FEE) * (1.0 - SELL_FEE) - 1.0
         )
         compounded_strategy *= 1.0 + forward_result['net_return']
+        compounded_raw_strategy *= 1.0 + raw_forward_result['net_return']
         compounded_benchmark *= 1.0 + benchmark_return
+        selected = {**selected, 'risk_off': risk_off}
         key = json.dumps(selected, sort_keys=True)
         selected_counts[key] += 1
         fold_reports.append({
@@ -278,16 +303,23 @@ def run(output_path):
             'selected': selected,
             'tuning': tuning_result,
             'forward': forward_result,
+            'forward_raw': raw_forward_result,
             'benchmark_return': benchmark_return,
             'selector_best_iterations': selector_iterations,
             'live_best_iteration': live_iteration,
         })
 
     strategy_return = compounded_strategy - 1.0
+    raw_strategy_return = compounded_raw_strategy - 1.0
     benchmark_return = compounded_benchmark - 1.0
     report = {
+        'evaluation_status': {
+            'deployable_alpha_claim': False,
+            'classification': 'exploratory; historical outer folds were reused during iterative strategy development',
+            'required_confirmation': 'pre-register the current rules and evaluate only sessions after the last inspected date',
+        },
         'protocol': {
-            'name': 'nested rolling-origin strategy tuning',
+            'name': 'nested rolling-origin XGBoost strategy with causal risk-off filter',
             'model': 'XGBoost OHLCV; nested choice of next-session return/price targets and windows 10/20',
             'minimum_training_rows': MIN_TRAIN_ROWS,
             'tuning_rows': TUNING_ROWS,
@@ -296,6 +328,8 @@ def run(output_path):
             'sell_fee': SELL_FEE,
             'slippage_per_execution': SLIPPAGE,
             'selection_score': 'net_return - 0.50*abs(max_drawdown) - 0.00025*position_changes - 0.0025*early_stop_exits',
+            'risk_off_policy': 'stay in cash for the next fold unless the prior tuning window has at least one trade, positive net return, and drawdown no worse than 12%',
+            'news_policy': 'news is displayed as explanatory context and never gates a trade',
             'false_breakout_controls': '2-3 forecast confirmations; required prior-20-day-high ATR buffer with median-volume confirmation; SMA50 or SMA200 uptrend regime gate',
             'fold_boundary_policy': 'flat at start and liquidated at end',
             'benchmark': 'next-open buy-and-hold reset per fold with entry and exit fees',
@@ -307,8 +341,11 @@ def run(output_path):
         'period': {'start': fold_reports[0]['start'], 'end': fold_reports[-1]['end']},
         'folds': len(fold_reports),
         'strategy_return': strategy_return,
+        'raw_strategy_return': raw_strategy_return,
         'benchmark_return': benchmark_return,
         'alpha': strategy_return - benchmark_return,
+        'forward_trades': sum(item['forward']['trades'] for item in fold_reports),
+        'risk_off_folds': sum(bool(item['selected']['risk_off']) for item in fold_reports),
         'selected_configuration_counts': dict(selected_counts),
         'fold_reports': fold_reports,
     }

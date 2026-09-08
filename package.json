@@ -14,7 +14,7 @@
     "lint": "tsc --noEmit",
     "test": "tsx --test src/data/validation.test.ts backend/yahoo_proxy.test.js backend/vercel_api.test.js",
     "train:model": "python backend/train_model.py --yahoo",
-    "tune:strategy": "python -m backend.tune_strategy",
+    "tune:strategy": "python -m backend.tune_strategy && python backend/export_backtest_data.py && python -m backend.export_server_data",
     "tune:news": "python -m backend.tune_news_overlay && python backend/export_backtest_data.py && python -m backend.export_server_data",
     "audit:news": "python -m backend.audit_news_overlay",
     "compare:windows": "python -m backend.compare_training_windows",
