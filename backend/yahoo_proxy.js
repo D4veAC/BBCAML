@@ -46,6 +46,19 @@ app.post('/api/predict', async (req, res) => {
     res.json({ prediction_price: result.prediction_price });
   } catch { res.status(502).json({ error: 'The model service is unavailable.' }); }
 });
+app.get('/api/news', async (req, res) => {
+  try {
+    const upstream = process.env.NEWS_API_URL || 'http://127.0.0.1:5000/news';
+    const url = new URL(upstream);
+    if (req.query.date) url.searchParams.set('date', String(req.query.date));
+    const response = await fetch(url, { headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(28000) });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) return res.status(response.status >= 500 ? 502 : 400).json({ error: 'News is unavailable.' });
+    if (!Array.isArray(result.articles) || typeof result.as_of !== 'string') return res.status(502).json({ error: 'News service returned an invalid result.' });
+    res.setHeader('Cache-Control', 'no-store');
+    res.json(result);
+  } catch { res.status(502).json({ error: 'News is unavailable.' }); }
+});
 app.get('/api/status', (_req, res) => res.json({ status: 'ok', service: 'web' }));
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Endpoint not found' }));
 app.use(express.static(distPath));

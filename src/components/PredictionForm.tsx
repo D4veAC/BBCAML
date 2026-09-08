@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { OHLCVInput } from '../types';
 import { validInput } from '../data/validation';
 
 const fields = ['open', 'high', 'low', 'close', 'volume'] as const;
 export default function PredictionForm({ onPredict, isLoading, realtimeInput, yahooStatusText, onRetryYahoo }: {
   onPredict: (input: OHLCVInput) => void; isLoading: boolean; realtimeInput?: OHLCVInput | null;
-  yahooAvailable: boolean; yahooStatusText: string; onRetryYahoo: () => void;
+  yahooStatusText: string; onRetryYahoo: () => void;
 }) {
   const [values, setValues] = useState<Record<keyof OHLCVInput, string>>({ open: '', high: '', low: '', close: '', volume: '' });
   const [error, setError] = useState('');
+  useEffect(() => {
+    if (realtimeInput) setValues(Object.fromEntries(fields.map(key => [key, String(realtimeInput[key])])) as Record<keyof OHLCVInput, string>);
+  }, [realtimeInput]);
   function submit(event: React.FormEvent) {
     event.preventDefault();
+    if (!realtimeInput) { setError('Choose an available trading session first.'); return; }
     const input = Object.fromEntries(fields.map(key => [key, Number(values[key])]));
     if (fields.some(key => values[key].trim() === '') || !validInput(input)) {
       setError('Enter positive prices and non-negative volume. High and low must contain the open and close.');
@@ -24,9 +28,6 @@ export default function PredictionForm({ onPredict, isLoading, realtimeInput, ya
     <div className="market-source" data-od-id="market-source">
       <p role="status">{yahooStatusText}</p>
       <div className="text-actions">
-        <button type="button" disabled={isLoading || !realtimeInput} onClick={() => {
-          if (realtimeInput) { setValues(Object.fromEntries(fields.map(key => [key, String(realtimeInput[key])])) as Record<keyof OHLCVInput, string>); setError(''); }
-        }}>Use quote values</button>
         <button type="button" disabled={isLoading} onClick={onRetryYahoo}>Refresh quote</button>
       </div>
     </div>
@@ -38,7 +39,7 @@ export default function PredictionForm({ onPredict, isLoading, realtimeInput, ya
           <span>{key === 'volume' ? 'shares' : 'Rp'}</span></div>
       </label>)}</div>
       {error && <p role="alert" className="error-message">{error}</p>}
-      <button className="primary-button" type="submit" disabled={isLoading}>{isLoading ? 'Requesting estimate…' : 'Estimate price'}<span aria-hidden="true">↗</span></button>
+      <button className="primary-button" type="submit" disabled={isLoading || !realtimeInput}>{isLoading ? 'Requesting estimate…' : 'Estimate next close'}<span aria-hidden="true">↗</span></button>
       <p className="field-note">Use open, high, low, close and volume from the same session.</p>
     </form>
   </section>;

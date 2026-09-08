@@ -35,3 +35,10 @@ test('model input mismatch remains an explicit service error', async () => {
   assert.equal(response.status, 503);
   assert.equal((await response.json()).code, 'MODEL_INPUT_MISMATCH');
 });
+test('news endpoint passes through sourced news without inventing a summary', async () => {
+  const payload = { as_of: '2026-09-08', fetched_at: '2026-09-08T12:00:00+07:00', summary: null, summary_status: 'not_configured', articles: [{ title: 'BBCA', source: 'Publisher', url: 'https://example.com', published_wib: '' }] };
+  globalThis.fetch = async () => Response.json(payload);
+  const response = await realFetch(`${origin}/api/news?date=2026-09-08`);
+  assert.equal(response.status, 200);
+  assert.deepEqual(await response.json(), payload);
+});

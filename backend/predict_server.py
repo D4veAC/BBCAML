@@ -231,6 +231,23 @@ class PredictHandler(BaseHTTPRequestHandler):
         except Exception:
             self.respond(500, {'error': 'Model prediction failed'})
 
+    def do_GET(self):
+        parsed = urllib.parse.urlparse(self.path)
+        if parsed.path != '/news':
+            return self.respond(404, {'error': 'Endpoint not found'})
+        try:
+            try:
+                from backend.news_service import get_news
+            except ImportError:
+                from news_service import get_news
+            query = urllib.parse.parse_qs(parsed.query)
+            as_of = (query.get('date') or [datetime.now(ZoneInfo('Asia/Jakarta')).date().isoformat()])[0]
+            self.respond(200, get_news(as_of))
+        except ValueError as exc:
+            self.respond(400, {'error': str(exc)})
+        except Exception:
+            self.respond(503, {'error': 'News is unavailable'})
+
 if __name__ == '__main__':
     if os.environ.get('AUTO_RETRAIN_DAILY', 'false').lower() in ('1', 'true', 'yes'):
         start_ok = retrain_model() if os.environ.get('AUTO_RETRAIN_ON_START', 'true').lower() in ('1', 'true', 'yes') else True
