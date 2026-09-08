@@ -8,7 +8,7 @@ import pandas as pd
 import xgboost as xgb
 from sklearn.preprocessing import MinMaxScaler
 
-from backend.train_model import FEATURES, SEED, load_yahoo, make_samples, model_params
+from backend.train_model import FEATURES, SEED, TARGET_SCALES, load_yahoo, make_samples, model_params
 
 MODEL_SPECS = [('return', 10), ('return', 20), ('price', 10), ('price', 20)]
 MIN_TRAIN_ROWS = 1000
@@ -23,6 +23,7 @@ ATR_MULTIPLIERS = [1.5, 2.0, 2.5, 3.0]
 TREND_GATES = ['sma50', 'sma200_uptrend']
 CONFIRMATION_DAYS = [2, 3]
 BREAKOUT_ATR_BUFFERS = [0.0, 0.25, 0.5]
+TAKE_PROFIT_ATR_MULTIPLIERS = [None, 3.0, 5.0]
 
 
 def technicals(frame):
@@ -67,6 +68,8 @@ def fit_predict_before(frame, train_end, prediction_indices, target_mode, window
     prediction = model.predict(X_prediction)
     if target_mode == 'price':
         prediction = (prediction - closes[prediction_indices]) / closes[prediction_indices]
+    else:
+        prediction = prediction / TARGET_SCALES['return']
     return prediction, int(model.best_iteration)
 
 
@@ -74,17 +77,20 @@ def simulate(frame, indices, forecasts, indicators, config, entry_permissions=No
     open_price = frame['open'].to_numpy(dtype=np.float64)
     close = frame['close'].to_numpy(dtype=np.float64)
     low = frame['low'].to_numpy(dtype=np.float64)
+    high = frame['high'].to_numpy(dtype=np.float64)
     volume = frame['volume'].to_numpy(dtype=np.float64)
     equity = 1.0
     peak = 1.0
     max_drawdown = 0.0
     position = False
     trailing_stop = 0.0
+    profit_target = math.inf
     trades = 0
     changes = 0
     bullish_streak = 0
     entry_age = 0
     early_stop_exits = 0
+    take_profit_exits = 0
     blocked_entries = 0
     invalidated_at_open = 0
 
@@ -139,6 +145,11 @@ def simulate(frame, indices, forecasts, indicators, config, entry_permissions=No
         elif not position and entry_ready:
             position = True
             trailing_stop = execution_open - config['atr_multiplier'] * atr
+            take_profit_atr = config.get('take_profit_atr')
+            profit_target = (
+                execution_open + take_profit_atr * atr
+                if take_profit_atr is not None else math.inf
+            )
             equity *= 1.0 - BUY_FEE
             trades += 1
             changes += 1
@@ -148,6 +159,7 @@ def simulate(frame, indices, forecasts, indicators, config, entry_permissions=No
         if position:
             next_close = close[day + 1]
             next_low = low[day + 1]
+            next_high = high[day + 1]
             entry_fill = execution_open * (1.0 + SLIPPAGE) if entry_this_session else execution_open
             if next_low <= trailing_stop:
                 # A gap below the stop fills at the open, not the stale stop.
@@ -158,6 +170,16 @@ def simulate(frame, indices, forecasts, indicators, config, entry_permissions=No
                     early_stop_exits += 1
                 position = False
                 bullish_streak = 0
+                changes += 1
+            elif next_high >= profit_target:
+                # If both stop and target occur in one daily candle, the stop
+                # branch above wins. This avoids assuming a favorable intraday order.
+                target_fill = profit_target * (1.0 - SLIPPAGE)
+                equity *= target_fill / entry_fill
+                equity *= 1.0 - SELL_FEE
+                position = False
+                bullish_streak = 0
+                take_profit_exits += 1
                 changes += 1
             else:
                 equity *= next_close / entry_fill
@@ -178,6 +200,7 @@ def simulate(frame, indices, forecasts, indicators, config, entry_permissions=No
         'trades': trades,
         'position_changes': changes,
         'early_stop_exits': early_stop_exits,
+        'take_profit_exits': take_profit_exits,
         'blocked_entries': blocked_entries,
         'invalidated_at_open': invalidated_at_open,
         'score': score,
@@ -191,14 +214,16 @@ def candidates():
                 for gate in TREND_GATES:
                     for confirmation_days in CONFIRMATION_DAYS:
                         for breakout_buffer in BREAKOUT_ATR_BUFFERS:
-                            yield {
-                                'entry_threshold': entry,
-                                'exit_threshold': exit_value,
-                                'atr_multiplier': atr,
-                                'trend_gate': gate,
-                                'confirmation_days': confirmation_days,
-                                'breakout_atr_buffer': breakout_buffer,
-                            }
+                            for take_profit_atr in TAKE_PROFIT_ATR_MULTIPLIERS:
+                                yield {
+                                    'entry_threshold': entry,
+                                    'exit_threshold': exit_value,
+                                    'atr_multiplier': atr,
+                                    'take_profit_atr': take_profit_atr,
+                                    'trend_gate': gate,
+                                    'confirmation_days': confirmation_days,
+                                    'breakout_atr_buffer': breakout_buffer,
+                                }
 
 
 def run(output_path):

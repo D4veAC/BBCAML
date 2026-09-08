@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/predict.py": {
+      "runtime": "python3.12",
+      "maxDuration": 60
+    },
+    "api/news.py": {
+      "runtime": "python3.12",
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}

@@ -17,13 +17,13 @@ def run_backtest():
     timestep = bundle['timestep']
     ticker = bundle['ticker']
     if (
-        bundle.get('bundle_version') != 3
+        bundle.get('bundle_version') != 4
         or bundle.get('target_mode') not in ('price', 'return')
         or ticker != 'BBCA.JK'
         or features != ['open', 'high', 'low', 'close', 'volume']
         or timestep not in (1, 10, 20, 30)
     ):
-        raise RuntimeError('Backtest requires the leakage-controlled bundle schema version 3')
+        raise RuntimeError('Backtest requires the leakage-controlled bundle schema version 4')
 
     headers = {'User-Agent': 'Mozilla/5.0'}
     url = f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(ticker)}?range=5y&interval=1d'
@@ -66,7 +66,7 @@ def run_backtest():
     lows = np.array(lows)
 
     raw_prediction = model.predict(samples)
-    pred_next_close = raw_prediction if bundle['target_mode'] == 'price' else curr_close * (1.0 + raw_prediction)
+    pred_next_close = raw_prediction if bundle['target_mode'] == 'price' else curr_close * (1.0 + raw_prediction / bundle['target_scale'])
 
     split_idx = int(len(samples) * 0.85)
 

@@ -14,7 +14,7 @@
     "benchmark": "next-open buy-and-hold reset per fold with entry and exit fees",
     "signal_execution": "complete day-t OHLCV; execute at day-(t+1) open",
     "stop_fill_assumption": "known trailing stop; gap below stop fills at next open",
-    "candidate_count": 1920
+    "candidate_count": 5760
   },
   "source": {
     "kind": "yahoo",
@@ -27,19 +27,26 @@
     "end": "2026-09-07"
   },
   "folds": 24,
-  "strategy_return": -0.37389631656821654,
+  "strategy_return": -0.20702439240248405,
   "benchmark_return": -0.0708871685710436,
-  "alpha": -0.30300914799717293,
+  "alpha": -0.13613722383144045,
   "selected_configuration_counts": {
-    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 4,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 10}": 5,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 20}": 1,
-    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 5,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 3,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 1,
-    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 2
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 4,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 3.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 5.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 3,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.5, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma200_uptrend\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"price\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"take_profit_atr\": null, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 20}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0015, \"take_profit_atr\": 3.0, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1
   },
   "fold_reports": [
     {
@@ -47,8 +54,9 @@
       "end": "2020-11-13",
       "selected": {
         "entry_threshold": 0.0,
-        "exit_threshold": 0.0,
+        "exit_threshold": 0.0015,
         "atr_multiplier": 2.0,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -61,24 +69,30 @@
         "trades": 1,
         "position_changes": 2,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0014333122510507006
       },
       "forward": {
-        "net_return": 0.020249857277247152,
-        "max_drawdown": -0.03882173863636362,
-        "trades": 2,
-        "position_changes": 4,
+        "net_return": 0.03215952584077297,
+        "max_drawdown": -0.022935779816513735,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": -0.00016101204093465962
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.020191635932516105
       },
       "benchmark_return": 0.03552160898683421,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 103,
+        "return:10": 60,
+        "return:20": 84,
         "price:10": 999,
         "price:20": 998
       },
-      "live_best_iteration": 61
+      "live_best_iteration": 170
     },
     {
       "start": "2020-11-13",
@@ -86,58 +100,69 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 2.0,
+        "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
-        "confirmation_days": 2,
+        "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
         "window": 10
       },
       "tuning": {
-        "net_return": 0.06176859524189138,
-        "max_drawdown": -0.06779661016949146,
-        "trades": 3,
-        "position_changes": 6,
+        "net_return": 0.03136728127578725,
+        "max_drawdown": -0.019897076271186198,
+        "trades": 2,
+        "position_changes": 4,
         "early_stop_exits": 0,
-        "score": 0.02637029015714565
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.02041874314019415
       },
       "forward": {
-        "net_return": -0.09350637379056304,
-        "max_drawdown": -0.0991187690044606,
-        "trades": 3,
-        "position_changes": 6,
+        "net_return": -0.009277505791701945,
+        "max_drawdown": -0.009277505791701945,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": -0.14456575829279333
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.014416258687552919
       },
       "benchmark_return": 0.03336631046417837,
       "selector_best_iterations": {
-        "return:10": 61,
-        "return:20": 103,
+        "return:10": 266,
+        "return:20": 355,
         "price:10": 642,
         "price:20": 683
       },
-      "live_best_iteration": 0
+      "live_best_iteration": 453
     },
     {
       "start": "2021-02-18",
       "end": "2021-05-25",
       "selected": {
         "entry_threshold": 0.0,
-        "exit_threshold": 0.0,
-        "atr_multiplier": 1.5,
+        "exit_threshold": 0.0015,
+        "atr_multiplier": 2.5,
+        "take_profit_atr": 3.0,
         "trend_gate": "sma50",
         "confirmation_days": 2,
-        "breakout_atr_buffer": 0.0,
-        "target_mode": "price",
+        "breakout_atr_buffer": 0.25,
+        "target_mode": "return",
         "window": 10
       },
       "tuning": {
-        "net_return": 0.0,
-        "max_drawdown": 0.0,
-        "trades": 0,
-        "position_changes": 0,
+        "net_return": 0.12030993944367174,
+        "max_drawdown": -0.03381294964028758,
+        "trades": 2,
+        "position_changes": 4,
         "early_stop_exits": 0,
-        "score": 0.0
+        "take_profit_exits": 2,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.10240346462352795
       },
       "forward": {
         "net_return": 0.0,
@@ -145,16 +170,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": -0.0673632167199032,
       "selector_best_iterations": {
-        "return:10": 61,
-        "return:20": 103,
+        "return:10": 170,
+        "return:20": 88,
         "price:10": 844,
         "price:20": 923
       },
-      "live_best_iteration": 776
+      "live_best_iteration": 3
     },
     {
       "start": "2021-05-25",
@@ -163,10 +191,11 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
-        "breakout_atr_buffer": 0.25,
-        "target_mode": "price",
+        "breakout_atr_buffer": 0.5,
+        "target_mode": "return",
         "window": 10
       },
       "tuning": {
@@ -175,24 +204,30 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
-        "net_return": 0.0,
-        "max_drawdown": 0.0,
-        "trades": 0,
-        "position_changes": 0,
-        "early_stop_exits": 0,
-        "score": 0.0
+        "net_return": -0.05761389266763384,
+        "max_drawdown": -0.05761389266763384,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 1,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.09042083900145076
       },
       "benchmark_return": 0.005823551003031557,
       "selector_best_iterations": {
-        "return:10": 0,
-        "return:20": 66,
+        "return:10": 453,
+        "return:20": 138,
         "price:10": 708,
         "price:20": 614
       },
-      "live_best_iteration": 746
+      "live_best_iteration": 95
     },
     {
       "start": "2021-08-27",
@@ -200,20 +235,24 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 2.5,
-        "trend_gate": "sma50",
+        "atr_multiplier": 1.5,
+        "take_profit_atr": null,
+        "trend_gate": "sma200_uptrend",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
-        "target_mode": "price",
-        "window": 20
+        "target_mode": "return",
+        "window": 10
       },
       "tuning": {
-        "net_return": 0.029211652390601417,
-        "max_drawdown": -0.022270895802099067,
-        "trades": 1,
-        "position_changes": 2,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
         "early_stop_exits": 0,
-        "score": 0.017576204489551883
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
       },
       "forward": {
         "net_return": 0.0,
@@ -221,16 +260,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": 0.13138379965118907,
       "selector_best_iterations": {
         "return:10": 3,
-        "return:20": 133,
+        "return:20": 0,
         "price:10": 776,
         "price:20": 789
       },
-      "live_best_iteration": 802
+      "live_best_iteration": 35
     },
     {
       "start": "2021-11-25",
@@ -238,37 +280,44 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 3.0,
-        "trend_gate": "sma50",
+        "atr_multiplier": 1.5,
+        "take_profit_atr": 5.0,
+        "trend_gate": "sma200_uptrend",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
-        "window": 10
+        "window": 20
       },
       "tuning": {
-        "net_return": 0.09531004667543663,
-        "max_drawdown": -0.09466172051054311,
-        "trades": 2,
-        "position_changes": 4,
-        "early_stop_exits": 0,
-        "score": 0.046979186420165076
-      },
-      "forward": {
-        "net_return": 0.05083378904607172,
-        "max_drawdown": -0.04088050314465419,
+        "net_return": 0.09440108605637576,
+        "max_drawdown": 0.0,
         "trades": 1,
         "position_changes": 2,
         "early_stop_exits": 0,
-        "score": 0.029893537473744625
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.09390108605637576
+      },
+      "forward": {
+        "net_return": -0.010482824755299713,
+        "max_drawdown": -0.04035713615411762,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 2,
+        "score": -0.031661392832358526
       },
       "benchmark_return": 0.07568458811134993,
       "selector_best_iterations": {
-        "return:10": 15,
-        "return:20": 19,
+        "return:10": 95,
+        "return:20": 1,
         "price:10": 746,
         "price:20": 873
       },
-      "live_best_iteration": 30
+      "live_best_iteration": 1
     },
     {
       "start": "2022-02-24",
@@ -277,6 +326,52 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 3.0,
+        "take_profit_atr": 5.0,
+        "trend_gate": "sma200_uptrend",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 20
+      },
+      "tuning": {
+        "net_return": 0.160815205371726,
+        "max_drawdown": -0.0408805031446543,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "take_profit_exits": 2,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.13937495379939885
+      },
+      "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "benchmark_return": -0.06131297735566166,
+      "selector_best_iterations": {
+        "return:10": 35,
+        "return:20": 3,
+        "price:10": 835,
+        "price:20": 802
+      },
+      "live_best_iteration": 17
+    },
+    {
+      "start": "2022-06-09",
+      "end": "2022-09-07",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0015,
+        "atr_multiplier": 3.0,
+        "take_profit_atr": 5.0,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -284,67 +379,35 @@
         "window": 10
       },
       "tuning": {
-        "net_return": 0.11229899395341092,
-        "max_drawdown": -0.06157831653225887,
-        "trades": 2,
-        "position_changes": 4,
-        "early_stop_exits": 0,
-        "score": 0.08050983568728148
-      },
-      "forward": {
-        "net_return": -0.039097522874591784,
-        "max_drawdown": -0.05185007431402411,
+        "net_return": 0.06068535581837842,
+        "max_drawdown": -0.04088050314465419,
         "trades": 1,
         "position_changes": 2,
-        "early_stop_exits": 1,
-        "score": -0.06802256003160384
-      },
-      "benchmark_return": -0.06131297735566166,
-      "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 41,
-        "price:10": 835,
-        "price:20": 802
-      },
-      "live_best_iteration": 111
-    },
-    {
-      "start": "2022-06-09",
-      "end": "2022-09-07",
-      "selected": {
-        "entry_threshold": 0.0,
-        "exit_threshold": 0.0,
-        "atr_multiplier": 1.5,
-        "trend_gate": "sma50",
-        "confirmation_days": 2,
-        "breakout_atr_buffer": 0.0,
-        "target_mode": "price",
-        "window": 10
-      },
-      "tuning": {
-        "net_return": 0.0,
-        "max_drawdown": 0.0,
-        "trades": 0,
-        "position_changes": 0,
         "early_stop_exits": 0,
-        "score": 0.0
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.03974510424605132
       },
       "forward": {
-        "net_return": 0.0,
-        "max_drawdown": 0.0,
-        "trades": 0,
-        "position_changes": 0,
+        "net_return": 0.07683457985850928,
+        "max_drawdown": -0.012499999999999956,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": 0.0
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0700845798585093
       },
       "benchmark_return": 0.12610730317906937,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 47,
+        "return:10": 26,
+        "return:20": 1,
         "price:10": 928,
         "price:20": 997
       },
-      "live_best_iteration": 837
+      "live_best_iteration": 1
     },
     {
       "start": "2022-09-07",
@@ -353,6 +416,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -360,29 +424,35 @@
         "window": 10
       },
       "tuning": {
-        "net_return": 0.051273700081695406,
-        "max_drawdown": -0.044428058350778676,
-        "trades": 2,
-        "position_changes": 4,
-        "early_stop_exits": 1,
-        "score": 0.025559670906306068
+        "net_return": 0.0833806867269502,
+        "max_drawdown": -0.012499999999999956,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.07663068672695023
       },
       "forward": {
-        "net_return": -0.0102331986423152,
-        "max_drawdown": -0.053080237454897206,
+        "net_return": -0.09606009540261873,
+        "max_drawdown": -0.09606009540261873,
         "trades": 3,
         "position_changes": 6,
-        "early_stop_exits": 3,
-        "score": -0.045773317369763804
+        "early_stop_exits": 2,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 2,
+        "score": -0.1505901431039281
       },
       "benchmark_return": 0.03942825489598989,
       "selector_best_iterations": {
-        "return:10": 111,
-        "return:20": 134,
+        "return:10": 1,
+        "return:20": 17,
         "price:10": 881,
         "price:20": 935
       },
-      "live_best_iteration": 107
+      "live_best_iteration": 7
     },
     {
       "start": "2022-12-05",
@@ -390,37 +460,44 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 1.5,
+        "atr_multiplier": 2.5,
+        "take_profit_atr": 3.0,
         "trend_gate": "sma50",
-        "confirmation_days": 2,
+        "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
         "window": 10
       },
       "tuning": {
-        "net_return": 0.0906969686013972,
-        "max_drawdown": -0.05308023745489732,
+        "net_return": 0.14497767592918498,
+        "max_drawdown": -0.039325842696628865,
         "trades": 3,
         "position_changes": 6,
-        "early_stop_exits": 2,
-        "score": 0.05765684987394854
+        "early_stop_exits": 0,
+        "take_profit_exits": 3,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.12381475458087055
       },
       "forward": {
-        "net_return": -0.06362025067023691,
-        "max_drawdown": -0.06362025067023691,
-        "trades": 2,
-        "position_changes": 4,
+        "net_return": -0.02820725739207741,
+        "max_drawdown": -0.05074023044692755,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": -0.09643037600535537
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.054077372615541186
       },
       "benchmark_return": -0.03350202086814735,
       "selector_best_iterations": {
-        "return:10": 111,
-        "return:20": 133,
+        "return:10": 1,
+        "return:20": 4,
         "price:10": 837,
         "price:20": 991
       },
-      "live_best_iteration": 111
+      "live_best_iteration": 0
     },
     {
       "start": "2023-03-03",
@@ -428,20 +505,24 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 1.5,
+        "atr_multiplier": 2.0,
+        "take_profit_atr": 3.0,
         "trend_gate": "sma50",
         "confirmation_days": 2,
-        "breakout_atr_buffer": 0.0,
-        "target_mode": "price",
+        "breakout_atr_buffer": 0.5,
+        "target_mode": "return",
         "window": 10
       },
       "tuning": {
-        "net_return": 0.0,
-        "max_drawdown": 0.0,
-        "trades": 0,
-        "position_changes": 0,
+        "net_return": 0.05359735752077999,
+        "max_drawdown": -0.03309818178729318,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": 0.0
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0365482666271334
       },
       "forward": {
         "net_return": 0.0,
@@ -449,16 +530,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": 0.05319586061136117,
       "selector_best_iterations": {
-        "return:10": 107,
-        "return:20": 134,
+        "return:10": 7,
+        "return:20": 0,
         "price:10": 931,
         "price:20": 995
       },
-      "live_best_iteration": 903
+      "live_best_iteration": 1
     },
     {
       "start": "2023-06-16",
@@ -467,6 +551,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
@@ -479,6 +564,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
@@ -487,16 +575,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": 0.011591714736381986,
       "selector_best_iterations": {
-        "return:10": 111,
-        "return:20": 110,
+        "return:10": 0,
+        "return:20": 0,
         "price:10": 989,
         "price:20": 999
       },
-      "live_best_iteration": 0
+      "live_best_iteration": 3
     },
     {
       "start": "2023-09-20",
@@ -505,6 +596,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
@@ -517,6 +609,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
@@ -525,16 +620,19 @@
         "trades": 1,
         "position_changes": 2,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": -0.0010836027468602012
       },
       "benchmark_return": 0.008638493920847923,
       "selector_best_iterations": {
-        "return:10": 68,
-        "return:20": 41,
+        "return:10": 1,
+        "return:20": 11,
         "price:10": 903,
         "price:20": 812
       },
-      "live_best_iteration": 63
+      "live_best_iteration": 0
     },
     {
       "start": "2023-12-19",
@@ -543,6 +641,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma200_uptrend",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
@@ -555,24 +654,30 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
-        "net_return": -0.04379824524409093,
-        "max_drawdown": -0.04637151634438719,
+        "net_return": -0.04632224998776835,
+        "max_drawdown": -0.04632224998776835,
         "trades": 2,
         "position_changes": 4,
-        "early_stop_exits": 0,
-        "score": -0.06798400341628452
+        "early_stop_exits": 1,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.07298337498165253
       },
       "benchmark_return": 0.08375222252218517,
       "selector_best_iterations": {
-        "return:10": 0,
-        "return:20": 134,
+        "return:10": 3,
+        "return:20": 6,
         "price:10": 685,
         "price:20": 685
       },
-      "live_best_iteration": 32
+      "live_best_iteration": 0
     },
     {
       "start": "2024-03-27",
@@ -581,6 +686,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 2.0,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -593,6 +699,9 @@
         "trades": 2,
         "position_changes": 4,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0017151303395236414
       },
       "forward": {
@@ -601,16 +710,19 @@
         "trades": 1,
         "position_changes": 2,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.00848685871372723
       },
       "benchmark_return": -2.912136356969519e-05,
       "selector_best_iterations": {
-        "return:10": 63,
-        "return:20": 19,
+        "return:10": 0,
+        "return:20": 0,
         "price:10": 752,
         "price:20": 685
       },
-      "live_best_iteration": 20
+      "live_best_iteration": 0
     },
     {
       "start": "2024-07-12",
@@ -618,45 +730,8 @@
       "selected": {
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
-        "atr_multiplier": 2.0,
-        "trend_gate": "sma50",
-        "confirmation_days": 2,
-        "breakout_atr_buffer": 0.0,
-        "target_mode": "return",
-        "window": 10
-      },
-      "tuning": {
-        "net_return": 0.03634599017491058,
-        "max_drawdown": -0.047741841668451634,
-        "trades": 3,
-        "position_changes": 6,
-        "early_stop_exits": 0,
-        "score": 0.010975069340684764
-      },
-      "forward": {
-        "net_return": -0.049565346755786166,
-        "max_drawdown": -0.049565346755786166,
-        "trades": 2,
-        "position_changes": 4,
-        "early_stop_exits": 0,
-        "score": -0.07534802013367925
-      },
-      "benchmark_return": 0.0395608519434314,
-      "selector_best_iterations": {
-        "return:10": 32,
-        "return:20": 41,
-        "price:10": 986,
-        "price:20": 964
-      },
-      "live_best_iteration": 32
-    },
-    {
-      "start": "2024-10-10",
-      "end": "2025-01-14",
-      "selected": {
-        "entry_threshold": 0.0,
-        "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -669,6 +744,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
@@ -677,12 +755,60 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.0395608519434314,
+      "selector_best_iterations": {
+        "return:10": 0,
+        "return:20": 2,
+        "price:10": 986,
+        "price:20": 964
+      },
+      "live_best_iteration": 993
+    },
+    {
+      "start": "2024-10-10",
+      "end": "2025-01-14",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "take_profit_atr": null,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "price",
+        "window": 10
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": -0.10378690079162523,
       "selector_best_iterations": {
-        "return:10": 20,
-        "return:20": 76,
+        "return:10": 0,
+        "return:20": 6,
         "price:10": 999,
         "price:20": 996
       },
@@ -695,11 +821,12 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
-        "target_mode": "price",
-        "window": 10
+        "target_mode": "return",
+        "window": 20
       },
       "tuning": {
         "net_return": 0.0,
@@ -707,6 +834,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
         "score": 0.0
       },
       "forward": {
@@ -715,16 +845,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": -0.08812560405991487,
       "selector_best_iterations": {
-        "return:10": 32,
-        "return:20": 32,
+        "return:10": 0,
+        "return:20": 71,
         "price:10": 993,
         "price:20": 980
       },
-      "live_best_iteration": 994
+      "live_best_iteration": 125
     },
     {
       "start": "2025-04-28",
@@ -733,6 +866,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -745,62 +879,75 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
-        "net_return": 0.043968967120606495,
-        "max_drawdown": -0.029428827319587403,
-        "trades": 1,
-        "position_changes": 2,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
         "early_stop_exits": 0,
-        "score": 0.028754553460812793
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
       },
       "benchmark_return": -0.047392675485765534,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 41,
+        "return:10": 78,
+        "return:20": 94,
         "price:10": 994,
         "price:20": 959
       },
-      "live_best_iteration": 30
+      "live_best_iteration": 185
     },
     {
       "start": "2025-08-05",
       "end": "2025-11-04",
       "selected": {
         "entry_threshold": 0.0,
-        "exit_threshold": 0.0,
+        "exit_threshold": 0.0015,
         "atr_multiplier": 1.5,
+        "take_profit_atr": 3.0,
         "trend_gate": "sma50",
-        "confirmation_days": 2,
+        "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
         "window": 10
       },
       "tuning": {
-        "net_return": 0.043968967120606495,
-        "max_drawdown": -0.029428827319587403,
+        "net_return": 0.06193439374843823,
+        "max_drawdown": -0.011019283746556474,
         "trades": 1,
         "position_changes": 2,
         "early_stop_exits": 0,
-        "score": 0.028754553460812793
+        "take_profit_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.055924751875159995
       },
       "forward": {
-        "net_return": -0.11003324088832378,
-        "max_drawdown": -0.11003324088832378,
-        "trades": 2,
-        "position_changes": 4,
+        "net_return": -0.029045377494487212,
+        "max_drawdown": -0.029045377494487212,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 1,
-        "score": -0.16854986133248567
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.04656806624173082
       },
       "benchmark_return": 0.021581164465986902,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 32,
+        "return:10": 60,
+        "return:20": 125,
         "price:10": 994,
         "price:20": 997
       },
-      "live_best_iteration": 30
+      "live_best_iteration": 235
     },
     {
       "start": "2025-11-04",
@@ -809,8 +956,9 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
-        "trend_gate": "sma200_uptrend",
-        "confirmation_days": 2,
+        "take_profit_atr": null,
+        "trend_gate": "sma50",
+        "confirmation_days": 3,
         "breakout_atr_buffer": 0.0,
         "target_mode": "return",
         "window": 10
@@ -821,6 +969,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
@@ -829,16 +980,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": -0.11458686693066489,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 23,
+        "return:10": 185,
+        "return:20": 153,
         "price:10": 983,
         "price:20": 962
       },
-      "live_best_iteration": 30
+      "live_best_iteration": 213
     },
     {
       "start": "2026-02-06",
@@ -847,6 +1001,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma200_uptrend",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -859,6 +1014,9 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
@@ -867,16 +1025,19 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "benchmark_return": -0.22862553070777292,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 32,
+        "return:10": 235,
+        "return:20": 282,
         "price:10": 992,
         "price:20": 999
       },
-      "live_best_iteration": 15
+      "live_best_iteration": 243
     },
     {
       "start": "2026-05-19",
@@ -885,6 +1046,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.0,
@@ -897,24 +1059,30 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
-        "net_return": -0.15113906779878106,
-        "max_drawdown": -0.15113906779878106,
-        "trades": 2,
-        "position_changes": 4,
+        "net_return": -0.06754068383569423,
+        "max_drawdown": -0.06754068383569423,
+        "trades": 1,
+        "position_changes": 2,
         "early_stop_exits": 0,
-        "score": -0.2277086016981716
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.10181102575354134
       },
       "benchmark_return": 0.04913003133370597,
       "selector_best_iterations": {
-        "return:10": 30,
-        "return:20": 41,
+        "return:10": 213,
+        "return:20": 10,
         "price:10": 993,
         "price:20": 821
       },
-      "live_best_iteration": 15
+      "live_best_iteration": 220
     },
     {
       "start": "2026-08-19",
@@ -923,6 +1091,7 @@
         "entry_threshold": 0.0,
         "exit_threshold": 0.0,
         "atr_multiplier": 1.5,
+        "take_profit_atr": null,
         "trend_gate": "sma50",
         "confirmation_days": 2,
         "breakout_atr_buffer": 0.5,
@@ -935,24 +1104,30 @@
         "trades": 0,
         "position_changes": 0,
         "early_stop_exits": 0,
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
         "score": 0.0
       },
       "forward": {
-        "net_return": -0.008732388493253418,
-        "max_drawdown": -0.022140221402214166,
-        "trades": 1,
-        "position_changes": 2,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
         "early_stop_exits": 0,
-        "score": -0.0203024991943605
+        "take_profit_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
       },
       "benchmark_return": 0.03809915220785287,
       "selector_best_iterations": {
-        "return:10": 15,
-        "return:20": 32,
+        "return:10": 243,
+        "return:20": 28,
         "price:10": 958,
         "price:20": 821
       },
-      "live_best_iteration": 30
+      "live_best_iteration": 128
     }
   ]
 }

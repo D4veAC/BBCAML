@@ -2,7 +2,9 @@ import unittest
 
 import pandas as pd
 
-from backend.train_model import decision_indices, exclude_incomplete_session, split_boundaries
+import numpy as np
+
+from backend.train_model import TARGET_SCALES, as_price, decision_indices, exclude_incomplete_session, make_samples, split_boundaries
 
 
 class ChronologicalSplitTests(unittest.TestCase):
@@ -45,6 +47,16 @@ class ChronologicalSplitTests(unittest.TestCase):
             window = range(decision_day - 9, decision_day + 1)
             self.assertEqual(max(window), decision_day)
             self.assertGreaterEqual(min(window), 0)
+
+    def test_return_targets_use_basis_points_and_convert_back_to_price(self):
+        scaled = np.arange(15, dtype=float).reshape(3, 5)
+        closes = np.array([100.0, 101.0, 103.02])
+        indices = np.array([1])
+        _, target = make_samples(scaled, closes, indices, 1, 'return')
+        self.assertAlmostEqual(float(target[0]), 200.0, places=4)
+        restored = as_price(np.array([200.0]), closes, indices, 'return')
+        self.assertAlmostEqual(float(restored[0]), 103.02, places=6)
+        self.assertEqual(TARGET_SCALES['return'], 10_000.0)
 
 
 if __name__ == '__main__':

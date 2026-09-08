@@ -30,6 +30,7 @@ FEATURES = model_bundle['features']
 TIMESTEP = int(model_bundle['timestep'])
 TICKER = model_bundle['ticker']
 TARGET_MODE = model_bundle.get('target_mode')
+TARGET_SCALE = float(model_bundle.get('target_scale', 1.0))
 BUNDLE_VERSION = model_bundle.get('bundle_version')
 YAHOO_CHART_URL = 'https://query1.finance.yahoo.com/v8/finance/chart'
 
@@ -48,7 +49,7 @@ def bundle_compatible(bundle):
     model = bundle.get('model')
     scaler = bundle.get('scaler_X')
     return (
-        bundle.get('bundle_version') == 3
+        bundle.get('bundle_version') == 4
         and bundle.get('target_mode') in ('price', 'return')
         and bundle.get('ticker') == 'BBCA.JK'
         and features == ['open', 'high', 'low', 'close', 'volume']
@@ -57,10 +58,12 @@ def bundle_compatible(bundle):
         and scaler is not None
         and model.get_booster().num_features() == timestep * len(features)
         and scaler.n_features_in_ == len(features)
+        and bundle.get('target_scale') in (1.0, 10_000.0)
+        and any('[f' in tree for tree in model.get_booster().get_dump())
     )
 
 def install_bundle(bundle):
-    global model_bundle, MODEL, SCALER_X, FEATURES, TIMESTEP, TICKER, TARGET_MODE, BUNDLE_VERSION
+    global model_bundle, MODEL, SCALER_X, FEATURES, TIMESTEP, TICKER, TARGET_MODE, TARGET_SCALE, BUNDLE_VERSION
     if not bundle_compatible(bundle):
         raise ModelInputMismatch('The model and its input configuration are incompatible')
     with MODEL_LOCK:
@@ -71,6 +74,7 @@ def install_bundle(bundle):
         TIMESTEP = int(bundle['timestep'])
         TICKER = bundle['ticker']
         TARGET_MODE = bundle['target_mode']
+        TARGET_SCALE = float(bundle['target_scale'])
         BUNDLE_VERSION = bundle['bundle_version']
 
 def retrain_model():
@@ -199,7 +203,7 @@ def predict(data, history_rows=None):
         sequence = build_sequence(current_session, history_rows)
         scaled_sequence = SCALER_X.transform(sequence).reshape(1, expected_model_features)
         y = MODEL.predict(scaled_sequence)
-        price = float(y[0] if TARGET_MODE == 'price' else current_session[FEATURES.index('close')] * (1.0 + y[0]))
+        price = float(y[0] if TARGET_MODE == 'price' else current_session[FEATURES.index('close')] * (1.0 + y[0] / TARGET_SCALE))
     if not math.isfinite(price) or price <= 0:
         raise RuntimeError('Model returned an invalid price')
     return {'prediction_price': price}

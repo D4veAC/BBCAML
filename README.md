@@ -18,7 +18,7 @@ Vite forwards `/api` requests to the web server on port 3001. The web server for
 
 The checked-in bundle is the BBCA-only quantitative slice adopted from AgenticBBCA. The current leakage-controlled benchmark selected XGBoost with OHLCV-only features, a 10-session window, and a next-session return target. Sentiment, retrieval, LLM reporting, broker-flow rules, other bank notebooks, and FX inputs are not part of this price endpoint.
 
-The backend retrieves the prior BBCA sessions required by the selected window, appends the submitted OHLCV session, scales each row with the stored deployment scaler, and sends the flattened sequence to XGBoost. The server accepts only leakage-controlled bundle schema version 3. Missing input, incomplete market history, a missing bundle, or incompatible metadata stops inference and returns an error; there is no model or rule fallback.
+The backend retrieves the prior BBCA sessions required by the selected window, appends the submitted OHLCV session, scales each row with the stored deployment scaler, and sends the flattened sequence to XGBoost. The server accepts only leakage-controlled bundle schema version 4. Return targets are trained in basis points and converted back at inference; bundles whose trees contain no feature splits are rejected. Missing input, incomplete market history, a missing bundle, or incompatible metadata stops inference and returns an error; there is no model or rule fallback.
 
 Python pickle compatibility depends on the versions used to train and save the model. The dependency file lists runtime packages, not a verified training environment.
 

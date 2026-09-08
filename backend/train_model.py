@@ -17,6 +17,7 @@ from sklearn.preprocessing import MinMaxScaler
 FEATURES = ['open', 'high', 'low', 'close', 'volume']
 WINDOWS = [1, 10, 20, 30]
 TARGET_MODES = ['return', 'price']
+TARGET_SCALES = {'return': 10_000.0, 'price': 1.0}
 TICKER = 'BBCA.JK'
 SEED = 42
 YAHOO_URL = 'https://query1.finance.yahoo.com/v8/finance/chart'
@@ -110,7 +111,7 @@ def make_samples(scaled_features, closes, indices, window, target_mode):
     if target_mode == 'price':
         y = closes[indices + 1]
     else:
-        y = (closes[indices + 1] - closes[indices]) / closes[indices]
+        y = ((closes[indices + 1] - closes[indices]) / closes[indices]) * TARGET_SCALES['return']
     return X, np.asarray(y, dtype=np.float32)
 
 
@@ -126,7 +127,7 @@ def model_params(**overrides):
 
 
 def as_price(prediction, closes, indices, target_mode):
-    return prediction if target_mode == 'price' else closes[indices] * (1.0 + prediction)
+    return prediction if target_mode == 'price' else closes[indices] * (1.0 + prediction / TARGET_SCALES['return'])
 
 
 def metrics(prediction, closes, indices):
@@ -134,6 +135,7 @@ def metrics(prediction, closes, indices):
     current = closes[indices]
     return {
         'mae_idr': float(np.mean(np.abs(prediction - actual))),
+        'mape': float(np.mean(np.abs(prediction - actual) / actual)),
         'rmse_idr': float(math.sqrt(np.mean((prediction - actual) ** 2))),
         'directional_accuracy': float(np.mean(np.sign(prediction - current) == np.sign(actual - current))),
     }
@@ -156,19 +158,27 @@ def train(frame, provenance, output_path):
             model = xgb.XGBRegressor(**model_params(early_stopping_rounds=50))
             model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
             val_price = as_price(model.predict(X_val), closes, val_idx, target_mode)
+            split_trees = sum('[f' in tree for tree in model.get_booster().get_dump()[:model.best_iteration + 1])
             candidates.append({
                 'target_mode': target_mode,
                 'window': window,
                 'validation': metrics(val_price, closes, val_idx),
                 'best_iteration': int(model.best_iteration),
+                'trees_with_splits': split_trees,
                 '_model': model,
             })
 
-    selected = min(candidates, key=lambda item: (item['validation']['mae_idr'], item['window'], item['target_mode']))
+    usable = [item for item in candidates if item['trees_with_splits'] > 0]
+    if not usable:
+        raise RuntimeError('Every candidate model is constant; training configuration is invalid')
+    selected = min(usable, key=lambda item: (item['validation']['mae_idr'], item['window'], item['target_mode']))
+    validation_idx = decision_indices(train_end, val_end, selected['window'])
+    validation_naive = metrics(closes[validation_idx], closes, validation_idx)
     test_idx = decision_indices(val_end, len(frame), selected['window'])
     X_test, _ = make_samples(scaled, closes, test_idx, selected['window'], selected['target_mode'])
     test_price = as_price(selected['_model'].predict(X_test), closes, test_idx, selected['target_mode'])
     test_metrics = metrics(test_price, closes, test_idx)
+    test_naive = metrics(closes[test_idx], closes, test_idx)
 
     # Deployment fit happens only after the untouched test report is fixed.
     # Hyperparameters and tree count are locked from validation; no test result
@@ -181,16 +191,20 @@ def train(frame, provenance, output_path):
     )
     deployment_model = xgb.XGBRegressor(**model_params(n_estimators=selected['best_iteration'] + 1))
     deployment_model.fit(X_deploy, y_deploy, verbose=False)
+    deployment_split_trees = sum('[f' in tree for tree in deployment_model.get_booster().get_dump())
+    if deployment_split_trees == 0:
+        raise RuntimeError('Deployment model is constant; refusing to write bundle')
 
     candidate_report = [{k: v for k, v in item.items() if k != '_model'} for item in candidates]
     bundle = {
-        'bundle_version': 3,
+        'bundle_version': 4,
         'model': deployment_model,
         'scaler_X': deployment_scaler,
         'features': FEATURES,
         'timestep': selected['window'],
         'ticker': TICKER,
         'target_mode': selected['target_mode'],
+        'target_scale': TARGET_SCALES[selected['target_mode']],
         'lineage': {
             **provenance,
             'framework': 'AgenticBBCA chronological XGBoost benchmark',
@@ -207,9 +221,11 @@ def train(frame, provenance, output_path):
             'selected_target_mode': selected['target_mode'],
             'selected_window': selected['window'],
             'selected_best_iteration': selected['best_iteration'],
+            'deployment_trees_with_splits': deployment_split_trees,
+            'validation_naive_last_close': validation_naive,
             'candidates': candidate_report,
         },
-        'evaluation': {'untouched_test': test_metrics},
+        'evaluation': {'untouched_test': test_metrics, 'untouched_test_naive_last_close': test_naive},
     }
     destination = Path(output_path).resolve()
     temporary = destination.with_name(f'{destination.name}.tmp')

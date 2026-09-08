@@ -50,6 +50,29 @@ class CausalExecutionTests(unittest.TestCase):
         expected = (1.0 - BUY_FEE) * stop_fill / (90.0 * (1.0 + SLIPPAGE)) * (1.0 - SELL_FEE) - 1.0
         self.assertAlmostEqual(result['net_return'], expected)
 
+    def test_take_profit_uses_entry_atr_and_pays_exit_costs(self):
+        frame = pd.DataFrame({
+            'open': [100.0, 100.0], 'high': [100.0, 104.0],
+            'low': [99.0, 99.0], 'close': [100.0, 101.0],
+            'volume': [1.0, 1.0],
+        })
+        indicators = {
+            'atr': np.array([1.0, 1.0]), 'sma20': np.array([100.0, 100.0]),
+            'sma50': np.array([100.0, 100.0]), 'sma200': np.array([100.0, 100.0]),
+            'rsi14': np.array([50.0, 50.0]), 'prior_high20': np.array([90.0, 90.0]),
+            'volume_median20': np.array([1.0, 1.0]),
+        }
+        config = {
+            'entry_threshold': 0.0, 'exit_threshold': 0.0,
+            'atr_multiplier': 3.0, 'take_profit_atr': 3.0,
+            'trend_gate': False, 'confirmation_days': 1,
+            'breakout_atr_buffer': None,
+        }
+        result = simulate(frame, np.array([0]), np.array([0.01]), indicators, config)
+        expected = (1.0 - BUY_FEE) * (103.0 * (1.0 - SLIPPAGE)) / (100.0 * (1.0 + SLIPPAGE)) * (1.0 - SELL_FEE) - 1.0
+        self.assertAlmostEqual(result['net_return'], expected)
+        self.assertEqual(result['take_profit_exits'], 1)
+
 
 if __name__ == '__main__':
     unittest.main()

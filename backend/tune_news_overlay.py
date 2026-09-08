@@ -31,6 +31,7 @@ def cash_result():
     return {
         'net_return': 0.0, 'max_drawdown': 0.0, 'trades': 0,
         'position_changes': 0, 'early_stop_exits': 0,
+        'take_profit_exits': 0,
         'blocked_entries': 0, 'invalidated_at_open': 0, 'score': 0.0,
     }
 
@@ -214,6 +215,7 @@ def run(output_path=None):
             'minimum_tuning_return': 0.0,
             'maximum_tuning_drawdown': MAX_TUNING_DRAWDOWN,
             'risk_off_policy': 'stay in cash for the next outer fold when no inner candidate passes all constraints',
+            'take_profit_policy': 'fixed 3x or 5x entry ATR target, or disabled; chosen only on the inner window; stop wins when both levels touch in one daily candle',
             'news_thresholds': NEWS_THRESHOLDS,
             'minimum_article_counts': MIN_ARTICLES,
         },
@@ -232,6 +234,7 @@ def run(output_path=None):
         'blocked_entry_signals': sum(item['forward_overlay']['blocked_entries'] for item in reports),
         'entries_invalidated_at_open': sum(item['forward_overlay']['invalidated_at_open'] for item in reports),
         'early_stop_exits': sum(item['forward_overlay']['early_stop_exits'] for item in reports),
+        'take_profit_exits': sum(item['forward_overlay']['take_profit_exits'] for item in reports),
         'selected_configuration_counts': dict(selected_counts),
         'fold_reports': reports,
     }
