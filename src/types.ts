@@ -16,4 +16,5 @@ export interface BacktestPoint { date: string; strategy: number; baseline: numbe
 export interface BacktestResponse {
   period: { start: string; end: string }; folds: number; trades: number;
   strategyReturn: number; baselineReturn: number; alpha: number; points: BacktestPoint[];
+  coreAllocation?: number; strategyLabel?: string; evaluationStatus?: string;
 }

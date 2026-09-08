@@ -43,19 +43,20 @@ export default function BacktestSimulation() {
   if (error) return <p role="alert" className="error-message">{error}</p>;
   if (!data || !chart) return <p role="status" className="status-message">Loading simulation…</p>;
   const current = data.points[Math.min(visible, data.points.length) - 1];
+  const strategyLabel = data.strategyLabel || 'XGBoost';
   return <section className="simulation" data-od-id="backtest-simulation">
     <div className="simulation-heading">
       <div><span className="eyebrow">Research simulation</span><h2>Walk-forward, fold by fold.</h2></div>
       <button type="button" className="replay-button" onClick={() => setRun(value => value + 1)}>Replay</button>
     </div>
     <div className="simulation-stats">
-      <div><span>XGBoost</span><strong>{percent(current.strategy - 1)}</strong></div>
+      <div><span>{strategyLabel}</span><strong>{percent(current.strategy - 1)}</strong></div>
       <div><span>Buy &amp; hold</span><strong>{percent(current.baseline - 1)}</strong></div>
       <div><span>Completed</span><strong>{Math.max(0, visible - 1)} / {data.folds}</strong></div>
       <div><span>Trades</span><strong>{data.trades}</strong></div>
     </div>
     <div className="chart-wrap">
-      <svg className="equity-chart" viewBox={`0 0 ${chart.width} ${chart.height}`} role="img" aria-label="Animated cumulative return comparison between the XGBoost strategy and buy-and-hold baseline">
+      <svg className="equity-chart" viewBox={`0 0 ${chart.width} ${chart.height}`} role="img" aria-label={`Animated cumulative return comparison between ${strategyLabel} and buy-and-hold baseline`}>
         {[0, .5, 1].map(position => { const y = chart.top + position * (chart.height - chart.top - chart.bottom); const value = chart.max - position * (chart.max - chart.min); return <g key={position}><line className="grid-line" x1={chart.left} x2={chart.width - chart.right} y1={y} y2={y} /><text className="axis-label" x={chart.left - 10} y={y + 4}>{percent(value - 1)}</text></g>; })}
         <path className="baseline-line" d={chart.baseline} />
         <path className="strategy-line" d={chart.strategy} />
@@ -63,7 +64,7 @@ export default function BacktestSimulation() {
         <circle className="strategy-dot" cx={chart.x(visible - 1)} cy={chart.y(current.strategy)} r="4" />
       </svg>
     </div>
-    <div className="chart-legend"><span><i className="strategy-key" />XGBoost</span><span><i className="baseline-key" />Buy &amp; hold</span><time>{current.date}</time></div>
-    <p className="simulation-meta">{data.period.start}—{data.period.end} · {data.folds} chronological forward folds · fees and slippage included</p>
+    <div className="chart-legend"><span><i className="strategy-key" />{strategyLabel}</span><span><i className="baseline-key" />Buy &amp; hold</span><time>{current.date}</time></div>
+    <p className="simulation-meta">{data.period.start}—{data.period.end} · {data.folds} chronological forward folds · quarterly rebalance · fees and slippage included · exploratory</p>
   </section>;
 }

@@ -3,6 +3,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+CORE_ALLOCATION = 0.50
 
 
 def export(source=ROOT / 'strategy_tuning_report.json', destination=ROOT / 'server' / 'backtest-data.json'):
@@ -14,8 +15,12 @@ def export(source=ROOT / 'strategy_tuning_report.json', destination=ROOT / 'serv
     strategy = baseline = 1.0
     points = [{'date': report['period']['start'], 'strategy': strategy, 'baseline': baseline}]
     for fold in folds:
-        strategy_return = fold['forward']['net_return']
         baseline_return = fold['benchmark_return']
+        xgboost_return = fold['forward']['net_return']
+        strategy_return = (
+            CORE_ALLOCATION * baseline_return
+            + (1.0 - CORE_ALLOCATION) * xgboost_return
+        )
         if not all(isinstance(value, (int, float)) for value in (strategy_return, baseline_return)):
             raise ValueError('Backtest report contains a non-numeric return')
         strategy *= 1.0 + strategy_return
@@ -26,6 +31,9 @@ def export(source=ROOT / 'strategy_tuning_report.json', destination=ROOT / 'serv
         'period': report['period'],
         'folds': report['folds'],
         'trades': sum(fold['forward']['trades'] for fold in folds),
+        'coreAllocation': CORE_ALLOCATION,
+        'strategyLabel': '50% BBCA core + 50% XGBoost',
+        'evaluationStatus': 'exploratory',
         'strategyReturn': strategy - 1.0,
         'baselineReturn': baseline - 1.0,
         'alpha': strategy - baseline,
