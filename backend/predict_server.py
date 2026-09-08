@@ -10,6 +10,9 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import numpy as np
+from dotenv import load_dotenv
+
+load_dotenv()
 
 MODEL_FILE = Path(os.environ.get('MODEL_FILE', Path(__file__).resolve().parent.parent / 'xgboost_ohlcv_bundle.pkl'))
 MODEL_LOCK = threading.RLock()
@@ -229,7 +232,7 @@ class PredictHandler(BaseHTTPRequestHandler):
             self.respond(500, {'error': 'Model prediction failed'})
 
 if __name__ == '__main__':
-    if os.environ.get('AUTO_RETRAIN_DAILY', 'true').lower() in ('1', 'true', 'yes'):
+    if os.environ.get('AUTO_RETRAIN_DAILY', 'false').lower() in ('1', 'true', 'yes'):
         start_ok = retrain_model() if os.environ.get('AUTO_RETRAIN_ON_START', 'true').lower() in ('1', 'true', 'yes') else True
         threading.Thread(target=retrain_scheduler, args=(not start_ok,), name='daily-model-retrain', daemon=True).start()
     ThreadingHTTPServer((os.environ.get('PREDICT_HOST', '127.0.0.1'), int(os.environ.get('PREDICT_PORT', '5000'))), PredictHandler).serve_forever()
