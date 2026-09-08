@@ -15,13 +15,14 @@
     "test": "tsx --test src/data/validation.test.ts backend/yahoo_proxy.test.js backend/vercel_api.test.js",
     "train:model": "python backend/train_model.py --yahoo",
     "tune:strategy": "python -m backend.tune_strategy",
-    "tune:news": "python -m backend.tune_news_overlay",
+    "tune:news": "python -m backend.tune_news_overlay && python backend/export_backtest_data.py",
     "audit:news": "python -m backend.audit_news_overlay",
     "compare:windows": "python -m backend.compare_training_windows",
     "news:update": "python -m backend.news_collector",
     "news:expand": "python -m backend.news_expand",
     "backtest": "python backend/backtest.py",
-    "export:model": "python backend/export_deployment_model.py"
+    "export:model": "python backend/export_deployment_model.py",
+    "export:backtest": "python backend/export_backtest_data.py"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
