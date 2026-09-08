@@ -1,0 +1,66 @@
+{
+  "query_window": "2021-02",
+  "n": 5,
+  "articles": [
+    {
+      "title": "PT Bank Central Asia Tbk Hasil Kinerja Sepanjang Tahun 2020 - Kinerja Solid dan Berkelanjutan di Masa Pandemi - BCA.co.id",
+      "snippet": "PT Bank Central Asia Tbk Hasil Kinerja Sepanjang Tahun 2020 - Kinerja Solid dan Berkelanjutan di Masa Pandemi BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONThHMG9ocFNGaDBzTnNFUHdXSVFLX0swQnR3VUNDYm1sc2V6Mm9zOEI5eWprTElnYUFKWEhTWlREUFg5T3A5SEVFekpfMEowT0RYOHhiWGxRWXRkdEVGcU8xR3E5eE0yYlJxVE5ja1dqMUp5QjEwZ3U5dFFfNjhCM241RWFfUFNPNWFMMUowX2h1WDROZjkzYkJpQmVOUEZsSzU0dzFMZ2IyRzZObmQ3ckFJYU1QTnQxLXBkc25ZcUZRWklkWnJsamNzOUtkakpY?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Mon, 08 Feb 2021 08:00:00 GMT",
+      "published_wib": "2021-02-08T15:00:00+07:00",
+      "pub_date": "2021-02-08",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bca.co.id"
+    },
+    {
+      "title": "Analis Optimistis Saham BCA Bisa Bergerak ke Rp 38.000/unit - CNBC Indonesia",
+      "snippet": "Analis Optimistis Saham BCA Bisa Bergerak ke Rp 38.000/unit CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTGhtTVNJTGd5cFdUdEVaZE9Sc3lIX19sNUFkS01MSjI0ME1ySzBMM3Fpd3k3czFrMHRGX1VNQ0tuT0QyTks1cHB4Yl9LUjVvMnJUMmY0LThQUk9peGF1d2JxbUt6ZzdsSXc1UUxsYjhNSmItWHUtc2hLSVFYZXlqb3k1ZElrbXhsLUNGRnEydW9uRWFVTUpxZHZPR2lIei1WS1BOSEhuSGhoR1drWHJEZFkyclZhRnlJUzdVYQ?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Wed, 10 Feb 2021 08:00:00 GMT",
+      "published_wib": "2021-02-10T15:00:00+07:00",
+      "pub_date": "2021-02-10",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "IHSG Melambung 0,77 Persen, Investor Asing Lepas Saham ASII hingga BBCA - Liputan6.com",
+      "snippet": "IHSG Melambung 0,77 Persen, Investor Asing Lepas Saham ASII hingga BBCA Liputan6.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaWZXd1hWOWd4dFFFc0RxRTFxNGlmUUhYUC1TM3VlM1YxTC1xbjZBLUpiTkxHYUZrY3hKOFB2QWJ5S0JtV2VQY1NTNk9wS253d21BRlBhenp3QWtHM3dZQnkwTUkwQUdXUkROM2s5LWt6YzVVOTNZTWNZMUtVcVpfR3R0dVF0TExoaUFicjV5MzZpZ3p4YkJMSHZUODhBMFVqRWVhbUJUMzd1Smx3MG1ibFREWdIBqgFBVV95cUxNZ3V1ZnZxaVBTN3A1RndPVWp3UVZlS3JBUTRCWWJtdVZUTE5NM3FZeE1wUWxKSE9keVNCMFlycnd6Umw0eVBsRndlVUpRQnBzVEg2cFFjaUtBV1BTbVpHenQwODFsZjFFUW5DeWNpT1FRbnIxa012alVlLVdETDNBcEZlUXhsS01QUC1valdFczhzMGpoOFVjY0RISW1wTHE3UkN5c0RFcDJldw?oc=5",
+      "source": "Liputan6.com",
+      "published_utc": "Mon, 15 Feb 2021 08:00:00 GMT",
+      "published_wib": "2021-02-15T15:00:00+07:00",
+      "pub_date": "2021-02-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA asing"
+    },
+    {
+      "title": "IHSG Merosot 1 Persen, Investor Asing Lepas Saham BMRI hingga BBCA - Liputan6.com",
+      "snippet": "IHSG Merosot 1 Persen, Investor Asing Lepas Saham BMRI hingga BBCA Liputan6.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcTJLVDJKMWJaRlBwX2QxdFhSc2hHYzQ0dVVualVkU3NqYmRQcnh6YzNNX0NQdXFIUUZZRERqdnpWdUR6RnRUZnZlV3ozb2xzYXBCUENzWnZxWDRzbjhwcTE4bmFLNXB1WGRqYkV3bW12VXdaOFFJSTNiUXFSZTY4TnM1UUlmSUNLRkVneGlJSDJBN3NlQXQ2TVVFb3dWUnZKdFNIT2NyS2lnV3B6dEHSAaQBQVVfeXFMUERDV1lrQzF5Wm0wTkZVVmR5akhZTDBSMHBfeHhPSlE1SHcwNzhLX0t5dXV3NXpxMm9TRGtDYkxjNUlSemZJcHp3d2ZCR190QldfVUVCLVIxdGJPRXNZUjRyUExmZjJTeGlCRFEySVliQ254Y1Y0YUNjLV9XbTE4b2p4VkxodmllbXNBUnRPckNMbG9rdS1JWXV4Tlk5Z0dVT1hYRnc?oc=5",
+      "source": "Liputan6.com",
+      "published_utc": "Wed, 17 Feb 2021 08:00:00 GMT",
+      "published_wib": "2021-02-17T15:00:00+07:00",
+      "pub_date": "2021-02-17",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:liputan6.com"
+    },
+    {
+      "title": "PT Bank Central Asia Tbk Hasil Kinerja Sepanjang Tahun 2020 - Kinerja Solid dan Berkelanjutan di Masa Pandemi - BCA.co.id",
+      "snippet": "PT Bank Central Asia Tbk Hasil Kinerja Sepanjang Tahun 2020 - Kinerja Solid dan Berkelanjutan di Masa Pandemi BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNczRZSm4tcmZmbTR1dXZQSy1WZ1hkVVpiWDNrZHZXODN4QXFxMTA4dVNEUFhaYlpUeXI3d0FSRlN1Wlp2NFRBNks3cUt6cnNPVDU3ZENnVmpPVE4yaHdBdmNhWkNZM05lU3JhYldDOHhqQlZTcnpEa1V1OVRVb2F0S2VwaWFaaGdxUTM2RzdReG5WYnAwMWQwaEo5a1FjZkh1SGE5VXNUd0ZGV1gyLVNVT1VpNkk5Q3F3LXR3TDEzQ2hNbXVlbGhHUFU4eXkxamVvU0NWX2RSVnNYcWZQQ3h1blFNSFQ5NjQ0Z3hudWk4VXNMNHJQR20zanVCdEgwbUE?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Fri, 19 Feb 2021 08:00:00 GMT",
+      "published_wib": "2021-02-19T15:00:00+07:00",
+      "pub_date": "2021-02-19",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BCA digital BBCA"
+    }
+  ]
+}

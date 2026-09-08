@@ -1,0 +1,42 @@
+{
+  "query_window": "2021-01",
+  "n": 3,
+  "articles": [
+    {
+      "title": "Investor Asing Borong Saham BCA hingga Telkom pada 4 Januari 2021 - Liputan6.com",
+      "snippet": "Investor Asing Borong Saham BCA hingga Telkom pada 4 Januari 2021 Liputan6.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3RjblE4azFsOVFvbGxzVTRSdnVoTjdqMDc4SU9pUTZMbW9weVlFU3FBTzJqX2hrUlFaR0Nqdkp3YlhjV05VLTNFMXFaUFhpVk5iM0MwWlNFWjJmMl93ZWduRTdNeGJFYy1fVjloU0lHbXFDeUVKUTFuV3FkLUJ3UGRvenM0M3JQOEZFS255UDVlYXloWV9WMHhsVmVjanhvSVA4eU9DTE92bE9BckHSAaQBQVVfeXFMUDMyb2hLdGVuc1g4RVZZcnloekc0VW95OTRDOHdPVmpKcWs3WE5TbUR0cDB0cXhoUGZENGdqY3NPU01pVE1ZT3JDZFc3dzZuVzZoNnZZLWdMeGFJWGk1YWlFUkFrWWFvY0QxLWtrM0RraDdablBwTlIxZGMyaC1uUG1DYWd6cjl2a2w4M2ZqejRPXzZFVUJERnI0b2xqcG5zZUQwRmU?oc=5",
+      "source": "Liputan6.com",
+      "published_utc": "Mon, 04 Jan 2021 08:00:00 GMT",
+      "published_wib": "2021-01-04T15:00:00+07:00",
+      "pub_date": "2021-01-04",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:liputan6.com"
+    },
+    {
+      "title": "Meski PSBB Ketat IHSG Menguat, Saham BBRI BBCA Diborong Asing - Bisnis.com",
+      "snippet": "Meski PSBB Ketat IHSG Menguat, Saham BBRI BBCA Diborong Asing Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVJnbENHMlVpbmk5cktDWDFlRktsMVEzTzNqTEgxZTVlbVZvU2JKMFdDNTgtWmctN1o2VTYtcjdQcHlnMEljWGtWNjBqcE5zU0oyYldwbnRzYzM0aml0V25idjkyNzE0RjhCWVBHUWtaT25nWmtuekN3UlJkNVAzbndadURFWkFDbmhiNWs1RGxCRkZaajd2bEdLVEo5X3hOV2t5TGhVSk9YcG10VkVB?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Mon, 11 Jan 2021 08:00:00 GMT",
+      "published_wib": "2021-01-11T15:00:00+07:00",
+      "pub_date": "2021-01-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Saham BBCA \"All Time High\" - CNBC Indonesia",
+      "snippet": "Saham BBCA \"All Time High\" CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2t4VW5FMEF6WW0wWnZmc1pzX0pwRlprTGViOWF1RUh2WFlabGZZYk5jUk9zZHBtZ0tTNGhyWGdBT3JkQlA4UzRtcENHc2o2QU1LLS1kTHR1dzQ0WjVSVkdjM0dSbzF5ZEVlR3dUVzE4bnB2QllicGJ3eXR0cHhqMkRtS0VtMzNTN0lrTC1lRQ?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Mon, 11 Jan 2021 08:00:00 GMT",
+      "published_wib": "2021-01-11T15:00:00+07:00",
+      "pub_date": "2021-01-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}

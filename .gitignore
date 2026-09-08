@@ -1,4 +1,7 @@
 node_modules/
+__pycache__/
+*.pyc
+*.pkl.bak
 build/
 dist/
 coverage/

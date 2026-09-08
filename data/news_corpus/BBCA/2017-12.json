@@ -1,0 +1,30 @@
+{
+  "query_window": "2017-12",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Ini Dua Skema Minimum Jika BBCA Ingin Untung dari Transaksi EDC - Bareksa.com",
+      "snippet": "Ini Dua Skema Minimum Jika BBCA Ingin Untung dari Transaksi EDC Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdHZKMUd1TkJnQmRicDVoQUJ3Ml80ZWU1UHVWODlucTRVUHZyM0FTQnMyRXZPazZRbG9UanZxQ1dZX04wRUlYY2NJampkQkRuSUJ4NWFXNEVSbXhGdTI0TGV5cDd5QnhtVHVWZ0lNT21KXy1lTXh2QV9pbktpMENsS19qM3VLMVFWT1RQYlFpMVdoelVuYXR2bFhCakhyRk1yWHJwZUt1UTdFR0VRcGxzblplOUpXZGtMQTBucnJzY0J1RTZWTlhr?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Thu, 07 Dec 2017 08:00:00 GMT",
+      "published_wib": "2017-12-07T15:00:00+07:00",
+      "pub_date": "2017-12-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    },
+    {
+      "title": "Sesama BCA Sekali Gesek EDC Kena Biaya 0,15 Persen di Pihak Toko, BBCA Untung? - Bareksa.com",
+      "snippet": "Sesama BCA Sekali Gesek EDC Kena Biaya 0,15 Persen di Pihak Toko, BBCA Untung? Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxON1VFSURQcHg0N0RZUENySG1nZGNtY00tU3l4ZTRJaEdDMnJQUzdmSzlLZEZvLTcwSDlNM19XdmpKdlRKOFo3LTE5ZWVpVjlYSk9YLXprc2h0NEo5Y0Q3ZnI5aHkxSXpTZHdMQThGbGcyYTlEb0xMSHNoenBjRDNVV050QnhISG9na0FRZnp3V3VBcFYzWDJrM1luaExqWkJNbFZucnpZT2lrZE9KcFlCWDdpSlZSZWFmZzZMTUlqeV82NldwX2hwUFVSWDJQWmxfYTd1Wng2WQ?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Thu, 07 Dec 2017 08:00:00 GMT",
+      "published_wib": "2017-12-07T15:00:00+07:00",
+      "pub_date": "2017-12-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    }
+  ]
+}

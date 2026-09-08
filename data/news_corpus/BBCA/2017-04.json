@@ -1,0 +1,30 @@
+{
+  "query_window": "2017-04",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Saham BBCA Sentuh Level Tertinggi Sejak IPO, Transaksi di Nego Capai Rp1,21 T - Bareksa.com",
+      "snippet": "Saham BBCA Sentuh Level Tertinggi Sejak IPO, Transaksi di Nego Capai Rp1,21 T Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYUZyWUhfUk5XUVJhSTRjRGltdEhtdDgtYV8yR3NmdXlhdHBkYUcxaVFuS2tfdXY1LVhQSmx4alhHbVFnemdaUVZsVmFCVWcxRkVCZFZFRGtCdXRMWHFWUVlDU1gwRTNJUUh3clJVWTYwRm9JcnZrM0pibldoQTA5cGRrUWxsazI0LVpZVzYzU0xMajk4ME9XdjZjQ0hzOWY0UWlDMGI2d1QxaHhWQ1B6ZjBzMGhneWRyUllOV1h3aHFLaXdXdmZMTA?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Mon, 10 Apr 2017 07:00:00 GMT",
+      "published_wib": "2017-04-10T14:00:00+07:00",
+      "pub_date": "2017-04-10",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    },
+    {
+      "title": "Terungkap Siapa Pembeli Saham BBCA Senilai Rp33,5 Triliun - Bareksa.com",
+      "snippet": "Terungkap Siapa Pembeli Saham BBCA Senilai Rp33,5 Triliun Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObzFpc2N4cXpxSV9mSE1BbG5Vejc0dmxiSUNycGU1WFZKcXV0NW9KVFZSd3hKVlN1MlNOOEt6ekR6S0p6bC1xTU1Ndnc4cVFEaXVLX1VxXzl3MzkzMXdHSmV2ZURDVDZwa3hQSENxVHBEdGZLWkI1NWhxcmYxcTU1a1JUYkdfOGl6RmdDU2Zoa1JFSGtoT3FVSjlEaTNqMk5rMU1zTGtOSkoyb3RoQkNtZ3ZqQkZYUFhuUlNwMHNn?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Mon, 17 Apr 2017 07:00:00 GMT",
+      "published_wib": "2017-04-17T14:00:00+07:00",
+      "pub_date": "2017-04-17",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    }
+  ]
+}

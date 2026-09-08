@@ -1,0 +1,18 @@
+{
+  "query_window": "2020-02",
+  "n": 1,
+  "articles": [
+    {
+      "title": "Mana yang lebih cuan: saham BCA atau deposito BCA? Yuk, kita hitung! - KONTAN",
+      "snippet": "Mana yang lebih cuan: saham BCA atau deposito BCA? Yuk, kita hitung! KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZXU2bkpiNjlDcTNUd1RSZU91Umk1Mk1vUzloRVBaY3M5UkxCSy14blpSWFNqZGw4S2dxT2xOX0dHX01HN1dtdlpmZXczSzdRM1JsN0FIaTNDWlE1X09ocHIxcllJZzFqMko1SW8zUktJVGxHME1tODV5SkJKWlpVbEpGSURMWGZTeFFmc3ZaWnhHNHBNUEZ2ZmZn0gGaAUFVX3lxTE9ldTZuSmI2OUNxM1R3VFJlT3VSaTUyTW9TOWhFUFpjczlSTEJLLXhuWlJYU2pkbDhLZ3FPbE5fR0dfTUc3V212WmZldzNLN1EzUmw3QUhpM0NaUTVfT2hwcjFyWUlnMWoySjVJbzNSS0lUbEcwTW04NXlKQkpaWlVsSkZJRExYZlN4UWZzdlpaeEc0cE1QRnZmZmc?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Sat, 08 Feb 2020 08:00:00 GMT",
+      "published_wib": "2020-02-08T15:00:00+07:00",
+      "pub_date": "2020-02-08",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "protocol": "same validation/test dates; one-session purged split boundaries; validation-only selection",
+  "source": {
+    "kind": "yahoo",
+    "name": "BBCA.JK",
+    "sha256": "ed86055e01faa1d6d9b9f41c681ed805e3921734f965b5fbc47ecda60ee01f8a"
+  },
+  "validation_period": [
+    "2025-04-15",
+    "2025-12-19"
+  ],
+  "untouched_test_period": [
+    "2025-12-22",
+    "2026-09-08"
+  ],
+  "results": [
+    {
+      "training_start": "2016-09-08",
+      "training_rows": 2126,
+      "selected_target_mode": "price",
+      "selected_window": 1,
+      "selected_best_iteration": 565,
+      "validation": {
+        "mae_idr": 99.26587352638474,
+        "rmse_idr": 133.65755587902908,
+        "directional_accuracy": 0.5568862275449101
+      },
+      "untouched_test": {
+        "mae_idr": 113.65882219587054,
+        "rmse_idr": 153.92244629276516,
+        "directional_accuracy": 0.47023809523809523
+      },
+      "candidates": [
+        {
+          "target_mode": "return",
+          "window": 1,
+          "best_iteration": 162,
+          "validation": {
+            "mae_idr": 102.36432770055211,
+            "rmse_idr": 134.49368301069677,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 10,
+          "best_iteration": 15,
+          "validation": {
+            "mae_idr": 102.39055767030773,
+            "rmse_idr": 134.50503425660304,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 20,
+          "best_iteration": 32,
+          "validation": {
+            "mae_idr": 102.37821415512862,
+            "rmse_idr": 134.4996655360574,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 30,
+          "best_iteration": 6,
+          "validation": {
+            "mae_idr": 102.39040337636798,
+            "rmse_idr": 134.50496685183447,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 1,
+          "best_iteration": 565,
+          "validation": {
+            "mae_idr": 99.26587352638474,
+            "rmse_idr": 133.65755587902908,
+            "directional_accuracy": 0.5568862275449101
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 10,
+          "best_iteration": 440,
+          "validation": {
+            "mae_idr": 115.58676202282935,
+            "rmse_idr": 153.52288920788726,
+            "directional_accuracy": 0.5209580838323353
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 20,
+          "best_iteration": 504,
+          "validation": {
+            "mae_idr": 117.1542676366018,
+            "rmse_idr": 154.5681357267784,
+            "directional_accuracy": 0.5269461077844312
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 30,
+          "best_iteration": 497,
+          "validation": {
+            "mae_idr": 123.01712200598803,
+            "rmse_idr": 159.65522564373651,
+            "directional_accuracy": 0.47305389221556887
+          }
+        }
+      ]
+    },
+    {
+      "training_start": "2020-01-02",
+      "training_rows": 1274,
+      "selected_target_mode": "price",
+      "selected_window": 1,
+      "selected_best_iteration": 465,
+      "validation": {
+        "mae_idr": 98.41070593188623,
+        "rmse_idr": 133.18753901631106,
+        "directional_accuracy": 0.562874251497006
+      },
+      "untouched_test": {
+        "mae_idr": 115.40447998046875,
+        "rmse_idr": 156.08478678789888,
+        "directional_accuracy": 0.44642857142857145
+      },
+      "candidates": [
+        {
+          "target_mode": "return",
+          "window": 1,
+          "best_iteration": 9,
+          "validation": {
+            "mae_idr": 102.0606772271459,
+            "rmse_idr": 134.3780445904494,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 10,
+          "best_iteration": 33,
+          "validation": {
+            "mae_idr": 102.01886356947665,
+            "rmse_idr": 134.36439720621752,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 20,
+          "best_iteration": 40,
+          "validation": {
+            "mae_idr": 102.04617359681043,
+            "rmse_idr": 134.37324833889636,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 30,
+          "best_iteration": 0,
+          "validation": {
+            "mae_idr": 102.05342541197817,
+            "rmse_idr": 134.37563817099834,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 1,
+          "best_iteration": 465,
+          "validation": {
+            "mae_idr": 98.41070593188623,
+            "rmse_idr": 133.18753901631106,
+            "directional_accuracy": 0.562874251497006
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 10,
+          "best_iteration": 341,
+          "validation": {
+            "mae_idr": 113.66802722679641,
+            "rmse_idr": 148.86075135620752,
+            "directional_accuracy": 0.5329341317365269
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 20,
+          "best_iteration": 336,
+          "validation": {
+            "mae_idr": 117.01270116017965,
+            "rmse_idr": 152.16020019952157,
+            "directional_accuracy": 0.5389221556886228
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 30,
+          "best_iteration": 293,
+          "validation": {
+            "mae_idr": 123.93168740643712,
+            "rmse_idr": 159.84764471849493,
+            "directional_accuracy": 0.49700598802395207
+          }
+        }
+      ]
+    },
+    {
+      "training_start": "2022-01-03",
+      "training_rows": 785,
+      "selected_target_mode": "price",
+      "selected_window": 1,
+      "selected_best_iteration": 585,
+      "validation": {
+        "mae_idr": 98.57395268057634,
+        "rmse_idr": 133.39678147680993,
+        "directional_accuracy": 0.5748502994011976
+      },
+      "untouched_test": {
+        "mae_idr": 714.2352062406994,
+        "rmse_idr": 867.5688779059797,
+        "directional_accuracy": 0.4226190476190476
+      },
+      "candidates": [
+        {
+          "target_mode": "return",
+          "window": 1,
+          "best_iteration": 21,
+          "validation": {
+            "mae_idr": 101.99710812397346,
+            "rmse_idr": 134.35751468783351,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 10,
+          "best_iteration": 0,
+          "validation": {
+            "mae_idr": 101.89373118434837,
+            "rmse_idr": 134.32685180432455,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 20,
+          "best_iteration": 28,
+          "validation": {
+            "mae_idr": 101.89388547828811,
+            "rmse_idr": 134.32689505588772,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "return",
+          "window": 30,
+          "best_iteration": 5,
+          "validation": {
+            "mae_idr": 101.92366420865773,
+            "rmse_idr": 134.33538332762214,
+            "directional_accuracy": 0.4251497005988024
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 1,
+          "best_iteration": 585,
+          "validation": {
+            "mae_idr": 98.57395268057634,
+            "rmse_idr": 133.39678147680993,
+            "directional_accuracy": 0.5748502994011976
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 10,
+          "best_iteration": 479,
+          "validation": {
+            "mae_idr": 112.33202540232035,
+            "rmse_idr": 148.39821289046847,
+            "directional_accuracy": 0.5329341317365269
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 20,
+          "best_iteration": 369,
+          "validation": {
+            "mae_idr": 118.24067295097305,
+            "rmse_idr": 151.7218114879401,
+            "directional_accuracy": 0.5149700598802395
+          }
+        },
+        {
+          "target_mode": "price",
+          "window": 30,
+          "best_iteration": 362,
+          "validation": {
+            "mae_idr": 120.47553038454342,
+            "rmse_idr": 155.9880174136452,
+            "directional_accuracy": 0.49101796407185627
+          }
+        }
+      ]
+    }
+  ]
+}

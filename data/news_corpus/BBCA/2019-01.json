@@ -1,0 +1,54 @@
+{
+  "query_window": "2019-01",
+  "n": 4,
+  "articles": [
+    {
+      "title": "Sepanjang tahun 2018, bunga deposito Bank Central Asia (BBCA) meningkat 175 bps - kontan.co.id",
+      "snippet": "Sepanjang tahun 2018, bunga deposito Bank Central Asia (BBCA) meningkat 175 bps kontan.co.id",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNanEtUVRnbno0UVZvQTF1LWM0V29IbVFyTjhtWEF5X3B4SDlZSHBGSEdaclJNempWRGxBemZMdV9LX2N6X3lBTmxWVlJiODhaWE53ei1fZnNqb2VMalp0OHlSM3NuQmxTUll4dU1ONDJSRmdUVDNNM1pUbC1LSUpaNUYwTjIxMEU2MjBqSEhtZUdqM3h5WmtrODNZSk9WeDRFQjFXTS1oalJNa3JFUzZud9IBqgFBVV95cUxPWHVuUlh6SWRIOFN4R2o4b2pvcEJHanBDbzNCX0xvWEFfRFUwc3VCQ3hCczFoRHpKeTl6bXc1eEdIcVhkZng4UWozeER5Y0RJWUhGNkNQWVFSRFlTMGVJTjRiVlBkQXB6S3VMS3pySjNhMVZEX2tYcnZkTzY5X3F5Ml8xTzZvOURvTWpEXzk5aXhVeXBFMzFvcjI0cXdiNFNtYTFtYXA5QUpKQQ?oc=5",
+      "source": "kontan.co.id",
+      "published_utc": "Wed, 02 Jan 2019 08:00:00 GMT",
+      "published_wib": "2019-01-02T15:00:00+07:00",
+      "pub_date": "2019-01-02",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "IHSG Hijau, Rekomendasi Beli Saham BBCA, INCO, INAF, INKP, SSMS, TLKM - kumparan.com - Kumparan.com",
+      "snippet": "IHSG Hijau, Rekomendasi Beli Saham BBCA, INCO, INAF, INKP, SSMS, TLKM - kumparan.com Kumparan.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMHRlcE4wd3pEblpzZjFfRHZpNldzX2hOQWZLMzQxTDQtTGhGR1M0enYyNFhPQ0xQaTBaOEQ4Zk5tMkQ5M2NWNUtxekh5WVpYaHI0NEJ4dHdaSDBEbnIxSkxtNXdsN0V2ZUZOWEppZUh6bVRZUXlwbG1PR2tseURQdWFDNzg5SU1jbkxsOEJDdktGOHVCTnN2TDRGSTMydldYSnQwY3pacGo4T1NoNjdJZHBQR2xadGpMbURj0gHDAUFVX3lxTE1oVWxJeG1JSmRNNnppV1BFUXk3MVR1TlpWLWVJZ1dfNnA4bDUtXzBXZ0d3MTZDa1VRbkh1UmluaUxVcTN3aDlmLXNNbDMxcWo5bFBLaDBFdUI5X3BwbUNRRHYxaF9oUzFLSm5hdlB5X3hPYmdwZmFZX2htODQ4d19rOUlZdTdXczNUSE9vODV1UU9TZ0hNM3lWNm4yd3diTnJzd1BhcW9uMjQ3SEkzTWVJVnB3Y0dzX2ZIQks5UXBaOXllVQ?oc=5",
+      "source": "Kumparan.com",
+      "published_utc": "Mon, 07 Jan 2019 08:00:00 GMT",
+      "published_wib": "2019-01-07T15:00:00+07:00",
+      "pub_date": "2019-01-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA target harga"
+    },
+    {
+      "title": "Jika Punya Saham BCA 10 Tahun Lalu, Anda Sudah Cuan 900%! - CNBC Indonesia",
+      "snippet": "Jika Punya Saham BCA 10 Tahun Lalu, Anda Sudah Cuan 900%! CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdlRnYVNlTDNUZmpfb0owemVrZ2lPR3hWZzMxenYzOERHVE5YVFVvTVlOX0k0dEljS1lrekNvSkNiRGlRRXpXUHRZcnZtdUgzTDBnLXlwazJMR3NlRmZTQzk3cUdTb3JRbFlad2JaWVFQTHNGak1tVFFQTDRBcVBqTkdQUlRuLUE2SWNIaTRaZWhQd1VWRm00NW91QmRkczFwUi1FR1dFbGI3Z3FQU3JMR1FUUmhKQQ?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Wed, 23 Jan 2019 08:00:00 GMT",
+      "published_wib": "2019-01-23T15:00:00+07:00",
+      "pub_date": "2019-01-23",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    },
+    {
+      "title": "Melihat Laju Saham BCA Selama 2009-2019 - Liputan6.com",
+      "snippet": "Melihat Laju Saham BCA Selama 2009-2019 Liputan6.com",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUTVsQV9oS0s0Z3NPRUVKTHRROXhuc1lILVR5MlFiMDA0ZW9IYW00MXRXZzk5dWpyNmhOeTJwOTZLLUNoRkNPeXk5RlRpZ2JvUE5lR0ZyTmNCQ1o1RXVNeDl2cTgyREV4cEExUk4zWGJyTHRZRTk5VWRzZnVXRlZPOEV0MGljUk5jMzFR0gGCAUFVX3lxTE1WN3hJdVEtZzdneTIwdV9kdmpaUTc0OEt3ckI0aUJuREtlSk5qMU9ldkllLXQxWndwUXFqOXpqdFByVm9GNVZNTG5QZTU4MGM1aVl4SU9uTmlKbHljTl9KcXpPcDRfRFJEQUZKZW9KOUNxR1JfdmhtNDVsQVMzZEwzWWc?oc=5",
+      "source": "Liputan6.com",
+      "published_utc": "Thu, 24 Jan 2019 08:00:00 GMT",
+      "published_wib": "2019-01-24T15:00:00+07:00",
+      "pub_date": "2019-01-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:liputan6.com"
+    }
+  ]
+}

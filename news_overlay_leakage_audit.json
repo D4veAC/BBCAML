@@ -1,0 +1,11 @@
+{
+  "direct_temporal_boundary_violations": [],
+  "future_available_articles": 0,
+  "reported_overlay_return": 0.0567578545237164,
+  "recomputed_overlay_return": 0.0567578545237164,
+  "return_reconciles": true,
+  "research_selection_leakage": true,
+  "point_in_time_corpus_guarantee": false,
+  "deployable_alpha_claim": false,
+  "reason": "Outer folds were repeatedly inspected during rule development; historical search results were backfilled ex post."
+}

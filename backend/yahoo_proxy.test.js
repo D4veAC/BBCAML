@@ -1,0 +1,37 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { app } from './yahoo_proxy.js';
+
+const realFetch = globalThis.fetch;
+const server = app.listen(0, '127.0.0.1');
+await new Promise(resolve => server.once('listening', resolve));
+const origin = `http://127.0.0.1:${server.address().port}`;
+test.after(() => { globalThis.fetch = realFetch; server.close(); });
+const request = () => realFetch(`${origin}/api/predict`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+test('upstream failures never become predictions or hardcoded quotes', async () => {
+  globalThis.fetch = async () => { throw new Error('offline'); };
+  const prediction = await request();
+  assert.equal(prediction.status, 502);
+  assert.equal((await prediction.json()).prediction_price, undefined);
+  const quote = await realFetch(`${origin}/api/yahoo`);
+  assert.equal(quote.status, 502);
+  assert.equal((await quote.json()).chart, undefined);
+});
+test('invalid model output is rejected', async () => {
+  globalThis.fetch = async () => Response.json({ prediction_price: '100' });
+  assert.equal((await request()).status, 502);
+});
+test('only model price is passed through', async () => {
+  globalThis.fetch = async () => Response.json({ prediction_price: 123.45, confidence: .99, trend: 'Bullish' });
+  assert.deepEqual(await (await request()).json(), { prediction_price: 123.45 });
+});
+test('model validation errors stay errors', async () => {
+  globalThis.fetch = async () => Response.json({ error: 'invalid' }, { status: 400 });
+  assert.equal((await request()).status, 400);
+});
+test('model input mismatch remains an explicit service error', async () => {
+  globalThis.fetch = async () => Response.json({ code: 'MODEL_INPUT_MISMATCH' }, { status: 503 });
+  const response = await request();
+  assert.equal(response.status, 503);
+  assert.equal((await response.json()).code, 'MODEL_INPUT_MISMATCH');
+});

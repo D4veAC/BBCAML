@@ -1,0 +1,30 @@
+{
+  "query_window": "2019-04",
+  "n": 2,
+  "articles": [
+    {
+      "title": "PT Bank Central Asia Tbk Hasil Kinerja Triwulan I 2019 - Mengelola Pertumbuhan - BCA.co.id",
+      "snippet": "PT Bank Central Asia Tbk Hasil Kinerja Triwulan I 2019 - Mengelola Pertumbuhan BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNWRsUXNNZTNlSXBIdUM4U2hTYnZLS21MeGg0aUpYT3NocHI0Q1VoYmVxZlBlMlNkVl9kQTV2ZUxGMkJ6WVpTMEE5dTA0Ym52cTJZanJvbGdXUnZ2M2tKZzVzMTdUNzZVdHFrSE9nSWx4SzRPWHFHYUNyZkFKN2JXcHg5NU5PNW9ndmpGdXRkRWFVMm5RbnBXb1RxU3NnYTdxQVBPRjFtaTVUWTN2dmVCUy1rQXZnaTlaVzNOOEZTb2FsajFtc2ZURTRmWEpNbXNxQmJyMzN4c1U5REtyRWVpaXB0bHN1R2Z1RlFFUlU5Z3NmakVhX2tN?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Thu, 25 Apr 2019 07:00:00 GMT",
+      "published_wib": "2019-04-25T14:00:00+07:00",
+      "pub_date": "2019-04-25",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bca.co.id"
+    },
+    {
+      "title": "Omzet Avengers: Endgame Sepekan Kalahkan Pendapatan Kuartal I BBCA? Ini Datanya - Bareksa.com",
+      "snippet": "Omzet Avengers: Endgame Sepekan Kalahkan Pendapatan Kuartal I BBCA? Ini Datanya Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZWRjZTZMd3dBTE9kcF9rRi16MG5RbnJzZjllbHU1Z3prdW5kWHFMTWRBUzFhcGJRZERyWE44XzFteHRrdjI2RVRqaW5sX0E2RVkzQ3lvS1VBMmVaMUlPdjlrV0lkd1VpOVRCRjdWd1puQmNFRVdnbl83LU5JYW1lZTN1ZW01NmFuZU5jRmtKcWJ1b1lfajJ3ZUxvZ2N0N3hYY1VDOUJhQnU5ck1NZ05XeUI1cTdZY2RiSlladTFjdi1NYndUcVVDU3lsRXZ0TG1CY3RjSjdYbUNSdw?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Mon, 29 Apr 2019 07:00:00 GMT",
+      "published_wib": "2019-04-29T14:00:00+07:00",
+      "pub_date": "2019-04-29",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "query_window": "2018-01",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Saham BCA Berhasil Stagnan Ditengah Aksi Ambil Untung - Infobanknews",
+      "snippet": "Saham BCA Berhasil Stagnan Ditengah Aksi Ambil Untung Infobanknews",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUnJzU2hfZUFFQnpJazFfYXpZNllIWi1jREczYmNvLW50SFY1Y21KM0NwRXptaWIweWlyZmhrYTk2elBPMXhkQV9ZQ0V5QWJIbFp6eGtDQWxxbXJIUklEUXpzYjV4TGhtZEtvdVJQSGxMSWZmVTdocWFWN2ZaREs4WVlDTjE?oc=5",
+      "source": "Infobanknews",
+      "published_utc": "Wed, 03 Jan 2018 08:00:00 GMT",
+      "published_wib": "2018-01-03T15:00:00+07:00",
+      "pub_date": "2018-01-03",
+      "pre_closing_ok": true,
+      "query": "\"Bank Central Asia\" saham"
+    },
+    {
+      "title": "IHSG Fluktuatif, Sarapan Saham Pilihan: UNTR, BRPT, INTP, BBCA, CTRA - kumparan.com - Kumparan.com",
+      "snippet": "IHSG Fluktuatif, Sarapan Saham Pilihan: UNTR, BRPT, INTP, BBCA, CTRA - kumparan.com Kumparan.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaWNxRTdpaFJPVjFvZmIySFM3LVI2Y0JMMHZpekhqSGRqWS1ITTBscGNjcEthQkwxeFhOLVk5ZFZVNG8xNGJfUHEzd0V5WG9qNHlSc1VHSm5TTXl2WXlLbDBmRWREV19rUjRBajlzREs3YTVncUJMOTRPaHlpNTVubkpiOUlVckE0WlFtVFQxelJyRzJpam5qY3p2cTJtTm_SAacBQVVfeXFMTmtTMDZKQWltaDJTaXdKT0ZJZWxtTFBqd21XbXlYcTNXTDd1Yy1PTjJDSFhwU0NUX2UtemtWWXRhWDJFR19kSWpoVVE0dHVITUJxaWZlbkluam9Uc1BBS2M2NHRHTmJzd1N6ZjdUVTdHcUFfQUx0blZHRDRvalJ0cURZXzFKLXpkcHJ4MzVOYUtqT2V2RjdtZzRZMmwta1ROSDZuMnpxSzA?oc=5",
+      "source": "Kumparan.com",
+      "published_utc": "Tue, 30 Jan 2018 08:00:00 GMT",
+      "published_wib": "2018-01-30T15:00:00+07:00",
+      "pub_date": "2018-01-30",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA asing"
+    }
+  ]
+}

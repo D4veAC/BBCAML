@@ -1,0 +1,18 @@
+{
+  "query_window": "2019-11",
+  "n": 1,
+  "articles": [
+    {
+      "title": "Gilak! Saham BCA Rekor Lagi, Market Cap Dekati Rp 800 T - CNBC Indonesia",
+      "snippet": "Gilak! Saham BCA Rekor Lagi, Market Cap Dekati Rp 800 T CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQN01jNExrWmw4VzRZVGtZMXJCazdZWFdWTzBzdnppYVhXdVpfWEZfN0s0V1lWbXBhQTRFdTNOZ3FfQlA5WExnYmdXS214b3ZNcmdrR2Fxck5lRmlONW9vMkZEaWQ5bUE1NGZwQXNkcVdoNEZKd1lubjBKUVBpOWkwU1FUVy1VdnNDU1d6ZExoUWlkRWRveFJ1QzlqTlJWOUJCTmVVVUdibVhsYS0zUVdzNVNEOTFwUQ?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Tue, 05 Nov 2019 08:00:00 GMT",
+      "published_wib": "2019-11-05T15:00:00+07:00",
+      "pub_date": "2019-11-05",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}

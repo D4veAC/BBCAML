@@ -1,0 +1,78 @@
+{
+  "query_window": "2020-09",
+  "n": 6,
+  "articles": [
+    {
+      "title": "Bank Central Asia hadirkan KPR BCA ONLINEXPO - ANTARA News Bali",
+      "snippet": "Bank Central Asia hadirkan KPR BCA ONLINEXPO ANTARA News Bali",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOERsRzJsWE9nVk9heVVhT3NiQjRnTTBNZFd5RUg2RmJ3dlFyc3Zrc3dOdnlieHNEcHJveUFUdm5EdVNRUlUtcU1SUFNRaGZtdW5hUlJJdDhKNHo4Y2dWaWRocGM5S2Fkazl2Z3o1ZUlwcWpSNWY4dFY1dE9CSE9naUQyOGVXVmkzemg0MHkwQdIBlAFBVV95cUxPcUNyRUdsQjZST2twdktpdkZmdVVzRmtRSmFxdWEwX095RW50bFFHQlBVQ0FsUGdvV2gtMEM5U09HWTJXRl9kem4tbTgyLWs4bGx0YkJ6UHd3OGtrZUI2RWsxbnJxOFNpYmdSY0p3MFlkNFFYVnBfSmVUV0g0NElxRUFyMDZqX0FTaW5KWnk3aklfbTA4?oc=5",
+      "source": "ANTARA News Bali",
+      "published_utc": "Wed, 09 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-09T14:00:00+07:00",
+      "pub_date": "2020-09-09",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "\"PT Bank Central Asia Tbk\""
+    },
+    {
+      "title": "IHSG Rebound dan Kembali ke Atas 5.000, Net Sell Asing di BBCA Tembus Rp 1,14 Triliun - KONTAN",
+      "snippet": "IHSG Rebound dan Kembali ke Atas 5.000, Net Sell Asing di BBCA Tembus Rp 1,14 Triliun KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNM0tBM3l0Z19NVHY3V0swVFJXakNzN3pSZmFoUGQtWlhnQjZaeTh5VXFQT2RlUmY5YlBxdGx4V1Nuc3JfZlRqN0ZTeXA4Xzl5aUhDX1B3eXRERGxZZHRnZE9VMTZmbnZYTGdzUzRkUUNzSUpISkVlUVZNSFNGNjZVQWJ2cG9QMGpaOVZ5UWF1dzdxN3QxTTRabWFWQi02X0tVTk9ENnFyM1FTY2QyX1NlM2JBVXQ1VXc?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Fri, 11 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-11T14:00:00+07:00",
+      "pub_date": "2020-09-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "IHSG Minus 1,26 Persen Diseret Koreksi Harga Saham BBCA dan TLKM - KONTAN",
+      "snippet": "IHSG Minus 1,26 Persen Diseret Koreksi Harga Saham BBCA dan TLKM KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYmtqQkFxdzJnaHpRR1hmdGxyZEVDbWNWYWRZTUJtTW9Ja0I0U0tkT3R6Sl9kR1pJa2NBdUdKekl6MThfQllkekk3UjRaRjlDNk9yRXZGY2JhQ2oyWThoUURDS0U2NXhralNlc1c3MFFhc200UjVRZ09UbFZuQ1ZCYmxoUFNZcHFjalM5RnJNOHBxX0N1b2FJMGVOTG13QQ?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Tue, 15 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-15T14:00:00+07:00",
+      "pub_date": "2020-09-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "Sejak Akhir Maret, Kekayaan Budi Hartono Naik Rp110 Triliun Berkat Saham BCA - Bisnis.com",
+      "snippet": "Sejak Akhir Maret, Kekayaan Budi Hartono Naik Rp110 Triliun Berkat Saham BCA Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMFBJQ2FSSkJ1MkNPVElyNnRLbzhoNTUzdjVwbVdOdnkzUXFqZFRNcDNiNVNvSnZnWFR1NThEZFprblIwOWtxYTB1TXFRQWpaOU55dlJPaE5rSTNaTDl3QllMNDRlczFvSGpvNzdvM0tEbk0xVkZJUjhIQ3FWQmJwWWxZUXRPc2Iyby1CaFQ2RW1WVjVENU94N21TbXJ5YVBqcHAwNUNWVThBZE9KTHdBd2NDMFBRZE9jWTBBSndzYzgydFpVOEE?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Tue, 15 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-15T14:00:00+07:00",
+      "pub_date": "2020-09-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "BBCA Kembali Dibeli Asing, Indeks Bisnis-27 Merekah - Bisnis.com",
+      "snippet": "BBCA Kembali Dibeli Asing, Indeks Bisnis-27 Merekah Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYkxDR0NNR19KLVZIUXNPdk40UTJSb3ppdURjNUJhY0hUQU1UQ0hwNlZCeGhsbDhiY1piYnBzWmNVeU1wNUtJcExTbTB1QkpYTFo3RjBTdWQyX29DcnY3bkNWQlc2SVJFcFdWcVloQWpJTFViRVk4eDRNWVBMOGNrdWtnUFBRTjVRdU5pOHY2RzNMZHBFQ29UdVBUYzRHZEpseVE?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Mon, 21 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-21T14:00:00+07:00",
+      "pub_date": "2020-09-21",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "BBCA Akuisisi Rabobank, Kinerja Sahamnya Rugi Tahun Ini - vibizmedia.com",
+      "snippet": "BBCA Akuisisi Rabobank, Kinerja Sahamnya Rugi Tahun Ini vibizmedia.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2pnNV9BLWJReWVlOHZ0ODlyMUtSS0ZGWHM0UWZXUVNJVks4Qnctc0s4eS1YUkQwVVZkMFNTTU44ci16YWttM01ibzB0MXFob0hOSjlDQmhRTzFRRXo2bTJCNTdGN1U1MHRRQnZhYUtfOVdHWHlJR0lXS09TcHJOcmViMUJKQVhranhZWlp2cnhpcWNIN0lmeFFaZWpIZ1NZQXRXNmtn?oc=5",
+      "source": "vibizmedia.com",
+      "published_utc": "Tue, 29 Sep 2020 07:00:00 GMT",
+      "published_wib": "2020-09-29T14:00:00+07:00",
+      "pub_date": "2020-09-29",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BCA digital BBCA"
+    }
+  ]
+}

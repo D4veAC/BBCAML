@@ -1,0 +1,90 @@
+{
+  "query_window": "2022-12",
+  "n": 7,
+  "articles": [
+    {
+      "title": "Mengecek Informasi Kartu Debit BCA di BCA mobile - BCA.co.id",
+      "snippet": "Mengecek Informasi Kartu Debit BCA di BCA mobile BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbXRYV1VYZWNjOTNrR2Q5MklQMmxXOUhHVm9welBqdmtRZkxOZlUwVTdXUGttTGpJNGVXRVJEZE00NHRFUVVmTi0wZ0VtSW1RNlI3dWdnLXVMNWM1a1NRMFYycXQ5YmNWZXRTbFM0TGpMdU5TdDdoQjZyNHhzb193TUgyZkxvdUVCZXJGb1VFZEdtbE00VU9wOFd3aGRXS3JfRGdPcFFtY0h4dkJmNnpV?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "",
+      "published_wib": "",
+      "pub_date": "2022-12-14",
+      "pre_closing_ok": false,
+      "timing_quality": "date_only_next_day",
+      "query": "legacy independent snapshot"
+    },
+    {
+      "title": "Analisis Harga Wajar Saham BBCA Periode Desember 2022 Halaman 1 - Kompasiana.com",
+      "snippet": "Analisis Harga Wajar Saham BBCA Periode Desember 2022 Halaman 1 Kompasiana.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeW8xYm0zTFhhSUdWR2pBSmY4X090UllIdVN2ai04REQtN3ltOGVqeVE3cHM5YXVrWTJyckVsQzRXaVV2enFWNlJubmhuQ2JvTGNrMm9EZTFSY0pJRlhoeG1hOWpCMHZIcHpjdXBuVGtfb3RMWm1JQXdfQWlEX1N4cXhyRXdtUEtUcjk1MFhrdi1ybTF2T2hrSWlheEVvMXNncEFqajVORDVkUXRKeVI4Z2g0bEh5blFaT1laSTZR?oc=5",
+      "source": "Kompasiana.com",
+      "published_utc": "Tue, 06 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-06T15:00:00+07:00",
+      "pub_date": "2022-12-06",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA laporan keuangan"
+    },
+    {
+      "title": "Segini Harga 1 Lot Saham BCA, Apakah Kamu Berminat? - Stockbit Snips",
+      "snippet": "Segini Harga 1 Lot Saham BCA, Apakah Kamu Berminat? Stockbit Snips",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xQTl3QV9UZmJ5OGhlRncwaDcyeW1LRlpJZFIxM3Q3OTBmX3ZlNnVJTXpBZXAyVDdYdG84RFdJNUlnT0s3b3Bsc0pJeDZaM3pnQ1ZVZmdaU1pqS2RSRjV6R1lNYUNPcjBRcHc?oc=5",
+      "source": "Stockbit Snips",
+      "published_utc": "Sun, 11 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-11T15:00:00+07:00",
+      "pub_date": "2022-12-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BCA digital BBCA"
+    },
+    {
+      "title": "Jelang Libur Nataru, BCA (BBCA) Siapkan Uang Tunai Rp37,6 Triliun - Bisnis.com",
+      "snippet": "Jelang Libur Nataru, BCA (BBCA) Siapkan Uang Tunai Rp37,6 Triliun Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPb1UwdHh6OEdWSkNJSl9pZi1YOUlDS2Q1TDF6bm50bUZ6eEhRdGZ2V0U1UThQbDRGdHFSak1DSkxWUXphNXFHdDhod1ZaVjVndE05UVRkd0t2ZFF3RjUyMk0wUVFRQ2hDTnZsVFBfRU01Y2NxTWpramNKVVdTOUV2U2lxRWg1bDE2VFdYRkxNVThZeTI2cFZkMWkyUktPMXl2MDR1WUh6MFMzLWpYUDFTZlVabEFydw?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Mon, 12 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-12T15:00:00+07:00",
+      "pub_date": "2022-12-12",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Saham Bank Central Asia (BBCA) Lebih Harum di Musim Bunga Mekar - KONTAN",
+      "snippet": "Saham Bank Central Asia (BBCA) Lebih Harum di Musim Bunga Mekar KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPX3JvSU1qay1wMFAtZ1A2OXFvYW9EbjJtSktnaVpWTlp2TGR1RXlJQ0w1ejM1dTBNTllVc0t6OXBvY2lMZ2VrZUFKZGtOQ2xoZXJDV2V4dEJVYllDT2NWZlhTT1RkQVg1cFlpc1VLRnZzM1VuYkpoV1VhcXhDV0xneXFlbUc4VTVWRkU0RzRtOVRZeFhaOVBrLXRnYw?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Thu, 22 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-22T15:00:00+07:00",
+      "pub_date": "2022-12-22",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "Siapa Pemilik Bank Central Asia alias BCA? - detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "snippet": "Siapa Pemilik Bank Central Asia alias BCA? detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaTNWWjJXZ3hwbV9GQ2tDOVh1LU80ZWtTRU9tcm41VXBBMWQ2TlptZ0dVSHB6Um1LZm1Qb3h0WWdvTXpMeGVKek5LTVdTeXl6SW5udDkxX3BLTlM4NUNWV1JMMHd0RGxHMlE2MmEwbl9nelo1QnV3ckZfZzNHMzU0UmJteFZQX3liUEJ0OWZn0gGTAUFVX3lxTE5xWXVMaHlXamVaaVRORXp3V2FzQUJtVDI0RHdYaVV3S2c0aTl3V2Z0OU13allBbWtZdWFxMkE0ajREOEJLY2lRbGx5RVJyUk5QTVNmekNVYlBzU3VJeWI5cXJhRUhpMFotcXA5MGJMaFRvRklMNjV3dFNJbzF4ckw4Y2U0UVdaMW1zcEYzWWVOUUhxaw?oc=5",
+      "source": "detikFinance - Berita Ekonomi Bisnis, dan Investasi Hari Ini",
+      "published_utc": "Fri, 23 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-23T15:00:00+07:00",
+      "pub_date": "2022-12-23",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "\"PT Bank Central Asia Tbk\""
+    },
+    {
+      "title": "PT BANK CENTRAL ASIA Tbk DAN ENTITAS ANAK - BCA.co.id",
+      "snippet": "PT BANK CENTRAL ASIA Tbk DAN ENTITAS ANAK BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWWdmd0Ryel9rTWxNRi12SGJCbHc1VWtRdng2RmwxejQzS256MzF6ZWdtc3l1SW92bnh2SXo3aFV2bHNsSmxONlZDeEpHS2ZUV1hkNmdzMUZQT2dJcFpMME9WLWg5cGg1bFNpV2hlNjN6dVloNmtkMC1KOTNVdmw1YkpVSmRKNDlzMTNKdFpORHp3bG9WYi1iTW4zVkVuRTFoM3pldndjRkRnQXRYNWJwNDU3UEFJMElnR3hJODF3Nzd5SlpURXc?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Sat, 31 Dec 2022 08:00:00 GMT",
+      "published_wib": "2022-12-31T15:00:00+07:00",
+      "pub_date": "2022-12-31",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bca.co.id"
+    }
+  ]
+}

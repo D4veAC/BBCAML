@@ -1,0 +1,30 @@
+{
+  "query_window": "2021-05",
+  "n": 2,
+  "articles": [
+    {
+      "title": "MIKA dan BBCA Lesu, Indeks Bisnis-27 Dibuka Terkoreksi - Bisnis.com",
+      "snippet": "MIKA dan BBCA Lesu, Indeks Bisnis-27 Dibuka Terkoreksi Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVjJySDdBTmNwYzRmek41eHFYY2NaTjVaUEpqbWktbVpRaDd6NGJpQTlpSkZZY1hoTlEyR1FRb2l1ZldWekFGVmxaRkpoOGpMSGhOVjJxRzd6T2ZNNjdzcnNNY3FIS0YzZDJkcDFPY1ZFSGxLbjAzOEZlT3FQQklZbl9fcUJRNDREcWltQUVkTlhCU2VNRDBOcHBlb1ZQajdGckg0NDln?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Tue, 18 May 2021 07:00:00 GMT",
+      "published_wib": "2021-05-18T14:00:00+07:00",
+      "pub_date": "2021-05-18",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "BBCA dan BBNI Masih Diburu Asing Meski IHSG Dibuka Melemah - Bisnis.com",
+      "snippet": "BBCA dan BBNI Masih Diburu Asing Meski IHSG Dibuka Melemah Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVG11cDgxclVVNnI4Z2lFdV9RS21sN2J4ZjVlek5DZE1CUURUeDU4bnVJdV9DYlJ6d203MjFPRG1BQmRXNnlsNFZCU0pHR25MUkxWa2NNQ2hheFBndlRxZmxldW5TQ0RISUZidE8xUjdDd2Q1ckx6OEc3dWdBTFFKcUR1SkhZSFE5WmdHWW4yQjd5dlV5ZjVDdS12bW1mVk5BcVpJVUprRUllTjlo?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Wed, 19 May 2021 07:00:00 GMT",
+      "published_wib": "2021-05-19T14:00:00+07:00",
+      "pub_date": "2021-05-19",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    }
+  ]
+}

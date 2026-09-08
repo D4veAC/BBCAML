@@ -1,0 +1,30 @@
+{
+  "query_window": "2018-02",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Berita Tentang Bbca Terkini Dan Terlengkap - CNBC Indonesia",
+      "snippet": "Berita Tentang Bbca Terkini Dan Terlengkap CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wZnByMkJ4eDBEN3k0LVNoSk54OW1BUWkwWWNBSGRwSjZqdFcxbXVmOW83WFVwWFMwNG9hbFdnWmhsa0NGXzQzQkkwRmFybE0?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Fri, 09 Feb 2018 12:39:23 GMT",
+      "published_wib": "2018-02-09T19:39:23+07:00",
+      "pub_date": "2018-02-09",
+      "pre_closing_ok": false,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "IHSG Fluktuatif, Menu Saham Pagi Ini: SMDR, BBCA, BKSL, PTBA, HOKI - kumparan.com - Kumparan.com",
+      "snippet": "IHSG Fluktuatif, Menu Saham Pagi Ini: SMDR, BBCA, BKSL, PTBA, HOKI - kumparan.com Kumparan.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMlZ6Z0pZdkhjRUJqbFh4V0RDNnZYbFZiTHN4dUJ5Qm1wY2RnUldjYXdVTHAzM1NqS1FBb1BmbW1mVzhxTVY5bjBGSjQxd1FwbVBqRWdnQmQ0LXh5elNPZDYwQ3FuRjdYY2ZoN2hleS1ybFdoaktVdzU2WmlsVHFOUGtsRkxVVzFGMnR5eVRNYi1leEVNWS1VOElZVW3SAaQBQVVfeXFMTzk0NGpna2tZeVZBMVcyMjE5ejV5bHhzVWNWNkNwYnctZ1p1QVYxazhKMWljSXJyeWUzU0JQNXNKYWxzaFZoZDB2YzU2LTdjZVY1SF96UndlY0pmdFRqdFd2Y1NSLTFvZ2JEUVNtamZrN3FwSDU2dWxNSEw4aGsxVjZxWEd3N3Y4SVNmWm1iQi1XamlNRG1wTHc4UkFkNlJYektTTGs?oc=5",
+      "source": "Kumparan.com",
+      "published_utc": "Mon, 12 Feb 2018 08:00:00 GMT",
+      "published_wib": "2018-02-12T15:00:00+07:00",
+      "pub_date": "2018-02-12",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA asing"
+    }
+  ]
+}

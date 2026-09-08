@@ -1,0 +1,113 @@
+{
+  "query_window": "2022-07",
+  "n": 9,
+  "articles": [
+    {
+      "title": "NPL Turun ke 2,2%, BCA Sebut Kembali ke Level Sebelum Pandemi - CNBC Indonesia",
+      "snippet": "NPL Turun ke 2,2%, BCA Sebut Kembali ke Level Sebelum Pandemi CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcnFNOHZTLXdMeFZvdUJxNm5vS0U0YW4zSlRXUVhHcktUYXlWTVNXdXhyb1VxMjF4WUFtV0ZGNTRGZjhrNDBpY0NRay1RUHZnejN2MVlPUlBFUDE0UlFTb185Q2ZXYWZvaHRCX004VWE0M3ZhdVBLcnhvT1lWYUlVeDUtalhxb1pjRmFOU1JwWjIxSXBmOVFFaVpFVDltZ05GSlcwYWdhS0E4Q2lGb3c5OUVIci1rMTllX01LQ9IBwgFBVV95cUxQazNFaUFYY3NlNW5uSjJubUhFM0Z3cUVwZWc2eDVtR1Z4a1JOeUJUZzQ5NEdtOFJpSHdHT0xGM3ItYUtVMU12SHhjWGJfT1pMdjV2SlZDTEJ3bHJSN0lVMk5uWUxpQ3N1WHlaQ215UlNjZnZyZnVjRVdDNVhWZnY1T2VwZU5BUkdsTXQ1ODBiVE5raEVvUm5XZElCcWdjNzJoWURtMmhaYXl1dE43UnZfaldjbUhmc1p6VWpyV3hyVUZkZw?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "",
+      "published_wib": "",
+      "pub_date": "2022-07-27",
+      "pre_closing_ok": false,
+      "timing_quality": "date_only_next_day",
+      "query": "legacy independent snapshot"
+    },
+    {
+      "title": "Ini Daftar Emiten Bank yang Siap Rights Issue pada Semester II 2022 - kontan.co.id",
+      "snippet": "Ini Daftar Emiten Bank yang Siap Rights Issue pada Semester II 2022 kontan.co.id",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOR1pIRVRjcjF4X0JIUnBNZkphRVI5V0ZZRTJZUUlpeHRvZVJzc01WckM1MFJuM01EaFdsUjU4WW5DLWpOV1p1di1hNFZJRW9iMWVTWEd1X1VFVlBZTmVJOGNWY212am5maHI3OE5RZkpYUXYtT1hnbDczUm8wc1QtSjYzLXpJdlRWZ3VvSjdza0hxLVdIZkJZZkQ3aEN6X1o2bk1SbWRR0gGeAUFVX3lxTFB1ZHNIQmU1VllORUlhdjNmdTBzQjNjQ2ZHa2Y2UlMtYjZYWlJ0NDFCQmprZkZaME5UYWlvSG9icnptb08tYU9yOTFEQXVSOHJycGQtS2xhVnVXN1pzdmNSZ1hxYmhQNE9mNmJadVM2S3I5Z2FKSnptbTczLS1KX2JkZkI3NlZEMjZMOEEzbkdCWUZtbjAtTVZ0ZTBPZHln?oc=5",
+      "source": "kontan.co.id",
+      "published_utc": "",
+      "published_wib": "",
+      "pub_date": "2022-07-28",
+      "pre_closing_ok": false,
+      "timing_quality": "date_only_next_day",
+      "query": "legacy independent snapshot"
+    },
+    {
+      "title": "Kurs Jual Beli Dolar AS di BCA (BBCA), BRI (BBRI), dan BNI (BBNI), Senin (11/7/2022) - Bisnis.com",
+      "snippet": "Kurs Jual Beli Dolar AS di BCA (BBCA), BRI (BBRI), dan BNI (BBNI), Senin (11/7/2022) Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVDU5aHlCYUlRaTlvSVFyVU5lVjlLaDlfMHhCVVYxcDZpRFBES2tFaTVPOTJWcGVIYk84TjAxWjRsc3V3b25kdno0cGxUdU1WNDlyc01peHU2cXhaOXhia3plU2o1akUtQ19LZkF6UjlnVzZlVVA5Q0kyclE0OVlYRGhhbjE0aTlDc0VHd3Iwcjh3Vll2eEQ1d2stYlE5UDRvMThqQkJsb3pfZTQ1ZEU5NFNJUDFwa1VSVUl3dzNrRi03c2M?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Mon, 11 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-11T14:00:00+07:00",
+      "pub_date": "2022-07-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Cilacap Samudera (ASHA) Simpan Sisa Dana Hasil IPO di BCA (BBCA) Rp40 M - Emitennews.com",
+      "snippet": "Cilacap Samudera (ASHA) Simpan Sisa Dana Hasil IPO di BCA (BBCA) Rp40 M Emitennews.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaG95cGV1MTBqQlNMR1RBYmc1QWJTeVhBSHVTaDZIT2R6NzhaSWhmTXZKTldNcno4Y3M2cUgwNlFBWjJtaVExd1BQWURRMW8xM21UUnVoTXJMdlZyYV96UkNYd1lpSHhfTXNKM2tHMkNtVjhZdnc3c241dnJac1M3RTg0WGtwamlBNjJPbUpqR2pUNmtIeVN5cXgwNA?oc=5",
+      "source": "Emitennews.com",
+      "published_utc": "Fri, 15 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-15T14:00:00+07:00",
+      "pub_date": "2022-07-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:emitennews.com"
+    },
+    {
+      "title": "Jelang Pengumuman Suku Bunga BI, Simak Rekomendasi Saham BBCA, BBRI, hingga BBYB - kontan.co.id",
+      "snippet": "Jelang Pengumuman Suku Bunga BI, Simak Rekomendasi Saham BBCA, BBRI, hingga BBYB kontan.co.id",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNS00tUmhOMURVUWV3aG5vVlQ1a2xiZ2p6YnE0bmw5YUk1WEI1YnFXc0lGWlpzQzVrcWNlb0VnRVA4NFpyeHJnZzFhZFJzM2FDMkJwYWFkdmFNOGNJSEpYU0NRbzJaek1nY3ZvakJHMTNPcG9tamhHSWxPXzYtbkh4eTZmOWpLZ2YteUxCUW5tQXhpX3hlekdKU2tLX0VWQXFGUlVnbURpZUlHS3NOeWZ6NXo0UdIBqwFBVV95cUxQenF2NV9kYWxjYmppYkFMMWNjdEh1ZmF5Qkh2UlRsZGNJelAwOC10cUNKcF80eTNRMDFXTDJCZlE5SlhjeUkwd0VCMGFrTjFORjlRcDQ0NG5WSDJNV2NBakhwOHB0SHhOdU5OOWp2dFZxaTR5NldxanEzT3BaS2VIQ0Z2QlNzRzNKdjljTXNNanBIVFhtNkhaQ1c1SUZ3Q1ptQnNXck42T2NGTUU?oc=5",
+      "source": "kontan.co.id",
+      "published_utc": "Wed, 20 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-20T14:00:00+07:00",
+      "pub_date": "2022-07-20",
+      "pre_closing_ok": true,
+      "query": "\"Bank Central Asia\" saham"
+    },
+    {
+      "title": "Kurs Jual Beli Dolar AS Hari Ini 20 Juli 2022 di BCA (BBCA), BRI (BBRI), Bank Mandiri (BMRI), dan BNI (BBNI) - Bisnis.com",
+      "snippet": "Kurs Jual Beli Dolar AS Hari Ini 20 Juli 2022 di BCA (BBCA), BRI (BBRI), Bank Mandiri (BMRI), dan BNI (BBNI) Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQ3JaYU9XWjVoTXpIOTZtV0RPX2FUdTBITlhWcElwb0dqX0VYRS1hUHAzNlRtR3dFT2UyTGd1M2dKR2t1LXE3T3JqSnQxUEJMMEN5ZWJHRWJiNkF6WW1zVWNhWnhEWTFqY1pzemx1QzZYcWlfR01Sem03a0poWjVCT24wb0UxYk9zeXRNOWNiRUJsR0h1cnRUR1BCQml5RzBKckpOWXVRdXA1TjgycTNwVGdVdHI1eU5VV05nS21wVWsxV08zdjIxU2RaQTNNY0o3OU1wRjdUZmNfNGNZdWxGd29jZVhnUQ?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Wed, 20 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-20T14:00:00+07:00",
+      "pub_date": "2022-07-20",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Rekor! BCA (BBCA) Raup Laba Bersih Rp18 Triliun - Bisnis.com",
+      "snippet": "Rekor! BCA (BBCA) Raup Laba Bersih Rp18 Triliun Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa2QwbmtVVTFjMGM4OElqb2s0Z0x3VzNwWDR3bGF4TUNxT0JyeXhlaTFsbmROa3E3bndKandKSXlfOUlHOWgxMW5vdjZRV3pmMldRR0VJWVdKM09uZUVpVGpxQW5WRDNwRWU2LWM1cW5DQ0NGVmo2dUQtTnl1aUExRmpydXhocmZWREQtS0FoVHZRY1BQdGViOFQ3aWdhc0E?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Wed, 27 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-27T14:00:00+07:00",
+      "pub_date": "2022-07-27",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Bos BCA (BBCA): Tidak Semua Nasabah Siap Pakai Layanan Digital Canggih - Bisnis.com",
+      "snippet": "Bos BCA (BBCA): Tidak Semua Nasabah Siap Pakai Layanan Digital Canggih Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNODU5aTlWRUVwSWU4cGEwVGdRNkZ1Z05JT0dHTjFsMG4tMjZNR05aa0piUW9rWGRZV0F0R05ZNTh0bXhoRllnQnRrSVV4YjExZUpCQ3NBQzdrUjlnb3E0MnljWnRzVGF5WlJnXy14eGpTUGZWdlBfdjU1RUYtekJNVDZoUFZnZlBEazJUemxzRl9sSVA2STJQSXRaQUsyNERKTHdlal8zZVkyM2pxSUJTN09qVGJWZ1dhTDRTdkxn?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Thu, 28 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-28T14:00:00+07:00",
+      "pub_date": "2022-07-28",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "BCA (BBCA) Catat Ada 48.000 Nasabah Aktif Gunakan Layanan SMS Banking - Bisnis.com",
+      "snippet": "BCA (BBCA) Catat Ada 48.000 Nasabah Aktif Gunakan Layanan SMS Banking Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNclNBWkxEdnY5ZXlHU0xkMF9hemlEQ0hDSllmdWNHclpReTFpTVZSeDlFR2hZQVBpeE43cHE4UEJ4TkhqWU9JbFB4Q2dtWS12ZDd2blRWVnM3WlliRkJ0OGtNWDAwTzZQcWMyYkRCWVFpbU9xN0tfNTdCSlptNFZudkJ3NGZpTEE3QzRNNF9fSDN1NTYtcG1FVEdCQldha3RmYWJmOXVvUkVQQzhJTWZja3RfUDJXY05kN0YtYw?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Sat, 30 Jul 2022 07:00:00 GMT",
+      "published_wib": "2022-07-30T14:00:00+07:00",
+      "pub_date": "2022-07-30",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    }
+  ]
+}

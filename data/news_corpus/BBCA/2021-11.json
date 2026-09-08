@@ -1,0 +1,42 @@
+{
+  "query_window": "2021-11",
+  "n": 3,
+  "articles": [
+    {
+      "title": "Keren! Bank BCA (BBCA) Dinobatkan Sebagai Perusahaan Papan Atas di Asia Pasifik - Emitennews.com",
+      "snippet": "Keren! Bank BCA (BBCA) Dinobatkan Sebagai Perusahaan Papan Atas di Asia Pasifik Emitennews.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMnVqeFpOZXpYRU9vbzlXd3lHVkdqRERWbnVwTHhLX3ZRNjlKYkNleWhKSXkxelhGT0RIQXdlNFBKd2FXLVNya05fZ3Q1TGFJNTFyTEFDVkJ6ampQNEEzZjNfV1E1YXVUUkNuNlo1cGZybnVIX3IzZm1NMVdtWTNmTHRpRXY3T2I2MFlWYU1aMUFGTGlTb0FKMDktN2UxSDcxMF9WNFB0OA?oc=5",
+      "source": "Emitennews.com",
+      "published_utc": "Fri, 12 Nov 2021 08:00:00 GMT",
+      "published_wib": "2021-11-12T15:00:00+07:00",
+      "pub_date": "2021-11-12",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:emitennews.com"
+    },
+    {
+      "title": "PT Bank Central Asia Tbk Hasil Kinerja Tahun 2017 - Menjaga Kepercayaan Melalui Kualitas - BCA.co.id",
+      "snippet": "PT Bank Central Asia Tbk Hasil Kinerja Tahun 2017 - Menjaga Kepercayaan Melalui Kualitas BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQek12Sl82ejZ3b215Q1RkUVhkVWJSREoxdnBrLTFFM1lYRlYxaUswOUNkZVlkaG1sR19WWS1ZRjJhbnpHOGg1Umx1cERHMmtjSXFkNFFhUXhxYTRiQTNFZ0lSai1fdTlKb1V4SV9VVFA5VUJlN0c1Z09ocTJDZkVTNDZDRHN3M0NDcDBCWl93VnJ1OHhTSGVLT016Q3BGTUhFWElZdjJnRHRtQzk3Rk1BUVltQjktUkZfUVpTdkRxYm01RXFudWRTMUhHNmgxQ1dCTmRwcTFXNVdqeWYyTFhDQUNJLVdVZENxd2dlN3pHem5CdURVOVRpWEUza1Q4Y3hKN1BkTw?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Thu, 18 Nov 2021 08:00:00 GMT",
+      "published_wib": "2021-11-18T15:00:00+07:00",
+      "pub_date": "2021-11-18",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bca.co.id"
+    },
+    {
+      "title": "Total saham umum beredar / Total common shares outstanding dari PT Bank Central Asia Tbk – IDX:BBCA - TradingView",
+      "snippet": "Total saham umum beredar / Total common shares outstanding dari PT Bank Central Asia Tbk – IDX:BBCA TradingView",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZUl3NHNTTE4xX1k5Y3lCNmRvbXJ3cU43V19aejZ2UUpLSmNBTllEeGc0eTVpenVjQ3l5TkxYYmhqQ1NlaldjZlJVMk05dmpNR1hEYXRmcWZHMExMN19ieHRDYW94SXBDcVB3T3F1TTBZbXUtTnBpUWdwSXZpYWVOZzBOaEZFU0tXSmVtU1NiMHU1WGFmdkFuVEZ3cHRLaEYtcEVMQQ?oc=5",
+      "source": "TradingView",
+      "published_utc": "Tue, 30 Nov 2021 01:05:03 GMT",
+      "published_wib": "2021-11-30T08:05:03+07:00",
+      "pub_date": "2021-11-30",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "\"IDX BBCA\""
+    }
+  ]
+}

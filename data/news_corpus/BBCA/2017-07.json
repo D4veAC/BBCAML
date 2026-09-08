@@ -1,0 +1,18 @@
+{
+  "query_window": "2017-07",
+  "n": 1,
+  "articles": [
+    {
+      "title": "Harga Saham Terus Naik, Apakah BBCA akan Stock Split? - Bareksa.com",
+      "snippet": "Harga Saham Terus Naik, Apakah BBCA akan Stock Split? Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaW5BYXFQamgxMDBkVTc3dmdTdHp3T1NiUzFmeTdRWF8tbHpXN2htLTBSNVRyWkhTeTIwa0NNbUZ4bjdCZFVfSk5qQUMyQmdaQ2E2NGdZSV9yeVlBUnVxU0owYm1DV1JWUXhKZ1Q3T1NRd1M4bFRTWlQtUUVfcjBLSmh1SURTYWJuUlllNFAyZVlIbjIwT2w2UmVPVHl1VjNkUzZXZ0FMLXl2SmY0cHl5R1JyY1NkdEU?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Fri, 28 Jul 2017 07:00:00 GMT",
+      "published_wib": "2017-07-28T14:00:00+07:00",
+      "pub_date": "2017-07-28",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    }
+  ]
+}

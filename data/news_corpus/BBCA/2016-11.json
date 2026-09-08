@@ -1,0 +1,30 @@
+{
+  "query_window": "2016-11",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Ada Crossing Saham BCA di Pasar Nego Rp177 Triliun, Siapa Pelakunya? - Bareksa.com",
+      "snippet": "Ada Crossing Saham BCA di Pasar Nego Rp177 Triliun, Siapa Pelakunya? Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPa29JcHczeVRiWWFrQ1pMQjB2ZlFJdWhhZUN0N2Y3OWVkN3otOVZIWFRZLXBfeGJxWkdDYWZISVV1Q3l5Qy1fYnhjdk5SUGt1blIzaG9BRUpiVUxsX2llR1YyMzRPM1RMN3VhSU1lS1VMU2M2U1paNjNnSTk3TFVPQzFxRWhUdEFXb2s0RnVQRk9PSGM4Vk9BMDMxSDJrWWo2c0RveVlJbTRUZ1lQZFpGaXFhemdKNzJPXzhFY242MnUyNV94S1RlWG9uSQ?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Fri, 11 Nov 2016 08:00:00 GMT",
+      "published_wib": "2016-11-11T15:00:00+07:00",
+      "pub_date": "2016-11-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    },
+    {
+      "title": "47% Saham BBCA Milik Farindo Berpindah Ke Perusahaan Ini - Bareksa.com",
+      "snippet": "47% Saham BBCA Milik Farindo Berpindah Ke Perusahaan Ini Bareksa.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdXdYd2dMdEppenVBYjBxZmhJR0oybFVRRW9uZFBsclMwZGdzRnJOem5oV28xbUJHYi03c3pjUm5xOXk1N2ZwV3dPaW5lcHh6NmhrRXBlajdLSlVPcmV1el92cmplVkhtcGF5TTZRQmtwbTYybkxkeHF1Qkc1Nk4yQlN1bWJOOVRPSzNIam1GV1plMVNYQ1ctRzhGVjl0Q2lrWWYxSUxKbEJjQ195M2ZqZjlPa3JYM19wRzJxQw?oc=5",
+      "source": "Bareksa.com",
+      "published_utc": "Tue, 15 Nov 2016 08:00:00 GMT",
+      "published_wib": "2016-11-15T15:00:00+07:00",
+      "pub_date": "2016-11-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bareksa.com"
+    }
+  ]
+}

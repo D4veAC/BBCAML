@@ -1,0 +1,42 @@
+{
+  "query_window": "2021-06",
+  "n": 3,
+  "articles": [
+    {
+      "title": "Anthoni Salim Tak Lagi Masuk Daftar Pemegang Saham BCA, Ini Penjelasan Dirut - Tempo.co",
+      "snippet": "Anthoni Salim Tak Lagi Masuk Daftar Pemegang Saham BCA, Ini Penjelasan Dirut Tempo.co",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWVJLN2xpbmJHMV80T2w2aFE3Y3RtTVFZU0VGV09wa2lraTNYX19rbHpsSFhIUGlLSTJjd2lnRDlFXzJvdXBwLXNuNFZDRXI5bG5zSkduaGhlSzZRd2ltTlNscHUyN0tiYkFvYy1EeDh1T1d0WHZDbTYzNTJRLTBRMi01MXdpUTdOcERrVmJwQUp1SDQxdW5qSWdCT1ZhTkxZUF9HeDEwbFdsLWNlSG1GUQ?oc=5",
+      "source": "Tempo.co",
+      "published_utc": "Mon, 07 Jun 2021 07:00:00 GMT",
+      "published_wib": "2021-06-07T14:00:00+07:00",
+      "pub_date": "2021-06-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    },
+    {
+      "title": "Terkuak! Tak Ada Anthoni Salim di Pemegang Saham BCA, Dijual? - CNBC Indonesia",
+      "snippet": "Terkuak! Tak Ada Anthoni Salim di Pemegang Saham BCA, Dijual? CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQd1M4QWtSa2ZmTTBidVhweDVSV1Z1Ull6bHNOR09jQWhnZTlvNzhESWJnSlZyZUhmQVhpX3dvSVVjaWl5MUJ2WHh5bE1zUGRRNjNveHAxd2Rzdm03WUdTdkRmMnM2SG5KT3owdXJNbFhwRWhjVVhZbGtfQng2MUtjV2pwNW5wVno1WUFLQVZ0eWdPRUxqSFpYQ2lRZk8xelB6WkdDRm9NczBpdWFxaE5XRmZ5WDdMdkxucGdXRw?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Mon, 07 Jun 2021 07:00:00 GMT",
+      "published_wib": "2021-06-07T14:00:00+07:00",
+      "pub_date": "2021-06-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "Direktur Bank BCA Vera Eve Lim Menambah Saham BBCA di Harga Rp 32.350 per Saham - KONTAN",
+      "snippet": "Direktur Bank BCA Vera Eve Lim Menambah Saham BBCA di Harga Rp 32.350 per Saham KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeVdqT1R4MmJDUjFxYXRXRjNYSVRIY21TTFJJbm1ZSXhqSnlXc0k5WkVfR3RBTFVOMWhyR2NhdC1kUmZkbjRJd3FxRjl3WGZUdG1PelpPZFlWbTZCNHh5TEEyQjZ1TUYxejg2c0FkLS01dDNQUG9GdjlEQTNybm02d2NvSkJmXzFTYVRlSWJnYmg4dEM4LU8wTUlJVFhYQUxTaExnNUI4WS1IajAwU0pLUm93?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Tue, 15 Jun 2021 07:00:00 GMT",
+      "published_wib": "2021-06-15T14:00:00+07:00",
+      "pub_date": "2021-06-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    }
+  ]
+}

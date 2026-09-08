@@ -1,0 +1,30 @@
+{
+  "query_window": "2019-06",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Tembus Harga Rp 30.100, Saham BCA Rekor Tertinggi Sejak IPO - CNBC Indonesia",
+      "snippet": "Tembus Harga Rp 30.100, Saham BCA Rekor Tertinggi Sejak IPO CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWUVoNklBUjlhanNtQXZqYkR2bDRINHdBQmtXbTBhY3czeWxxVFRtc2VHbk8xdHBqTDRQQkh6RHU4VGhETTdfY1VVRVVwcW01azR0b2xLT05FNFpvWmJ3VWF4UFp4eXZ1ODNRNVhNNDZfNG15aEFlVWlVeldoXzhUTkVEMlBraWE1SlFwU0pYWlpJY0gyQTBydHFWOUNXNE1feG5LOVBrcDNadWh3dmxpOU1aWlhMUGRaOFE?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Mon, 10 Jun 2019 07:00:00 GMT",
+      "published_wib": "2019-06-10T14:00:00+07:00",
+      "pub_date": "2019-06-10",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Djarum BBCA saham"
+    },
+    {
+      "title": "Tembus Rekor Tertinggi, Saham BCA Bisa Sampai Rp 32.300 - CNBC Indonesia",
+      "snippet": "Tembus Rekor Tertinggi, Saham BCA Bisa Sampai Rp 32.300 CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORzFmbUZIVmc3OENQeVIyc21PZGE2N2RMRVY2U2JudGZqeHQyZFRtLTVvUFo2N3RKN3BqemJkYTE0czZXRXJVQ2l3SXNSaVV6SVNRNHFOZ3E1ODJjUTYzSzlpaEF1TlM1ZnF0enR3ajQ5SUotdVFhdGZxWUxXb3IxOC1KanZMUXNvUU9pSUptdXI4X3lndU9zMnFYVk9tTE1QSGxUOWVocE1fS2pCNFVnRTM3RlM?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Mon, 10 Jun 2019 07:00:00 GMT",
+      "published_wib": "2019-06-10T14:00:00+07:00",
+      "pub_date": "2019-06-10",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Djarum BBCA saham"
+    }
+  ]
+}

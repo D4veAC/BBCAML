@@ -1,0 +1,18 @@
+{
+  "query_window": "2020-08",
+  "n": 1,
+  "articles": [
+    {
+      "title": "Apakah Saham BBCA Bisa Tembus Rp 35.000, Kapan? - CNBC Indonesia",
+      "snippet": "Apakah Saham BBCA Bisa Tembus Rp 35.000, Kapan? CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQczFXZ2hLTXg3bGFLYk1GUmlTUnlha3paTE9QMmF4YUlULW9FbEEwLVFZMWV1dE9ESElDMDF2QnB2ZW16QWZLRXFJT2JTRzIxSl8tcmZJUU9Pb1NOY0xfVGRLaXVSeTlrNE1VY254ZE0wbFNwNVNtamJCdzdYYVNxVm9wU2JFUzN6TFM1SjhCM0J4T0ZHV2R1QlRzTnRsM1YtSHp3MmZud0RMUQ?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Mon, 31 Aug 2020 07:00:00 GMT",
+      "published_wib": "2020-08-31T14:00:00+07:00",
+      "pub_date": "2020-08-31",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}

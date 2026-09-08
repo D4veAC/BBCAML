@@ -1,0 +1,42 @@
+{
+  "query_window": "2019-12",
+  "n": 3,
+  "articles": [
+    {
+      "title": "Realisasi Kredit Ekspor Impor, BBNI dan BBCA Berbeda Jalan - KONTAN",
+      "snippet": "Realisasi Kredit Ekspor Impor, BBNI dan BBCA Berbeda Jalan KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOGZud2h2Y2VrT3lFY0xtS3NEUmZaSVgtSkdneFVfdjJZTWxPMjM5dG1qM0xHZGh6bGVCdmRBeDd0b3BoaGpDbExzSzNJOEhLOUpHdWlaY2UzOTlkWThwSV9XcTgwblRTWkRSTVhWRjhPVC1hZXZnRDYwU2xqV1JMNG11OFBMc2c4SGFHai1wY1VHNUwxeEE?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Thu, 19 Dec 2019 08:00:00 GMT",
+      "published_wib": "2019-12-19T15:00:00+07:00",
+      "pub_date": "2019-12-19",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "Sempat Rekor Harga Tertinggi, Apakah Saham BCA Sudah Mahal? - CNBC Indonesia",
+      "snippet": "Sempat Rekor Harga Tertinggi, Apakah Saham BCA Sudah Mahal? CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTDZOdmZ5cGFtcGdUaE9KNU5vZjZpX3h5ajluM3ZvX3lJZWUzYjVFb2ZzQldrSjR5T0k1MGRjc0JHZzBnWlJwQ1F2UnlxM3BiWEtYQ3VCMVE2b0tCWDlOWkpQNDI0ZFlPWmhhaV9QRGZZZmdfMGFldGkzOC1VU0l5ZEp5Wl9PWmtNM0hnYm51V0xObHNxRks0TUJZSG1lbk92eWVacUZUWlRnTDFxdEcwcXlsN1dGZ2FYNjNN?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Thu, 19 Dec 2019 08:00:00 GMT",
+      "published_wib": "2019-12-19T15:00:00+07:00",
+      "pub_date": "2019-12-19",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "Tebak! Jika Saham BCA Rp 40.000, Berapa Kekayaan Duo Hartono? - CNBC Indonesia",
+      "snippet": "Tebak! Jika Saham BCA Rp 40.000, Berapa Kekayaan Duo Hartono? CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOck1odldzNm9TWWRRR0M2LURrbnhZY0NEQ1p0YVoxRTd4cmdabkJ1cmJNSmFKNy1rQ2lFeFZCQnQzLXhCbHdKeXp1U1JsX2czMk1UMUItN0ZzOWFPdHBRcnQ1aTBIUTRSd0RhTVFuejNCbWRZb3lkc2FqcEJvdHIwRGNuVEpWSWdrX0FIS0NVMk1Xeno5WXNuUFNqb1ZJLS1uaWNMQW4yaFlUMzFGZ0lNUHpaUnRtNzhieGRR?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Tue, 24 Dec 2019 08:00:00 GMT",
+      "published_wib": "2019-12-24T15:00:00+07:00",
+      "pub_date": "2019-12-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}

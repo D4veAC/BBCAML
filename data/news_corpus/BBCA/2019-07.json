@@ -1,0 +1,18 @@
+{
+  "query_window": "2019-07",
+  "n": 1,
+  "articles": [
+    {
+      "title": "Lagi! Vera Eva Lim Tambah Kepemilikan Saham BCA - CNBC Indonesia",
+      "snippet": "Lagi! Vera Eva Lim Tambah Kepemilikan Saham BCA CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGUxdjJYczc5djc4Y3RRV0ZTalBGamx2Uy0ydVloRTdwZENZNUdOYm5XLUNQRXZfd2hJeXRkckVaTzZuSjNmcEV4UVZvQVFyU0dLRWM2OHpvZjA4bXRxaDRFRFhLNmdnMlYwV0VRS2habUc4enZ6YmYtY3M4M3BGQkZ5cDJiWnM1aEphbWZJU3FwRTNlclFMLVdHckc4cmJUbkhmXzRGVnBnY0E?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Tue, 30 Jul 2019 07:00:00 GMT",
+      "published_wib": "2019-07-30T14:00:00+07:00",
+      "pub_date": "2019-07-30",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}

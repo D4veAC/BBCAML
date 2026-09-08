@@ -1,0 +1,1470 @@
+{
+  "protocol": {
+    "name": "nested rolling-origin timestamp-safe news veto",
+    "news_model": "hashed word unigram/bigram features plus balanced logistic regression",
+    "label": "next-session open-to-close return exceeds modeled round-trip friction",
+    "availability": "pre-15:50 WIB same date; later or date-only next date; weekend carried to next session",
+    "news_memory": "documents contain only news made available during the current and previous four trading sessions",
+    "selection": "within one run, quant config and news threshold are selected on the inner window before scoring the outer fold; repeated research runs have contaminated those outer folds",
+    "minimum_tuning_trades": 2,
+    "tuning_rows": 252,
+    "minimum_base_quant_tuning_trades": 4,
+    "minimum_tuning_return": 0.0,
+    "maximum_tuning_drawdown": -0.12,
+    "risk_off_policy": "stay in cash for the next outer fold when no inner candidate passes all constraints",
+    "news_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7
+    ],
+    "minimum_article_counts": [
+      1,
+      2,
+      3
+    ]
+  },
+  "source": {
+    "kind": "yahoo",
+    "name": "BBCA.JK",
+    "sha256": "0ddbc6dde0f47ff60a642efb3175b28ea93c19dc44873fdacc2bbb93efe5258e",
+    "excluded_partial_session": true
+  },
+  "period": {
+    "start": "2020-08-10",
+    "end": "2026-09-07"
+  },
+  "folds": 24,
+  "skipped_warmup_folds": 0,
+  "overlay_return": 0.0567578545237164,
+  "benchmark_return": -0.0708871685710436,
+  "overlay_alpha": 0.12764502309476,
+  "news_incremental_return": 0.08625557066768752,
+  "forward_trades": 2,
+  "blocked_entry_signals": 51,
+  "entries_invalidated_at_open": 2,
+  "early_stop_exits": 0,
+  "selected_configuration_counts": {
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.5, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.5, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 2, \"news_threshold\": 0.5, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.5, \"risk_off\": false, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.5, \"risk_off\": false, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.55, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.55, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 3,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 3, \"news_threshold\": 0.5, \"risk_off\": false, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.25, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.5, \"risk_off\": false, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 3, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.6, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 3, \"news_threshold\": 0.5, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1,
+    "{\"atr_multiplier\": 2.0, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.6, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 2,
+    "{\"reason\": \"insufficient_inner_quant_opportunities\", \"risk_off\": true}": 5,
+    "{\"atr_multiplier\": 1.5, \"breakout_atr_buffer\": 0.0, \"confirmation_days\": 2, \"entry_threshold\": 0.0, \"exit_threshold\": 0.0, \"minimum_articles\": 1, \"news_threshold\": 0.55, \"risk_off\": true, \"target_mode\": \"return\", \"trend_gate\": \"sma50\", \"window\": 10}": 1
+  },
+  "fold_reports": [
+    {
+      "start": "2020-08-10",
+      "end": "2020-11-13",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 9,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 5,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.03552160898683421,
+      "news_probability_mean": 0.4729272339905991,
+      "news_days": 33,
+      "forward_raw_matched_quant": {
+        "net_return": 0.029756002108187518,
+        "max_drawdown": -0.029865991477272646,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.013823006369551194
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2020-11-13",
+      "end": "2021-02-18",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.037005345210917584,
+        "max_drawdown": -0.0183486238532109,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 8,
+        "invalidated_at_open": 0,
+        "score": 0.027331033284312134
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 6,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.03336631046417837,
+      "news_probability_mean": 0.49229287991602705,
+      "news_days": 41,
+      "forward_raw_matched_quant": {
+        "net_return": -0.089915284156457,
+        "max_drawdown": -0.09554991296769288,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.13919024064030344
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2021-02-18",
+      "end": "2021-05-25",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 2,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 14,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.0673632167199032,
+      "news_probability_mean": 0.506009208015627,
+      "news_days": 39,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2021-05-25",
+      "end": "2021-08-27",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 2,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 15,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 4,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.005823551003031557,
+      "news_probability_mean": 0.4769446245551056,
+      "news_days": 33,
+      "forward_raw_matched_quant": {
+        "net_return": -0.03362607509842597,
+        "max_drawdown": -0.08283130282808104,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.07604172651246649
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2021-08-27",
+      "end": "2021-11-25",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": false
+      },
+      "tuning": {
+        "net_return": 0.012979767358595407,
+        "max_drawdown": -0.0958649463245721,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 0,
+        "blocked_entries": 7,
+        "invalidated_at_open": 0,
+        "score": -0.036452705803690644
+      },
+      "forward_overlay": {
+        "net_return": 0.061058868896054275,
+        "max_drawdown": -0.058064516129032406,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.03152661083153807
+      },
+      "benchmark_return": 0.13138379965118907,
+      "news_probability_mean": 0.5051111456036258,
+      "news_days": 48,
+      "forward_raw_matched_quant": {
+        "net_return": 0.061058868896054275,
+        "max_drawdown": -0.058064516129032406,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.03152661083153807
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.061058868896054275,
+        "max_drawdown": -0.058064516129032406,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.03152661083153807
+      }
+    },
+    {
+      "start": "2021-11-25",
+      "end": "2022-02-24",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.25,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": false
+      },
+      "tuning": {
+        "net_return": 0.03555431294987699,
+        "max_drawdown": -0.06183969369531517,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 7,
+        "invalidated_at_open": 0,
+        "score": 0.0036344661022194033
+      },
+      "forward_overlay": {
+        "net_return": -0.004053511542496002,
+        "max_drawdown": -0.037018355891719534,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 1,
+        "score": -0.02306268948835577
+      },
+      "benchmark_return": 0.07568458811134993,
+      "news_probability_mean": 0.5122263282544319,
+      "news_days": 47,
+      "forward_raw_matched_quant": {
+        "net_return": -0.024270802115885504,
+        "max_drawdown": -0.05372884349985685,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": -0.05213522386581393
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": -0.024270802115885504,
+        "max_drawdown": -0.05372884349985685,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": -0.05213522386581393
+      }
+    },
+    {
+      "start": "2022-02-24",
+      "end": "2022-06-09",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": false
+      },
+      "tuning": {
+        "net_return": 0.031378333888466114,
+        "max_drawdown": -0.05806451612903196,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 0,
+        "blocked_entries": 6,
+        "invalidated_at_open": 1,
+        "score": 0.0008460758239501333
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "benchmark_return": -0.06131297735566166,
+      "news_probability_mean": 0.4923217201371329,
+      "news_days": 59,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2022-06-09",
+      "end": "2022-09-07",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.55,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 15,
+        "invalidated_at_open": 1,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 7,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.12610730317906937,
+      "news_probability_mean": 0.5280698637673277,
+      "news_days": 56,
+      "forward_raw_matched_quant": {
+        "net_return": 0.09647290046383183,
+        "max_drawdown": -0.012499999999999956,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.08972290046383186
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2022-09-07",
+      "end": "2022-12-05",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.55,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.05310189303174462,
+        "max_drawdown": -0.06052158709677424,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 13,
+        "invalidated_at_open": 1,
+        "score": 0.022341099483357496
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 6,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.03942825489598989,
+      "news_probability_mean": 0.5241606336750007,
+      "news_days": 52,
+      "forward_raw_matched_quant": {
+        "net_return": -0.12905614632818785,
+        "max_drawdown": -0.12905614632818785,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 2,
+        "blocked_entries": 0,
+        "invalidated_at_open": 2,
+        "score": -0.20008421949228178
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2022-12-05",
+      "end": "2023-03-03",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 3,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 3,
+        "risk_off": false
+      },
+      "tuning": {
+        "net_return": 0.05573083053675032,
+        "max_drawdown": -0.05211801533883598,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 1,
+        "blocked_entries": 10,
+        "invalidated_at_open": 0,
+        "score": 0.026171822867332332
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 2,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.03350202086814735,
+      "news_probability_mean": 0.47639825016828447,
+      "news_days": 60,
+      "forward_raw_matched_quant": {
+        "net_return": -0.03553846835894359,
+        "max_drawdown": -0.03553846835894359,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": -0.05630770253841538
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": -0.03553846835894359,
+        "max_drawdown": -0.03553846835894359,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": -0.05630770253841538
+      }
+    },
+    {
+      "start": "2023-03-03",
+      "end": "2023-06-16",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.11155232521434733,
+        "max_drawdown": -0.0326035830357142,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 4,
+        "invalidated_at_open": 3,
+        "score": 0.09475053369649022
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 2,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.05319586061136117,
+      "news_probability_mean": 0.5043416525889517,
+      "news_days": 56,
+      "forward_raw_matched_quant": {
+        "net_return": -0.0037120659324939576,
+        "max_drawdown": -0.020705585088315104,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.01456485847665151
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2023-06-16",
+      "end": "2023-09-20",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.25,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 1,
+        "risk_off": false
+      },
+      "tuning": {
+        "net_return": 0.07645002707809367,
+        "max_drawdown": -0.07780022811417542,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 0,
+        "score": 0.036049913021005964
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.011591714736381986,
+      "news_probability_mean": 0.46407756301973657,
+      "news_days": 56,
+      "forward_raw_matched_quant": {
+        "net_return": -0.028052357396766814,
+        "max_drawdown": -0.028052357396766814,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.04507853609515022
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": -0.028052357396766814,
+        "max_drawdown": -0.028052357396766814,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.04507853609515022
+      }
+    },
+    {
+      "start": "2023-09-20",
+      "end": "2023-12-19",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 3,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.6,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 11,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.008638493920847923,
+      "news_probability_mean": 0.4571489000093059,
+      "news_days": 55,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0004158975030148504,
+        "max_drawdown": -0.001999000499750103,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.0010836027468602012
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2023-12-19",
+      "end": "2024-03-27",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.5,
+        "minimum_articles": 3,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 6,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 6,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.08375222252218517,
+      "news_probability_mean": 0.5297083228985529,
+      "news_days": 62,
+      "forward_raw_matched_quant": {
+        "net_return": -0.05852005876962452,
+        "max_drawdown": -0.07114758912424979,
+        "trades": 3,
+        "position_changes": 6,
+        "early_stop_exits": 1,
+        "blocked_entries": 0,
+        "invalidated_at_open": 1,
+        "score": -0.09809385333174941
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2024-03-27",
+      "end": "2024-07-12",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.55,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.032475557538825583,
+        "max_drawdown": -0.02381525961538422,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 5,
+        "invalidated_at_open": 0,
+        "score": 0.020067927731133473
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 1,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -2.912136356969519e-05,
+      "news_probability_mean": 0.4611118322757241,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.01773685871372721,
+        "max_drawdown": -0.01749999999999996,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.00848685871372723
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2024-07-12",
+      "end": "2024-10-10",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.6,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 9,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 5,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.0395608519434314,
+      "news_probability_mean": 0.4930318071572081,
+      "news_days": 62,
+      "forward_raw_matched_quant": {
+        "net_return": -0.049565346755786166,
+        "max_drawdown": -0.049565346755786166,
+        "trades": 2,
+        "position_changes": 4,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.07534802013367925
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2024-10-10",
+      "end": "2025-01-14",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.55,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 11,
+        "invalidated_at_open": 2,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.10378690079162523,
+      "news_probability_mean": 0.46129570249256824,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2025-01-14",
+      "end": "2025-04-28",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 2.0,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.6,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 12,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.08812560405991487,
+      "news_probability_mean": 0.4730434538820583,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2025-04-28",
+      "end": "2025-08-05",
+      "selected": {
+        "risk_off": true,
+        "reason": "insufficient_inner_quant_opportunities"
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.047392675485765534,
+      "news_probability_mean": 0.0,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2025-08-05",
+      "end": "2025-11-04",
+      "selected": {
+        "risk_off": true,
+        "reason": "insufficient_inner_quant_opportunities"
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.021581164465986902,
+      "news_probability_mean": 0.0,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2025-11-04",
+      "end": "2026-02-06",
+      "selected": {
+        "risk_off": true,
+        "reason": "insufficient_inner_quant_opportunities"
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.11458686693066489,
+      "news_probability_mean": 0.0,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2026-02-06",
+      "end": "2026-05-19",
+      "selected": {
+        "risk_off": true,
+        "reason": "insufficient_inner_quant_opportunities"
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": -0.22862553070777292,
+      "news_probability_mean": 0.0,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2026-05-19",
+      "end": "2026-08-19",
+      "selected": {
+        "risk_off": true,
+        "reason": "insufficient_inner_quant_opportunities"
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.04913003133370597,
+      "news_probability_mean": 0.0,
+      "news_days": 63,
+      "forward_raw_matched_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    },
+    {
+      "start": "2026-08-19",
+      "end": "2026-09-07",
+      "selected": {
+        "entry_threshold": 0.0,
+        "exit_threshold": 0.0,
+        "atr_multiplier": 1.5,
+        "trend_gate": "sma50",
+        "confirmation_days": 2,
+        "breakout_atr_buffer": 0.0,
+        "target_mode": "return",
+        "window": 10,
+        "news_threshold": 0.55,
+        "minimum_articles": 1,
+        "risk_off": true
+      },
+      "tuning": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 5,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "forward_overlay": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 3,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      },
+      "benchmark_return": 0.03809915220785287,
+      "news_probability_mean": 0.5038176048540409,
+      "news_days": 12,
+      "forward_raw_matched_quant": {
+        "net_return": -0.008732388493253418,
+        "max_drawdown": -0.022140221402214166,
+        "trades": 1,
+        "position_changes": 2,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": -0.0203024991943605
+      },
+      "forward_risk_controlled_quant": {
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "trades": 0,
+        "position_changes": 0,
+        "early_stop_exits": 0,
+        "blocked_entries": 0,
+        "invalidated_at_open": 0,
+        "score": 0.0
+      }
+    }
+  ],
+  "raw_matched_quant_return": -0.24478399080376323,
+  "risk_controlled_quant_return": -0.02949771614397112,
+  "risk_policy_incremental_return": 0.2152862746597921,
+  "evaluation_status": {
+    "deployable_alpha_claim": false,
+    "classification": "exploratory; historical outer folds were reused during iterative strategy development",
+    "point_in_time_news_archive": false,
+    "required_confirmation": "pre-register the current rules and evaluate only sessions after the last inspected date"
+  }
+}

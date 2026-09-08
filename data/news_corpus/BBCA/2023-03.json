@@ -1,0 +1,126 @@
+{
+  "query_window": "2023-03",
+  "n": 10,
+  "articles": [
+    {
+      "title": "Siap-Siap, Empat Bos BCA Borong Saham Bank Milik Grup Djarum - Bisnis.com",
+      "snippet": "Siap-Siap, Empat Bos BCA Borong Saham Bank Milik Grup Djarum Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTmQzQVluQ0x6OGpSdlJTVy1CRkZ0NE9KVXpaZ0NlWDBBODdpMVdpZjFVY21XeVdPcVdObFBpOWtfUzRDMEQ3c0F1WHk1TklrZnNaMFloZDZVMHRiY3ZvQVNtRVNwbDFQTEFSNEdPYjAzOUV1ZS1HSGNxR1JJT0cwZFY5Z1RLYWEwblpVWXdGOF9LbU1qVTRTREtreXg0Ul8tcjZPN1kxdXNoN0ZmUTdtNnUzNA?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "",
+      "published_wib": "",
+      "pub_date": "2023-03-27",
+      "pre_closing_ok": false,
+      "timing_quality": "date_only_next_day",
+      "query": "legacy independent snapshot"
+    },
+    {
+      "title": "BCA (BBCA) Ungkap Aksi Terbaru, Entitas Lain Milik Duo Hartono Disebut-sebut - Indo Premier Sekuritas",
+      "snippet": "BCA (BBCA) Ungkap Aksi Terbaru, Entitas Lain Milik Duo Hartono Disebut-sebut Indo Premier Sekuritas",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxPSHlWaDg3cy1HVTJybVprLVhsRDl2Mm5iWThtNkxscVN6YzFwbFpqTC1aeHJTV1FPZFB6cmt0MFVyQlNBczZBdHd4OXU5ZGtFWE1aVDZZUFRuRm9aV0piTTJBalBkd1gzdUVITzRXb3Z3OHpUdHpjOHlNeGxzOC1uSXJKa0VHLTlQc0RkcWE3M01iR1ZVNE9UVUZKclpQZllvWXZzZ3hCTXRQSERUYjlJaHZQQ2RDaUVqVmpVcW9zQThIYnloek80R0xremJWOUhpQURhUjRsTVdRYUVVUERxaGhkUnJ1bmx5RTRsZjZDdFgxeWhOR09OUXFxVU5OT1BlLUNOSlhKNlVLemlPR2pQa3hERlFzeVplNjcwbEtpd3pXQTFFV1g1NlotbTFibjJWbEZGeWM3OEhLMUJTV0F0SU9qN1dvaEZNc0hTTmoySGJMZ3hiVnRUVUxTYVloT24xZVE?oc=5",
+      "source": "Indo Premier Sekuritas",
+      "published_utc": "Sat, 04 Mar 2023 08:00:00 GMT",
+      "published_wib": "2023-03-04T15:00:00+07:00",
+      "pub_date": "2023-03-04",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Djarum BBCA saham"
+    },
+    {
+      "title": "Bank Central Asia (BBCA) Eksekusi Transaksi Afiliasi Rp16,33 Miliar, Intip Detailnya - Emitennews.com",
+      "snippet": "Bank Central Asia (BBCA) Eksekusi Transaksi Afiliasi Rp16,33 Miliar, Intip Detailnya Emitennews.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWk9vU2Vfa0dsYlBsODBjb1FjSWlJZ05XZGoxNVRxYm1oWThNazdEY3luSHV4VVZKQW04dy0yeFFFUTlVSGFPSXdGZ1hhaW91RFBQZExHNUZfa2ltRDROMkgteEdOUUdOV01pdHBQNXZId2ktTjlvRGVheUZFeGp1T2pRbFEwNm02eFhOSkROcERYVllWVm05b3Z5UEstRXNOSzRZX0dTU0NoMWpE?oc=5",
+      "source": "Emitennews.com",
+      "published_utc": "Sun, 05 Mar 2023 08:00:00 GMT",
+      "published_wib": "2023-03-05T15:00:00+07:00",
+      "pub_date": "2023-03-05",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:emitennews.com"
+    },
+    {
+      "title": "UNPAR Raih Penghargaan Top 5 Most Engaging University dari Bank Central Asia - Universitas Katolik Parahyangan",
+      "snippet": "UNPAR Raih Penghargaan Top 5 Most Engaging University dari Bank Central Asia Universitas Katolik Parahyangan",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNlFveWotd3ZqN2VZaXZ3Z3RJZEViTFlyX1pDQng2WVBIcmR6djVHdGdNejdGMnUwS01sU1cteEdsaU5rYUN3UDRnYnQ2RDJtazhfWksyV254TEVVTTI5SVljQWRiZkNMdHlMQy1jcWhoaFJwRHIydFFlU1Qxc1ExckZhaFRjNUZXdTFSeFBkdmlEdmFLVG11VXUxaEVrQQ?oc=5",
+      "source": "Universitas Katolik Parahyangan",
+      "published_utc": "Mon, 06 Mar 2023 08:00:00 GMT",
+      "published_wib": "2023-03-06T15:00:00+07:00",
+      "pub_date": "2023-03-06",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "\"BCA Tbk\""
+    },
+    {
+      "title": "Bos BCA (BBCA) Ungkap Bisnis Kartu Flazz Gak Ada Cuannya, Kok Bisa? - Bisnis.com",
+      "snippet": "Bos BCA (BBCA) Ungkap Bisnis Kartu Flazz Gak Ada Cuannya, Kok Bisa? Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOVpCTDN5aUthQUV2YWpwenFHNEVXUm1kQktUM18tZ25XZEZIejBrSFFLaU1xVGFjVGlBaGZTOHVWLUxfbnd4T2h1X0EyYkk0SmNtOHdFTjBoQzZkQnc4ZHpDRHlRSW9LakxsVjhNM2hISjJFUzltU21UYWxHa0hiSW4yaE1UYlk2aXdjSy1KRDJJSlBaSXJrUjZURDRJcXh1U2JRU1ZpLUNZa0ZzM1BORFU2WUVOVmdH?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Thu, 16 Mar 2023 07:00:00 GMT",
+      "published_wib": "2023-03-16T14:00:00+07:00",
+      "pub_date": "2023-03-16",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "5 Berita Populer: GOTO Rugi Rp40,5 T dan Jadwal Pembagian Dividen BCA (BBCA) - Bisnis.com",
+      "snippet": "5 Berita Populer: GOTO Rugi Rp40,5 T dan Jadwal Pembagian Dividen BCA (BBCA) Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdVN6d2h0MTNmNE02VFM5OGUxUlNxM2lWT1ZPNWFPLVZSX2p3a1VzS1FnMXNfdWtFeGFHejBqblFqRFcwdEF0UzRDQXdrV3c0OUZ4V09oSzBCMXQyRnhJczMyS2NyMThmSWh6Z0tDNE82dGlVemNmazB2d2pBZXo4SXVZa2dYV1lIdXVkRnp4Q28zVnV4My0xVlo3a0tfT0d4UkJBTFVGVjJBY3RkUkpoWmtsTTVxb2FJdUdqLUVobkxpQQ?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Tue, 21 Mar 2023 07:00:00 GMT",
+      "published_wib": "2023-03-21T14:00:00+07:00",
+      "pub_date": "2023-03-21",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Borong 100 Ribu Lembar Saham BCA, Rudy Susanto Kucurkan Rp837,5 Juta - Warta Ekonomi",
+      "snippet": "Borong 100 Ribu Lembar Saham BCA, Rudy Susanto Kucurkan Rp837,5 Juta Warta Ekonomi",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORUxYUjI1NzExWk5IXy1VTTNiMG93aWxjOURPZ2JfUWRnMmZERnFVSm5FNXMyb21NY0JGOHRBTzNCcm1wN1Bfd0hFWXpfUEdPVUI1ellhVzlRRE8wX2poQlZGOVJwN2hiZ05uR3dpXzFKeFU5SUtxcFpGc2p6VVhPM1EtdTU3dUc5Y1lNZ3NfNXZQbkMtUExwZFgwQWp1ejFtMFh4eW40b9IBrAFBVV95cUxNd0kzU3dhM00xazVSODBZcUJvU0p6Z0hHRDM2S1dlMjl1RDVaRXp2WlhvYXdRV01uRjNmenh4bHZtSWRLWWZxU2NKT2JrNDBRUVkwYXdxVDBpWjBsR0hfV3RtNk8tNVJOcmJiSE9tYVNtQ3haaUpmdnViMVh6UWJZb1VyR0ZTVUNuSThSQUZDOUpPbnFXUUZBMEFhQXFUN0N3enJpRjUtTHRxZFZX?oc=5",
+      "source": "Warta Ekonomi",
+      "published_utc": "Fri, 24 Mar 2023 07:00:00 GMT",
+      "published_wib": "2023-03-24T14:00:00+07:00",
+      "pub_date": "2023-03-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA kredit"
+    },
+    {
+      "title": "Indeks Bisnis-27 Ditutup Hijau, Saham AKRA, BBNI & BBCA Paling Cuan - Bisnis.com",
+      "snippet": "Indeks Bisnis-27 Ditutup Hijau, Saham AKRA, BBNI & BBCA Paling Cuan Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdktfVUxrREs1Y3pKclVXN1cyM2xnQVYzN0FFMUlYTlJVd0FUN2hRYWg4REtocTRlMkN2NGZVckx5R3ZRY3RRSUFNNEtwWDEwYi1GVUJ0ZG5tSGtBU0F0QzMzS3dGdHRtX19reHV6WGdCczBZM3NsWGo0UXdPMEFNQlR1SGgzRm5xbGVCaVlRdnBFSHVnUjBURXByMFZuS0RfWDQ0NE1aVmNHSTl0OHVpbTZCMA?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Fri, 24 Mar 2023 07:00:00 GMT",
+      "published_wib": "2023-03-24T14:00:00+07:00",
+      "pub_date": "2023-03-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Saham BBCA - Bloomberg Technoz",
+      "snippet": "Saham BBCA Bloomberg Technoz",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JMXJKNnliR3NvM01HSWVFVExhV25faHB0RjA5UzdxVUF4ZTdQWXhBYU5oMTNEM0M3d01mLUwyVmxRX1RDSGF3MjJDbGN2R2k0MjI2bWtfR0tURG8?oc=5",
+      "source": "Bloomberg Technoz",
+      "published_utc": "Fri, 24 Mar 2023 12:12:01 GMT",
+      "published_wib": "2023-03-24T19:12:01+07:00",
+      "pub_date": "2023-03-24",
+      "pre_closing_ok": false,
+      "timing_quality": "exact",
+      "query": "BBCA site:bloombergtechnoz.com"
+    },
+    {
+      "title": "Jelang Cum Dividen, Komisaris dan Direktur Bank BCA Kompak Borong Jutaan Saham BBCA - KONTAN",
+      "snippet": "Jelang Cum Dividen, Komisaris dan Direktur Bank BCA Kompak Borong Jutaan Saham BBCA KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZGhWTVczYndTN1U1dDlYN1RUc3lIbjJlbjRxSVZkWU55cmdNUGt6eG8xMUFiNXVFbVo2RjFVdS1XOF9kYW1ZZWdWaktIa0xULU5YaWhsbXdqYUpwdGhRZlJlV2R5cmpWY3dpbmpqRUJ1cHgxcXh6NUNNM3FzaDRoYW1ybG9FRWp0NHFnWE53VzUzQ2FwY2RPTkZiLWU2c29qYzdGUHJoWXQtN25xOERuUUlMNWp5aTg?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Mon, 27 Mar 2023 07:00:00 GMT",
+      "published_wib": "2023-03-27T14:00:00+07:00",
+      "pub_date": "2023-03-27",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    }
+  ]
+}

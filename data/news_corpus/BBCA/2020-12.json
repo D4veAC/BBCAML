@@ -1,0 +1,66 @@
+{
+  "query_window": "2020-12",
+  "n": 5,
+  "articles": [
+    {
+      "title": "BBCA Dilego Asing Sepekan, Kekayaan Hartono Bersaudara Malah Bertambah - Bisnis.com",
+      "snippet": "BBCA Dilego Asing Sepekan, Kekayaan Hartono Bersaudara Malah Bertambah Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdEo5Nm5DZ1laTFVVdll5Mm5UbUh6NDdhQUNwQ2g3VzZrLXBsQnRxanJVT3hqMHBSS2Nmemxqc2dDWmZ2Y3g0UXRKNE5XX0dSY0kwN1gtVEZEbmZxRnA5RGN3T0hlOGZ4VWYwcVJXMnppTFhOc1BVV3QxZUxDOXhtVW5JZ3ZvQlA1V2Q1aFpMdHpkQjEydmhZLWFCQUNHZzhVN0RLaU16OVgyam9rb0xfODMxTlJsb3o0VzZz?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Fri, 04 Dec 2020 08:00:00 GMT",
+      "published_wib": "2020-12-04T15:00:00+07:00",
+      "pub_date": "2020-12-04",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "IHSG Mendekati 6.000, Asing Borong Saham BBCA dan BBRI, Lepas Saham BFIN dan TLKM - KONTAN",
+      "snippet": "IHSG Mendekati 6.000, Asing Borong Saham BBCA dan BBRI, Lepas Saham BFIN dan TLKM KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR1RhRlNQQmZUMWl1ZXc3LW50Q2ZjMTQ5bzRlVnlNcjVKeC00Y0UyT0gxVlRGOHlnR19ZWlQ5Y3prc1h6TjByOWRhYmpxenktX05WbFFTWlZVdlk0ODRGZWZNcW5IZ0RFNzZOSnhhcTlRcDJkeGY5MFQycWN6SGFhN2tZNFQ4MlNvcDJPajh6UDBSN0FBQjhnNl9hUEQ3a3l5aUxzaS1nYmZLNVdheVJaQ09n?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Mon, 07 Dec 2020 08:00:00 GMT",
+      "published_wib": "2020-12-07T15:00:00+07:00",
+      "pub_date": "2020-12-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "Kedatangan Vaksin Corona Sulut IHSG, Investor Asing Masuk BBCA - Bisnis.com",
+      "snippet": "Kedatangan Vaksin Corona Sulut IHSG, Investor Asing Masuk BBCA Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNLUljT2RJU2tHaV9yQTRzNmg5R3lObTRXUU9kTFJobVVxS3R3eDV2QWI3b2hnSnlzNlBDMC10VVJBdnZnNWVydlBaeXpPU2Jadlc1QWNiSHJOc3hNMkppZFExRTNBT2J3M3FEbU1FdHVSMVRvMDdsM2RSTGxlU21LdXJMUG1WQ3E4SzlhYktoUEJOc1lCcTU3RzVrUEIwLUlhalNMRkZ5UUwwLW1odjRRSQ?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Mon, 07 Dec 2020 08:00:00 GMT",
+      "published_wib": "2020-12-07T15:00:00+07:00",
+      "pub_date": "2020-12-07",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA asing"
+    },
+    {
+      "title": "Saham BCA Kembali Masuk Indeks Sri Kehati - Kompas.com",
+      "snippet": "Saham BCA Kembali Masuk Indeks Sri Kehati Kompas.com",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUzdxT2FJXy1lNnpVLUVQbWxGZC1lMFVfYWQ4NF9sU0c5NlZwSHVUWHRXeloyTFpCT2oyN0trekFvSDI4QS10b2lpNHJubi1Hb3dGZ045bXZ0Qm1qa1lROU1HZ25MRXBoZnptVm9ZVlppSUVXMWJDelc2MWpmM0s5ZHVrRGFQaERubEt1R0U5NUN3SmYxVGVV?oc=5",
+      "source": "Kompas.com",
+      "published_utc": "Mon, 14 Dec 2020 08:00:00 GMT",
+      "published_wib": "2020-12-14T15:00:00+07:00",
+      "pub_date": "2020-12-14",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "\"Bank BCA\" saham"
+    },
+    {
+      "title": "Bank Central Asia Bukukan Laba Rp18 Triliun pada 2015 - pasardana.id",
+      "snippet": "Bank Central Asia Bukukan Laba Rp18 Triliun pada 2015 pasardana.id",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT0hIZ2NmVEI5cl9iZ0FyQnZEZ0E5ZDV1U240bUR4eG9HN2xfVWNveWJQM3htSkh5U0psN1FSSmJMNmE3ZkpmMzZXZmE1TGs1cDZtZ0pUNUVIZFBrYVBmcm1Fc0ljZDFGaXFtWXI3anJrTHZ5ZmRpRG9ndEpsRmVGcjJXWThEZHVVdlF1ZTRYbUhmdw?oc=5",
+      "source": "pasardana.id",
+      "published_utc": "Wed, 23 Dec 2020 08:00:00 GMT",
+      "published_wib": "2020-12-23T15:00:00+07:00",
+      "pub_date": "2020-12-23",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    }
+  ]
+}

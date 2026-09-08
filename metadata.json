@@ -1,6 +1,5 @@
 {
-  "name": "BBCA Stock Prediction",
-  "description": "A professional AI stock prediction platform for BBCA stock based on XGBoost and OHLCV data.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "BBCA Predictor",
+  "description": "Request a model price estimate from session prices and volume.",
+  "requestFramePermissions": []
 }

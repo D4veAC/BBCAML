@@ -1,0 +1,30 @@
+{
+  "query_window": "2019-05",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Direksi BCA Beli Saham BBCA, Apa Kaitannya dengan Demo 22 Mei 2019? - Kompasiana.com",
+      "snippet": "Direksi BCA Beli Saham BBCA, Apa Kaitannya dengan Demo 22 Mei 2019? Kompasiana.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd1BhV2RfWFVQRndXcS1XYldmaV9SNENMaU9MWVNNczhNMFREVEZMVG5WOHRYRE16cF9lMS1CbWF1bWd4Wm9PVTBZdUZrYWF1ZW44R1pTRllfZWF1bXdrUS1sNU90bmdLR2FwUEROUmNaZDNMN2JuOXJBbjN4UWZXUi1QLWlQUC1KZkxycTJlQlBwUFFucE9jZDI3Q3hyNE9QQVdLM3F2emt4c2pHRWVRczVtOWU3SF9UbUNhOUJ3?oc=5",
+      "source": "Kompasiana.com",
+      "published_utc": "Fri, 24 May 2019 07:00:00 GMT",
+      "published_wib": "2019-05-24T14:00:00+07:00",
+      "pub_date": "2019-05-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Djarum BBCA saham"
+    },
+    {
+      "title": "Jahja Setiaatmadja Borong Saham BCA, Nilainya. . . - Warta Ekonomi",
+      "snippet": "Jahja Setiaatmadja Borong Saham BCA, Nilainya. . . Warta Ekonomi",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWXBQMUZEbFhHcmVxN2tVUU9OX3ZhUDhCdVlQbHRFVHJUTnZwVWE1N3d0TV9ULVRDT3pmbGNNOXU4YnlXLThZOGV4YzRCdnFxX0d6MUQxMnV5VGNrMWIxZWh0LW9LZGRDal9YNS04bFlTZWZ6Nlg2VWM2WXFFOUZ5NXpjVl9aOUVGU0HSAY8BQVVfeXFMT0kxZGhsV0ZoZHlyOWljYm43UnkwTW1Zd3N5eHN6Zk5hcG1DRldfdUMxTG53cnFjMFd3RFNRWTd1aWYwa3BHY1lDbTJPV0Z1ODJQN09Xa0tSZkJLZVhPYXA4cEZ4ZHJ1TUJQcmxMcFJvRlg0RlpDemgzVUpDOTQtZDJoY2E5d0tzd2ZoMDRGS0U?oc=5",
+      "source": "Warta Ekonomi",
+      "published_utc": "Fri, 24 May 2019 07:00:00 GMT",
+      "published_wib": "2019-05-24T14:00:00+07:00",
+      "pub_date": "2019-05-24",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    }
+  ]
+}

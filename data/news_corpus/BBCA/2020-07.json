@@ -1,0 +1,102 @@
+{
+  "query_window": "2020-07",
+  "n": 8,
+  "articles": [
+    {
+      "title": "Laba Anak Usaha Bank BCA (BBCA) Ini Tumbuh 41 Persen - Bisnis.com",
+      "snippet": "Laba Anak Usaha Bank BCA (BBCA) Ini Tumbuh 41 Persen Bisnis.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0M4SEhSbkZEQnNRN1RHQldLRVZjOXZXRmxlNnRiLW1iVlhHT0J1VjhEbUsyOVBodjFXQWNwRXJQMk9ZX3dhYmUtRHhoaWk2c1ZENU9MVUdvSTJkZmtxZU5xQ3BlU2lmTWFBWXByZ2t4Yy0wLTdzd205d21iNmoyc3k2bHpCbjNudVpaeG5DNThlWUNmcXNlZ005RVotSmktOVZuN3hZV0M?oc=5",
+      "source": "Bisnis.com",
+      "published_utc": "Wed, 01 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-01T14:00:00+07:00",
+      "pub_date": "2020-07-01",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bisnis.com"
+    },
+    {
+      "title": "Gelar RUPS 30 Juli, Saham BCA Sudah Balik Lagi ke Rp 31.000 - CNBC Indonesia",
+      "snippet": "Gelar RUPS 30 Juli, Saham BCA Sudah Balik Lagi ke Rp 31.000 CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOM3FMa01aVTV1azNlMTlKNTg0XzhHWmdnMjZtZG5leVhZLTVaMVdTNmUycHZuaTFoeFlfS3BiaXJyV1pBaTZ1MjNrenpZR2JVRDBtWkFfekxwSTl6MDJONk8zT1htbjVDMGFIQVpmMzAzQzE3cTNoSnNvZjhQczZ5NXlTNkhUbmRONlVUM3dLVEVsTmVMR1UtLU5BOHpfRGtUT2ZCZkh1UmFtYU1SdEkxU28yMGk5U2FUbklV?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Thu, 09 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-09T14:00:00+07:00",
+      "pub_date": "2020-07-09",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "Lepas Saham BBCA, Erwan Yuris Ang Kantungi Rp 1,55 Miliar - investor.id",
+      "snippet": "Lepas Saham BBCA, Erwan Yuris Ang Kantungi Rp 1,55 Miliar investor.id",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOUIyWXFfdjl0T0pNbXd2R09pLWRkcklPbnFmQWpQa3hMRVphSm55WVUtaXM0S1pqWmVKTTFwTDF3a0ZsWmdabUk1WWUtUHhSOW5UYXJDcEFDdjNLU3VsOENVTWtuTEN5QWhPQWhva05xLU9qTVBlZW5GUkxUbjRUTkZDcjJNTlhhVVlGSjhyeEtrVlg2?oc=5",
+      "source": "investor.id",
+      "published_utc": "Sat, 11 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-11T14:00:00+07:00",
+      "pub_date": "2020-07-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:investor.id"
+    },
+    {
+      "title": "Pekan Ini, Direksi BCA Jual Saham BBCA Senilai Rp20,27 Miliar - Iconomics",
+      "snippet": "Pekan Ini, Direksi BCA Jual Saham BBCA Senilai Rp20,27 Miliar Iconomics",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWlM5Uk9MdzZvb3ExYUZyQTU4NlBNSmZWOU9veEpPVkhjcm1wSFoxMkFmNjh6SFV0ZmVraDAxcGtHUFhxRXJ5azE4SVo4WDcyZnV0VGtLMkI5ZURTcmw1U052NVZ4QWo2dlpmRmhKOVIzaHd2WUdGOU5FQk5fRjdzSGI5aXpHM29zS180VWdsOHZLa3pvQ25wTDFhNUxfMHVDYXl5SEtpMA?oc=5",
+      "source": "Iconomics",
+      "published_utc": "Sat, 11 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-11T14:00:00+07:00",
+      "pub_date": "2020-07-11",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    },
+    {
+      "title": "Melirik Harga Saham BCA Sebelum dan Saat Pandemi Corona - CNN Indonesia",
+      "snippet": "Melirik Harga Saham BCA Sebelum dan Saat Pandemi Corona CNN Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTzJCS181bGdTNXpiZkpxSzhVS0JhOTNlT1NFWGJRRThBTm5BdGR6di1ybnM4R3QxcDRZY0t4YTdXMEFiU2J0ZTZ6T1ctZzdISkx1TnBvYlpaRVN4RzJSek95M0JySkdwazZqOW1uZXd1bmpNMjhZYTdFR0xTY3Z0cENDNVdYaDNUNm4xUzBmSnhDNXBnNDRCbHRQWk9qczNINUtLNkdqOHI3SjNhTEc2cE0tUHlZYnBH?oc=5",
+      "source": "CNN Indonesia",
+      "published_utc": "Mon, 13 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-13T14:00:00+07:00",
+      "pub_date": "2020-07-13",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "Jahja Setiaatmadja BBCA"
+    },
+    {
+      "title": "Restrukturisasi Kredit Bank BCA, Ini Dampak Ke Kinerja dan Harga Saham BBCA - KONTAN",
+      "snippet": "Restrukturisasi Kredit Bank BCA, Ini Dampak Ke Kinerja dan Harga Saham BBCA KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeUJLUEVNZUw4bHRCVzRSa29qYk1yeVZXNHd6TURKMTRuWVg1U1hRRG5DY2IxWFQ5MFF1c0huaFhkTlRpMFRESkREbFRDT2xsamhlVzVhR2NjN1ZEczdkX3E0Q0NNT1hPaER3cm5rS3NNRGtKTGMyWjdUUlVJaUVqd3daNVp3SnA4OE5RbmtTR2l6VUhDYWFVX1hydmhLdDZnTTIzYVREUk92YVVP?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Thu, 16 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-16T14:00:00+07:00",
+      "pub_date": "2020-07-16",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    },
+    {
+      "title": "PT Bank Central Asia Tbk Hasil Kinerja Semester I 2020 - Menavigasi Perseroan Melalui Masa Pandemi - BCA.co.id",
+      "snippet": "PT Bank Central Asia Tbk Hasil Kinerja Semester I 2020 - Menavigasi Perseroan Melalui Masa Pandemi BCA.co.id",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbzVGeTBuNjVIeEJBRlF5cTFtdXplVUtHNkxrSGVBeG95M1Y0emtCb2NaN1dneWxTeHJiS3ExZEFjYVpBalBqaHhQVjZJdWx1NkI0RkEwVkdtYU1OSXMteThNWE8zdDZ6QnF0QUZMcG5udU9IUmQ0VHlZRUhaeWY1QjREUEt4Y3R4eF8xV2hYUzhPSV9CbFBSSnJMN3lnYXlZVEhMUWNyRzVQOGdEX2djejlubmxTZV84TUhUZWNzQUp4djZhck1yTA?oc=5",
+      "source": "BCA.co.id",
+      "published_utc": "Mon, 27 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-27T14:00:00+07:00",
+      "pub_date": "2020-07-27",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:bca.co.id"
+    },
+    {
+      "title": "Bank Central Asia (BBCA) Telah Merestrukturisasi Kredit Senilai Rp 69,3 Triliun - KONTAN",
+      "snippet": "Bank Central Asia (BBCA) Telah Merestrukturisasi Kredit Senilai Rp 69,3 Triliun KONTAN",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZ3VBLXY4ZzRQaFVsY2M5MHdDemdHbFg4RlZrbXpzNXZIZlNIakFlU1RPNmpZRmVvTi1KcHkxb1B4aGhlRkl0M1BOZFFUQXoyT2E5R1Zld1ExTjBIa2VWa0hvQW1NUzZCenoyYzdvU1Izc2U3LV9zZ2xhZk1ZRmtzSEJTM0l5M3FNTkl6NDZKYnBibTVsXzlwZkh2bGFOMWN3MjgxN1FOcTZ2UmdCTUNJ?oc=5",
+      "source": "KONTAN",
+      "published_utc": "Tue, 28 Jul 2020 07:00:00 GMT",
+      "published_wib": "2020-07-28T14:00:00+07:00",
+      "pub_date": "2020-07-28",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:kontan.co.id"
+    }
+  ]
+}

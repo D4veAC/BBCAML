@@ -1,0 +1,30 @@
+{
+  "query_window": "2020-01",
+  "n": 2,
+  "articles": [
+    {
+      "title": "Harga Saham BCA Cetak Rekor Baru - CNBC Indonesia",
+      "snippet": "Harga Saham BCA Cetak Rekor Baru CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcW9EaVFISzRKclZIZUxrUjNERXVtb04xWTNtZlY3bHluNWpmRGFKeDZjY1BMM2NPOWtOVUR1dDUwRzVZdWhHMy0wSndLSzZOYWdTU1RGeV9wUmRhX3g4OUVNVFBRVEF4LXVnSTAyOXI5elJ4Wk9ad0lsQnBlZ2JUQXQ4R2d6QV9zbVM1MS1qSUVWRkQzZzIwY01B?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Wed, 15 Jan 2020 08:00:00 GMT",
+      "published_wib": "2020-01-15T15:00:00+07:00",
+      "pub_date": "2020-01-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    },
+    {
+      "title": "Pagi-pagi Saham BCA Rekor Lagi, Tembus Rp 35.300/saham - CNBC Indonesia",
+      "snippet": "Pagi-pagi Saham BCA Rekor Lagi, Tembus Rp 35.300/saham CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeEs4cnMxN3gzcHYzczVpbjl3dEwzS3hIeGNjel9qcXlUT2J1RF8xa3J0LUpXX3QtQkFxQXZFXzVTUW5zT2lmOEg4NUR6MGtnaEVtRXU5bUdPYi1qcFA5ZEd0bEMwejZ1YUIxODJJVEdjR1RSZ2dBNV9qYVpOSTVZOFc1RmlIYnJUN2NMWWg1d3JJR2VUQ3pBYWtMNlNwMFVaVHQ2QWgxQ0U4N0M2NGdTcjRPaTk?oc=5",
+      "source": "CNBC Indonesia",
+      "published_utc": "Wed, 15 Jan 2020 08:00:00 GMT",
+      "published_wib": "2020-01-15T15:00:00+07:00",
+      "pub_date": "2020-01-15",
+      "pre_closing_ok": true,
+      "timing_quality": "exact",
+      "query": "BBCA site:cnbcindonesia.com"
+    }
+  ]
+}
