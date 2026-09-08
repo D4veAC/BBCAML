@@ -42,3 +42,11 @@ test('news endpoint passes through sourced news without inventing a summary', as
   assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), payload);
 });
+test('backtest endpoint returns a reconciled equity path', async () => {
+  const response = await realFetch(`${origin}/api/backtest`);
+  const result = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(result.points.length, result.folds + 1);
+  assert.ok(Math.abs(result.points.at(-1).strategy - 1 - result.strategyReturn) < 1e-12);
+  assert.ok(Math.abs(result.points.at(-1).baseline - 1 - result.baselineReturn) < 1e-12);
+});

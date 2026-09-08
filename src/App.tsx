@@ -3,6 +3,7 @@ import { NewsResponse, OHLCVInput, PredictionHistoryItem } from './types';
 import PredictionForm from './components/PredictionForm';
 import PredictionResult from './components/PredictionResult';
 import PredictionHistory from './components/PredictionHistory';
+import BacktestSimulation from './components/BacktestSimulation';
 import { dateInJakarta, parseMarketQuote, parseNews, parsePrediction, isHistoryItem } from './data/validation';
 
 // Keep legacy records untouched: they may contain simulated results.
@@ -20,7 +21,7 @@ function marketUrl(range: string) {
 }
 
 export default function App() {
-  const [tab, setTab] = useState<'predict' | 'history'>('predict');
+  const [tab, setTab] = useState<'predict' | 'simulation' | 'history'>('predict');
   const [history, setHistory] = useState<PredictionHistoryItem[]>([]);
   const [result, setResult] = useState<PredictionHistoryItem | null>(null);
   const [loading, setLoading] = useState(false);
@@ -35,7 +36,7 @@ export default function App() {
   const [sessionDate, setSessionDate] = useState('');
   const [targetDate, setTargetDate] = useState<string | undefined>();
   const [news, setNews] = useState<NewsResponse | null>(null);
-  const [newsStatus, setNewsStatus] = useState('Loading news…');
+  const [newsStatus, setNewsStatus] = useState('');
 
   async function fetchNews(asOf: string) {
     const requestId = ++newsRequest.current;
@@ -54,6 +55,7 @@ export default function App() {
     ++newsRequest.current;
     setQuote(null);
     setResult(null);
+    setNews(null); setNewsStatus('');
     setQuoteStatus('Loading market data…');
     try {
       const response = await fetch(marketUrl(requestedDate ? '10y' : '1mo'), { signal: AbortSignal.timeout(30000) });
@@ -65,11 +67,10 @@ export default function App() {
       setSessionDate(resolvedDate);
       setTargetDate(market.nextTimestamp ? dateInJakarta(market.nextTimestamp) : undefined);
       setQuoteStatus(`Yahoo Finance · ${new Date(market.timestamp * 1000).toLocaleDateString('id-ID', { timeZone: 'Asia/Jakarta', dateStyle: 'long' })}`);
-      void fetchNews(resolvedDate);
     } catch (err) {
       if (requestId !== quoteRequest.current) return;
       setQuoteStatus(err instanceof Error ? err.message : 'Market data is unavailable.');
-      setTargetDate(undefined); setNews(null); setNewsStatus('Choose an available trading session.');
+      setTargetDate(undefined); setNews(null); setNewsStatus('');
     }
   }
 
@@ -88,6 +89,8 @@ export default function App() {
     setLoading(true);
     setError(null);
     setResult(null);
+    const predictionSession = sessionDate;
+    const predictionTarget = targetDate;
     try {
       const response = await fetch(PREDICT_URL, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -100,7 +103,7 @@ export default function App() {
       }
       const prediction = parsePrediction(await response.json());
       const item = { ...prediction, id: crypto.randomUUID(), timestamp: new Date().toISOString(), input,
-        ...(sessionDate ? { sessionDate } : {}), ...(targetDate ? { targetDate } : {}) };
+        ...(predictionSession ? { sessionDate: predictionSession } : {}), ...(predictionTarget ? { targetDate: predictionTarget } : {}) };
       setResult(item);
       const updated = [item, ...history];
       setHistory(updated);
@@ -108,6 +111,7 @@ export default function App() {
         localStorage.setItem(HISTORY_KEY, JSON.stringify(updated));
         setStorageError(null);
       } catch { setStorageError('Prediction completed, but history could not be saved in this browser.'); }
+      if (predictionSession) void fetchNews(predictionSession);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Prediction failed. Please try again.');
     } finally { busy.current = false; setLoading(false); }
@@ -124,10 +128,10 @@ export default function App() {
       <div className="header-inner">
         <h1 className="brand">BBCA Predictor</h1>
         <nav aria-label="Main navigation" className="navigation">
-          {(['predict', 'history'] as const).map(value => <button key={value} onClick={() => setTab(value)}
+          {(['predict', 'simulation', 'history'] as const).map(value => <button key={value} onClick={() => setTab(value)}
             aria-current={tab === value ? 'page' : undefined}
             className="nav-button">
-            {value === 'predict' ? 'Prediction' : 'History'}
+            {value === 'predict' ? 'Prediction' : value === 'simulation' ? 'Simulation' : 'History'}
           </button>)}
         </nav>
       </div>
@@ -165,18 +169,18 @@ export default function App() {
             {!loading && !error && !result && <div className="empty-result"><h2>No estimate yet.</h2><p>Enter the session prices and volume, then request an estimate.</p></div>}
           </section>
         </div>
-        <section className="news-section" data-od-id="news-context" aria-live="polite">
+        {(news || newsStatus) && <section className="news-section" data-od-id="news-context" aria-live="polite">
           <div className="news-heading"><span className="eyebrow">News context</span>{sessionDate && <span className="unit-label">{sessionDate}</span>}</div>
           {news?.summary && <p className="news-summary">{news.summary}</p>}
           {newsStatus && <p className="news-status">{newsStatus}</p>}
           {news && <div className="news-list">{news.articles.slice(0, 6).map(article => <a key={`${article.url}-${article.title}`} href={article.url} target="_blank" rel="noreferrer">
             <span>{article.title}</span><small>{article.source}{article.published_wib ? ` · ${new Date(article.published_wib).toLocaleString('id-ID')}` : ''}</small>
           </a>)}</div>}
-        </section>
-      </> : <>
+        </section>}
+      </> : tab === 'simulation' ? <BacktestSimulation /> : <>
         <h2 className="history-title">Prediction history</h2>
         <p className="status-message">Model results saved in this browser.</p>
-        <PredictionHistory history={history} onClear={clearHistory} onSelect={item => { setResult(item); setTab('predict'); setError(null); }} />
+        <PredictionHistory history={history} onClear={clearHistory} onSelect={item => { setResult(item); setTab('predict'); setError(null); if (item.sessionDate) void fetchNews(item.sessionDate); }} />
       </>}
     </main>
   </div>;

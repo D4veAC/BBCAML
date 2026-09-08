@@ -1,4 +1,4 @@
-import { MarketQuote, NewsResponse, OHLCVInput, PredictionHistoryItem, PredictionResponse } from '../types';
+import { BacktestResponse, MarketQuote, NewsResponse, OHLCVInput, PredictionHistoryItem, PredictionResponse } from '../types';
 const fields = ['open', 'high', 'low', 'close', 'volume'] as const;
 const finite = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value);
 export function validInput(value: any): value is OHLCVInput {
@@ -50,4 +50,15 @@ export function parseNews(value: any): NewsResponse {
     && typeof item.source === 'string' && typeof item.url === 'string' && typeof item.published_wib === 'string');
   return { as_of: value.as_of, fetched_at: value.fetched_at, articles, summary: value.summary,
     summary_status: value.summary_status, ...(typeof value.summary_model === 'string' || value.summary_model === null ? { summary_model: value.summary_model } : {}) };
+}
+export function parseBacktest(value: any): BacktestResponse {
+  if (!value || !value.period || typeof value.period.start !== 'string' || typeof value.period.end !== 'string'
+      || !Number.isInteger(value.folds) || !Number.isInteger(value.trades)
+      || !finite(value.strategyReturn) || !finite(value.baselineReturn) || !finite(value.alpha)
+      || !Array.isArray(value.points) || value.points.length < 2
+      || !value.points.every((point: any) => point && typeof point.date === 'string'
+        && finite(point.strategy) && point.strategy > 0 && finite(point.baseline) && point.baseline > 0)) {
+    throw new Error('Simulation data is unavailable.');
+  }
+  return value;
 }

@@ -12,3 +12,8 @@ export interface NewsResponse {
   summary_status: 'ready' | 'not_configured' | 'unavailable';
   summary_model?: string | null;
 }
+export interface BacktestPoint { date: string; strategy: number; baseline: number; }
+export interface BacktestResponse {
+  period: { start: string; end: string }; folds: number; trades: number;
+  strategyReturn: number; baselineReturn: number; alpha: number; points: BacktestPoint[];
+}
