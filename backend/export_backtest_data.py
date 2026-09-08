@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def export(source=ROOT / 'news_overlay_tuning_report.json', destination=ROOT / 'api' / 'backtest-data.json'):
+def export(source=ROOT / 'news_overlay_tuning_report.json', destination=ROOT / 'server' / 'backtest-data.json'):
     report = json.loads(Path(source).read_text(encoding='utf-8'))
     folds = report.get('fold_reports')
     if not isinstance(folds, list) or not folds:

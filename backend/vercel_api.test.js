@@ -1,37 +1,30 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import backtestHandler from '../api/backtest.js';
-import predictHandler from '../api/predict.js';
+import app from '../server/index.js';
 
-function responseHarness() {
-  const output = { statusCode: 200, headers: {} };
-  return {
-    output,
-    response: {
-      setHeader(name, value) { output.headers[name] = value; },
-      status(code) { output.statusCode = code; return this; },
-      json(body) { output.body = body; return this; },
-    },
-  };
+async function request(path, options) {
+  const server = app.listen(0, '127.0.0.1');
+  await new Promise((resolve) => server.once('listening', resolve));
+  try { return await fetch(`http://127.0.0.1:${server.address().port}${path}`, options); }
+  finally { server.close(); }
 }
 
 test('Vercel prediction rejects coerced string inputs before fetching history', async () => {
-  const { output, response } = responseHarness();
-  await predictHandler({
-    method: 'POST',
-    body: { open: '6600', high: 6700, low: 6500, close: 6650, volume: 1000 },
-  }, response);
-  assert.equal(output.statusCode, 400);
-  assert.match(output.body.error, /invalid market feature/i);
+  const response = await request('/api/predict', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ open: '6600', high: 6700, low: 6500, close: 6650, volume: 1000 }),
+  });
+  assert.equal(response.status, 400);
+  assert.match((await response.json()).error, /invalid market feature/i);
 });
 
 test('Vercel backtest response reconciles checked-in report totals', async () => {
-  const { output, response } = responseHarness();
-  await backtestHandler({}, response);
-  assert.equal(output.statusCode, 200);
-  assert.equal(output.body.trades, 5);
-  const last = output.body.points.at(-1);
-  assert.ok(Math.abs(output.body.strategyReturn - (last.strategy - 1)) < 1e-12);
-  assert.ok(Math.abs(output.body.alpha - (last.strategy - last.baseline)) < 1e-12);
+  const response = await request('/api/backtest');
+  assert.equal(response.status, 200);
+  const body = await response.json();
+  assert.equal(body.trades, 5);
+  const last = body.points.at(-1);
+  assert.ok(Math.abs(body.strategyReturn - (last.strategy - 1)) < 1e-12);
+  assert.ok(Math.abs(body.alpha - (last.strategy - last.baseline)) < 1e-12);
 });

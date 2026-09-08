@@ -48,9 +48,9 @@ For a fixed AgenticBBCA CSV snapshot, run `python backend/train_model.py --data 
 
 ## Vercel deployment
 
-The checked-in `api/` functions provide quote lookup, XGBoost inference, news, backtest data, and status on the same Vercel deployment as the Vite frontend. Prediction uses the exported 85 KB tree model in `api/model.json`, so production does not need a persistent Python process or a second server. The local three-process setup remains available for research and retraining.
+The Vercel deployment contains a Vite `frontend` service and an Express `backend` service under `server/`. The backend provides quote lookup, XGBoost inference, news, backtest data, and status on same-origin `/api/*` routes. Prediction uses the exported 85 KB tree model in `server/model.json`, so production does not need a persistent Python process or a server outside Vercel. The local three-process setup remains available for research and retraining.
 
-After retraining, run `npm run export:model` and commit both `xgboost_ohlcv_bundle.pkl` and `api/model.json`. After regenerating the news-overlay report, `npm run tune:news` also exports compact simulation data to `api/backtest-data.json`; run `npm run export:backtest` when only the checked-in report changed. Set `GROQ_API_KEY` and optional `GROQ_API_KEYS`/`GROQ_MODELS` in Vercel Project Settings. Then import the repository in Vercel; `vercel.json` builds `dist` and keeps all browser requests on same-origin `/api/*` routes. Do not upload `.env`.
+After retraining, run `npm run export:model` and commit both `xgboost_ohlcv_bundle.pkl` and `server/model.json`. After regenerating the news-overlay report, `npm run tune:news` also exports compact simulation data to `server/backtest-data.json`; run `npm run export:backtest` when only the checked-in report changed. Run `npm run export:server` after updating the historical news corpus. Set `GROQ_API_KEY` and optional `GROQ_API_KEYS`/`GROQ_MODELS` in Vercel Project Settings. Then import the repository with the Vercel Framework Preset set to Services. Do not upload `.env`.
 
 ## Checks
 

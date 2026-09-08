@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def export(source=ROOT / 'xgboost_ohlcv_bundle.pkl', destination=ROOT / 'api' / 'model.json'):
+def export(source=ROOT / 'xgboost_ohlcv_bundle.pkl', destination=ROOT / 'server' / 'model.json'):
     with Path(source).open('rb') as handle:
         bundle = pickle.load(handle)
     booster = bundle['model'].get_booster()
