@@ -1,19 +1,7 @@
 {
   "query_window": "2024-02",
-  "n": 33,
+  "n": 23,
   "articles": [
-    {
-      "title": "Laba Dwimuria Investama, Induk BCA milik Duo Hartono Rp49,27 Triliun, Aset Rp1.553,6 Triliun - Bisnis.com",
-      "snippet": "Laba Dwimuria Investama, Induk BCA milik Duo Hartono Rp49,27 Triliun, Aset Rp1.553,6 Triliun Bisnis.com",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVzNpTExMTVlnbXljT01VcnlkM0NfNFZ5UTh2Nm9YalktMTZhSmY2ZTdmZW51T0tjREZOaVlnWTI2MGp6a0twUnNHeUdieEdpRERZU1Y3QW9WaWNZSHBUX1RiNUdzTWJVMURnUWFha3BPN2tkRFo3STMwMUkxSGZ5UVR3MzNqN0hmeTJYNmNNZWNkYkFkRDk3NkotQ3RZX04tVGJmOTU0Q0pQd3NKbDcwOVE2aWVvLWFTc21VakRkZWpDNjJUMTczdUNzUzJjUnhzTmg2NWZzVkQ?oc=5",
-      "source": "Bisnis.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-02",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Cetak Rekor Harga Saham, Market Cap BBCA Tembus Rp1.208 Triliun - Bloomberg Technoz",
       "snippet": "Cetak Rekor Harga Saham, Market Cap BBCA Tembus Rp1.208 Triliun Bloomberg Technoz",
@@ -27,18 +15,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "6 Penyebab Sementara Transaksi Tidak dapat Diproses pada M-Banking BCA - IDX Channel",
-      "snippet": "6 Penyebab Sementara Transaksi Tidak dapat Diproses pada M-Banking BCA IDX Channel",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYUd3SERFWDZRU0E5X2s0a0xPVUhmak1saS1QTEh1RDhLWndMd2lKZW9BVGNtMElHVEVVWXRCOFVCM0tCNDJxWko2bmdLbWtVYnFuYjRjUkdlcFNjdzVPVk1KdFAzY243eHA1MU5kalpBVDVBSzctOXp6ZXZPc1h6a29TZ3R3cWs1QWxMS3NwVHQ4Rzd5bWg2dHQyVDZWV1NCUHFXcFJJYTFNTDA5THfSAa4BQVVfeXFMUFZqZ19ybEQ0M3VRRjUydWUxaGtTMjJ5MHZwMzVaRUFXZGk3UG5Lb1RONWlsbDVzdVl1c0RWcFFubFU0cG1sajA2WGxxWFhYNUFuaklhaG5STndiQWo4QnVmYUZnN0dad0FEdVZkVmRkZUNBUjh4WnhQbjROdEpva3hNdV92OVRLVlJmWVpjNDhTM0pIeTFjSWp3R2pITDRJTm1mQW1NNHBvYzVyYkpR?oc=5",
-      "source": "IDX Channel",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-15",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Saham BBCA Diborong Asing, Cetak Rekor Harga Tertinggi - Bloomberg Technoz",
       "snippet": "Saham BBCA Diborong Asing, Cetak Rekor Harga Tertinggi Bloomberg Technoz",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZHFVcGlyQWhZc1dIQ2ZuTGEwM3hXWEJBNi1EVzlvUWROZW5iUTQ5S0JXUWR3VXJRLXBjU3pKcGwtS2UwOWhURDNiMUhEUjZLSUFBbkd2Nk5fS296Q1FWb0l6aENHdVhrMlJGTWpBeE9TTEVlQXAwNzhFMzNveUUyQVVWUHVQVXRxNDVGRjlyY0ZpOFZUMzI0a2hfTmNDRGw1bGlGQlVFNA?oc=5",
@@ -46,18 +22,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-02-15",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Netizen Kaget Biaya Admin Debit BCA Naik, Manajemen Pastikan Hanya Berlaku untuk Tahapan Xpresi - Jawa Pos",
-      "snippet": "Netizen Kaget Biaya Admin Debit BCA Naik, Manajemen Pastikan Hanya Berlaku untuk Tahapan Xpresi Jawa Pos",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOaTJra3JPazRYR0JRQmU5WV9OZ0hwYmU1MHgyUUdTZjJmRG9CdjZwNlFGUDhRWFlHdzRQN2dzRnRRTnFpcHNxeTZ0bUlHdXp3WFJFQkVjejE5Zjd6cWNjMWNTT25qRXI5cVBic292RGhmWnBFMnNEeDdpb0NoQVUtM1hmRE12MXZzMHo5N2FKZVRlaFNSc1NfUmJYM3N3ZS11NVJuZUIyZTBSaVY5SGZkdVBxQ1hKTnhzNkg5UlZ3dlZONHZncms5aHN2RFBvS1lld2g4?oc=5",
-      "source": "Jawa Pos",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-20",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"
@@ -79,42 +43,6 @@
       "snippet": "Ada Emiten Rights Issue Rp 6,7 Triliun, BCA (BBCA) Ikut Ambil Bagian Indo Premier Sekuritas",
       "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQaFk5QXNneFFja0pUb2dVNjZZV3JGSUs1ZnUzRUxGVFlXSG1BU2ZnVmtHRkgyTTY3dTV4ZU4tTWJBTmZWNmVsVktLc3lMSS1jOHptNGtTNG5pemU2d1V2QVpqbXNadGlhX19kdXpfYUxXTFg5SUtETEJPWFR4Y1pscmN6dEg3R1V5Wk9QajJXQnRhbXhYWFdrVlB4M3Jja0V5UE03cW90VUZPMF91OVFDajgxZlNQeHJGa2w3RzJnNWRJQ3o0NmR5aGRiXzdqSVF2S25aS2I1UVAtQ09kdVFVYXZHY2Rlc3pDVm9iSkZ0bW93VHBxYVlydExqVVc3bjU4Y1ZIN0N6SGhncmY3NkFkMk56ZU9hdTBMcEY0Y0wtd0R4eC1tRC1xZHlQUFh3UnI3R0FMZGx3blFDS1JwVkEtWVZfV09wd0ZwblZQS0FrTENvdTE3ZjJZNW1GZ3VYQQ?oc=5",
       "source": "Indo Premier Sekuritas",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BTPN Bakal Rights Issue Rp6,73 T, BCA Ambil 26,68 Juta Saham - CNBC Indonesia",
-      "snippet": "BTPN Bakal Rights Issue Rp6,73 T, BCA Ambil 26,68 Juta Saham CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVmtFLWkwNW80dVBDaHM3cWVLTVJRZmJPcnVVYlRDY0h1Mmp2S05qeTdrWlJZcFBlc3lxU2trc1p6M1p5d1dPd3NWeGNDWHFFVHJucEd1Ul9wMWljdWZMMzA2WUlKZ0ZpRlNZV0R1b0tkZGFyd19RUmVpRmNmeXZLT0xtY2hsYUs0TWdFenRBRGtVODB2eXBTc0ZmVHRtRGJFaDBxUXhTMlZ3VFk4MFphY0ljUDRKamFURHNJ0gHAAUFVX3lxTE5uaVZjNDZDT3ZnYklOc2FFT0VHejZXT1FTVVQtZ1lFUU50ODF3cTFEdXl4MndwYlptdHl0aHVTZ3JPQURJYThpSXJNYTUwTWtxYUUwR1VyMUpualI1T05iY0xLRnRlNjdFOU0xbHFFRHB0N3ExYjZKNE1UX0tQNGdPTG56YkVFM2h2X190NXNRYWhWajJQN1p0cVZlQmJGVG5BN0RoU1AtRC1aM3otRFU3bExjV3JDbHNCZl9oLUtlVg?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BTPN bidik Rp6,73 triliun dalam rights issue, SMBC dan BCA akan ambil bagian - idnfinancials.com",
-      "snippet": "BTPN bidik Rp6,73 triliun dalam rights issue, SMBC dan BCA akan ambil bagian idnfinancials.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMVpseDBjNDNMaWxUTDlNV2d0M1F4YUtyaFFmaVZ2UzJ5bGRiMEh1OVRwTV9GZUJfcUtIMzhfNzQySXlDNEdDOVduaV9ieGQyVEdDUlZsd2FMZzV6bmhUZ3g0cWlSNDlMU0Eya1pzc1BtNlZEZEpPU2JPU3hRNTdIYWxycWg1X3FmNkdlX0tWTThtamxYOGI1ckhyUHdtZ042T1VJcWpLc2c4YmZIM0dBcmppNkxKNTVZQ09J?oc=5",
-      "source": "idnfinancials.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Bos BCA Sebut Harga Saham Masih Wajar, Belum Ada Rencana Stock Split - kumparan.com - Kumparan.com",
-      "snippet": "Bos BCA Sebut Harga Saham Masih Wajar, Belum Ada Rencana Stock Split - kumparan.com Kumparan.com",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXpNSUU4Y2NMaUJGMkNwbG43cEpJaUwtQlZSZmpfemdDMGFkOUJxMFVUcTM3UkdNa2JJRjVlQ005Mm9WY1JaMHpUY2NpaG1pdnlIMHU5RnVZUVVHQ3FmWm5Jd0JkR29hNHFMbzBNZWh1V1lHLXRCbUZPb2dhTERhMDJSUVhpblNhVUk1TXJNdWhmZDlRclhhR0g3YUktMVk2ZmdCRUo0VGthQUtIcF9nM2RHenMyUdIBvgFBVV95cUxOZGhEWUJjUFpidmd0cExZLVBfbE5FZklyQkFYODM2Vmp2bTN0UTZDT0xMZXQ5Q2tsZGJEZUtRanBzYngzbVh6S3JTSmdGSS1kUXVQUDZpeFR0d3I1UE1NUDRFQ0FNWFJST002UWpySGlMQ01LanItMkpweUExZlU2eXRRZEdRU1BOa2p6QjV5bEh1U3VxdmMtVkJRR1l0OGlkTEVWMkF4WjdIelJFRjlObzVkcE90Y3BqdnJMZGRR?oc=5",
-      "source": "Kumparan.com",
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-02-22",
@@ -147,18 +75,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Restrukturisasi Kredit Covid-19 Hampir Berakhir, BCA: CKPN Memadai - Validnews",
-      "snippet": "Restrukturisasi Kredit Covid-19 Hampir Berakhir, BCA: CKPN Memadai Validnews",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVUFMNFI2RkttOTdxSjFyYV9xQS0xVDQzLVJ6bE9mWV83aXBVRGFWbUJEWWpUM1JFT1NKTDJiMUVZR3N6YWtOOXlYSE05cTh1U1dfX1ViSkNTVklTczBOeTFjcUIzX3dSb1AyVXpBWlVnVDZtNFgyRHVRbXYxbmtYNW1nNU44OHlYeFh5TWh2dE04OTRDTUFBRQ?oc=5",
-      "source": "Validnews",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-24",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Top News: Saham BCA Hampir Rp 10 Ribu, Nasib Hak Angket di PDIP - Katadata.co.id",
       "snippet": "Top News: Saham BCA Hampir Rp 10 Ribu, Nasib Hak Angket di PDIP Katadata.co.id",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNEFhYjQwTDJpbU8weDI2bnJ0b1Jidm42d2FkYllTYWtubExIYnc5T2xwcWFOemVOSFR3c0FqRnotNEN3VzdleHg3NDd0WnhNUS1yVUlRaE91R0VCSzA2WU10TmpEYVoyNVZOMDVyZDhPWHdCZXpmNGZIOGdLclVyT0p6SFJWRFE2aC1NWlB4SXhDbXRSMHBGWTlZWHNHUmp3TDFWeWdSQ2UwVzZZMXFVcU5pLXHSAboBQVVfeXFMT2JZVWxFZEpWLU04M0U3WUROTmR5SkhXOTFFb2gzeDFobXV2MFcyalpGOVJMWURaLTcyaGlhV0tzNkVteTQwV2JLXy05Wlc0TmtyTF9ZMDZ1QkE2T2tJZS1XV25XdjdfWWlmWHdHTEpXTU9YalEzQVgtdmI3R2hHVHd6WFpoWC1jYTNOdVFWdVpucHlLVVFqTjZ5NEtrSDFrdE9wME9yNDY0aHM0eTNORWFrWkJwOXJ2SXZR?oc=5",
@@ -166,42 +82,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-02-24",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kisah Bos BCA Hibahkan Saham Senilai Rp 74 Miliar ke Anak - CNBC Indonesia",
-      "snippet": "Kisah Bos BCA Hibahkan Saham Senilai Rp 74 Miliar ke Anak CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNXA1XzA0blBSdno0QVhLT0Y1ZVY4bGt2SGE3dTJ4d1IyWERRQmZNR2FnMW5VTFZId24yZm5KeHdoQS02MDMwc25jemNhQ2wxVlVDc3ZjTmRBOV8tT2ZkZUx3LU5hVzZCdTFrRTZkd3NIRnA5Q2Jncl9XY1pYOHBrb2Y0WVJPRS1xTWVjelc1MWJxVWRGdnoyTjZoSTVaemxWREoxX0lCS200S0xjQUVFWjVCRzNkTVBKTUd30gHAAUFVX3lxTE5veENrLWRtZG81OERMUjRrSFNGRExwbk5jeHhlTktKdFVOazRkMU1ENGN6TTh6cUI3WE81Nk4tM0ZNTDV2Q2paYTBBbnROQm15RjIySURGLXEtZVQxYjBDTVhocDJ4MnctOUp2bzNFaFk2NWhRbWVUbnc0QTl4Z3ZQdGp5ejllYVpIVmtNS1YweE9YZ2dDXzRKMDE0WFRQc3QwVmhYeWJzXzU3V1pHdmVZMGlqdGh4TjlXcGpiaTBOOQ?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-26",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BBRI Raih Laba Bersih Tertinggi Dibanding BNI dan BCA Namun Memiliki EPS Terendah - artik.id",
-      "snippet": "BBRI Raih Laba Bersih Tertinggi Dibanding BNI dan BCA Namun Memiliki EPS Terendah artik.id",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMHBjLTNvVlZNdzVLQUczUGI2QkhnODBEX2E5ZXBwbDdZVGNaSTFiMjNENHUwNkpmYlNTOVJnaW9QclMxaDJpaEVsZzFWZTYzejdyR2N5UlI3dW90RVJDVkpEV2F1WERfS3BibmllZ1FuRkxRcnppVTNvaHhsSXVudjZxVVFkaDdjQ0p4SVc3RkJNM1JNeE1EOEhBTi1DeXlRbXBnUmJWMFUyZVhK0gGyAUFVX3lxTE52ZnNjc21YMzJQZjFKNWczMWpHUm0tbnQzVlZkdTB2UTI1QzNxaXJqY2pOSDRzTlRINXFRTkhTZTJNeU5pVkR5R0x4NFdYVTRtZ3ZObUYzd0hLa1A4RTVXUS1QbE1qSHRzSVJxTlZRbGFkelEwc3NsLXJUQ1J5WFdRbkZvN2haclMxUjBKcTBGT0FLNzhJQXhWWklNTWdEUHlKUUp1ZUFMY01Ra2dhNVFQSmc?oc=5",
-      "source": "artik.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-29",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Targetkan Pertumbuhan KPR 11 Persen pada 2024 - Kompas.com",
-      "snippet": "BCA Targetkan Pertumbuhan KPR 11 Persen pada 2024 Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXZzZFVraUxoWE5EU2FGZG15SG0wRUIyX2dmMWpYeWoxek9MWEUzWHJ2aVBza3FKRG1mZzB3WEZmMUh2QUU3TElibHFPbWRCUXp3Q01Wc05wWWtJLWxhM3BRNmpsQ19XZ19IeTZqQXozQ3VUY3h0WUJuWDF1S0JTVW1Zc0ZSRUZvZHAwczgwZUI0a21HalcwMFlndFROdHN5UkE?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-02-29",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"

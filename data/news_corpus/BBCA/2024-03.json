@@ -1,55 +1,7 @@
 {
   "query_window": "2024-03",
-  "n": 49,
+  "n": 33,
   "articles": [
-    {
-      "title": "Pertahankan BCA Mobile, Apa Saja Keunggulan Aplikasi myBCA? - olenka.id",
-      "snippet": "Pertahankan BCA Mobile, Apa Saja Keunggulan Aplikasi myBCA? olenka.id",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZmk4eXg5SnQ3VlJFQ3Izb04tb3BWSzNQYW1xOEVVa2YydUpqUl9CZHlpbFEyX3dRdndyb0tLRnhBNEQ3TkRwRk1RaE1PdmdVMV9obTFZNDdab1ZhUHViWGtyMm43ajB4ZlVxWGxWa0JyZWROTnFNZ3BGUlExOG0waNIBhgFBVV95cUxOSmlONFlJcURjaUExNlVlZzk5ZldndVV3YmU5bU9uNkpJMnlzVXlKLUpQYmtqc1YtWUpLN3B3QzZqNlNCQ3QzbXZUUmRQTHpnWThFQnYwVlFCc09iSmRjSnV6VWtrb3NOOVZ1N2lfMlJYNk1iZGplcFBVNjgwb0VMQVZIYkltUQ?oc=5",
-      "source": "olenka.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Waspada Penipuan, Begini Prosedur Jadi Nasabah Prioritas BCA - olenka.id",
-      "snippet": "Waspada Penipuan, Begini Prosedur Jadi Nasabah Prioritas BCA olenka.id",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeDdUR29NZW8tRmplTDZwd3pHd21ibTZpMy1xMzRpNkZRcGJJS3hUMGVZUVNyX253VVgzcU5YS3ZLcXBHWjBSSmtEV1F0NDZRNHhodVJFT3J5REdSdzVVbVhQNlhZdUNHem9pVU5vMTVVeHR1d1A4MlRzcjZCbW10RGVSMNIBiAFBVV95cUxQcGhlS1A5U1FzeVJQd1ZoUk1Tb0RmaWVncU5ScXhHQkd6TWdWZ2taMzJ4c2tKT3dYSGVzQ24yUEE4cGFJc251Y3E2VFczTmYxbExnV1hSc3NPYzFMUEhUYjNULVlfR2VZSWVPUVNwMEZLM1hhNGJHeGNnVmtMR0RkS0g4LVZiN2ha?oc=5",
-      "source": "olenka.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Investasi Reksa Dana Lebih Mudah Lewat Fitur Investasi di myBCA - BCA.co.id",
-      "snippet": "Investasi Reksa Dana Lebih Mudah Lewat Fitur Investasi di myBCA BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSVlKRGhXdFZQSVZaY252ZlRwc3podjZEZWltRHE2QXR6TXZqaFlRUF9QSTFFYU1ELU1VWndDMVJlbFVSMkZKejJSdmY5LVc0NUxBT1dQTUl3bTFPbExpMmh0OUdDcTBHMUx5SHdCbDExWWR2MDFxVS1wVkhrYTBKR21lTmFCeU81b2dvRjZnUmhYaENiTHJySDlqZnVzUy1tYjludnp0dDJnZC0wQU9vVzF1emhGWEJQYXJfTDV4SnZqMVRaRVVGZkt4OFhQdw?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-04",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Berpeluang Diakuisisi BSI, Begini Respons BCA Syariah dan Mega Syariah - kontan.co.id",
-      "snippet": "Berpeluang Diakuisisi BSI, Begini Respons BCA Syariah dan Mega Syariah kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObjQ2b3c0LVd2SmZzQWpva3dranNfbnp6UnM0Q2h3UjZVbERxdEpWQ3JWdkZ4OXNmU3lvQXVIZk93WVNXdTVTWlRNNzdvQlVFay1HSkRPRlVZdkpuS1VyaWJKZjN5dU5NaFRGT3UwZzBYRGpVZTJvbXNYd0xIQkpqc3hadzJTWUtVd0d5YkdtZE9ySG9pZm02QmlpaWliZ1c3RHozNXdXRdIBoAFBVV95cUxPLWpyRk01N2ozc19sTzVjOWxRWnhYejNDbDk5bnRzX0h2UWx1bl9qYVAwRnJ5QUZERDRvQVlKOEdTODM5SnVGd1RrN1E3ZlVQY0g1TkozYmlCYkc1bDNka2xxRENyZUFFXzI0TE9UREI5M2hvcEZzSWRDYjE4R3Npc3NuZXBQeUJycUhKMEhSeml3YWcxYXdvX2UtbU5kNGct?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-05",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Dividen di Depan Mata, Saham BCA, BRI, BRIS Hingga Mandiri Ngegas - CNBC Indonesia",
       "snippet": "Dividen di Depan Mata, Saham BCA, BRI, BRIS Hingga Mandiri Ngegas CNBC Indonesia",
@@ -87,54 +39,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "5 Saham Bank Termahal Indonesia, Ada BCA juga Himbara - IDN Times",
-      "snippet": "5 Saham Bank Termahal Indonesia, Ada BCA juga Himbara IDN Times",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMkQtdmFfc09HbElDQUtpd3A0dTFienNwT3ROU2diTWcxdlpGSXhLalcxeGt3dnpydlpuZDZITUNDUHBIS1JuY1V4cE9nOHR2R1NDd3dCODZiZ1ZFRkdIZFRTdnJkV21Ua0FEMTlmV0tXdGRrS3EtVzFJZV9aZ0hPNXJnN1pnSkNCaWhZRkpIY0ZuV1h6NFktZlZlSWdZeDJsMzBabDdLWXRHSm5vY0hz0gG0AUFVX3lxTFBtV1R4Z1hQSG1ZY24xMGI0WG1sM3BwbjJvU2xvU3hmYkVWVE5IME5yWjZMN3NoQTdkLXpST0VlekpQTUxWZU52YUgxc2FJR3dPNUgzWEtSV18wRm45d1BRRWxTN3EtNkhldjdqbk90ZWgtT3dKT2FaRHBJeDdSOGJ4U2NoNUdPWUQtZVpld0hFeENkQklBZUZ3ZV9obmVocGJPZ3ZucWtLcWRfUUswUVdTREFvWA?oc=5",
-      "source": "IDN Times",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-11",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Tok, BCA Bagikan Dividen Rp33,28 Triliun - Industry.co.id",
-      "snippet": "Tok, BCA Bagikan Dividen Rp33,28 Triliun Industry.co.id",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMmY5S1haWVpPZzNpUnIxMWdSTUZXZE5BbFlkaV8yUnhzYWNybDFtMTZrUHcxdXFPbkRkS25NaVVGaEppVHQwR3F5cDB0aURqekdOQlEtd3NWeGRsSDlaTWVNME5lVVVwbmdYMmNPU0Q0TXpTSkRjNGlpbE43UEt5cXY4bw?oc=5",
-      "source": "Industry.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-14",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA, BRI, Mandiri, dan BNI Bagi THR Dividen saat Ramadan, Siapa Terbesar? - Bisnis.com",
-      "snippet": "BCA, BRI, Mandiri, dan BNI Bagi THR Dividen saat Ramadan, Siapa Terbesar? Bisnis.com",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQWJXTFVzNVh3R2dBa2NGSWd3X2xtLUpTblkyb1AwTXdEMlMyNG9wYUtyOVdPS1A4UmNFNE1fSTJsNTdSc3VqQmgzRm45ZXp1LVlEV1ZKZzd2VS1GUXBmOE9xZFpzN05nT3hlTTMxNkNrM2ZtSVRKZ1NqOFVOVE8xdS1vUGpSUEV6cTVVbzNuWWNETHJIaDNWRzJRRHg5UlNGS2RJNGEzaTF1Y0ljMXpfNFZhemh5alBCWE9hVVdBMA?oc=5",
-      "source": "Bisnis.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-15",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Paylater BCA Salurkan Dana Rp400 Miliar Sejak Oktober 2023 - InvestasiKu",
-      "snippet": "Paylater BCA Salurkan Dana Rp400 Miliar Sejak Oktober 2023 InvestasiKu",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOci0xeTFqVUV6WFZzc1ZVSXRZWEM5SXRFSDJGWUZCbENUbEFJclZHNkdyanZnQzRHYjFDdkQ4cTlwbjREVTFJNUFuOHZuMUo3WEY0RlloRm1BUlItN2M4cm4zd1h2Sy1fZThSN3BYWnpPM21ZeUViaklUQkRwUXNfY25Ob0VaOW5sOFdCaTJIdw?oc=5",
-      "source": "InvestasiKu",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-16",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Direksi Hingga Komisaris BBCA Berpeluang Dapat Tantiem Rp45 Miliar Per Orang - pasardana.id",
       "snippet": "Direksi Hingga Komisaris BBCA Berpeluang Dapat Tantiem Rp45 Miliar Per Orang pasardana.id",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUFtQ01NQVMwbzFIUFc3NWdPYk9PUC1KMF9pYjYyY2VpN0FZZ0NmV3ZiVFNyTk9Cbm0ybVVjbUNabmpySTNaWG8xanM2d1lhX0pFbmd6Q2Q4bkF5ell0RGhvbFhzVmdubURidHFseEMxZHJjSXRUMmhRY2hRY25lNVgxblZvdHUwMHFmOVdQSjRMRFljbkdxbGtpVHJOY1ZRRWRKRW5zLXNVS2FPRE1TcEpB?oc=5",
@@ -147,66 +51,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "BCA Mau Bagi THR Dividen Rp 33,28 T, Catat Tanggal Cum Datenya - CNBC Indonesia",
-      "snippet": "BCA Mau Bagi THR Dividen Rp 33,28 T, Catat Tanggal Cum Datenya CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONmRrY1lCRDZoQzRVUXdGd1BLT3ZfQ2hHTEEyT3lVQmpFYjNveUIxekRrTTI3MEFzMDVwcFhPZHRvdFk2ZDRNV2RxVVl4d19oRHVLV09kUHNuM0pmZ3A0b014ekdHSVZCdDkyN0dVeTZBeHJfc0lJWE8yUzVialJLMG5wS0FMRkNfOFlSN3NxTXZfTGZVN2VleUo4dkRlMld2YWl3eDgzcWpkVkhWNmhRXzFpbHNiTjRxSnFxQjF5MNIBxAFBVV95cUxQR2MybzluYzVmOUpza2NVVDI1Tm9JWmZQaWhwUFh6dU1fbmJWcHN0VlBKM3ZRR3pkcnQwOFk4Um42dlNheDlSNFp2RV9tOVE5NXFfVklRdU51WmNXRVlDeDhISGZaem9Gem95TzVoX3pxT2lFdXZTNTJvYWRvVWVLSW5DNExjSjlxVjFoalVBLVZTd0FrZzJWQXhDcUR4N1BzdkVPWVJoX1g2Nm1tQTVGYjFrOUJxSnJOeVlwNXZSdk9BdWlS?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-19",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "ABM Group Kantongi Pendanaan Rp 1 Triliun dari BCA, untuk Apa? - Liputan6.com",
-      "snippet": "ABM Group Kantongi Pendanaan Rp 1 Triliun dari BCA, untuk Apa? Liputan6.com",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNFU2aXhUMmIwd1RLc0QtLVB2ODJGMmo3N0Z4ZVZGTnhyaHlyZ0lYNkRBSmRaMjB4SWdBZnFCN2ZCQ08wZ1ZVUktfQUVvZzRMSkNDUldaUVdVSXRyYVdHMVRVX3pMNHd6UHc2Y1dPazY4ZHExbkFwUkVKaEEtalU3SWJmbEVDUS1wcUpfaHg1eHl0VmVZdldZVFdUNmxOLUwxY2Z3dEx3NNIBngFBVV95cUxOa0hFemRYTWhxLUJmb2NWUHVsZXB5bGRnc1hWb0VPNkRiYnVPOFRqLXNaOHgxVmpoZFRrNTdlc3dVc2VWR0FMUkpQeExuTGhNd2Ria196VVdnc3J4MVNlOUhpdHhIQ1YtRlBxUURlSG5xdnR3UlVpX0pndTh0amFqTWo1Yk03bURuTmFzeEV5TE1JSzZlWXgyRlFWTE11Zw?oc=5",
-      "source": "Liputan6.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Buana Finance Raih Fasilitas Kredit Rp500 Miliar dari BCA - Berita Moneter",
-      "snippet": "Buana Finance Raih Fasilitas Kredit Rp500 Miliar dari BCA Berita Moneter",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeUZEVHJXSHI3SHdSVU8zZ25sWTh5SnVFTnQxZjM4UmNwSUI2LW5GUVpFUkdCVExMR2FmcjNJSmE3SWd6WDlPaTlFNllPUGpkWm9KZk5xRXdrSlVpUzlpOG1NSnowYThLV0ZkejZZRWxhTDZQWUU5UTladTFFdkM4ZzYtV1pnM003OS11Vg?oc=5",
-      "source": "Berita Moneter",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Bocoran Rencana BCA Bangun Kantor di IKN, Sudah Sampai Mana Prosesnya? - Kompas.com",
-      "snippet": "Bocoran Rencana BCA Bangun Kantor di IKN, Sudah Sampai Mana Prosesnya? Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYUZOaVdZYWJVWmZGRnBSWjFLYmJiYndVRVllR0d3aklJU0NWLXpfLUI2YVhvVGRCOXBVeVZ3YjdHWk5hY3NHdkRqLUh1WDB2aEgwRVkyVWZsMGF0a0xHTlZOMlhvVXZDVTNXbGV5QWhZamdtU05lMmRwa3VxU2VMdjU0Y3RQS1hkRi1ieXlKWTZUNTFSUThQdlNIUE9aX2RhSWswSW9PRXJZREhPTkotZGRjT2V6R1NqRUVUQW5GVGRrTVhQdnFkRQ?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Direksi-Komisaris BCA Barengan Borong Saham Rp 14,5 M Jelang Cum Date - CNBC Indonesia",
-      "snippet": "Direksi-Komisaris BCA Barengan Borong Saham Rp 14,5 M Jelang Cum Date CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOXRhNXgtMlkyalc4Z3JmNl9aWVpEM3pGaHA3MDZ4RlhpSXoyOUVCMEhYaDJwMl9IdGR3Zlc4SDZQYkwyVWZ0Ri1jYVNXZlBwWDM0Nko2T21PeEVXZkdiSzVyblJDc0dDWWhBWUJ3TEtIRHNKb1NYbUthVTdSTEIxR0ZwcS03bEd1S2MxU0s1NEVZM0lJRlJjVF9SN2JzdlpTNWhKRHFqV0E1cFAtU2NfY1l5NUx2a3FWaHRLZHZrLXRwcnN3UFhPU2lR0gHPAUFVX3lxTE5OSGlzbmM4bVVFNFFSTm41RWdvdWdsNG5zWXlMYnNFUVVlaUJTMmVpRnZZVHU2UGVUdlhVcTlEOTFQUGtrNGNZY3hBSWZlY09YMVhQeF9xZnJjYnpYQ0tlOU9qY3VlUUZ0OW5IUEp0QVY5WnFKS3ZaNm5rMFBFNTQwLUo1aHc0dngtTHhTRl9DaWxEaUx0VHN2MDNRLTVUNVN2NGxMWTkxV0RFZjRhaEFDQVZSRGx5a2pGcTVMd1ZIbFQ2YXRMd1VTTmN5Ym1WMA?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Saham ASII, BBCA, BBRI, MDKA, dan TLKM jadi Underlying Kontrak Berjangka Saham - Bareksa.com",
       "snippet": "Saham ASII, BBCA, BBRI, MDKA, dan TLKM jadi Underlying Kontrak Berjangka Saham Bareksa.com",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc2huMDRObHFuaWtQUHRlNG5CWlpNaTVMb1FvSmFFWVJIVC1BdkpGbF9OdVRudEp3a1hSbXBtR2dWSExhc01ISjJhbXQ0THlDeXl5REFEZlYzYWI0d2I5QU5EV2FKSHo1a1poa1NkZEpqS1FId2J5NTdNYWNRWDdKX3hxcDRxNHkwN0JFYWFkdWczYTVTd2ZMaUNRQTU3VHBybWEtU1NqekxUV1hjMlpBUktUMlRuVmlFMUozZ2IzZw?oc=5",
@@ -214,30 +58,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-03-25",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "4 Alasan Kenapa Kode OTP BCA Tidak Masuk ke SMS - IDX Channel",
-      "snippet": "4 Alasan Kenapa Kode OTP BCA Tidak Masuk ke SMS IDX Channel",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOR0hWZ1dyUkp0SmdLamFGcFIzeE1RVTZMdXUxY0I0MjVfM1RPdVJDd2lIeEx4eWxLa09LT2F0elFtVUN0SmtFMGdKdGhLYlJwRVpka3c5SGNzMnRrQVdzRF9QNGtsWXlid0RPUW4zSjVZUTZIQXpWaDhMSF85VktNY2tRZkFPR3R0TDI5WFZEZ3l4Z9IBkgFBVV95cUxNcDhtRVhzSDFTSmp0SlMwdzdHb1d6ZU1rTlpFbzMzN3JLVnEzVVAwM0lON1hSY1VUV3B1OFZYQkR3TWwwUVBQdGFoTnRHZnZ5dWNFem1YTUl2VUY5V0lQRVFvZjIzME13X25Xb3pSNTVhNHVPZklJck1QeHlaZ3BGN1V2ZnZYUmhRQkZCZVZfdEpUZw?oc=5",
-      "source": "IDX Channel",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-26",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Musim Dividen! 100 Lot Saham BRI, Mandiri, BCA, Kamu Dapat Berapa? - CNBC Indonesia",
-      "snippet": "Musim Dividen! 100 Lot Saham BRI, Mandiri, BCA, Kamu Dapat Berapa? CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZHAzRGlwYjF4dUJnQnBSbU5vcmR0NUJBZFROY3hqa0tscjFKSHhSRXFxbGQtOUpQbW5yUG1fVWFTU1B6ZXFFSEdLTlBJbVlVZktweVJSZjVJd0xJRDZjcW92VUd4Y1kweDJCM2hfOUpoM0JfeGJkNzZYUW1VeUtQTDNXbVpjLW1hNjNvcFhSNXZobUd2dkw1M05OLXVDTE1od2FXZ1BhWkNqbjlWU2JCY0ZzMUxyNUVoOGd4LVNxNU5sU1hy?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-03-27",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"
@@ -421,16 +241,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "BBCA site:kontan.co.id"
-    },
-    {
-      "title": "Jadwal Pembagian Dividen BCA Rp 28 Triliun - Kompas.com",
-      "snippet": "Jadwal Pembagian Dividen BCA Rp 28 Triliun Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSGpyYjIxR0FoTUVzV2hzQjViUW5lcWtMbTdoQWxmbkdCbmJTVHNzTEoyM2s4ZXM4NnBIMGR4RGJKamhIdXhwcWE0eXdpRVJQUTFkb2ZEV09FbVFrZElDVG4zSDN1c04wdWFHdnk4WGNrdEVuWDd5S294dWpUbnpvckhLN2ZjNTl3dDZPMHI1R1NhZ1o4dmhPMQ?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "Mon, 18 Mar 2024 07:00:00 GMT",
-      "published_wib": "2024-03-18 14:00:00+07:00",
-      "pub_date": "2024-03-18",
-      "pre_closing_ok": true
     },
     {
       "title": "BBCA Bagi-bagi Duit Lagi! Bersiap Terima Dividen Jumbo Maret 2024 - finansialku.com",

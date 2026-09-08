@@ -1,19 +1,7 @@
 {
   "query_window": "2022-12",
-  "n": 7,
+  "n": 6,
   "articles": [
-    {
-      "title": "Mengecek Informasi Kartu Debit BCA di BCA mobile - BCA.co.id",
-      "snippet": "Mengecek Informasi Kartu Debit BCA di BCA mobile BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbXRYV1VYZWNjOTNrR2Q5MklQMmxXOUhHVm9welBqdmtRZkxOZlUwVTdXUGttTGpJNGVXRVJEZE00NHRFUVVmTi0wZ0VtSW1RNlI3dWdnLXVMNWM1a1NRMFYycXQ5YmNWZXRTbFM0TGpMdU5TdDdoQjZyNHhzb193TUgyZkxvdUVCZXJGb1VFZEdtbE00VU9wOFd3aGRXS3JfRGdPcFFtY0h4dkJmNnpV?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-12-14",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Analisis Harga Wajar Saham BBCA Periode Desember 2022 Halaman 1 - Kompasiana.com",
       "snippet": "Analisis Harga Wajar Saham BBCA Periode Desember 2022 Halaman 1 Kompasiana.com",

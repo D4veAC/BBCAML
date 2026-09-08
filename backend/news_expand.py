@@ -9,9 +9,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 
 try:
-    from backend.news_collector import BBCA_CORPUS, WIB, audit, fetch, merge_month, month_periods, parse, reconcile_corpus, update_recent
+    from backend.news_collector import BBCA_CORPUS, WIB, audit, fetch, merge_month, month_periods, parse, reconcile_corpus, relevant, update_recent
 except ImportError:
-    from news_collector import BBCA_CORPUS, WIB, audit, fetch, merge_month, month_periods, parse, reconcile_corpus, update_recent
+    from news_collector import BBCA_CORPUS, WIB, audit, fetch, merge_month, month_periods, parse, reconcile_corpus, relevant, update_recent
 
 EXPANDED_QUERIES = [
     'BBCA', '"PT Bank Central Asia Tbk"', '"BCA Tbk"', 'BBCA IHSG',
@@ -113,7 +113,7 @@ def gdelt_recent(retries=3):
         except ValueError:
             continue
         title = str(item.get('title', '')).strip()
-        if not title:
+        if not title or not relevant({'title': title, 'snippet': ''}):
             continue
         articles.append({
             'title': title, 'snippet': '', 'url': item.get('url', ''),

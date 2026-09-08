@@ -1,19 +1,7 @@
 {
   "query_window": "2023-03",
-  "n": 10,
+  "n": 9,
   "articles": [
-    {
-      "title": "Siap-Siap, Empat Bos BCA Borong Saham Bank Milik Grup Djarum - Bisnis.com",
-      "snippet": "Siap-Siap, Empat Bos BCA Borong Saham Bank Milik Grup Djarum Bisnis.com",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTmQzQVluQ0x6OGpSdlJTVy1CRkZ0NE9KVXpaZ0NlWDBBODdpMVdpZjFVY21XeVdPcVdObFBpOWtfUzRDMEQ3c0F1WHk1TklrZnNaMFloZDZVMHRiY3ZvQVNtRVNwbDFQTEFSNEdPYjAzOUV1ZS1HSGNxR1JJT0cwZFY5Z1RLYWEwblpVWXdGOF9LbU1qVTRTREtreXg0Ul8tcjZPN1kxdXNoN0ZmUTdtNnUzNA?oc=5",
-      "source": "Bisnis.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-03-27",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "BCA (BBCA) Ungkap Aksi Terbaru, Entitas Lain Milik Duo Hartono Disebut-sebut - Indo Premier Sekuritas",
       "snippet": "BCA (BBCA) Ungkap Aksi Terbaru, Entitas Lain Milik Duo Hartono Disebut-sebut Indo Premier Sekuritas",

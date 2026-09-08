@@ -1,6 +1,6 @@
 {
   "query_window": "2026-09",
-  "n": 77,
+  "n": 76,
   "articles": [
     {
       "title": "Net Buy Melambung Rp 2,02 Triliun, Saham BBRI dan BBCA Diburu - InvestorTrust",
@@ -901,17 +901,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "BBCA asing broker target harga"
-    },
-    {
-      "title": "豐原站前傳世 「 靜奢地標 」 耗時3年整合 、 斥資數億慢釀 | ETtoday房產雲",
-      "snippet": "",
-      "url": "https://house.ettoday.net/news/3222745",
-      "source": "house.ettoday.net",
-      "published_utc": "20260908T020000Z",
-      "published_wib": "2026-09-08T09:00:00+07:00",
-      "pub_date": "2026-09-08",
-      "pre_closing_ok": true,
-      "query": "GDELT"
     },
     {
       "title": "Harga Saham PT Bank Central Asia Tbk (BBCA) Hari Ini, 08 September 2026 - FORTUNE Indonesia",

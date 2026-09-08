@@ -1,31 +1,7 @@
 {
   "query_window": "2023-04",
-  "n": 14,
+  "n": 11,
   "articles": [
-    {
-      "title": "BCA Syariah Perluas Akses Layanan Perbankan Syariah - Minanews.net",
-      "snippet": "BCA Syariah Perluas Akses Layanan Perbankan Syariah Minanews.net",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFcFFGdGxqWkR0bHRVTTBRdmRYTWsyWWppUFBpZS1pX09LVXIxSHJNRDFDTnV6U0ppcm1hRXV4MTRhelZvX1ZkeDJqay14R0tjQ0RNRXBwakxrbURnaWw3clhTeGJGYlhwanUxczNqSm12ZUp0NFp6OFdzVXFEUQ?oc=5",
-      "source": "Minanews.net",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-04-17",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Bank BCA Fokus Pembiayaan KPR di Tahun 2023 - Bloomberg Technoz",
-      "snippet": "Bank BCA Fokus Pembiayaan KPR di Tahun 2023 Bloomberg Technoz",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZXhxN2ZiY3FCblFzUENlNndZWkpMMWlKVUxpVkN2YlBDQ2JkNkd4dWZUWjRKdFloZ1BVNVd4XzZCRE55dEE2anhOU3RPUXk1VDUxTFRsLTN2QzZiYjdMZG45STQ3bDBobEtJOWhfTTNaVXhUQWNER1ZjeVkxYnBEUzEtdjhjbUlZRXlmcDQ0aDRHT054amxSYQ?oc=5",
-      "source": "Bloomberg Technoz",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-04-27",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "PT Bank Central Asia Tbk - TradingView",
       "snippet": "PT Bank Central Asia Tbk TradingView",
@@ -119,16 +95,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "BBCA site:bisnis.com"
-    },
-    {
-      "title": "Laba BCA Naik 43% Jadi Rp 11,5 T di Kuartal-I 2023 - CNBC Indonesia",
-      "snippet": "Laba BCA Naik 43% Jadi Rp 11,5 T di Kuartal-I 2023 CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUGhja2tDeVFjRWp5ZEdPcWN5WjZjdk1QMjAwemhzak5tcTlkMzVOZ2MzeGo1X0NCSWVlUm41ZkgxYTVqeGRXSEY3RGhWT1dMS19kMWdZSFRPQmRpekNTaGZJU1V4MlVJbC14M2hBMXI3SG9zZ1hGelRGNVo4WFZBV1pEUFNGZW9zYlJfMXo3QzBFX3ZMZ2doR0JielRURF9NdzRsZ1ZqNDA0TEdDam1n0gG0AUFVX3lxTE0wSElRRU56T1BpNUpPNXdfM2FCZUJ1VWtja3FoazZBMkVwQjRYdlJRSVloalZzMVh1NUFhSER4b1c2TGpfUXpuQmg3eXBRU3U4MzBlWWstcnFxYXlJbktqMDkwMDNqNkRjRE9tVU5paWxqZjBHRE5JNnhjSHpXZEg0YWUyRll3Zl9GWDdLb2hjLVpTNzA4dXlaeVdoSnRBUzREYjRka1A1YmlFVHgxR0wtWUh6Ug?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "Thu, 27 Apr 2023 07:00:00 GMT",
-      "published_wib": "2023-04-27 14:00:00+07:00",
-      "pub_date": "2023-04-27",
-      "pre_closing_ok": true
     },
     {
       "title": "31 MARET / PT Bank Central Asia Tbk dan entitas anak / and subsidiaries - BCA.co.id",

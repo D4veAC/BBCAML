@@ -1,31 +1,7 @@
 {
   "query_window": "2022-03",
-  "n": 25,
+  "n": 23,
   "articles": [
-    {
-      "title": "Layanan M-Banking BCA Bermasalah, Warganet Nahan Lapar Tak Bisa Pesan GoFood - Gora Juara - Gora Juara",
-      "snippet": "Layanan M-Banking BCA Bermasalah, Warganet Nahan Lapar Tak Bisa Pesan GoFood - Gora Juara Gora Juara",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVHZtS2ZPSkdhR0VBUF9BVFNJQ3pVNWJCZ0ZWNXJnN0F1NXZWcURyR2xIVHVuYnZTU181aDNDZHFqcmhTOHZRZnhmU2w2SzdmMzljMFk1UGx5c2VaWkh4UlROWjhfUVJycG1GT3N1cGFwNW5MckdMSDdKNll6S1RvOXp0Z19YZ1FlOXM2ZldLUDk4RUpld05yVFJiVzZfVkx2V1RSYUo3YWozakt5eGpVcFE2Vm5jMWJTMXR5QVRNT1NsS2vSAcgBQVVfeXFMTTE4X0k0b0xRNTJHQTRFZDhUMXdIcmt6Q0dreHRPSlpPZFFTR1EyN1c1aTRqUHZFUDljdFI4UmdTNXBtem1obXp3dm16RmVWWk5ZN05pZUMzOVNBOXNvSEVWbWlpWEZnUTFXdVVQbzN3T1h3Zm1iUFNyUl9Gc0J0bDVrWjJLSWRJVXA3MjZHLUlsMUszTnBtSGNob0thZGRtRXk4TktDZkFPNDhGY1dWbncySU1FUVgyNTllbmR4NHZBZDVuN2tWNTg?oc=5",
-      "source": "Gora Juara",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-03-02",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Riset Bain & Company: BCA dan UOB Pimpin Customer Advocacy di Perbankan Indonesia - kontan.co.id",
-      "snippet": "Riset Bain & Company: BCA dan UOB Pimpin Customer Advocacy di Perbankan Indonesia kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzE1LXVDNjc3Mnc5cEh1ODQ2VE56WXlfX2VfRE1saElzRGo1Y0NmSmdJbUNFQ1BUTU9NUEt5T1dGdTRzWDRvdzA3bm5fY1lmbkRoYWN4NVFOdXBKU1g3aTI5STkwcUJ6T0VxZjJpLTc1ODJoUS0yUUJLU2VXQnZrR3piaThpVGlidjBBUFUtSE5TSVBTRzE2Xzg0UjNhcjRkeWVNWnBlNl8zakI3SE1wWGN0WdIBrAFBVV95cUxNeXh0U0tQUTEtellrVEtsTzBrOWdQRE93UjV5QWY1UVBpSlNGLTREUGpaSnhxVkIyS1FtUDI1RXIyRHljUVBIaHgwN0xnRHIxdzcycUZfQnJGMENwSFQ2bVlvdE5ya0RJTlZYbU15Qk94TjI3ZzBXZ2IxT09CTThYSGVTTEQ3alBOVkV0Q0NIT0ZLVXlUTmJJcEV6ZDZFYzZXZHcxejZOSERsQkFj?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-03-14",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Jahja Setiaatmadja Borong Saham BCA Jelang Bagi Dividen - CNBC Indonesia",
       "snippet": "Jahja Setiaatmadja Borong Saham BCA Jelang Bagi Dividen CNBC Indonesia",

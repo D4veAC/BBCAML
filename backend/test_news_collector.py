@@ -8,6 +8,16 @@ from backend import news_collector
 
 
 class NewsCorpusTests(unittest.TestCase):
+    def test_relevance_rejects_foreign_article_without_bbca_terms(self):
+        self.assertFalse(news_collector.relevant({
+            'title': '豐原站前傳世 靜奢地標 耗時3年整合',
+            'snippet': '',
+        }))
+        self.assertTrue(news_collector.relevant({
+            'title': 'Bank Central Asia mencatat pertumbuhan kredit',
+            'snippet': '',
+        }))
+
     def test_conflicting_feed_times_keep_later_availability(self):
         with tempfile.TemporaryDirectory() as directory:
             corpus = Path(directory)

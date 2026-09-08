@@ -1,43 +1,7 @@
 {
   "query_window": "2022-01",
-  "n": 5,
+  "n": 2,
   "articles": [
-    {
-      "title": "How to Replace and Activate Your Expired Debit BCA Card - BCA.co.id",
-      "snippet": "How to Replace and Activate Your Expired Debit BCA Card BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcjVBWkxZUkhmTUFLSGtpN0l2WDlkQXoxbFh5dUl0XzNvel8wZTFhS00wRkZxWVQ4MmFFUEt6VG42Vl9ZMTdsQUdZbDV1R3oxVXpuOWFab2V4WnVpR3RTR2dEMTQ1N3ZiTTd1aXNTTnlkUXhBdE5uX1dkWm5sUE5SaEVjMDJSMGlsOTJZTFJpLVYzRkIwaGMzYm9tNEpzZmxsc09wRmo1SXkzR0JRa3FxcHZncTFIN0IyQ3ZPeUFMd1pqYllaYzNfZzV3?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-01-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kebut Kinerja, Ace Oldfields (IDX: KUAS) Manfaatkan Pinjaman BCA - The Econopost",
-      "snippet": "Kebut Kinerja, Ace Oldfields (IDX: KUAS) Manfaatkan Pinjaman BCA The Econopost",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU3FyTTZRcEpFZlhRU3hBa2pjRmtLS21Qekx5ZGZhN3psNmd6R0J4REFkdWxxRFpZR2FheklkWTd0bTRMb1R2UmVNZU51SVprTFB3a2pfbFVwZ0VyYzdXWVdfeGZGdEh5WGVVR0IzMkgyUXVLSzdkNmpuSXoxRXMtckJyVllUcHJLODRVZkZ3Mnl2T21a?oc=5",
-      "source": "The Econopost",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-01-04",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Hasil Kinerja Periode Januari - Maret 2016 Mempertahankan Soliditas - BCA.co.id",
-      "snippet": "Hasil Kinerja Periode Januari - Maret 2016 Mempertahankan Soliditas BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNM0o4S1p5N0xoU1ZyZHMwVkZFMFh2Rzg1cm5YRnhZMWhaR1htQ05qYVdEcVROQUlLZW1rNGVHdi1vandjNkhjbW9hQW94MU5pNXBDSDJLY0Rfd292SE40LWx3VGxjUC1tbmxDVW04T3FTWkNXRzJQYmdyanA3cGdEMkQtS0F5UWtfWnk5YThpT2JNaFVjU05WeVRSV2pNelgxV1lEQ3NORWVyNnFKM0NwY1JYX1lYU3M3OE5qVjZiU3IzTExiaG8xOFRwMFpRQ2Fla2FUekl6UmdFS01yeWo5SGpCeGJlVlBi?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-01-19",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "PT Bank Central Asia Tbk. Hasil Kinerja Semester I 2016: Mempertahankan Soliditas - BCA.co.id",
       "snippet": "PT Bank Central Asia Tbk. Hasil Kinerja Semester I 2016: Mempertahankan Soliditas BCA.co.id",

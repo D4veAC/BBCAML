@@ -1,19 +1,7 @@
 {
   "query_window": "2023-10",
-  "n": 11,
+  "n": 9,
   "articles": [
-    {
-      "title": "Kurs Dollar-Rupiah di BCA Hari Ini Jumat 13 Oktober 2023, Nasabah Valas Merapat - kontan.co.id",
-      "snippet": "Kurs Dollar-Rupiah di BCA Hari Ini Jumat 13 Oktober 2023, Nasabah Valas Merapat kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSGxyaUY1Tm1EeS1vbFVzNTdvbWg3VTJPb1ROT3R1NGNwV25lc0RDMU11dE4ycm5ENlUwWW4xUnhFQ1F3a3VCbW1KOXZnWnBiak0zX21kMFNhMVlkTjl2eUpNTDdEYnBwR3lseFlTLUhYWEJrSzUzbERpa29DOG9BS0FOMkwwT3k2NEdNVVJ2TzJKV3dpYlJQZ0FHeFNLQnJXV1JJZzdWb2FjbS1JUmxoUkRsSdIBrAFBVV95cUxPWG9PaVljaE5mSXZ1OUJxeU93VEVBMjZyWHNVd0JkSXlZMTlfY3hSaDJxajFyekNUZnBnYW9wb3VDamM1QVpmWjNqQW1GNnl6UlhpbG1lbXZLRWMwb3RKNVpXakdES1VTMDVrQ1NKNmRFSFV3TU1EQXBUeHlXSU41Z0t6cXlLcllnN3ZsRHRLMS1YZ2NxSEdJZVl2akhOTXlNSmlRbzlKamdFVzVa?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-10-13",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Bank BCA (BBCA) Resmi Luncurkan Layanan Paylater - CNBC Indonesia",
       "snippet": "Bank BCA (BBCA) Resmi Luncurkan Layanan Paylater CNBC Indonesia",
@@ -37,16 +25,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "\"PT Bank Central Asia Tbk\""
-    },
-    {
-      "title": "Laba BCA Naik 25,8% Jadi Rp 36,4 T Hingga Kuartal III-2023 - CNBC Indonesia",
-      "snippet": "Laba BCA Naik 25,8% Jadi Rp 36,4 T Hingga Kuartal III-2023 CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa1F6aUNRdll0Yi1kOFk5d0s0bFlDMUhyOXNhX2JOMmdtYUYzbWdwaXY5YkxlUkFpckRRSGtOSkNrR2tfZ19Uck9OdnJhOFl1encwR3JJUkJ3ZWxMVHltczJjSE5LdWtLazI5ckJIOHNkQVFxS0FwU3JHZzlrNUdPZ3BXcVRubUJzdWlTdWNFeHUwaXN3dzQ0ZGpLUUdhNlRpWmpMMmRSQW5naGRGUGJudTJwVHJ6UjVK0gG-AUFVX3lxTE1TU2g0WnMwMWFXS2VLaGVXbE9wdi0wMzJ4VmVqaVN2Sk96R29NZUVqYmEtU2F1bXpHUkg5MXdkaTFHbXhsYjFEbXpXWVN4aVVjSU5NZ1FqeTVnVWE3anVnZHMtMVVxbm0ya2gtTGlPRkY3Z19sYmxPQlV0cmFFZktvM3d6UGRaVmVMS3VOOFFfNFlzaTl0dmo4eEo5eWlsSEJMaTl4cUlEU0FXR1RPSFc1dlhtS0RncnNoSU5GV0E?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "Thu, 19 Oct 2023 07:00:00 GMT",
-      "published_wib": "2023-10-19 14:00:00+07:00",
-      "pub_date": "2023-10-19",
-      "pre_closing_ok": true
     },
     {
       "title": "Laba Bank BCA Naik 25,8%, Begini Rekomendasi Saham BBCA dari Analis - kontan.co.id",

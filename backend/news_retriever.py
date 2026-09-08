@@ -7,6 +7,11 @@ from pathlib import Path
 CORPUS = Path(__file__).resolve().parent.parent / 'data' / 'news_corpus' / 'BBCA'
 TOKEN = re.compile(r'[a-z0-9]{2,}', re.I)
 
+try:
+    from backend.news_collector import relevant
+except ImportError:
+    from news_collector import relevant
+
 
 def available_date(article):
     published = date.fromisoformat(article['pub_date'])
@@ -18,7 +23,7 @@ def load_articles():
     for path in sorted(CORPUS.glob('*.json')):
         payload = json.loads(path.read_text(encoding='utf-8'))
         for article in payload.get('articles', []):
-            if article.get('pub_date'):
+            if article.get('pub_date') and relevant(article):
                 articles.append(article)
     return articles
 

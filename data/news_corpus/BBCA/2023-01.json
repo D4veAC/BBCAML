@@ -1,6 +1,6 @@
 {
   "query_window": "2023-01",
-  "n": 15,
+  "n": 14,
   "articles": [
     {
       "title": "Cek! Promo Kartu Kredit dan Diskon Tahun Baru 2023 BCA (BBCA) - Bisnis.com",
@@ -97,16 +97,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "BBCA site:bisnis.com"
-    },
-    {
-      "title": "Simak! Ini Penyebab Laba BCA Naik 29% Jadi Rp 40 T di 2022 - CNBC Indonesia",
-      "snippet": "Simak! Ini Penyebab Laba BCA Naik 29% Jadi Rp 40 T di 2022 CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS2dXWC1wUm95akxmdXBOSTFjYXNYN0lUVDBNR1hwaHRYSlpKc2ZsRlNwLUl4QWtTMW1NVEFQT3BWUUVYNk1XWlUyUGU1OU1TbE1zU0pMdWNNQ0Y1ZjZ2ZTZxVWN0ZTdxUG1aRkw3WjBlVERlbXhOcDBCUWxsT1NFV09tWHgzbmg3ZnhxaWt3RWZ5ZjZ2aFVwUUxSMlBsLVhTZFB5dmxqU3Bpa3pEaGdMNURIMHJZQkU3M2c?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "Thu, 26 Jan 2023 08:00:00 GMT",
-      "published_wib": "2023-01-26 15:00:00+07:00",
-      "pub_date": "2023-01-26",
-      "pre_closing_ok": true
     },
     {
       "title": "Laba Bank Central Asia (BBCA) Melonjak 29,6% Jadi Rp 40,7 Triliun pada 2022 - kontan.co.id",

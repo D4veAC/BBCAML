@@ -1,43 +1,7 @@
 {
   "query_window": "2024-05",
-  "n": 22,
+  "n": 11,
   "articles": [
-    {
-      "title": "Cara Transfer BCA ke DANA Lewat ATM, M-Banking Hingga KlikBCA - Katadata.co.id",
-      "snippet": "Cara Transfer BCA ke DANA Lewat ATM, M-Banking Hingga KlikBCA Katadata.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNEgyS042aHF0X2hQajJMM09mMERxbzl0QnBDVTFKdHRMQUpXZGJxSmZKVEhPaTFCSmtIS0VMM0FUZVpfVHNkb2p1c2pRVkkzcmxBeTV5N2YwNWk0Mmh1eTNjOHBKd1pZOVJCdnpVc1gxOUFWQlpJVFBwdkZZdW9iNDEtdXRGa21MdFlRR1A0akFxOXdoZXVra0FXYzhFWmd0dFZhaUI2ejJFcE4tLVhvNVdLc9IBuAFBVV95cUxNalJzMlMtUGVRemxGYjdzdzIwd1drMkZzYWlCZWV0Q1dpamRybTFMNmNEY1Y2WFkyM2RnbW1aM2xtMzNkUzAwUXIwNE1JQ0dUcGV4MjAtQm5UcnFNcEE1cF9jZ2NjWklmNEp1ZnNueGNhSlJyZ2dXSnVNakk2NFN3MXBSLVRDZExYUzVicFJleGNCQlpPNUNXY0l1c0UwQXZwbXpTMnVrcHpOOGtCTzFzeW9JaGFHT3Ft?oc=5",
-      "source": "Katadata.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-02",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Daftar 10 Bank dengan Laba Terbesar di Indonesia, BRI Kalahkan BCA - CNBC Indonesia",
-      "snippet": "Daftar 10 Bank dengan Laba Terbesar di Indonesia, BRI Kalahkan BCA CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbEluRlBmWERKZ1B5OXJUNng1T3lVdUJzVG9WMHVqR1FYRmpQdFZNc256VHV0SFVqSFgwVVpPWk5hY21VUkpnc1RFNUZ5UEozUjZ4OW1zN0NQeUh5VjZxVkRjSU80ZV94bFdlXzcyTWsxQm9yU0pKblVEelVyMEJ3YTJwTmE5V05RZzM5OG5MR184Sl92OWRxbFo5N1hERk1GcW1ObXlzeU5wMW5YbmV3eFVfTzZIdF9tdm1FV3dORVhhcFE1R0HSAcsBQVVfeXFMUFVDOWtOemZiN0lZVEJkRU9sUDlxelNEb3p6Y3N1SHZSajhGMGlmdFZoQ1Y2aDgwTDdPM2Etb1ZuaF9Dd21xWi05ZUdfam5ycnhmbGgwVzRoN3E3ZXg2THQzc2Y5N0ZRZzJEMG1jU2dmSVhIM09faUtuQU9UUFFFTnZIWjNwdlZfWWNqVHJjRGZpTVEtR1prTWlTcmI2R2t5WXZNWW9CU09tZXJzWlRXUjFpSzAzTGZHNjdmajFTUHVmRXY0enY3dE9la2M?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-04",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "10 Raksasa IDX 30 dengan Kenaikan Laba Jumbo: Ada Alfamart - BCA - CNBC Indonesia",
-      "snippet": "10 Raksasa IDX 30 dengan Kenaikan Laba Jumbo: Ada Alfamart - BCA CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbDBMRTdsNG5GcFllN1JacDhVbmdxaUY0MWdtb0VEcmZkSG9SLXhlaGx3ZmdCeG0wQ1BqanAxVW9JTEJfcmJ6bHI4QllyM2hGM2dQNzNjOE5UbzBveHA5aFhpeEhkNUJiNGhDbUo2dm9fODJYQlFuS3NackRRN09PSmI0bUZMWlRMZERac2ljTXktY09LSmdTYmYwR25kX09ZNjJvSG5Ga3Z4NExpSmUzZnkyWExLekIwVkZsenEzZjFIakI0VEE?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-07",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Meroket Usai Masuk MSCI Global, Saham Chandra Asri (TPIA) Kejar Market Cap BCA (BBCA) - InvestorTrust",
       "snippet": "Meroket Usai Masuk MSCI Global, Saham Chandra Asri (TPIA) Kejar Market Cap BCA (BBCA) InvestorTrust",
@@ -51,42 +15,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Bank BCA Syariah Buka Peluang Konsolidasi dengan Bank Syariah Lain - kontan.co.id",
-      "snippet": "Bank BCA Syariah Buka Peluang Konsolidasi dengan Bank Syariah Lain kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdzhtdGZEWUJkUy1PYXcza3RxOGFKU3BUME5xTmpCYkFCWEx0T3Y5cV85aktvdUFRcThRTHlQSTZoMHNVV3pRSWxnMFU1dmM1bjBtejlzRFg5bU1mVUFweTJoRURKSjJBRVV1bnZiSWR1emwyeFlZRmpxWXJ0eTR6azF1alhLSWRLNWlmSWkwZzZ5U3l0WHVRQzljR2VrNW1OUTFv0gGcAUFVX3lxTE1HMWIzeWNVd1c2ZkV3VEc0M3VtNmV6dk84TUdGQkpqTjNEd1RzN2poZzhlLXMzbnI2dzhwTmxjbEJMN0VqRXYyRGVKcmJfWFpaYm5zZTdkLUllSThKZmRVYzQzdjZraHpkN0w0R2VDdkw1RHB4TXd4eUZyMlFQbWJjVm51R3hrekxrYlhJZm4zbHZZNXUwNDBzellvaA?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-15",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Daftar Suku Bunga BRI, BCA, Mandiri, dan BNI, Mana yang Paling Cuan? - Liputan6.com",
-      "snippet": "Daftar Suku Bunga BRI, BCA, Mandiri, dan BNI, Mana yang Paling Cuan? Liputan6.com",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSlA5WlJWUnV1YjBxWENVdllzdWg2Y2ZnR29QcWdvVHVacDloenRtRFQ3aVJDNktuNThVVlF6ZjZKR3R1X0dnTTdNWGRhdHFPYm1yTFdwT1VQN19EeDlOd1M0THNSSG9FNE9GaDN4WDAwTmFFV2puSmNBZkhCT0lBeEJ0YkZiaUZsMzdaLUN3aWNJZzE5ZW9NdlRJM0JxQ0M5UVBaRjZiYnlxamtS0gGiAUFVX3lxTE1OMlJ2TzZUNThwcVhWc2luRDJkTkdnQ2p1Rlp5eXgtek5UMXJFc0drWlRhaHNidEttLTNQN3YxWlVuQjZwQ0J4THltbTMxRFJobEU4MnlhSmNpV0pod3c1NFBNZG82bDhjX2d1UkNzdHFqS25ZMVN2NU85TzNVX0d3Rlk3U0diR1pvOEFZamRWa05TdUFRZkZ6clhMa3Z4UTdiQQ?oc=5",
-      "source": "Liputan6.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-17",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Mau Buka Deposito? Cek Suku Bunga BRI, BCA, Bank Mandiri dan BNI - kontan.co.id",
-      "snippet": "Mau Buka Deposito? Cek Suku Bunga BRI, BCA, Bank Mandiri dan BNI kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUFsRkxhTVF5OGJLMDJBZlpNZTBPMXBxdW00bjkyWXNGNXZrODNhOXNjZ3NRQXhXcUFTMGV2XzJ2dFdTRFhPeTNzV0h2cS13OThKUlBqaEk2S18zT1dVcDRXbDM0X2szYjNqQVh3V3NhaXYyNHJjclFBZGJMNUNQU21SUnlucEtSWE95Q3NtR1RyaXNoNXpzUHRRLXrSAZYBQVVfeXFMUGRXUkhHaTZNY05zaF9JbTI4djEyWExBQ2ZWZF9keE05RmEzV2FMa2Z3bTNLZURybmZ4MnBWMU5Vck00d19BdjBsY1dHcXVuZDRvWkptUnZPUHhGeEJaaVBLQVZNSWNZWGF6WXp0Rl9XYWotRnNPcHNSZlBwVG9LQ3dfV1gxdVNScHNmN214SHBGbDN3dWNn?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-18",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Kinerja Saham BBCA, BMRI, BBRI & BBNI jelang Pengumuman BI Rate Pekan Depan - Bisnis.com",
       "snippet": "Kinerja Saham BBCA, BMRI, BBRI & BBNI jelang Pengumuman BI Rate Pekan Depan Bisnis.com",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQczhmMGdESlI1UGFmd2dxNl9QN2lwSElMbjVMTjJrT0ljY2RDOEZBQWZWZ1piTHBUUFVEUEhEZFpuNUZNM1psV1ZqVU5nN0g3ZU9qalFhMm9tVWdCcmV1bngtT1V6eE1Ld3JxQndUdGcwOW92aVdtb1g4NElUa2dJbmd1Zjg1b0NmeTJ5VUxPVUF2aDZ3ZHhPRXJMOUFldVBncDAyaTVxN1VvcnNQQ1VrODlsSmNYOFdJRHZwcWlfcDh5Qzg?oc=5",
@@ -94,66 +22,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-05-19",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Catat! Ini Jadwal Operasional Bank BCA Selama Libur dan Cuti Bersama Hari Raya Waisak 2024 - Warta Ekonomi",
-      "snippet": "Catat! Ini Jadwal Operasional Bank BCA Selama Libur dan Cuti Bersama Hari Raya Waisak 2024 Warta Ekonomi",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNejJkVnk1TnFFVWZsNlBpaFlza2daTDFFSlJuTWsyUDRhd29tZGVDa08tMVpVU0ZoWHVZZ0syVTdXcnNpMFZhVlcxWC1Qa3BZdW5rLXNfUWdDWEpaNG9CdG1hekR5MDZRdnpfSjdYamV1bTJWVUJJQXpIa0lpWDcydXRydzc2cEhiWmJJVlpBMHhYVGtBdFJQX08tM1F5ZVFLM095RjFYMmNaTHpKNXBMbTVSMEZzV0JaSks1ZGVVX1BnVGpWNlHSAcsBQVVfeXFMTW1va2tVTVBuNXZRT2hKandiTEZYaGY4NUFjY2Vkd2ZtcnEwZU5JcUdRQ3g3RTJfdHVBRnBrSW81WEpKeXRnQWlldVNTYnpCVnZocENmd01hcG9ubXVIQjJVcEROY0NYUEhqNHdmcUZJRUNHbTZzRmpJc1U1SXRJbm9mQnQ4OEV1VGlzVmFuLUtSSUE2bU5MM21SRXAzTV91dTRZZkI3N1FvWWdvTnZ4dGZ0b21GRV9mYk1meVNQMG5SUHhjdlNGb19VVVU?oc=5",
-      "source": "Warta Ekonomi",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Harga Saham Melonjak 14 Kali Lipat, BREN Salip BCA Jadi Penguasa IHSG - CNBC Indonesia",
-      "snippet": "Harga Saham Melonjak 14 Kali Lipat, BREN Salip BCA Jadi Penguasa IHSG CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNd193UTAwYUhsdFp6ZkFJY1V1enI1WF8zMTFFU0tfM1FHZ2lUb2NCNGNId2ZIUmhVQTJfRFI5YmhzWHdjbW9LYU4xTHIwZElRSUcwYXF1cGtsTlNYTTZrWi1PUjBTRHR5Y2M0WW5VQ2g0eURsYmU2U1dWZWdVaGRiS1BCNThiQjNtVHJzNl9KSVg1NlI2RmYzajZNTlZXVkYwWXNra0toUnl0QWx6Z3c1aFJzYkdaR2V4MGxfbm5paW5sZlg2ejFkVXVES09adw?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Berawal dari Tukang Kaset, Yuk Intip Kisah Sukses Bos BCA Jahja Setiaatmadja - olenka.id",
-      "snippet": "Berawal dari Tukang Kaset, Yuk Intip Kisah Sukses Bos BCA Jahja Setiaatmadja olenka.id",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFAyT3IxLTVZTUdrYmVZWTB5STVxT3RVXzlyRmhJbTZDbWcyTnJhUmRQQ3ZVZ1hYaTBVN0g4bENiM3RJZHBtaFF6U1Z3alhWOTJuWkNIcHBheUdqV0hablJRcFMwM01DMHNGUE1ET016Q0x5QWZfb0lHNV9naVJZVFFSWlNqR3M5N0RnWElGTVJEaWNzb2ZxT1d2N19zd9IBngFBVV95cUxPbGlGcFROemVYMnhGNFJMT0ticEplcVR3Ym9BUVlvMjBvcDlrUGx2TkdaYmx6bm43cE1jRWVNbEMzdWczMkhmNHNoYkNGRGhHVGRVaDRYOGsxak44T2huQzMwRzI5QTBLaFdocWlmSkVaVEJ1TnpvVmxReElQYld3cENEbzgzMTNwNktrZFlkd0dJQm13ellvbnIyTjBPdw?oc=5",
-      "source": "olenka.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-25",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Resmi, Tarik Tunai BCA Lewat EDC di Retail Akan Dikenakan Biaya Rp 4.000 - Kompas.com",
-      "snippet": "Resmi, Tarik Tunai BCA Lewat EDC di Retail Akan Dikenakan Biaya Rp 4.000 Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWllWczFxWGMwYkdyMDdUdlJWdEFYaFlhX29GUkFHUmg3SmR3ODZJejBiRGZYemhCOE9JVE1VMDVPTjUxYUJMSTExSHNHZmpJV2xEb0RVNVp6ZDRnUzlUN2ZtLUYxVHc0T09WV1BfeEdyY3JIMy03TFlOM05aMG04akJrYjh3ZF9kanFtUnhmbmc0OGVQMzlvN2pYeExhZ2tVY0JnRlNQNGRjbklvMXFlOHBKUWJaRi1wMWd2bTllZ1NPQ2PSAcMBQVVfeXFMUDhvZ2dMbC1ZdXZqRTI5c24zYTc4RmVXMWlNbHVSenBTWWhGRlBhdTNOX2lSekM4OU96V0N5Z01ldEx3Ymd5UUtGZ1FScVZTdUZfdmc4bFItaVhPSEJwbl9waFpLRHQtaG1OM0QtVm42a042OGhmSkxoZHVQVl95Tmhfa1pJSVBFbjVsSURlUGxual9UTU9MMDdRcF9zLWNhdDZBSHpfWXJRUUZOaTM5N1g2VDBYWUFmRmh0Q1UtODlsQ3A4?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-29",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Valuasi Saham Perbankan Big Caps Setelah Harganya Ambruk, Makin Murah? - CNBC Indonesia",
-      "snippet": "Valuasi Saham Perbankan Big Caps Setelah Harganya Ambruk, Makin Murah? CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPekc2MG5NT2RBME1JVEFGRUdGRmVJdmxwaEpaNzYtdU1Zc1pzOXMwdEx0V1pVSDBBZngwRTdBUTVjSGR2SjlRYjZud2NUWmlBYlNSdGxVLXRjRUNHZ05FNzBTdnFOSlYxeTdzcEF6cDg2RmQ0UlBrSTYwUXdNMWZmSzIyZnJteGhKSjkzdlg2VEliU1ZzRFNLWENUMktnTzZkakF6Q3JObWFYR0JiVkNCMkExZExHU2FNZVhJYnE3MzBPbHhwenJtcGhhczFQdw?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-05-30",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"

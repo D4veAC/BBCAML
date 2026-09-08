@@ -1,43 +1,7 @@
 {
   "query_window": "2023-12",
-  "n": 10,
+  "n": 7,
   "articles": [
-    {
-      "title": "Perubahan Limit Transaksi Harian & Biaya Administrasi Bulanan - BCA.co.id",
-      "snippet": "Perubahan Limit Transaksi Harian & Biaya Administrasi Bulanan BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUFhvOGRieWw3RW4zNUpQaVNfeFpBWS1fZlVrTklVYkNfd0ZEb21RbnpXR0ZvcmxFVVR6a0x4QVRDOUR3c2NpMkZUUmJXY19QT2Z6MTYxQlBJQ005WllwVkdqb2NHY2FoeXJ0M2dvb3hlUWplbHFObXZ5Z2lGNWZUX3hDbGF4ZFpwbVRRcXpKV19OWWtNSWp3bVM2Yk5Zb0FqOEowWmc3SGhIT3kzX0hnb3M2QVo3czJpOHp0T29zRQ?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-12-04",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Bankir Senior BCA, Jahja Setiaatmadja Kembali Didapuk sebagai Best CEO 2023 - Infobanknews",
-      "snippet": "Bankir Senior BCA, Jahja Setiaatmadja Kembali Didapuk sebagai Best CEO 2023 Infobanknews",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMkdUbTdGRnRFSHdGSmhqRWNDdUttWjNQR3ZrMXVpaU4zSHIwY2pqcklwMGhLWXZ6UXNsZVpJcVRKYTlMVHZnMVJldUVWZjlhMko5eWpzVl9GV2NaM0VxRDF3LV9ZMlRqTWNES2lrMi1xb3RSdm9JR0FFMWozVVhvb25SMzQ2YURKNzFkeW5WREtUNldta3gzMlA0ZnJvNi1x?oc=5",
-      "source": "Infobanknews",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-12-06",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Rincian Potongan Biaya Admin BCA per Bulan, Berlaku Januari 2024 - Bisnis.com",
-      "snippet": "Rincian Potongan Biaya Admin BCA per Bulan, Berlaku Januari 2024 Bisnis.com",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORWp6YlNzNjJwWW8wY1EzMWF1VmRIVDhBX2JUM0tXZjFpUEJ4VVhobWRqLUJNaHpCZDQtaWxqNTNmSTltVDVMcFF0X214WEMtaHFrRlFvajJwa1VuVzNsTEdZdkVGckZqQnNQRkl0UjlWZndIa05PUGxGd2MxdDRjUFVSUVhnV215TFBfR2NTZ0lGMVNZQzJEVlFZWkFVNHJVdFlHSS1ScktVZGZrd1NpXzNyYmhkSl92?oc=5",
-      "source": "Bisnis.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2023-12-10",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Bersejarah! BREN Salip Market Cap BBCA di Pasar Intraday - InvestorTrust",
       "snippet": "Bersejarah! BREN Salip Market Cap BBCA di Pasar Intraday InvestorTrust",

@@ -23,6 +23,10 @@ QUERIES = [
 RELEVANCE = re.compile(r'\bBBCA\b|BANK CENTRAL ASIA|SAHAM\s+BCA', re.I)
 
 
+def relevant(article):
+    return bool(RELEVANCE.search(f"{article.get('title', '')} {article.get('snippet', '')}"))
+
+
 def clean(value):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(value or ''))).strip()
 
@@ -58,7 +62,7 @@ def fetch(query, start, end, retries=3):
 def parse(item, query):
     title = clean(item.findtext('title'))
     snippet = clean(item.findtext('description'))[:600]
-    if not title or not RELEVANCE.search(f'{title} {snippet}'):
+    if not title or not relevant({'title': title, 'snippet': snippet}):
         return None
     raw_time = item.findtext('pubDate') or ''
     try:
@@ -128,7 +132,7 @@ def reconcile_corpus():
     selected = {}
     for path in paths:
         for article in json.loads(path.read_text(encoding='utf-8')).get('articles', []):
-            if not article.get('pub_date'):
+            if not article.get('pub_date') or not relevant(article):
                 continue
             identity = key(article)
             current = selected.get(identity)

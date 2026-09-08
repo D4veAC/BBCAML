@@ -1,67 +1,7 @@
 {
   "query_window": "2022-04",
-  "n": 17,
+  "n": 12,
   "articles": [
-    {
-      "title": "BCA Mempertahankan Kinerja Solid di Tengah Ketidakpastian - BCA.co.id",
-      "snippet": "BCA Mempertahankan Kinerja Solid di Tengah Ketidakpastian BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRFVHM0pBVmRWVzZwWjFodUVLOEF5OU1mTVo3RWJPTjlyUUlYdkNnQm9pdjNUcm9RYzQ0eVo3U2ZnTHVLRVRKdmJfT09zckdLUGd1T21RbE4xSGEwemU5ZFNicEFyWkVXeFRNRW1vUFdyLTNKekpIWWI4ZUhkejJVNkZ6X1ZsdTFod0dFTHRWbFBrZHAxTmNQLU5IV1lweklIbkdZYURPaGszMWt6RWdQaXdmOUkwcC1kUmZGQzNrR3J5cWJjbjdiSTc0cW9BU1dEeGgxOVQxbnNHQmpPVEE?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-04-11",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Cetak Laba Rp 8,1 T di Kuartal I-2022, Tumbuh 14,6% - CNBC Indonesia",
-      "snippet": "BCA Cetak Laba Rp 8,1 T di Kuartal I-2022, Tumbuh 14,6% CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQT2JCeE9rOWJ2MUI5MlVTMl9qR2JzRkhwN3E0aV81d1laei1odUtOZXk4aFJISTJzQ2xuSW9qT0R0M1NZbnhBaXNmYm5tNFpEYzlEQUp5Y2N4eE16RVdlcUlMYWszUTVQUmZ6d2RXS0pLNXR5cUJjaXowbWRWekl6MVVheDhNZGM2MFg4OVRHSGtYNkkyenNmZGZuWW5BZ2dGbjBMM0VYSHk4a2M2R0xXSm1YZ9IBuAFBVV95cUxNQ3RldUpBaVFBaE1vWVcyNm1xeEo2a2xaZ01CelpIaFBscVhTQ0cyX0lBeWxJcXhQbjRDeTExZ3JscWxMX3h1c2Jpa2s5cnMxcU41R0pVSFJwVFNoOVgxNTdod3Vwd1dEa0lDOGlhYjJaM0k0OUtUWTl0bWJ0R3hRLVFJZGxwcWRJZ1ZBWXpQRU5GeENQeGN2bW9xRV94THRKVmZTYm9iR0NMNXlzOUV4UDdrTXNvSnl0?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-04-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Hasil Kinerja Triwulan I 2022 - Tumbuh Berkelanjutan Seiring Momentum Pemulihan - BCA.co.id",
-      "snippet": "Hasil Kinerja Triwulan I 2022 - Tumbuh Berkelanjutan Seiring Momentum Pemulihan BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObkkwQ1dEYVNrcHZWanBEMmlhTTZDeUZLd1d4RXphdFZmWmZwNDFJaHhzT0lUckdBU0p1ZEhmbGh2bTFnYzdIOXNrNktVNUE2LUl5bE1SSXJjb2xEYlA1SHYwMC04MVFvamg5VElrMFFvY1h2b3RRVlJ6UF9PTDVqbFBPOTVoa1VjN2VScERYQlZkMFZHVzAzd0hDWUFjbDkwT3JXYUd0UXN6YV9UdW9EQzJJQmJ3cDNfRktvN1JWMkhVZWJfT01Teld0N05xNmJN?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-04-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Hanya dalam 3 Bulan, BCA Sudah Untung Rp 8,1 Triliun di Tahun Ini - Kompas.com",
-      "snippet": "Hanya dalam 3 Bulan, BCA Sudah Untung Rp 8,1 Triliun di Tahun Ini Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTHZGVGdCX2lySTFjeV9XVXE1V1U5ZUpIb0hRTGwxQTJsd1lLNHJza3ppRXA2ZzgtSFg1MkdEYXJYOW1pMUhqZlg1d0xVRU4xQVM2bS1oNTc1bXRVbkJfYjlhWFFjNUNjUXhfSG9DMTB6aHVRdU9fLWZUYUxCSXZxQ1FfSWljQUJzVW5JdHp5LURjbkplS1RsM3FyWmdhMVZERE1HWFY1cTVGTHA0WXRCWHhUZ0Y?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-04-23",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Laba Bersih Bank BCA Rp8,1 T Meroket di Kuartal I-2022 - Ajaib",
-      "snippet": "Laba Bersih Bank BCA Rp8,1 T Meroket di Kuartal I-2022 Ajaib",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd3kwUG5BWFZwOGtsc0ZPWUJDZENwTFVSTTZmRmx2aTFjM05VYmpOcFpkZUx4N244emU0SU9FNkw0U2ZGdGNjZWlTZ1pIUnBZelFycENjRkk1bFVUcnhFTHVianUxSlZRSUJ5a2JvUExjNEhuaXJ3VzN0OWtITXBjenNvRmZ4dm9heWJsRWVGWVpYUQ?oc=5",
-      "source": "Ajaib",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-04-25",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Anak Usaha Trans Power (TPMA), TLP Raih Kredit US$ 51 Juta dari BCA (BBCA) - investor.id",
       "snippet": "Anak Usaha Trans Power (TPMA), TLP Raih Kredit US$ 51 Juta dari BCA (BBCA) investor.id",

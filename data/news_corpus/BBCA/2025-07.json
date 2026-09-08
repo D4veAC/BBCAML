@@ -1,79 +1,7 @@
 {
   "query_window": "2025-07",
-  "n": 54,
+  "n": 32,
   "articles": [
-    {
-      "title": "Perjalanan Jerry Ng dari Berkarir di Citibank, BCA, BTPN hingga Membangun Bank Jago - Warta Ekonomi",
-      "snippet": "Perjalanan Jerry Ng dari Berkarir di Citibank, BCA, BTPN hingga Membangun Bank Jago Warta Ekonomi",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQT2xsNGJ0aDI1TUhOMFFZUkh2SDdNX1BFRUx1M0pQb0VyekRLY29LcDZIektMY1pBdUcydTdDREZIUFVqaTNPX3JKd3NXc0dJUjM5YTFzQkphTDd1YWFrM2xxWTNNV3RrX0U1eVp2SGlPVUpxVXVQSUlYaWh2OGQyN2l6YUlqRGdFYWtYbWZuaE5ZZTBhRFRCakt4MHFhTS1pcVJsTHhwUm1pTW5acXRLX1U3WTFMVUZ2TXZj?oc=5",
-      "source": "Warta Ekonomi",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-02",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kredit Macet KPR Tembus Rekor Tertinggi dalam Empat Tahun, BTN dan BCA Akui Tertekan - Kompas.com",
-      "snippet": "Kredit Macet KPR Tembus Rekor Tertinggi dalam Empat Tahun, BTN dan BCA Akui Tertekan Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQa3AyWTJIOHBiT0NuZzJVWEtfSGxtUXl5ZVFtV3hkaVZmRDV2YmdVdXRQNHFjWVRzLXdGOGY0LXM3cm1EMTB6MFIxOVV3QUhIbkstdHVXUlJhS2ZCR01xWG5VdmhBLXdBaDVMREhBRTBjZWNKT2wxS3dVZE00MHpHandZTTFtNnI2REZMYVpwb25uSV9TRGhOTFp3ZUhzZDFKQmlROEdSWlBOakJzY0tIa2QzRXZtRnFfSVAtWGg1U3B2ZEE?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Mudahnya Cek Portofolio Saham dan Obligasi BCA Sekuritas di myBCA - BCA.co.id",
-      "snippet": "Mudahnya Cek Portofolio Saham dan Obligasi BCA Sekuritas di myBCA BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRE5ScmI2a1JBaXE4c01YZmtqcHUtM082M3pCcHpXdHozMEt0ajMxYTZmV1BwbnVLNUQ0TmVSbUxsclBMZGVzQi1FMzlMMmtMRXJvLTQ2SWU1clZ0ZWJhUVRjNHoxcldOb3NacE13ZXFULWQwdU1rc1g5X0p0TlpQTW9JUG5CamwzREhNLWZiNXgwWUhkb3VKbWtxQjRTZ3d2WE5LZ19wZF9vQ011WFVuRGhkSFJYSXpIUTNwc1VvbG5tcUlXTUE?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "NPL KPR Meningkat, BCA Perketat Strategi Mitigasi Risiko - kontan.co.id",
-      "snippet": "NPL KPR Meningkat, BCA Perketat Strategi Mitigasi Risiko kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZUJGZkhkcFd0b2RzWjlkSmk0WDRCc1dWbEl2bHE0WEphVWxpdVVfQk9TQ3ZhZTU1ZDJTX0lKRENZaTZlQXdTUlZxd0pVQjVkTzU2WFNWZTJweEtxZUxYbDctTnUyMndGUWJyVzFycmVKQnY1RGZCZDhKaW9Lcnd1WVQwV1dNMTVpTDdyUmE5Z2RDZzND0gGOAUFVX3lxTFB6SmxpNUw2QVhZeHMtMU9DakRKNEJmNkNpOHluMEdRX3BocjhuYjdQMXMyQllWZ05Xd1loNmZJUFNxNklNQ1ROSnUtNUVZNllUa191bmRGV081bUJUNkJaUVRqV0VNazg5MjhVXzdlM1BOSDhKaVBucXIyNHh3VUxJdjNORjBzV2pyRE43cWc?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Tata Cara Buka Rekening BCA secara Online lewat M-Banking Terbaru 2025 - kontan.co.id",
-      "snippet": "Tata Cara Buka Rekening BCA secara Online lewat M-Banking Terbaru 2025 kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkVKbXBHMTJoMTJpZl9lLUd3Ni1Ub3F0ZTFjYXN5dHE1ZlVES0V1Z2VwaDZBQXJ6VEtsUDVxbDhJRlVhUGZqbGNCVmlNZnVlSFF5ZWRtNzhMMnhzbjNNcFVMampwVE5KVW9YeTY4eEVBYmFJMVFsTUxwTlYtQ2FRanZuc2t4TGxWNVlsYkRxVWpKNkhpV0t2b0xyN01ManVyMG9wdzdSeVBycnkw0gGkAUFVX3lxTFBTS3k3M1RJbFdXOTd0T2hSMVZrajJkd3Z1Y0xzdVNxNmZ3OHE0M3ZaUlZoUXg0OXA4QzVXVGhPdGYtd3RwRHVxQkZwSFVEVXJsZURscXJ0R2xCOE01TmoxcUdsTzhuYW51U29sVm51dHc4RnVPWWxVWDJhTU0yaUNuY2ZVMXdhcVd1VU5naUtjSmkybkt4bk5sVDA1V0Mtd016QnMx?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-05",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Business Case Competition Dibuka: Total Hadiah Rp50 Juta dan Peluang Karier di BCA - SWA.co.id",
-      "snippet": "BCA Business Case Competition Dibuka: Total Hadiah Rp50 Juta dan Peluang Karier di BCA SWA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUGxrNmdwajBvZzZqX1hscnFQNWxnUTd2THczTVJLckE5dFVUZ0FLSnd5allmMlpiaGktS1hjN1NmVmMwSzFPblJmN1ZDbDlPZ3FtbVhjMXFacWFBRjBQaXJPTlh6VmtJX3J0VkdWVnYwN3FBZnJhdU4wUmZjWmViWWpSS1UtNzNUTE02V3pTc2pkN3dUV2RBUjhwU2hvTmUxYzJ6a25JazVtUnRmMThaWjh2MTZyUQ?oc=5",
-      "source": "SWA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-10",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Saham Big Banks (BBRI, BBNI, BMRI, BBCA) Kompak Hijau, Ini Pendorongnya - Bisnis.com",
       "snippet": "Saham Big Banks (BBRI, BBNI, BMRI, BBCA) Kompak Hijau, Ini Pendorongnya Bisnis.com",
@@ -82,78 +10,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2025-07-10",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA dan BNP Paribas AM Menggaungkan Reksa Dana Syariah Berbasis Saham Teknologi Global - SWA.co.id",
-      "snippet": "BCA dan BNP Paribas AM Menggaungkan Reksa Dana Syariah Berbasis Saham Teknologi Global SWA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2w0VXdpOC1pV1laWlFycURGTmJqeFJ5dE9aU29RQ2JFRjdyajBZbHRDcHdYbzF0aVdHNkNjcGExdkVEMmxXMmswdU13MHlmX0Y1YVZfWldDcnRsV1c5cG9CNkxzY2FrS2ZVRHR2LTJldVdXc21PX2lqV3lFdjBKMzNzTFlPMVljR1JOcTNqei1VbFRUS0J5blpXT0p2cTZ3aVlwSTNSZUdFZXYyTV9ScFlhR0FTOFk?oc=5",
-      "source": "SWA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-11",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA dan BNP Paribas Asset Management Hadirkan BNP Paribas Titan, Reksa Dana Syariah Indeks Offshore Pertama di BCA - pasardana.id",
-      "snippet": "BCA dan BNP Paribas Asset Management Hadirkan BNP Paribas Titan, Reksa Dana Syariah Indeks Offshore Pertama di BCA pasardana.id",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYnpBZWRRY0pzN1UyLWhtZXVFQWtxdVkwUWxCNG5SZnpfN3Z2VGhKWExTR2Nfa2dqTDZvM1MwUjA3QnRMamdZRnFtUTF5T241T1p4LUF4cGVmaDFVUlVidUVXLVRRV1NvSzR2VWF2TWVSQ01HYkstZ0Vkbjl0TGVLT0ltRld4a3ZYSjc3RVU0TV9nak1hUmpYMXdHVFZZR3hJOEd5TFNDNDhvRFRQNkVUMTRHcU5hb2RKRzl4bkV3UlJ0RUN1WWZzTE9wUFFzTFhXejhBd2F2dGlHUW9ibGhWYUFPSQ?oc=5",
-      "source": "pasardana.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-11",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Jaga Kualitas Kredit, NPL BCA Cuma 2% Per Kuartal-I 2025 - TradingView",
-      "snippet": "Jaga Kualitas Kredit, NPL BCA Cuma 2% Per Kuartal-I 2025 TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4QnQteVl2c2lyZERIQWFQVUlXUWFWZ1V5TTRNcFIzQTFNMFVTMXhlVE9TSGh6VUtTZ2JjQnNTN1l0U0xHdlZUN0xyX2Z6ZHNyaGd3dWZwSGVnUDNUQ29TNTVWc0ItUQ?oc=5",
-      "source": "TradingView",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-11",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Andai Punya 1 Lot Saham di Bank BCA, Berapa Dividen yang Didapat? - Kompas.com",
-      "snippet": "Andai Punya 1 Lot Saham di Bank BCA, Berapa Dividen yang Didapat? Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenFnOHRoNTU1T01udnJrNy1vNFB4NFVRVFhYLWZTVlctLVpzY3liQXM4VS1nQUp3RUh2d1VOWUZrZVd0WTVzcFdnM0ZHbldnZExKVFI5d1duQ0xTM1JnRTBLVnJGbTY5QnIxUlZRQmE3Z2MzWHN3eEd4YXRtekRETnZkd0FDQ25MYU5hM0RabjdwaVJOdUJXSkxhVVM4X3h1TlFBbmJwQmgxSEpIR3lmbnJsODc?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-12",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Saham Perbankan Sesi I Hari Ini Mendadak Anjlok Dipimpin BMRI, Ada Apa? - InvestorTrust",
-      "snippet": "Saham Perbankan Sesi I Hari Ini Mendadak Anjlok Dipimpin BMRI, Ada Apa? InvestorTrust",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeXhZTC1MREpfNmxMc2xsVjI1N2pNdW1pUkJhY19XU200Wk1Oa0doZkVIdWlXVElReXB1R1EzTHY0VGM4VnJyM1doS3Q3R2tKa3d5MFhUX0FMSWtyakNSSzJoTEcxb3JQcjlaSDV5dHpZRGFGQ3cxLXlzUDlxZVZ0ODBfdTRkWlNlUy1WaEVMVWJ6b1dHbWc?oc=5",
-      "source": "InvestorTrust",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-14",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Blu by BCA Digital Gandeng Transjakarta Hadirkan Metode Pembelian Tiket Lebih Mudah - kontan.co.id",
-      "snippet": "Blu by BCA Digital Gandeng Transjakarta Hadirkan Metode Pembelian Tiket Lebih Mudah kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSkZmbzVuSkFGYW0zb3hVRkFRUmlQdjJvRkZwcDRmOGk4Mnl0MVRfUTFGSkdSU085dDZEeEw4bFBtb2NYVlN6eWZVSDFtci1kSFhhNlU2N3F1cHNXb0ZxTWZ5Nk1qQTRGLWNhWnpVZ0JkV25DeVRXSVJ1Z01XUWgtNEd2OFBXclZfTFR6eTNQeVdHdW5BZlNGb196dHNtajBIelJ3QmZocXBSODMySk9lY2JKYmhTejdLQkHSAbMBQVVfeXFMTUQwZ0Z6RzNSaVdRRTdjdzlrbVo4dmJabTFyM2VZN3RsNkFUcEp3V2RBRXNqNTVCbGJ5eV91LW5rcGx1cG94NU5fZXVmVEdzazhmR19pdlAwOGNYU1VxQU54czM0cHBmQ3FXRlExSkZnNXNOLWdHX2w4QTdaNkR3NlBEcHQtbTE2eHhWWHpMSE9ocHcxVUMzMldBNmgtR2FtU2wwcDg3bElYN1hfNkZTWWNrdEE?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-16",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"
@@ -171,18 +27,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Usai IPO, Brigit Biofarmaka Teknologi (OBAT) Parkir Sisa Dana di Mandiri, BCA, dan BNI - SWA.co.id",
-      "snippet": "Usai IPO, Brigit Biofarmaka Teknologi (OBAT) Parkir Sisa Dana di Mandiri, BCA, dan BNI SWA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQc3hkZzg2S0dsLVNxOURaRVpLOGtfanZIQ2ZGUTFjQ09IOW9OQnc4NkJoSkhvaGlvRm9VcnFNQ0gwZUZOTENfVjhIbGhsYldXN0g2NDdadmkzcS1JMmpwNFZ2RmhMSWtobUIzWUh1TVRJMU04S1hoVGZVejJ0Mk53TFhUZzRNeEFfbTZGQVBSZDlEYlRkVHJIT3BDQ0FocE9aci03S3ljT0M1dnFLemt5cA?oc=5",
-      "source": "SWA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-17",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "BBCA, BBRI, dan BMRI Bergerak Beda Arah, Cek Saham Bank Blue Chip Hari Jumat (18/7) - kontan.co.id",
       "snippet": "BBCA, BBRI, dan BMRI Bergerak Beda Arah, Cek Saham Bank Blue Chip Hari Jumat (18/7) kontan.co.id",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZDlGbS1aZG5yMHZUYTR4SURDMkNtQzgtbzVlVlN2QnBDQzV4S21jeUFWR2gzeklKczljQ2lFVzdid3pQTUVfRGlrcVZ2M000aU9wT1dabGdsakN2TjBoWXY5TktXRWd2VHlSUnRPSGhFbjVzQk9jMjMtanItYlZhREpvWkppZ1RBRzNRZlRDdkVDRFRIdFBabnJwQkY4NjZuam9nV3dHeWJVZnhLZkc4UnFKWdIBqwFBVV95cUxQc1k2YmdNb3BjU0hpVkZEZTBEZ3U5akJLMXBrMDhJdDRJWTBtV05sajI3N09EWUNONWNFS2U5a2NQZ1Y5UDBLSTU5ZGdNWDhrdDlqQUI5andFajRxaFFNZU4zakVRZE1rWFFsMDhhNGRDenh0bzdoWUowTWdrc2FMdGRLdlNpc2FyeUJxbEsydUYtSXc0MmVfeHBqVWJUX3c2Y0p2cDkyU3lka2s?oc=5",
@@ -190,30 +34,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2025-07-18",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Berapa Triliun Dividen yang Diterima Konglomerat Budi Hartono di BCA? - Kompas.com",
-      "snippet": "Berapa Triliun Dividen yang Diterima Konglomerat Budi Hartono di BCA? Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYlMyT1FCWkpaSkRyREFHWHZSYjAtMm40dk96ak9vSXd2NVhTejdpYllZYWZyOExXOXluMDZ4WmNaWUhXZnc2VU9FZGJRU290cEVHcURnNDhLZFNGbkpubUZFb0plX0c1cHdwdUQ1YmdRbTdNc1VMNS12ZlJ0YUc3ZzBWTWdfelZyZTk1VlJmZmhMUzNvMHhJX2ZwcFZzbWYxZi1vRTJxc3hVNnFLMG5ScHJNWHdPNDQzVHl3?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-21",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Meski dalam Tekanan, Saham Perbankan Masih Memiliki Potensi - Kompas.id",
-      "snippet": "Meski dalam Tekanan, Saham Perbankan Masih Memiliki Potensi Kompas.id",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNd0JYdFBWUUJ2NThLY1lBN2pldGQ5cWhVcU1MQmVrcTFzeU44Sl80ejUzSkZfYVk0d1RpOVcwZWpodjhlUkN4dWs0MklPeVhuMzdsdk0xWThkZHJFNlk5cXFyd1FFMmFGUHFWTUNEZmpBTkpITnoyOXk0YW9GbWdlWWZiOF9mM0tOOXFnT2l5a0Z5Zw?oc=5",
-      "source": "Kompas.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-21",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"
@@ -255,54 +75,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "BNI, BCA hingga Mandiri Dukung PPATK Blokir Rekening Tak Aktif - Katadata.co.id",
-      "snippet": "BNI, BCA hingga Mandiri Dukung PPATK Blokir Rekening Tak Aktif Katadata.co.id",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRUtSeUlRU3RRVVE5RUJGNzlTNkRYb0ZZd3lJUktCVFBERGx4YVNyeFJWRktRdy1vOFM1a2F6LTU2SWtHd3l0SU5CU0xxM2l5S0xTVDl5ZGFoZEVMNTFKN1RHaEt6OXBYT2ktZnZMZDc2X3pVVE1HR0R2aDhFRkVOVkpFV2hTaVpUaXJpZElSUkJKejBaQm80NG54MFJkblNWVGZSeDZBc0pWcWc2STJ0NmJKc2LSAbsBQVVfeXFMUEZqWjd5SzBfcGhycjhyYWhrRFlLYnZkck9LU0RwbVVTeW9FMm5WQVlReDNzX3V4S3h0WVh0T0ctU2dxVG5aYlBiYm92QU1OcFZRckNFODVCLUptZUY2ZTY2STBBV05RakpwZlQ3d3p3SHZtS28yV3BhVmtMRUd4S00wU0Zsb0hpeEFCTm9IQVJmdjZ2d2dFRlBNU2pTdjRwaTRWcGRJczBzbTMwRU85czdMNEV5SmR6SUZPYw?oc=5",
-      "source": "Katadata.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-30",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Laba BCA Tembus Rp 29 Triliun di Semester I 2025 - Suara.com",
-      "snippet": "Laba BCA Tembus Rp 29 Triliun di Semester I 2025 Suara.com",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR28zN1RPTGQ3ME5JbUtFbU5DS1NuMHdRQWRuVTFGU2NVOU1sZkFnSThGZEhHbGMxSHIwTFlfdDNCUnJfQWZEWVFWMFZQZTUzZDh6elg3bWZxUjhWanFJN3hfYXJ3RGpCbVhKUEhWU09LYmF1VnpibnNXOWU4Y2sxMHZ3cEswVVE2MGhmZTlMNHBXUHF0TWZfMFUyMNIBmwFBVV95cUxNd2cxeUYtQ3dwNmxlX2FqdGRMSFNvd3BSUUxCODE4ZDFwMlZfLXFuc2prNHFTZmdvT2xZeDBLeGFLbmE0UE5RTkFmdE9jd1VaODYtTjlwSzhfREdFQWllbWM3SE12VDEzeVVMUkNsOFNPbXk3Rm5xRElGbXFVa0JYeElDbkR3TW9GWEo0NEJHZ0ZDcHBKaGxlYVctQQ?oc=5",
-      "source": "Suara.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-30",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kinerja Solid Ditopang Penyaluran Kredit yang Pruden - BCA.co.id",
-      "snippet": "Kinerja Solid Ditopang Penyaluran Kredit yang Pruden BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWlREd2hLMmFxdXI3TmxLdkRITm9wWk5Cd2o2UVZDcXlsWV9IaEo3OWs4cFpzMkRxRDNjYXFyTzV2YjNFQU95WmF5bTdjTGdoajQ4Y3UtbTNxNDllV2Z2d1pHOUNPOVRuYUFnSzBXV3F0Y3paQzdoOVJUUS1Ob2pud2sta3hhSDFsWVYtd1owSGdKa3lqbUpoampMWFBWWnZmRzRoUDc0OXI1dlo5R0ItUjhNaFBLNG1TaFF0YWFfdTdDSFlkTmZ3cExpeDA1cjNqbWdlNkVWQQ?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-31",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Mengapa BCA Belum Pangkas Bunga Kredit Meski BI Rate Turun? - Katadata.co.id",
-      "snippet": "Mengapa BCA Belum Pangkas Bunga Kredit Meski BI Rate Turun? Katadata.co.id",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYTVYa0dWcnZpcEdUUUFDLWx3eUdmN0dBUENDamtROGRxMkwxaTNkUnFlQ0U1TzNISzQ0ZXZ6c2xxakc3STlXeGxHTkkwMUszRERoUDB5X2x3ZjY1YnIxc3NOME1sM0JEZHpOazNfM2dRMFNqckxpdjZRakwyejVKcExyNXU0bWpvZm9rQ09uRHJRU2tOX2NaTURhbWhBVDAyTGNGUUxINFVDbGRtMUJVadIBtgFBVV95cUxNSVdvdDBvMG1xV3k3THVNRHpMZnZ4NmVYOUxUbmJWT19ZUjBOSkFjNkZMRDhOUHVqWHl0RGktVEQ2WTR0ZDhvZ0dzNF94blFvYlVicW9fTUdQZmpxVUpqOEY3YjRFT3AwTDNlYV81Q3h1SjdZb29GMUFQc1lfZHVLZVc0SkhKZEdIQzgtc1NYU0J6X1pzZDFnOGJxNWN0UTYycUI0THpvQVQ1QjYwNVVzSmdTYU1YZw?oc=5",
-      "source": "Katadata.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2025-07-31",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Harga Saham BBCA Berpotensi Naik 38% Meski Kinerja Keuangan Melemah - InvestorTrust",
       "snippet": "Harga Saham BBCA Berpotensi Naik 38% Meski Kinerja Keuangan Melemah InvestorTrust",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVU1TWmN1aFJrdEhXVld4RDY0QVJTSGRfai1MZE1idGVfMi12RmJBWmwtVEx1VzNNVGlNMENQVGFvMmtsYnp3bERwTEoybk00anhjdlVjdFI2VVAyUDhIandfRElfY1hYdEFLMHJseDJvZ2JSbUVzTGJCa3J5eHRjMTJtNFU2V1pNekVzbVNnZThmU21YTnVBSWVFM00zdGVJd3YtTjUyTQ?oc=5",
@@ -334,16 +106,6 @@
       "pub_date": "2025-07-11",
       "pre_closing_ok": true,
       "query": "BBCA saham"
-    },
-    {
-      "title": "Menghitung Dividen BCA Setahun yang Didapat Jahja Setiaatmadja - Kompas.com",
-      "snippet": "Menghitung Dividen BCA Setahun yang Didapat Jahja Setiaatmadja Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZm1QdWtQX2g0X3c3UTNCUHNfdS1lMWJNaFdONVhLamhXdXRuMWFRWmNmNDdNNUhmY21ZaElUaGdCdno2N1d4SWlYYm11NlFsVENEd0c0QnlaQXZrQmdIMEJVcTh1cDFrU3QtdzdWdmZlSGRXLWdZdDExcXkyZlRJaHVUWnV1SHdhemQ2Q0h1bTMta1FJQnhTb3QyUkhMOUNKTFlPNENiOVhIa0FEWFJhYVhfeUtiU2EzdTlJa0tRVQ?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "Sat, 12 Jul 2025 07:00:00 GMT",
-      "published_wib": "2025-07-12 14:00:00+07:00",
-      "pub_date": "2025-07-12",
-      "pre_closing_ok": true
     },
     {
       "title": "BBCA salurkan pinjaman Rp250 miliar untuk emiten baru Grup Djarum - IDNFinancials",
@@ -466,16 +228,6 @@
       "query": "BBCA saham"
     },
     {
-      "title": "Berapa Triliun Dividen BCA untuk Konglomerat Bambang Hartono Setahun? - Kompas.com",
-      "snippet": "Berapa Triliun Dividen BCA untuk Konglomerat Bambang Hartono Setahun? Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWnZIZ0QxWlphckJtV1ktOVNOSkZ1UTd4ZlZ2ZUxLdnJlYWVMMzR3T2ZuM2wtcjQyV3l0R1AtbHo1akhvUU1rOHRsTGdzQWVHRUQtMUFxdERIMkNfaHJqOTRPREpRYVdGZUsxcmlrczRhT3JwbUtqZ01WUzhRZDAtcHZjUHMyWlNEc1NvSHE4YjNxYTFPYUdMMUc0UWhyTmtOSEt3clYyaWl3bU9Lc0ZMOEhaTVZKNnlFcGtr?oc=5",
-      "source": "Kompas.com",
-      "published_utc": "Tue, 22 Jul 2025 07:00:00 GMT",
-      "published_wib": "2025-07-22 14:00:00+07:00",
-      "pub_date": "2025-07-22",
-      "pre_closing_ok": true
-    },
-    {
       "title": "PT Bank Central Asia Tbk - TradingView",
       "snippet": "PT Bank Central Asia Tbk TradingView",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MWVg4SURteC1WMXc4dVdTa1ducXdmX0JRT2IzY3BkQ3dpTXg4ZWNmWWtKRmdKd3pmS0lxVTVfY1h6Q0hWWDhoZ2JvLTRITzI4YWRGTlMxZ0sweC1BQlBxcXhDT041MmJz?oc=5",
@@ -527,16 +279,6 @@
       "pub_date": "2025-07-24",
       "pre_closing_ok": true,
       "query": "BBCA saham"
-    },
-    {
-      "title": "Kredit Moncer, Laba BCA Naik 8% Jadi Rp 29 Triliun pada Semester I 2025 - Katadata.co.id",
-      "snippet": "Kredit Moncer, Laba BCA Naik 8% Jadi Rp 29 Triliun pada Semester I 2025 Katadata.co.id",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdUJaQldXQWhNRUI0cDhOV19IWWhYemZhcjNtQ2JTN1AzMkVXTXdFWWsyMFZnVzF2VURaeGVpeDUyZ0VfSVlFLWhzZnY5VWdmNEhDbUxzckFUd2JuaFRFRHlsLVp6SGRkZzlrZE05Q1BqRWQ0eVUyc1daM2ZTLWdDVEZjaDI3bUxzNzhhSWJMbExSOVFPVlVLbEZrRktjbUVVV1JZOEVBVk1RT2dnZ1NWc2VkaXlnVTVZSGxLSTNqWdIBxAFBVV95cUxOckRNOXY5cDR2NGNoNXFBLVN1TnpFUXZjM256dFFoaGRjU2FRQkZDZGpSZEdwVXNFLXRQQlFISWpMUkFIeEk0M2lCbmRHYnF4bWRzakNGYTJjMlZ1cldoMXFzUWVkWVBMWHY4ekdvOVl4Ym14Wk1TdU42RWU5UXhQODNZQ29GSDBsOWJqM2ZWeVhrSi16Wl9uSVctUTJybm0wWjdvenUwNVB3a3RRVDBmYlVIaUU3dlJtcGotZTRDRVUtM1B5?oc=5",
-      "source": "Katadata.co.id",
-      "published_utc": "Wed, 30 Jul 2025 07:00:00 GMT",
-      "published_wib": "2025-07-30 14:00:00+07:00",
-      "pub_date": "2025-07-30",
-      "pre_closing_ok": true
     },
     {
       "title": "Masih 'Cari Aman' di Kredit, Laba BCA (BBCA) Rp29 T di Semester I-2025 - CNBC Indonesia",

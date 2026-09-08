@@ -1,17 +1,16 @@
 {
-  "generated_at": "2026-09-08T10:22:53.036506+07:00",
+  "generated_at": "2026-09-08T20:59:03.082696+07:00",
   "files": 121,
-  "articles": 2815,
-  "dated_articles": 2815,
-  "exact_timestamp_articles": 2164,
-  "date_only_next_day_articles": 651,
-  "pre_closing_articles": 2133,
+  "articles": 2378,
+  "dated_articles": 2378,
+  "exact_timestamp_articles": 2149,
+  "date_only_next_day_articles": 229,
+  "pre_closing_articles": 2118,
   "duplicate_articles_across_files": 0,
   "future_dated_articles": 0,
   "articles_by_collection_method": {
-    "gdelt": 1,
-    "google_news_rss": 2163,
-    "legacy_date_only": 651
+    "google_news_rss": 2149,
+    "legacy_date_only": 229
   },
   "date_min": "2016-11-11",
   "date_max": "2026-09-08",
@@ -22,11 +21,11 @@
     "2019": 24,
     "2020": 45,
     "2021": 98,
-    "2022": 132,
-    "2023": 127,
-    "2024": 371,
-    "2025": 879,
-    "2026": 1117
+    "2022": 114,
+    "2023": 112,
+    "2024": 219,
+    "2025": 628,
+    "2026": 1116
   },
   "empty_months": [
     "2016-09",
@@ -51,46 +50,38 @@
   "top_sources": [
     [
       "investor.id",
-      344
+      342
     ],
     [
       "Bisnis.com",
-      276
-    ],
-    [
-      "CNBC Indonesia",
-      182
-    ],
-    [
-      "kontan.co.id",
-      176
+      251
     ],
     [
       "InvestorTrust",
-      152
+      143
     ],
     [
-      "Kompas.com",
-      102
+      "kontan.co.id",
+      132
+    ],
+    [
+      "CNBC Indonesia",
+      131
     ],
     [
       "Bareksa.com",
       83
     ],
     [
-      "Bloomberg Technoz",
-      68
+      "Kompas.com",
+      78
     ],
     [
       "Ajaib",
-      62
-    ],
-    [
-      "BCA.co.id",
       59
     ],
     [
-      "TradingView",
+      "Bloomberg Technoz",
       58
     ],
     [
@@ -98,20 +89,16 @@
       57
     ],
     [
-      "Infobanknews",
-      56
+      "TradingView",
+      53
     ],
     [
       "Emitennews.com",
-      54
+      51
     ],
     [
       "KONTAN",
-      52
-    ],
-    [
-      "Liputan6.com",
-      51
+      49
     ],
     [
       "achmadnurhidayat.id",
@@ -122,32 +109,44 @@
       38
     ],
     [
-      "Suara.com",
+      "BCA.co.id",
       36
     ],
     [
+      "Infobanknews",
+      35
+    ],
+    [
       "Bisnis.com - Market",
-      31
+      30
     ],
     [
       "KabarBursa.com",
       29
     ],
     [
-      "SWA.co.id",
+      "Suara.com",
       28
-    ],
-    [
-      "Katadata.co.id",
-      27
-    ],
-    [
-      "IDX Channel",
-      26
     ],
     [
       "katadata.co.id",
       26
+    ],
+    [
+      "Liputan6.com",
+      23
+    ],
+    [
+      "IDX Channel",
+      23
+    ],
+    [
+      "readers.id",
+      19
+    ],
+    [
+      "pasardana.id",
+      17
     ]
   ],
   "coverage_note": "Public RSS coverage is measured, not assumed complete."

@@ -1,67 +1,7 @@
 {
   "query_window": "2024-04",
-  "n": 34,
+  "n": 19,
   "articles": [
-    {
-      "title": "Gak Usah Bingung! Ini Penyebab Saham Perbankan Raksasa RI Rontok - CNBC Indonesia",
-      "snippet": "Gak Usah Bingung! Ini Penyebab Saham Perbankan Raksasa RI Rontok CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbTU5Z3c3eGs2Tml3dVBNQWdJNk5xbE1vX1phMzQ2RkdOSHlqYktFVmsyWEFvT29ULVNlNmxSZ283WVIxUHcxUjk3WnNLZV9BOG5TdTdmUU15SUxESm1BUkRqSWlnM191TVlEYlhCang0MmhieWVHeUdxUEQ5eDFHUGtNVVh1UHcyaGNlNjllVDdVREo4aGtoODB3THpqYzRrZDMtVW9rV01oZjM3LUQyTkxrMWxVVTNGOGtPa3BoR3llTVEwQ3lB?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "10 Perusahaan Paling Berharga di ASEAN, Bank BCA - BRI Jadi Juara! - CNBC Indonesia",
-      "snippet": "10 Perusahaan Paling Berharga di ASEAN, Bank BCA - BRI Jadi Juara! CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVGZjaDhUUUFnaFotUTJGVXhHOF9FdkpXdzVFc1o0WjBNbXFVSUxLYnpQREVTVE43OTEta3UxYk9SUnY4MzEwa2hvZjZrYm1KUFRuaDNwVVNITS10Tm8xSnFtOFo5V0pNalkyNjdnUTBza0NGQXdTN1BsbENsel8yMUZzR1p5VVQtbDFnSkV0RzVyNUtfUDk5QmV6ZUJxeHZ1cDlWQkxEZ0luMy1xZEZkU3BtU1FFY094OWp5WklTSHhid0dGaVRz?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-05",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Life Raup Premi Rp1,6 Triliun di 2023, Aset Naik 23 Persen - Tribunnews.com",
-      "snippet": "BCA Life Raup Premi Rp1,6 Triliun di 2023, Aset Naik 23 Persen Tribunnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdzhHcjZoNTVobldFc3dvMWxfQVBjWE4zTWxrYmJodFFlbjdYU3lmTzc5eUYwM19Id0FzNzZLM0JQVXpSa1dCS1V6c20tSm1mcFZ5UlZMLWdOM2dPNklBNFBDdFdsVHUzVlVGZzhJLVRzU3R1Uks1SDZDbFJmZDJFOVBLQ0VxZXpka3pSYU9tZGFneUIwMHZQN3haa0ZQdnEtUGhhTEtQM1I?oc=5",
-      "source": "Tribunnews.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-08",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kekayaan Bos BCA & Djarum Kalahkan Pemilik Manchester United - Bloomberg Technoz",
-      "snippet": "Kekayaan Bos BCA & Djarum Kalahkan Pemilik Manchester United Bloomberg Technoz",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVW9SdmdXRTFuaTZsdGsza2JacDhBaVQ5RjNMZUMza05udWVVZjdzS203SFpCZ1pIT1lfdUxyZ3VqT29ROE9aM3VZbGhPMG5GZnNNcUM1RmFwSTBvai1XR0xFaHRndy1rbHJ3cWFFXzFQc2Z0d2c5ZkxrODlWWkxTN2dGc0ZZeFB2bzRUQjBRQk85VXhheUhKSGsxSWt3TWlEN21vblllcTBBcHJSNHc?oc=5",
-      "source": "Bloomberg Technoz",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-08",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Lokasi ATM dan Mobil ATM BCA di Sepanjang Jalur Mudik Tol Trans Jawa - Jawa Pos",
-      "snippet": "Lokasi ATM dan Mobil ATM BCA di Sepanjang Jalur Mudik Tol Trans Jawa Jawa Pos",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT0FsSkdwU3YtX3Nvel9aamoxWXNHb004Nm1jaXBtRWxaU0xVLUxkUzgzWFdlMzcwdzc1Z1NKNVNNbVlleThFTEE5NGxHdWlFRklvMDFLQ3VWcVVNdVlvcUpYRXItZU9ua2ppN3JYdm5lSHBQSU9EdklGU09MQWlQOHpQTkEzdGVKUHZOcmxDZFdMY1JBeDdKSGdHSkRXLTc2ZV8waEd5SFYzZkItam0zRQ?oc=5",
-      "source": "Jawa Pos",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-10",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Saatnya Beli, Sekuritas Ini Prediksi Potensi Cuan Saham BCA (BBCA) Segini - InvestorTrust",
       "snippet": "Saatnya Beli, Sekuritas Ini Prediksi Potensi Cuan Saham BCA (BBCA) Segini InvestorTrust",
@@ -70,18 +10,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-04-12",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Terbaru! Ini Daftar 20 Bank Raksasa di Asia, Ada BRI dan BCA! - CNBC Indonesia",
-      "snippet": "Terbaru! Ini Daftar 20 Bank Raksasa di Asia, Ada BRI dan BCA! CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGxlS3pPc3ZXLVY1YlVuajFyRHlMOHRpMS0tSFdsSzlmTkpuSlkwNTd4MlVQeTZiOTROSUpHbGpZLV96a1d4OHFlSy03dlN3dG1qdEozTVRrZElyVktkRDE3TXVuZE5KMHNSV21TYzdtejByeVBtZmZNMS1VREpyWE5XYnVGb0hOaFl4OVU4NU9zN0Z6WjJqMjZUbXFjbHNZWlpJdThXQVI3bXl6c1pZZTIyRVZPOU5fSWRaMGY2NzE?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-16",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"
@@ -111,34 +39,10 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Borong! Ini 4 Saham Mercy Harga Bajaj: Ada BCA - CNBC Indonesia",
-      "snippet": "Borong! Ini 4 Saham Mercy Harga Bajaj: Ada BCA CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVkJSZXFMN0tfeWk4S2RYdkNySzAxX2p0elF3WWNMSlhXRm5zTGRrYWNuV3lsMnR0Q3N2WF9yUHBnYzhINkpER0lZemZUTlFhaXh6aHNYcGxtdzJkQlpBNnZHWTVvQUthOVlyVEJqN3A5OElseGxCUTM3YUM3WFRpZEdkeS1FV252RGRUTXNkdy1MRThVamcxeFhFN19YYldzYy1jcDdXWUJuY3BpMUE?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-18",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "BCA (BBCA) Rilis Kinerja Kuartal I/2024 Hari Ini, Simak Prospek Sahamnya - Bisnis.com",
       "snippet": "BCA (BBCA) Rilis Kinerja Kuartal I/2024 Hari Ini, Simak Prospek Sahamnya Bisnis.com",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdmZCOXRRSXlWR0NKYXB4NHhvSFc0SEZfOEFzYkJjTHc2TTh3S1RqQzBpRFpXODJ6eWR4MjUyREp6M1cybGNvYi1FbmdiWTFfTE5FM0F4bHlVeFZSNDRpUjRRYWtqTEFhUnViaVVGZmlrakpEM2VWdGNhWjRiSV9wc1owRHVOWmpOTnpPNTRQbFJnMlMyTlQzT1lxSW05TzRBQUtldEVOTDFZVzhackVhMm1EbDNxTTdnOVRYZ2Nubw?oc=5",
       "source": "Bisnis.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Kredit BCA Tumbuh 17,1%, Kinerja Solid di Seluruh Segmen - BCA.co.id",
-      "snippet": "Kredit BCA Tumbuh 17,1%, Kinerja Solid di Seluruh Segmen BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY2xqYkJ2NmdzS251QWRKVnNUdnhBQjZKRy01amw5UVoxb2oxbkZYR2hieGlJRDlKbUd2RW1wbWRicktIUk1GS1E0YmI0N0l5UG9xNmlVbW5BREpMeUZnbnNqeTdXNS1DNk8tVGplU3AxTUwwODBjUllWUjhfT0VEQnVGOVBsa042WnlGeEliSEFTcmhhRVJHTU5mRXhweGxBU2paOWtTZU5QUU9fTlV3YzB1SmJSRVU3Qk9TN3dvVGlJTDRJazM1Slc3YXZIbzNNVXplUzJ5T0VqQQ?oc=5",
-      "source": "BCA.co.id",
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-04-22",
@@ -159,34 +63,10 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Naik 11,7%, BCA Bukukan Laba Bersih Rp 12,9 Triliun di Awal 2024 - detikFinance",
-      "snippet": "Naik 11,7%, BCA Bukukan Laba Bersih Rp 12,9 Triliun di Awal 2024 detikFinance",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR04taUhRWWlQSmZUZWZnSWdFcnBSTjBrbmVIMHhGYk9ycXY1OHNieGdHTWNERmU2dWExRHoxc2M2UjhQNGtjRERGbGkydWxTT2ZJTTQwbjVBazUzcENYbnZWWjhHNzdTYzZKXzhVamNlemoyNFZGX2V2X0draTNGM0ZFOWppM21OZFFFRl92S2hMT3poTkEzaVl1N0pCMU1RS0JLOUFrZ2Y3dzJvSm1YNmJYRTPSAboBQVVfeXFMTlB3bXRSdk9RMENQXzVXa1NCSTMtTHJYR1Y1d040TklRSFg4aElVV3plT3cwYXp3OE5xUjhnd0NvdzhwZ3M5QnFBb0N0amhCWGUxLXNTV1QyMG1ySE9saWNwTlJkd0VFS2lySnZxaE56UDM0bnFNc3hYY2EwT2p6bnhpTUtLWmVaRC1SbHBuWWJrWjYtUFFEU2RnbUNfSTR5V0gyT0l2d0F4WGdvYi1rVDVvVFNCNkx2cE93?oc=5",
-      "source": "detikFinance",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-22",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "BCA (BBCA): Harga Naik hingga Diborong Asing, Ternyata Target Sahamnya masih Meggiurkan - InvestorTrust",
       "snippet": "BCA (BBCA): Harga Naik hingga Diborong Asing, Ternyata Target Sahamnya masih Meggiurkan InvestorTrust",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd1dEdllpdGxYUVR6VkdqalhJM1pJelh6ckpIVkF6OC1fcExoRURWTTg4YlFBLWpQM2FaQkl1NTZiZGxkSzc3Q253aWJEWDFVYWpobURRaVZXRy1oMTRqcFdabmZNQ0pvZ0hIOGhCRkZ2VHdUVEY1QVRkUi1ET1dUaE84VlVqYzl1dWZsN2RoRGY1Mm5zdHN2a21JQU9LS0MtTEpJRWxIZFktRDdoN0ctdkdiZE54RlV2UE9rbUp3?oc=5",
       "source": "InvestorTrust",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-23",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BI Intervensi Jaga Rupiah, Bos BCA: Seperti Buang Garam ke Laut - CNBC Indonesia",
-      "snippet": "BI Intervensi Jaga Rupiah, Bos BCA: Seperti Buang Garam ke Laut CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ0E5SGMwMkViY1JJNEtsRTk4Sk1DN0UtaW9nSGpsaFdGSkJWYTgyZGRBQnJ4T3I5YTJIc3RSMjZBQS1rUXN0akVoVmp1b3hMY3hxeUVZUjlSQUhFbHF6a1FiV0Z0VFdyN1d3akN4MzA0eXJqYTlSdmlBdlZiX2JiZzIwUVN3NmRlT0VaUUFKUnZmdWp3SlM4YXhCYkpCTVc4UlhOdW5jSkEyN1ZrWG52VHB5NXFXZkJPRVNkakxBbHTSAcYBQVVfeXFMTWlzYndiREhYTUg2M1h5blBZUmM2QURvdDAydmJpMFM2UUFVSEZFTXJ2azJLMzY3SWk3ZGtSaGpGSWUyMTJfalVaTEQ0bWt0S2pBczFCUFJlYjJmY3IwYUxvczVEdV9lb1ZaaUFMdnJIV3VEUDdESUdqdEFpTFRiTHVBT2FxNTlETzhZSVhMUjlzN0JoUUpBMUlkNjUxTUw0TUFqblBKSWkwUi03SUlKbnN6ajVvekJzbDBMRnRQclJfbDBxT2Vn?oc=5",
-      "source": "CNBC Indonesia",
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-04-23",
@@ -207,54 +87,6 @@
       "query": "legacy independent snapshot"
     },
     {
-      "title": "Rupiah Melemah Lagi, Presdir BCA Sebut Permintaan terhadap Dolar AS Sedang Tinggi - Kompas.tv",
-      "snippet": "Rupiah Melemah Lagi, Presdir BCA Sebut Permintaan terhadap Dolar AS Sedang Tinggi Kompas.tv",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSGJTWTFTNmJZc1hPTmhEX09SMnZVZ2I5cXpJQVo0YU5OdVZIdFN4Rk1IR3B3QzUtNGQ0OVFCc0NwNlpXeEtWMDdESHBmTnNwaXNYYkJBV05BbHRjM240UG1hczFEMFBUdVFCaEtheUE2WE5QYWcyWnBzdl9ldEdqZjlkZWN1Vjdlc1h2NUkyeGY3WTU3Vjl0bXBKRG5kWll5N3BHZ0RwaDVwSXlEWW1ON1BWWjJ1aFpkYkx0OUFvbmRkaWRt0gG-AUFVX3lxTFBSMUFnWGw0d3RFMkpkTzFPYUJiZjF1RU4ta1k3MkR3TkdnMUJXUXJPWUFBR193VjJTUmNJeFF1YUNuYzRGUExMY0JTNmNQNXlBV3V2RmFUdURtQ3hXbURReFZHNXNGdzI0Q3VhbTVpcGJ3RFdET3h1RFZkbVdSdjItNUVSZzN3TmJ2N1VxY1UwUmtQOU9JX3BmRUxHNGptN2pIZm9TQy1YMmJCUWdwMnZSdVIteUQ0YXR1UXhEVHc?oc=5",
-      "source": "Kompas.tv",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-23",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Video: Q1-2024, BCA Raup Laba Bersih Rp 12,9 Triliun, Naik 11,7% (YoY) - CNBC Indonesia",
-      "snippet": "Video: Q1-2024, BCA Raup Laba Bersih Rp 12,9 Triliun, Naik 11,7% (YoY) CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNGlBMlUzU21MemVCSjJMYjZvR0F0blVidkFCS2JRaEY2c0IxSTNFOHNzTWY5c1d6d1A5OGFrS283LTlkUDctQlZtSW9xcUh3SXU0dFptak1NRTlxMXIySUJLdUdOeG5ZVTBOQ0tnY29adV9MOHROM3FEdm9mYXR5bHVMRlFjc3RUSlU2Unp6WGxWMnRKYlJwazh4VVlMaVc2MUxrYWZ1azE0bGZnVVJzYTh5WTZGTk93LXFUZ08tMlZQa0hU?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-23",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "4 Cara Menemukan ATM BCA Terdekat dari Lokasi Saya Sekarang - IDX Channel",
-      "snippet": "4 Cara Menemukan ATM BCA Terdekat dari Lokasi Saya Sekarang IDX Channel",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN0U2SURzNW1LLWxoRGUwTTZ4UzJCVHp2clRyVHhCRVctbGkxLUlPUXgwU2NZZXVUbTVhcGVvdG9UTm1oWUZOdUk0eEtrZGpNYnNobHp2OGJPZENtUWxGcjBlaXRwblg3ekROMmE1THR3dmFKbHVna21IWEpLQXlzVnNxTWpROEZJdklHNVpKUWVzUmJPTHNvMENwMUJOS0ZpQmhZ0gGjAUFVX3lxTE11SEwtMFh3emgzSXBXZkRReWYzRGUwYUk0MHI0ZGltbTVKakNZa3I3bmNZTkZ6OFd3LXAzbmRsVXpLdF9uS2R5QmZETmpNLUJNM2VPdVY0aS1RZHlmekZpazAwbjZNSnFudE1OVmhVclZaT05KWkNONHFzNi00dXYweEViSHVveEx1QVUyOUFOZnhZbEdCdGhSdmlUM3R6NkRnVlk?oc=5",
-      "source": "IDX Channel",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-24",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "30+ Saham Blue Chip 2024 LQ45 Terbaik di Indonesia - Bizhare",
-      "snippet": "30+ Saham Blue Chip 2024 LQ45 Terbaik di Indonesia Bizhare",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8wQ0hXVFdjSS1MZTdiSW5HRDFlZGJZSTZLOG0ycjV4VDA4LWxLOF9PcTdoSWtkUktFOU9OVGl1S1hQYm5Qa2lUaUZKdDBLbnphX2ZYZWdXTklmYTAxV1BmdVZlcVo?oc=5",
-      "source": "Bizhare",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-04-26",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
       "title": "Rupiah Melemah Bikin IHSG dan Saham Bank Berguguran, BBCA & BBRI Turun 2% - Bareksa.com",
       "snippet": "Rupiah Melemah Bikin IHSG dan Saham Bank Berguguran, BBCA & BBRI Turun 2% Bareksa.com",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLW9Wd0Q4T2EyN0J3akV6WE5pZHBsXy1CX2dRZGhabmJEX0VfMkVrZTV2dVVpcERLcjlvcEtiQlNzY05sR3haczI4dEw5OUhBSXlTNjlXeDFPTGhSY3pYdnNCRGs0ZHhUUWtEMFBLUVlvbmMtWTlPN2MxSVpYdEZvenY0WnpKenRhM1JyMDA4Q0RQM295VkpMNGVSMmt2NzNMU1MwMkc2Uk1rS3lhRDdzZ3oxdUIzbDJ3?oc=5",
@@ -265,16 +97,6 @@
       "pre_closing_ok": true,
       "timing_quality": "exact",
       "query": "BBCA site:bareksa.com"
-    },
-    {
-      "title": "Anak Orang Terkaya di Indonesia Raup Cuan Miliaran dari THR Dividen BCA - Bisnis.com",
-      "snippet": "Anak Orang Terkaya di Indonesia Raup Cuan Miliaran dari THR Dividen BCA Bisnis.com",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVk1paGthU2tycWZOU0NzdnZvcnd3bVZucWlsMGt3UlBwNktiQ0E0UGRJRlNwQkhnUzR2UzExdmdhdDhGdnFkcHJiQzdQcnVOSU5oZWthc3lyMmZrc2MtT3J0bmE0ZXdKTUkyaFlOUHU3eVFqLXRWblFFQnQ2Y005YklKT21BVE9rUE1tVFVnNDNXWXlKVDZFSHg3c0hoS1J2ZWEwUnlvSWd6Q2lsX2VHbDhvXy1wUENOa3RhNmhud1AxSnM?oc=5",
-      "source": "Bisnis.com",
-      "published_utc": "Fri, 05 Apr 2024 07:00:00 GMT",
-      "published_wib": "2024-04-05 14:00:00+07:00",
-      "pub_date": "2024-04-05",
-      "pre_closing_ok": true
     },
     {
       "title": "IHSG Anjlok Pasca Liburan, BBRI dan BBCA Anjlok 4% Tapi Antrean Beli Segini - Bareksa.com",

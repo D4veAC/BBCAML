@@ -1,43 +1,7 @@
 {
   "query_window": "2024-09",
-  "n": 20,
+  "n": 13,
   "articles": [
-    {
-      "title": "BCA Finance dan BCA Multi Finance Resmi Merger, Ini Nasib Nasabahnya - CNBC Indonesia",
-      "snippet": "BCA Finance dan BCA Multi Finance Resmi Merger, Ini Nasib Nasabahnya CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPejduVDY1SG82V1RjcHA2R081bm02RWE0SmpnOVZqYlMzOTRoZEVrejBCdWdqMl9paHFKcVRqUXkxSHZwZ3FnY2lxSW1GRHRyZWFzci03c1NOVEk2T0NGQlRXZlByamZwSlJFQ01qb2ZxNjFaZktBT1NJMUpmX0p2NnRJY2k5UzhkZVVMeDR3amZUbHZUZzRMT0FCcERsTTg5eUZRVmVSdXpIVXF4QkM3YWdtWTBZWjJPYjJ3aFBGUWg3b2s2Zk80ZtIBzgFBVV95cUxQSHJ1MGlibHY4VjhQZ2hhOTRCVVRXQlNVRXdCOHMwVFJuenZYN1VaRkhuZWZfYTI4RXJzMVRMZUlvRHVDQVhiTkE2WkN4VVYzSmJhZVdESnZUQVhfSGNSaFltdW93cm9TUmNGYzR5bzZ0aG96QjRZY0ZoNmw0M05kMEhfZGNic1g1VHdtc0labjU5Y1ZPOGJSWXNVV1Vpc2tIaEQyMm5HQXJUQ0JLdnRpdVp5RDZETm1BcEY5dzNuczBVSi11Zk1MTTNGcjJwQQ?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Simak Nih! Bocoran Dividen Bank Mandiri, BNI hingga BCA Tahun Buku 2024 - Infobanknews",
-      "snippet": "Simak Nih! Bocoran Dividen Bank Mandiri, BNI hingga BCA Tahun Buku 2024 Infobanknews",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYjZkU29CdmlmaDN3b0NjQWNrMjAtd2tNMm9Ld3NXMlFYdVZyRVJ2VmJ1Y21Cc2dnWi1xMWpoR2VyOHQxOVQxcHFQWkVLLXIyRzR6b19DRjJ5LUJ4NEFZeXEzdFdYOTNRbGdMUmRXaGlKTnB4bmlGMG5SUFk1VnJfVmdHTG1SWlVWN0tmQzZ5M2l4aUphQVlDNFBR?oc=5",
-      "source": "Infobanknews",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-03",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Resmi Gabungkan 2 Anak Usaha, Apa Tujuannya? - Liputan6.com",
-      "snippet": "BCA Resmi Gabungkan 2 Anak Usaha, Apa Tujuannya? Liputan6.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbFoxaW9vaktweFNZYzQzMTlNeWlDU0J4ZHJ1MU1SSHFxei1rZ1QxYjNxRjlzbGVpREZHREhiZHZuUXp0MWRReHJ4WnUyYjVCTHN3ME1CeTUwb1VxZjllN0NKNmZLeUVjc2FjdEQxYkgtNVBzRTlseTM3MFA2Sm5mNEpySzJqTjdKRjdzV2xKLXFmNVJm0gGLAUFVX3lxTE1EMnlub0ZTNzJDQnBjNFNtTTg3QVNpeDI0RXJiOVBGbmc4dXBybHo4NEtOVi1POTVyeXZDN2FLVkR4VHJ5UVFRQ2tOMUJVa1NpYzhYVl9KWjliVG1YY09QVF9USTc0ZVhQYS1Deld5dzVLOEZ0dnJkbmRLU0w4SlEzNUg3clpxdXhZdlk?oc=5",
-      "source": "Liputan6.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-04",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Historia Bisnis: Kuncian Terakhir Grup Salim di BCA (BBCA), Berapa Tersisa Kini? - Bisnis.com - Market",
       "snippet": "Historia Bisnis: Kuncian Terakhir Grup Salim di BCA (BBCA), Berapa Tersisa Kini? Bisnis.com - Market",
@@ -46,54 +10,6 @@
       "published_utc": "",
       "published_wib": "",
       "pub_date": "2024-09-10",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Bertabur Puluhan Pakar, BCA Wealth Summit 2024 Berhasil Menarik Lebih dari 2.000 Nasabah - BCA.co.id",
-      "snippet": "Bertabur Puluhan Pakar, BCA Wealth Summit 2024 Berhasil Menarik Lebih dari 2.000 Nasabah BCA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeG9oRDV1ZXRGMTl2Z2w1MW5qN2M2R2U4Z3dUWEJVdEFzR0hoZzJHWnVnbDhRYkFzR0dGTjBiZ3RSTFBERFhUazlUMWRlTmZjY0RpaWpHcmF0Y25NX0NZUkVqZjFNbTRCV3VlXzNuWHhGcG5qOWxpZXIyS0NyNExrR0tSYTgxdHYtNk43U19PVllCWnBfMGsxM2JVMV92Y1NSdERrTXhPWVVvVjY4Ymh0VmxtbzRfWTdOS1RFVEYyRm51U0Vub0tOYjBIaDY1dw?oc=5",
-      "source": "BCA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-12",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "BCA Bagikan Motor dan Mobil Mewah pada Sejumlah Nasabah dalam Program Gebyar Hadiah BCA - Suara.com",
-      "snippet": "BCA Bagikan Motor dan Mobil Mewah pada Sejumlah Nasabah dalam Program Gebyar Hadiah BCA Suara.com",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQM1B6aWh4WXBGbHlaNEY0UHc3SEZkZkdXYXMwTktpUUpldFVWczNGS0JPdERTdTU3ZXB5YllqRG8xRDQ2bkRzdGdzc2hCVnNiSjJkLWVZMHJKMlR4b2JDUEhlamtESThHYUlDWmd6U0I2TDFlbm5OM3htaS1fNzdyUFhza2ctdHo1ZFpNdFNMVm02QVg0dWI2b2FiaExuMi1aOUlZWk5Cem1rS1F3czdDN29tQ0I0LUNkS1FEc18tLXdERFpMekprSjd3dElaNVF0WmczTGFqYmfSAcwBQVVfeXFMTlZ0ekxTM21UX2x0Tk1OLXBVN1RhRjJuV3laUTNJbFRvMHVkUTlvR3pya2tqYVlXT1ZDd2pmQVpOZ0Z4VTFzZ3V0VTRTdnNubmlpT0xBUENVbktSX1JYZlUyeWZXeTRCeVI5My1SMVlqak1yMzQ0V2NsSWF6b1kxTWlBRGh2dWJvRXctdjJ5ZFo1Qll4ZnNrNUZVVUxSSGlIeEY2SndRdm1fczgtbkhMb2JOeEJnanJrSm45UW5zSWU0MnVmdktiUXh6cm16?oc=5",
-      "source": "Suara.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-24",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "The New Gebyar Hadiah BCA Tahap Dua, Putar Gatcha Dapat Hadiah! - SWA.co.id",
-      "snippet": "The New Gebyar Hadiah BCA Tahap Dua, Putar Gatcha Dapat Hadiah! SWA.co.id",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMVVfZHRfV3RTTWp4VzV3R2QxS3UzVVd3WFB6R25jNWV0anZjVTZGVUtPN096NkZSSHZaS0ZrSjIxTllqN1E3aGNKLVpxdUZ5OEp5TDZNU25wb0g1YUJ1TXFvNV9GVEE5Y3NqVDVodlBEOWx0VHBsMi1NUXNqSWNmZl9CMGVqcEt5MGk0dUxfd3BCYWZDMVE?oc=5",
-      "source": "SWA.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-24",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Lowongan Kerja Bank BCA Terbuka untuk Fresh Graduate - Lokernas.com",
-      "snippet": "Lowongan Kerja Bank BCA Terbuka untuk Fresh Graduate Lokernas.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSUZRYXpReWt5N01CYkdYc0dhUWdraDhSdzVoN1RDb0FZajg1U3FiU0xfbG02REhWSXI3RG53a2phU3ZuRm5CZEp6bl9xSmxmVWxLYWhsWnlqa09iMVk1TTFBVkJqeUNmanNqcWd6cUZ6TGhzRzQ5UlZhSWhZUzlzMDAxU0UxWDJZeTc1NVI3OVpzUFJD?oc=5",
-      "source": "Lokernas.com",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2024-09-28",
       "pre_closing_ok": false,
       "timing_quality": "date_only_next_day",
       "query": "legacy independent snapshot"

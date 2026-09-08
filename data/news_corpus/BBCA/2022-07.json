@@ -1,31 +1,7 @@
 {
   "query_window": "2022-07",
-  "n": 9,
+  "n": 7,
   "articles": [
-    {
-      "title": "NPL Turun ke 2,2%, BCA Sebut Kembali ke Level Sebelum Pandemi - CNBC Indonesia",
-      "snippet": "NPL Turun ke 2,2%, BCA Sebut Kembali ke Level Sebelum Pandemi CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcnFNOHZTLXdMeFZvdUJxNm5vS0U0YW4zSlRXUVhHcktUYXlWTVNXdXhyb1VxMjF4WUFtV0ZGNTRGZjhrNDBpY0NRay1RUHZnejN2MVlPUlBFUDE0UlFTb185Q2ZXYWZvaHRCX004VWE0M3ZhdVBLcnhvT1lWYUlVeDUtalhxb1pjRmFOU1JwWjIxSXBmOVFFaVpFVDltZ05GSlcwYWdhS0E4Q2lGb3c5OUVIci1rMTllX01LQ9IBwgFBVV95cUxQazNFaUFYY3NlNW5uSjJubUhFM0Z3cUVwZWc2eDVtR1Z4a1JOeUJUZzQ5NEdtOFJpSHdHT0xGM3ItYUtVMU12SHhjWGJfT1pMdjV2SlZDTEJ3bHJSN0lVMk5uWUxpQ3N1WHlaQ215UlNjZnZyZnVjRVdDNVhWZnY1T2VwZU5BUkdsTXQ1ODBiVE5raEVvUm5XZElCcWdjNzJoWURtMmhaYXl1dE43UnZfaldjbUhmc1p6VWpyV3hyVUZkZw?oc=5",
-      "source": "CNBC Indonesia",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-07-27",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
-    {
-      "title": "Ini Daftar Emiten Bank yang Siap Rights Issue pada Semester II 2022 - kontan.co.id",
-      "snippet": "Ini Daftar Emiten Bank yang Siap Rights Issue pada Semester II 2022 kontan.co.id",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOR1pIRVRjcjF4X0JIUnBNZkphRVI5V0ZZRTJZUUlpeHRvZVJzc01WckM1MFJuM01EaFdsUjU4WW5DLWpOV1p1di1hNFZJRW9iMWVTWEd1X1VFVlBZTmVJOGNWY212am5maHI3OE5RZkpYUXYtT1hnbDczUm8wc1QtSjYzLXpJdlRWZ3VvSjdza0hxLVdIZkJZZkQ3aEN6X1o2bk1SbWRR0gGeAUFVX3lxTFB1ZHNIQmU1VllORUlhdjNmdTBzQjNjQ2ZHa2Y2UlMtYjZYWlJ0NDFCQmprZkZaME5UYWlvSG9icnptb08tYU9yOTFEQXVSOHJycGQtS2xhVnVXN1pzdmNSZ1hxYmhQNE9mNmJadVM2S3I5Z2FKSnptbTczLS1KX2JkZkI3NlZEMjZMOEEzbkdCWUZtbjAtTVZ0ZTBPZHln?oc=5",
-      "source": "kontan.co.id",
-      "published_utc": "",
-      "published_wib": "",
-      "pub_date": "2022-07-28",
-      "pre_closing_ok": false,
-      "timing_quality": "date_only_next_day",
-      "query": "legacy independent snapshot"
-    },
     {
       "title": "Kurs Jual Beli Dolar AS di BCA (BBCA), BRI (BBRI), dan BNI (BBNI), Senin (11/7/2022) - Bisnis.com",
       "snippet": "Kurs Jual Beli Dolar AS di BCA (BBCA), BRI (BBRI), dan BNI (BBNI), Senin (11/7/2022) Bisnis.com",
