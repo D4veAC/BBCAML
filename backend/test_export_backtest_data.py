@@ -9,6 +9,7 @@ from backend.export_backtest_data import export
 class BacktestExportTests(unittest.TestCase):
     def test_continuous_equity_points_are_not_reset_at_chart_boundaries(self):
         report = {
+            'strategy_label': 'RSI regime + XGBoost',
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
             'forward_trades': 2,
             'points': [
@@ -27,6 +28,7 @@ class BacktestExportTests(unittest.TestCase):
 
     def test_fold_returns_are_compounded_without_future_inputs(self):
         report = {
+            'strategy_label': 'RSI regime + XGBoost',
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
             'folds': 2,
             'forward_trades': 1,
@@ -43,7 +45,7 @@ class BacktestExportTests(unittest.TestCase):
         expected = (1.0 + 0.0) * (1.0 - 0.02) - 1.0
         self.assertAlmostEqual(result['strategyReturn'], expected)
         self.assertEqual(result['trades'], 1)
-        self.assertEqual(result['strategyLabel'], 'RSI 30/50 · SMA200')
+        self.assertEqual(result['strategyLabel'], 'RSI regime + XGBoost')
 
 
 if __name__ == '__main__':

@@ -4,13 +4,15 @@ from pathlib import Path
 
 import numpy as np
 
-from backend.train_model import load_yahoo
+from backend.train_model import load_csv
 from backend.tune_strategy import (
     BUY_FEE, FORWARD_ROWS, MIN_TRAIN_ROWS, SELL_FEE, SLIPPAGE, technicals,
 )
 
 ENTRY_RSI = 30.0
 EXIT_RSI = 50.0
+ROOT = Path(__file__).resolve().parent.parent
+DATASET = ROOT / 'data' / 'bbca_ohlcv_snapshot.csv'
 
 
 def simulate_path(frame, start, end, indicators=None):
@@ -78,8 +80,8 @@ def simulate(frame, start, end, indicators=None):
     return {key: value for key, value in result.items() if key != 'points'}
 
 
-def run(output_path=None):
-    frame, provenance = load_yahoo()
+def run(output_path=None, data_path=DATASET):
+    frame, provenance = load_csv(data_path)
     indicators = technicals(frame)
     close = frame['close'].to_numpy(dtype=np.float64)
     open_price = frame['open'].to_numpy(dtype=np.float64)
@@ -109,6 +111,7 @@ def run(output_path=None):
     strategy_return = forward['net_return']
     benchmark_return = benchmark_equity - 1.0
     report = {
+        'strategy_label': 'RSI 30/50 · SMA200',
         'evaluation_status': {
             'deployable_alpha_claim': False,
             'causal_execution': True,
@@ -137,7 +140,7 @@ def run(output_path=None):
         'max_drawdown': forward['max_drawdown'],
         'points': points,
     }
-    destination = Path(output_path or Path(__file__).resolve().parent.parent / 'rsi_strategy_report.json')
+    destination = Path(output_path or ROOT / 'rsi_strategy_report.json')
     destination.write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(f'Wrote: {destination.resolve()}')
     print(

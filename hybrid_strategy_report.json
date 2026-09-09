@@ -1,0 +1,286 @@
+{
+  "strategy_label": "RSI regime + XGBoost",
+  "evaluation_status": {
+    "deployable_alpha_claim": false,
+    "causal_execution": true,
+    "classification": "exploratory; hybrid thresholds were inspected on this historical period",
+    "required_confirmation": "freeze the hybrid rules and evaluate only later sessions"
+  },
+  "protocol": {
+    "name": "RSI regime strategy with walk-forward XGBoost sensitivity entries",
+    "rsi_entry": "RSI14 below 30 and close above SMA200",
+    "xgboost_entry": "walk-forward predicted return above 0.10%, RSI14 below 40, and close above SMA200",
+    "rsi_exit": "RSI14 above 50",
+    "xgboost_exit": "predicted return below zero or RSI14 above 55",
+    "xgboost_model": "return target, 20-session OHLCV window, refit before each 63-session block",
+    "signal_execution": "complete day-t data; execute at day-(t+1) open",
+    "position_policy": "continuous positions; no artificial liquidation at chart checkpoints",
+    "buy_fee": 0.0015,
+    "sell_fee": 0.0025,
+    "slippage_per_execution": 0.0005
+  },
+  "source": {
+    "kind": "file",
+    "name": "bbca_ohlcv_snapshot.csv",
+    "sha256": "55011cf417f301f1262e02ec036bdc1874c7273d72998475bb13c1fdca2ef8a2"
+  },
+  "period": {
+    "start": "2020-08-11",
+    "end": "2026-09-08"
+  },
+  "folds": 24,
+  "strategy_return": 0.28459589297434706,
+  "benchmark_return": 0.07557571315303835,
+  "alpha": 0.20902017982130872,
+  "forward_trades": 13,
+  "wins": 12,
+  "rsi_entries": 11,
+  "xgboost_entries": 2,
+  "max_drawdown": -0.0792075392397028,
+  "trade_log": [
+    {
+      "source": "xgboost",
+      "signal_date": "2020-11-30",
+      "entry_date": "2020-12-01",
+      "entry_price": 6223.11,
+      "exit_date": "2020-12-08",
+      "exit_price": 6516.740000000001,
+      "net_return": 0.042998995321471334
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2021-01-29",
+      "entry_date": "2021-02-01",
+      "entry_price": 6763.379999999999,
+      "exit_date": "2021-02-17",
+      "exit_price": 6886.555,
+      "net_return": 0.014143017926133261
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2021-03-24",
+      "entry_date": "2021-03-25",
+      "entry_price": 6403.2,
+      "exit_date": "2021-04-26",
+      "exit_price": 6391.802500000001,
+      "net_return": -0.005769106187628492
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2022-04-05",
+      "entry_date": "2022-04-06",
+      "entry_price": 7828.912499999999,
+      "exit_date": "2022-04-26",
+      "exit_price": 7921.0375,
+      "net_return": 0.007724004309746402
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2022-05-25",
+      "entry_date": "2022-05-27",
+      "entry_price": 7528.7625,
+      "exit_date": "2022-06-02",
+      "exit_price": 7621.1875,
+      "net_return": 0.008230944919981997
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2022-12-20",
+      "entry_date": "2022-12-21",
+      "entry_price": 8604.3,
+      "exit_date": "2022-12-28",
+      "exit_price": 8645.675000000001,
+      "net_return": 0.0007931756541790236
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2023-01-10",
+      "entry_date": "2023-01-11",
+      "entry_price": 8054.025,
+      "exit_date": "2023-01-27",
+      "exit_price": 8695.65,
+      "net_return": 0.07535052457466929
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2023-03-03",
+      "entry_date": "2023-03-06",
+      "entry_price": 8554.275,
+      "exit_date": "2023-03-27",
+      "exit_price": 8820.5875,
+      "net_return": 0.027011433137597907
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2023-05-16",
+      "entry_date": "2023-05-17",
+      "entry_price": 8779.387499999999,
+      "exit_date": "2023-05-24",
+      "exit_price": 9195.4,
+      "net_return": 0.0431995264760785
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2023-09-15",
+      "entry_date": "2023-09-18",
+      "entry_price": 9054.525,
+      "exit_date": "2023-10-04",
+      "exit_price": 9195.4,
+      "net_return": 0.011500093351114682
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2024-04-16",
+      "entry_date": "2024-04-17",
+      "entry_price": 9554.775,
+      "exit_date": "2024-05-03",
+      "exit_price": 9745.125,
+      "net_return": 0.01584611298735461
+    },
+    {
+      "source": "xgboost",
+      "signal_date": "2024-11-11",
+      "entry_date": "2024-11-12",
+      "entry_price": 10105.05,
+      "exit_date": "2024-11-13",
+      "exit_price": 10219.8875,
+      "net_return": 0.007322702468382403
+    },
+    {
+      "source": "rsi",
+      "signal_date": "2024-11-14",
+      "entry_date": "2024-11-15",
+      "entry_price": 10055.025,
+      "exit_date": "2024-12-04",
+      "exit_price": 10169.9125,
+      "net_return": 0.007383968430896504
+    }
+  ],
+  "points": [
+    {
+      "date": "2020-08-11",
+      "strategy": 1.0,
+      "baseline": 1.0
+    },
+    {
+      "date": "2020-11-16",
+      "strategy": 1.0,
+      "baseline": 1.0472949759937842
+    },
+    {
+      "date": "2021-02-19",
+      "strategy": 1.057750148809242,
+      "baseline": 1.1030537362897497
+    },
+    {
+      "date": "2021-05-27",
+      "strategy": 1.0516478758807821,
+      "baseline": 1.0133548610310228
+    },
+    {
+      "date": "2021-08-30",
+      "strategy": 1.0516478758807821,
+      "baseline": 1.0610326415739488
+    },
+    {
+      "date": "2021-11-26",
+      "strategy": 1.0516478758807821,
+      "baseline": 1.1757825540670959
+    },
+    {
+      "date": "2022-02-25",
+      "strategy": 1.0516478758807821,
+      "baseline": 1.3010377402391904
+    },
+    {
+      "date": "2022-06-10",
+      "strategy": 1.0684937237598646,
+      "baseline": 1.187904023696652
+    },
+    {
+      "date": "2022-09-08",
+      "strategy": 1.0684937237598646,
+      "baseline": 1.3495236187574207
+    },
+    {
+      "date": "2022-12-06",
+      "strategy": 1.0684937237598646,
+      "baseline": 1.4020499871521723
+    },
+    {
+      "date": "2023-03-06",
+      "strategy": 1.1274843168967932,
+      "baseline": 1.357604598510462
+    },
+    {
+      "date": "2023-06-19",
+      "strategy": 1.2319952168264034,
+      "baseline": 1.4545763555469242
+    },
+    {
+      "date": "2023-09-21",
+      "strategy": 1.2397219532786785,
+      "baseline": 1.4747788049295196
+    },
+    {
+      "date": "2023-12-20",
+      "strategy": 1.2461632768280346,
+      "baseline": 1.503062234065155
+    },
+    {
+      "date": "2024-03-28",
+      "strategy": 1.2461632768280346,
+      "baseline": 1.6283174202372503
+    },
+    {
+      "date": "2024-07-15",
+      "strategy": 1.2659101209133439,
+      "baseline": 1.6242769303607312
+    },
+    {
+      "date": "2024-10-11",
+      "strategy": 1.2659101209133439,
+      "baseline": 1.6768032987554822
+    },
+    {
+      "date": "2025-01-15",
+      "strategy": 1.284595892974347,
+      "baseline": 1.5838720315955384
+    },
+    {
+      "date": "2025-04-29",
+      "strategy": 1.284595892974347,
+      "baseline": 1.41013096690521
+    },
+    {
+      "date": "2025-08-06",
+      "strategy": 1.284595892974347,
+      "baseline": 1.3414426390043832
+    },
+    {
+      "date": "2025-11-05",
+      "strategy": 1.284595892974347,
+      "baseline": 1.406090477028691
+    },
+    {
+      "date": "2026-02-09",
+      "strategy": 1.284595892974347,
+      "baseline": 1.212146962955768
+    },
+    {
+      "date": "2026-05-20",
+      "strategy": 1.284595892974347,
+      "baseline": 0.965677080488096
+    },
+    {
+      "date": "2026-08-20",
+      "strategy": 1.284595892974347,
+      "baseline": 1.0343654083889227
+    },
+    {
+      "date": "2026-09-08",
+      "strategy": 1.284595892974347,
+      "baseline": 1.0755757131530383
+    }
+  ]
+}

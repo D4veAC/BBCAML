@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def export(source=ROOT / 'rsi_strategy_report.json', destination=ROOT / 'server' / 'backtest-data.json'):
+def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'server' / 'backtest-data.json'):
     report = json.loads(Path(source).read_text(encoding='utf-8'))
     if isinstance(report.get('points'), list) and len(report['points']) >= 2:
         points = report['points']
@@ -20,7 +20,7 @@ def export(source=ROOT / 'rsi_strategy_report.json', destination=ROOT / 'server'
             'period': report['period'],
             'folds': len(points) - 1,
             'trades': report['forward_trades'],
-            'strategyLabel': 'RSI 30/50 · SMA200',
+            'strategyLabel': report.get('strategy_label', 'Strategy'),
             'evaluationStatus': 'exploratory',
             'strategyReturn': points[-1]['strategy'] - 1.0,
             'baselineReturn': points[-1]['baseline'] - 1.0,
@@ -49,7 +49,7 @@ def export(source=ROOT / 'rsi_strategy_report.json', destination=ROOT / 'server'
         'period': report['period'],
         'folds': report['folds'],
         'trades': sum(fold['forward']['trades'] for fold in folds),
-        'strategyLabel': 'RSI 30/50 · SMA200',
+        'strategyLabel': report.get('strategy_label', 'Strategy'),
         'evaluationStatus': 'exploratory',
         'strategyReturn': strategy - 1.0,
         'baselineReturn': baseline - 1.0,
