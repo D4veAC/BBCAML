@@ -7,6 +7,13 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'server' / 'backtest-data.json'):
     report = json.loads(Path(source).read_text(encoding='utf-8'))
+    trade_log = [{
+        'source': trade['source'],
+        'signalDate': trade['signal_date'],
+        'entryDate': trade['entry_date'],
+        'exitDate': trade.get('exit_date'),
+        'netReturn': trade.get('net_return'),
+    } for trade in report.get('trade_log', [])]
     if isinstance(report.get('points'), list) and len(report['points']) >= 2:
         points = report['points']
         if not all(
@@ -26,6 +33,7 @@ def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'serv
             'baselineReturn': points[-1]['baseline'] - 1.0,
             'alpha': points[-1]['strategy'] - points[-1]['baseline'],
             'maxDrawdown': report['max_drawdown'],
+            'tradeLog': trade_log,
             'points': points,
         }
         Path(destination).write_text(json.dumps(data, separators=(',', ':')), encoding='utf-8')
@@ -56,6 +64,7 @@ def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'serv
         'baselineReturn': baseline - 1.0,
         'alpha': strategy - baseline,
         'maxDrawdown': report['max_drawdown'],
+        'tradeLog': trade_log,
         'points': points,
     }
     Path(destination).write_text(json.dumps(data, separators=(',', ':')), encoding='utf-8')

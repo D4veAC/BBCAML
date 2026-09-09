@@ -59,6 +59,12 @@ export function parseBacktest(value: any): BacktestResponse {
       || (value.coreAllocation !== undefined && (!finite(value.coreAllocation) || value.coreAllocation < 0 || value.coreAllocation > 1))
       || (value.strategyLabel !== undefined && typeof value.strategyLabel !== 'string')
       || (value.evaluationStatus !== undefined && typeof value.evaluationStatus !== 'string')
+      || !Array.isArray(value.tradeLog)
+      || !value.tradeLog.every((trade: any) => trade
+        && (trade.source === 'rsi' || trade.source === 'xgboost')
+        && typeof trade.signalDate === 'string' && typeof trade.entryDate === 'string'
+        && (trade.exitDate === null || typeof trade.exitDate === 'string')
+        && (trade.netReturn === null || finite(trade.netReturn)))
       || !Array.isArray(value.points) || value.points.length < 2
       || !value.points.every((point: any) => point && typeof point.date === 'string'
         && finite(point.strategy) && point.strategy > 0 && finite(point.baseline) && point.baseline > 0)) {

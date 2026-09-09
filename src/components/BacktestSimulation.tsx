@@ -4,6 +4,16 @@ import { parseBacktest } from '../data/validation';
 
 const BACKTEST_URL = import.meta.env.VITE_BACKTEST_API_URL || '/api/backtest';
 const percent = (value: number) => new Intl.NumberFormat('id-ID', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value);
+type PositionKind = 'buy' | 'sell' | 'stock' | 'cash';
+
+function PositionIcon({ kind }: { kind: PositionKind }) {
+  return <svg viewBox="0 0 24 24" aria-hidden="true">
+    {kind === 'buy' && <><path d="M12 19V6" /><path d="m7 11 5-5 5 5" /></>}
+    {kind === 'sell' && <><path d="M12 5v13" /><path d="m7 13 5 5 5-5" /></>}
+    {kind === 'stock' && <><path d="M3 17 8 12l4 3 7-8" /><path d="M15 7h4v4" /></>}
+    {kind === 'cash' && <><path d="M4 7.5h16v10H4z" /><path d="M7 5h10" /><circle cx="12" cy="12.5" r="2.5" /></>}
+  </svg>;
+}
 
 export default function BacktestSimulation() {
   const [data, setData] = useState<BacktestResponse | null>(null);
@@ -44,6 +54,13 @@ export default function BacktestSimulation() {
   if (!data || !chart) return <p role="status" className="status-message">Loading simulation…</p>;
   const current = data.points[Math.min(visible, data.points.length) - 1];
   const strategyLabel = data.strategyLabel || 'XGBoost';
+  const startTime = Date.parse(data.period.start);
+  const endTime = Date.parse(data.period.end);
+  const currentTime = Date.parse(current.date);
+  const datePosition = (date: string) => Math.max(0, Math.min(100,
+    (Date.parse(date) - startTime) * 100 / Math.max(1, endTime - startTime)));
+  const visibleTrades = data.tradeLog.filter(trade => Date.parse(trade.entryDate) <= currentTime);
+  const activeTrade = visibleTrades.find(trade => !trade.exitDate || Date.parse(trade.exitDate) > currentTime);
   return <section className="simulation" data-od-id="backtest-simulation">
     <div className="simulation-heading">
       <div><span className="eyebrow">Research simulation</span><h2>Walk-forward, fold by fold.</h2></div>
@@ -65,6 +82,28 @@ export default function BacktestSimulation() {
       </svg>
     </div>
     <div className="chart-legend"><span><i className="strategy-key" />{strategyLabel}</span><span><i className="baseline-key" />Buy &amp; hold</span><time>{current.date}</time></div>
+    <div className="position-panel" data-od-id="position-timeline">
+      <div className="position-heading">
+        <div className="position-now"><PositionIcon kind={activeTrade ? 'stock' : 'cash'} /><span>Position on {current.date}</span><strong>{activeTrade ? 'Hold stock' : 'Hold cash'}</strong></div>
+        <div className="position-key" aria-label="Trading action legend">
+          {(['buy', 'sell', 'stock', 'cash'] as PositionKind[]).map(kind => <span key={kind}><PositionIcon kind={kind} />{kind === 'stock' ? 'Hold stock' : kind === 'cash' ? 'Hold cash' : kind[0].toUpperCase() + kind.slice(1)}</span>)}
+        </div>
+      </div>
+      <div className="position-track" aria-label="Historical invested and cash periods">
+        <span className="cash-track" />
+        {visibleTrades.map((trade, index) => {
+          const left = datePosition(trade.entryDate);
+          const right = datePosition(trade.exitDate && Date.parse(trade.exitDate) <= currentTime ? trade.exitDate : current.date);
+          return <span key={`${trade.entryDate}-${index}`} className="stock-range" style={{ left: `${left}%`, width: `${Math.max(0, right - left)}%` }} />;
+        })}
+        {visibleTrades.flatMap((trade, index) => {
+          const markers = [<span key={`buy-${index}`} className="trade-marker buy-marker" style={{ left: `${datePosition(trade.entryDate)}%` }} title={`Buy · ${trade.entryDate} · ${trade.source}`}><PositionIcon kind="buy" /></span>];
+          if (trade.exitDate && Date.parse(trade.exitDate) <= currentTime) markers.push(<span key={`sell-${index}`} className="trade-marker sell-marker" style={{ left: `${datePosition(trade.exitDate)}%` }} title={`Sell · ${trade.exitDate}`}><PositionIcon kind="sell" /></span>);
+          return markers;
+        })}
+        <span className="position-playhead" style={{ left: `${datePosition(current.date)}%` }} />
+      </div>
+    </div>
     <p className="simulation-meta">{data.period.start}—{data.period.end} · XGBoost refit every 63 sessions · next-open execution · fees and slippage included · exploratory</p>
   </section>;
 }

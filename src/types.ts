@@ -13,8 +13,13 @@ export interface NewsResponse {
   summary_model?: string | null;
 }
 export interface BacktestPoint { date: string; strategy: number; baseline: number; }
+export interface BacktestTrade {
+  source: 'rsi' | 'xgboost'; signalDate: string; entryDate: string;
+  exitDate: string | null; netReturn: number | null;
+}
 export interface BacktestResponse {
   period: { start: string; end: string }; folds: number; trades: number;
-  strategyReturn: number; baselineReturn: number; alpha: number; maxDrawdown: number; points: BacktestPoint[];
+  strategyReturn: number; baselineReturn: number; alpha: number; maxDrawdown: number;
+  tradeLog: BacktestTrade[]; points: BacktestPoint[];
   coreAllocation?: number; strategyLabel?: string; evaluationStatus?: string;
 }
