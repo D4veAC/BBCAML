@@ -34,13 +34,14 @@ def simulate_path(frame, forecasts, start, end, indicators=None):
     values = technicals(frame) if indicators is None else indicators
     close = frame['close'].to_numpy(dtype=np.float64)
     open_price = frame['open'].to_numpy(dtype=np.float64)
+    high = frame['high'].to_numpy(dtype=np.float64)
     rsi = values['rsi14']
     sma200 = values['sma200']
     equity = peak = 1.0
     max_drawdown = 0.0
     position = False
     source = None
-    trades = wins = rsi_entries = xgb_entries = 0
+    trades = wins = rsi_entries = xgb_entries = recovery_entries = 0
     entry_equity = 0.0
     entry_fill = 0.0
     trade_log = []
@@ -53,32 +54,42 @@ def simulate_path(frame, forecasts, start, end, indicators=None):
 
         forecast = float(forecasts[day])
         regime_ok = math.isfinite(sma200[day]) and close[day] > sma200[day]
-        rsi_entry = not position and regime_ok and rsi[day] < RSI_ENTRY
-        xgb_entry = (
-            not position and regime_ok and rsi[day] < XGB_RSI_CAP
-            and math.isfinite(forecast) and forecast > XGB_THRESHOLD
-            and day >= start + XGB_CONFIRMATIONS - 1
+        positive_confirmation = (
+            day >= start + XGB_CONFIRMATIONS - 1
             and all(
                 math.isfinite(float(forecasts[index]))
                 and float(forecasts[index]) > XGB_THRESHOLD
                 for index in range(day - XGB_CONFIRMATIONS + 1, day + 1)
             )
         )
+        rsi_entry = not position and regime_ok and rsi[day] < RSI_ENTRY
+        xgb_entry = (
+            not position and regime_ok and rsi[day] < XGB_RSI_CAP
+            and math.isfinite(forecast) and forecast > XGB_THRESHOLD
+            and positive_confirmation
+        )
+        recovery_entry = (
+            not position and not regime_ok and day > start
+            and rsi[day - 1] <= RSI_ENTRY < rsi[day]
+            and close[day] > high[day - 1]
+            and positive_confirmation
+        )
         exit_position = position and (
             (source == 'rsi' and rsi[day] > RSI_EXIT)
             or (
-                source == 'xgboost'
+                source in ('xgboost', 'recovery')
                 and ((math.isfinite(forecast) and forecast < 0.0) or rsi[day] > XGB_EXIT_RSI)
             )
         )
 
-        if rsi_entry or xgb_entry:
+        if rsi_entry or xgb_entry or recovery_entry:
             equity *= 1.0 - BUY_FEE
             equity /= 1.0 + SLIPPAGE
             position = True
-            source = 'rsi' if rsi_entry else 'xgboost'
+            source = 'rsi' if rsi_entry else 'xgboost' if xgb_entry else 'recovery'
             rsi_entries += int(rsi_entry)
             xgb_entries += int(xgb_entry and not rsi_entry)
+            recovery_entries += int(recovery_entry)
             trades += 1
             entry_equity = equity
             entry_fill = execution_open * (1.0 + SLIPPAGE)
@@ -130,6 +141,7 @@ def simulate_path(frame, forecasts, start, end, indicators=None):
         'wins': wins,
         'rsi_entries': rsi_entries,
         'xgboost_entries': xgb_entries,
+        'recovery_entries': recovery_entries,
         'trade_log': trade_log,
         'points': points,
     }
@@ -169,19 +181,20 @@ def run(output_path=None, data_path=DATASET):
     } for index in range(len(result['points']))]
     benchmark_return = baseline[-1] - 1.0
     report = {
-        'strategy_label': 'RSI regime + XGBoost',
+        'strategy_label': 'Regime recovery + XGBoost',
         'evaluation_status': {
             'deployable_alpha_claim': False,
             'causal_execution': True,
-            'classification': 'exploratory; hybrid thresholds were inspected on this historical period',
-            'required_confirmation': 'freeze the hybrid rules and evaluate only later sessions',
+            'classification': 'exploratory; recovery logic was designed after inspecting the BBCA historical period',
+            'required_confirmation': 'freeze these rules and evaluate only later sessions',
         },
         'protocol': {
-            'name': 'RSI regime strategy with walk-forward XGBoost sensitivity entries',
+            'name': 'Regime strategy with walk-forward XGBoost and confirmed recovery entries',
             'rsi_entry': 'RSI14 below 30 and close above SMA200',
             'xgboost_entry': 'two consecutive positive walk-forward return forecasts, RSI14 below 45, and close above SMA200',
+            'recovery_entry': 'below SMA200, RSI14 crosses above 30, close exceeds the prior high, and two consecutive forecasts are positive',
             'rsi_exit': 'RSI14 above 50',
-            'xgboost_exit': 'predicted return below zero or RSI14 above 60',
+            'xgboost_and_recovery_exit': 'predicted return below zero or RSI14 above 60',
             'xgboost_model': 'return target, 20-session OHLCV window, refit before each 63-session block',
             'signal_execution': 'complete day-t data; execute at day-(t+1) open',
             'position_policy': 'continuous positions; no artificial liquidation at chart checkpoints',
@@ -199,6 +212,7 @@ def run(output_path=None, data_path=DATASET):
         'wins': result['wins'],
         'rsi_entries': result['rsi_entries'],
         'xgboost_entries': result['xgboost_entries'],
+        'recovery_entries': result['recovery_entries'],
         'max_drawdown': result['max_drawdown'],
         'trade_log': result['trade_log'],
         'points': daily_points,
@@ -209,7 +223,8 @@ def run(output_path=None, data_path=DATASET):
     print(
         f'Hybrid {report["strategy_return"]:+.2%} | Benchmark {benchmark_return:+.2%} | '
         f'Alpha {report["alpha"]:+.2%} | Trades {report["forward_trades"]} '
-        f'(RSI {report["rsi_entries"]}, XGBoost {report["xgboost_entries"]})'
+        f'(RSI {report["rsi_entries"]}, XGBoost {report["xgboost_entries"]}, '
+        f'Recovery {report["recovery_entries"]})'
     )
     return report
 

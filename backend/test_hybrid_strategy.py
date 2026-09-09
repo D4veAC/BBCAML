@@ -56,6 +56,20 @@ class HybridStrategyTests(unittest.TestCase):
         )
         self.assertEqual(result['trades'], 0)
 
+    def test_recovery_entry_waits_for_confirmed_cross_and_next_open(self):
+        frame = pd.DataFrame({
+            'date': pd.to_datetime(['2025-01-01', '2025-01-02', '2025-01-03']),
+            'open': [100.0, 150.0, 200.0], 'high': [101.0, 151.0, 202.0],
+            'low': [99.0, 149.0, 199.0], 'close': [100.0, 150.0, 200.0],
+            'volume': [1.0, 1.0, 1.0],
+        })
+        result = simulate_path(
+            frame, np.array([0.002, 0.002, -1.0]), 0, 2,
+            {'rsi14': np.array([25.0, 35.0, 99.0]), 'sma200': np.array([1000.0, 1000.0, 1000.0])},
+        )
+        self.assertEqual(result['recovery_entries'], 1)
+        self.assertEqual(result['trade_log'][0]['entry_date'], '2025-01-03')
+
     def test_future_forecast_cannot_create_current_entry(self):
         result = simulate_path(
             self.frame(), np.array([0.0, 1.0]), 0, 1,

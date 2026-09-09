@@ -61,7 +61,7 @@ export function parseBacktest(value: any): BacktestResponse {
       || (value.evaluationStatus !== undefined && typeof value.evaluationStatus !== 'string')
       || !Array.isArray(value.tradeLog)
       || !value.tradeLog.every((trade: any) => trade
-        && (trade.source === 'rsi' || trade.source === 'xgboost')
+        && (trade.source === 'rsi' || trade.source === 'xgboost' || trade.source === 'recovery')
         && typeof trade.signalDate === 'string' && typeof trade.entryDate === 'string'
         && (trade.exitDate === null || typeof trade.exitDate === 'string')
         && (trade.netReturn === null || finite(trade.netReturn)))

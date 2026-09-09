@@ -14,7 +14,7 @@ export interface NewsResponse {
 }
 export interface BacktestPoint { date: string; strategy: number; baseline: number; }
 export interface BacktestTrade {
-  source: 'rsi' | 'xgboost'; signalDate: string; entryDate: string;
+  source: 'rsi' | 'xgboost' | 'recovery'; signalDate: string; entryDate: string;
   exitDate: string | null; netReturn: number | null;
 }
 export interface BacktestResponse {
