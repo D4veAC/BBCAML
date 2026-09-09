@@ -25,7 +25,7 @@ def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'serv
             raise ValueError('Backtest report contains an invalid equity point')
         data = {
             'period': report['period'],
-            'folds': len(points) - 1,
+            'folds': report.get('folds', len(points) - 1),
             'trades': report['forward_trades'],
             'strategyLabel': report.get('strategy_label', 'Strategy'),
             'evaluationStatus': 'exploratory',

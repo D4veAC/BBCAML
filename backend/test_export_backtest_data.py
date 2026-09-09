@@ -11,6 +11,7 @@ class BacktestExportTests(unittest.TestCase):
         report = {
             'strategy_label': 'RSI regime + XGBoost',
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
+            'folds': 7,
             'forward_trades': 2,
             'max_drawdown': -0.08,
             'trade_log': [{
@@ -30,7 +31,7 @@ class BacktestExportTests(unittest.TestCase):
             result = export(source, destination)
         self.assertAlmostEqual(result['strategyReturn'], 0.2)
         self.assertAlmostEqual(result['baselineReturn'], 0.1)
-        self.assertEqual(result['folds'], 1)
+        self.assertEqual(result['folds'], 7)
         self.assertEqual(result['maxDrawdown'], -0.08)
         self.assertEqual(result['tradeLog'][0]['entryDate'], '2025-01-03')
 

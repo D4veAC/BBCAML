@@ -22,10 +22,11 @@ export default function BacktestSimulation() {
     if (!data) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setVisible(data.points.length); return; }
     setVisible(1);
+    const step = Math.max(1, Math.ceil(data.points.length / 120));
     const timer = window.setInterval(() => setVisible(value => {
       if (value >= data.points.length) { window.clearInterval(timer); return value; }
-      return value + 1;
-    }), 120);
+      return Math.min(data.points.length, value + step);
+    }), 50);
     return () => window.clearInterval(timer);
   }, [data, run]);
 

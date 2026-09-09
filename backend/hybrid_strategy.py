@@ -163,10 +163,10 @@ def run(output_path=None, data_path=DATASET):
     checkpoints = list(range(0, len(result['points']), FORWARD_ROWS))
     if checkpoints[-1] != len(result['points']) - 1:
         checkpoints.append(len(result['points']) - 1)
-    points = [{
+    daily_points = [{
         **result['points'][index],
         'baseline': baseline[index],
-    } for index in checkpoints]
+    } for index in range(len(result['points']))]
     benchmark_return = baseline[-1] - 1.0
     report = {
         'strategy_label': 'RSI regime + XGBoost',
@@ -190,8 +190,8 @@ def run(output_path=None, data_path=DATASET):
             'slippage_per_execution': SLIPPAGE,
         },
         'source': provenance,
-        'period': {'start': points[0]['date'], 'end': points[-1]['date']},
-        'folds': len(points) - 1,
+        'period': {'start': daily_points[0]['date'], 'end': daily_points[-1]['date']},
+        'folds': len(checkpoints) - 1,
         'strategy_return': result['net_return'],
         'benchmark_return': benchmark_return,
         'alpha': result['net_return'] - benchmark_return,
@@ -201,7 +201,7 @@ def run(output_path=None, data_path=DATASET):
         'xgboost_entries': result['xgboost_entries'],
         'max_drawdown': result['max_drawdown'],
         'trade_log': result['trade_log'],
-        'points': points,
+        'points': daily_points,
     }
     destination = Path(output_path or ROOT / 'hybrid_strategy_report.json')
     destination.write_text(json.dumps(report, indent=2), encoding='utf-8')
