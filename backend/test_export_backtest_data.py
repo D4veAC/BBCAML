@@ -7,7 +7,25 @@ from backend.export_backtest_data import export
 
 
 class BacktestExportTests(unittest.TestCase):
-    def test_core_and_xgboost_returns_are_blended_without_future_inputs(self):
+    def test_continuous_equity_points_are_not_reset_at_chart_boundaries(self):
+        report = {
+            'period': {'start': '2025-01-01', 'end': '2025-06-30'},
+            'forward_trades': 2,
+            'points': [
+                {'date': '2025-01-01', 'strategy': 1.0, 'baseline': 1.0},
+                {'date': '2025-06-30', 'strategy': 1.2, 'baseline': 1.1},
+            ],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / 'report.json'
+            destination = Path(directory) / 'backtest.json'
+            source.write_text(json.dumps(report), encoding='utf-8')
+            result = export(source, destination)
+        self.assertAlmostEqual(result['strategyReturn'], 0.2)
+        self.assertAlmostEqual(result['baselineReturn'], 0.1)
+        self.assertEqual(result['folds'], 1)
+
+    def test_fold_returns_are_compounded_without_future_inputs(self):
         report = {
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
             'folds': 2,
@@ -22,10 +40,10 @@ class BacktestExportTests(unittest.TestCase):
             destination = Path(directory) / 'backtest.json'
             source.write_text(json.dumps(report), encoding='utf-8')
             result = export(source, destination)
-        expected = (1.0 + 0.05) * (1.0 + 0.01) - 1.0
+        expected = (1.0 + 0.0) * (1.0 - 0.02) - 1.0
         self.assertAlmostEqual(result['strategyReturn'], expected)
         self.assertEqual(result['trades'], 1)
-        self.assertEqual(result['coreAllocation'], 0.5)
+        self.assertEqual(result['strategyLabel'], 'RSI 30/50 · SMA200')
 
 
 if __name__ == '__main__':
