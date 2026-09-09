@@ -9,6 +9,10 @@
   --line: #38383a;
   --accent: #2997ff;
   --error: #ff8177;
+  --buy: #30d158;
+  --sell: #ff453a;
+  --hold-stock: #0a84ff;
+  --hold-cash: #ffd60a;
   --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -491,54 +495,16 @@ h2 {
 .baseline-key { background: var(--muted); }
 .chart-legend time { margin-left: auto; font-variant-numeric: tabular-nums; }
 
-.position-panel {
-  margin-top: 30px;
-  padding: 20px 0 18px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.position-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.position-now {
-  display: grid;
-  grid-template-columns: 24px auto;
-  align-items: center;
-  column-gap: 10px;
-}
-
-.position-now > svg { grid-row: 1 / 3; }
-.position-now span { color: var(--muted); font-size: 11px; }
-.position-now strong { font-size: 15px; font-weight: 500; }
-
-.position-key {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px 20px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.position-key span { display: flex; align-items: center; gap: 6px; }
-.position-panel svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.position-now > svg { width: 24px; height: 24px; color: var(--ink); }
-
-.position-track { position: relative; height: 34px; margin-top: 18px; }
-.cash-track,
-.stock-range { position: absolute; top: 16px; height: 2px; }
-.cash-track { right: 0; left: 0; background: var(--line); }
-.stock-range { background: var(--ink); }
-.trade-marker { position: absolute; z-index: 2; color: var(--muted); transform: translateX(-50%); }
-.trade-marker svg { width: 14px; height: 14px; }
-.buy-marker { top: -1px; }
-.sell-marker { top: 20px; }
-.position-playhead { position: absolute; top: 11px; width: 1px; height: 12px; background: var(--ink); transform: translateX(-50%); }
+.plot-marker,
+.plot-key { fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.buy-plot-marker { stroke: var(--buy); }
+.sell-plot-marker { stroke: var(--sell); }
+.cash-state-line { stroke: var(--hold-cash); stroke-width: 3; opacity: .62; }
+.stock-state-line { stroke: var(--hold-stock); stroke-width: 4; }
+.position-plot text { font-family: var(--font-body); font-size: 10px; }
+.stock-state-label { color: var(--hold-stock); fill: var(--hold-stock); stroke: var(--hold-stock); }
+.cash-state-label { color: var(--hold-cash); fill: var(--hold-cash); stroke: var(--hold-cash); }
+.plot-key text { fill: var(--muted); stroke: none; }
 
 .simulation-meta {
   margin: 30px 0 0;
@@ -565,8 +531,6 @@ td { font-variant-numeric: tabular-nums; }
   .news-list a { grid-template-columns: 1fr; gap: 6px; }
   .news-list small { text-align: left; }
   .simulation-stats { grid-template-columns: repeat(2, 1fr); }
-  .position-heading { align-items: flex-start; flex-direction: column; }
-  .position-key { justify-content: flex-start; }
 }
 
 @media (max-width: 480px) {
