@@ -30,7 +30,7 @@ test('news parser keeps sourced articles and rejects malformed responses', () =>
   assert.throws(() => parseNews({ articles: [] }));
 });
 test('backtest parser requires positive equity paths', () => {
-  const value = { period: { start: '2020-01-01', end: '2021-01-01' }, folds: 1, trades: 1, strategyReturn: .1, baselineReturn: .05, alpha: .05,
+  const value = { period: { start: '2020-01-01', end: '2021-01-01' }, folds: 1, trades: 1, strategyReturn: .1, baselineReturn: .05, alpha: .05, maxDrawdown: -.03,
     points: [{ date: '2020-01-01', strategy: 1, baseline: 1 }, { date: '2021-01-01', strategy: 1.1, baseline: 1.05 }] };
   assert.deepEqual(parseBacktest(value), value);
   assert.throws(() => parseBacktest({ ...value, points: [{ date: '', strategy: 0, baseline: 1 }] }));

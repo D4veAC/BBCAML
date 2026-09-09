@@ -55,6 +55,7 @@ export function parseBacktest(value: any): BacktestResponse {
   if (!value || !value.period || typeof value.period.start !== 'string' || typeof value.period.end !== 'string'
       || !Number.isInteger(value.folds) || !Number.isInteger(value.trades)
       || !finite(value.strategyReturn) || !finite(value.baselineReturn) || !finite(value.alpha)
+      || !finite(value.maxDrawdown) || value.maxDrawdown > 0
       || (value.coreAllocation !== undefined && (!finite(value.coreAllocation) || value.coreAllocation < 0 || value.coreAllocation > 1))
       || (value.strategyLabel !== undefined && typeof value.strategyLabel !== 'string')
       || (value.evaluationStatus !== undefined && typeof value.evaluationStatus !== 'string')

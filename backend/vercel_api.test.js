@@ -23,7 +23,8 @@ test('Vercel backtest response reconciles checked-in report totals', async () =>
   const response = await request('/api/backtest');
   assert.equal(response.status, 200);
   const body = await response.json();
-  assert.equal(body.trades, 13);
+  assert.equal(body.trades, 25);
+  assert.equal(body.maxDrawdown, -0.1336802237750203);
   const last = body.points.at(-1);
   assert.ok(Math.abs(body.strategyReturn - (last.strategy - 1)) < 1e-12);
   assert.ok(Math.abs(body.alpha - (last.strategy - last.baseline)) < 1e-12);

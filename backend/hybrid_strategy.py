@@ -12,9 +12,10 @@ from backend.tune_strategy import (
 
 ROOT = Path(__file__).resolve().parent.parent
 DATASET = ROOT / 'data' / 'bbca_ohlcv_snapshot.csv'
-XGB_THRESHOLD = 0.001
-XGB_RSI_CAP = 40.0
-XGB_EXIT_RSI = 55.0
+XGB_THRESHOLD = 0.0
+XGB_RSI_CAP = 45.0
+XGB_EXIT_RSI = 60.0
+XGB_CONFIRMATIONS = 2
 RSI_ENTRY = 30.0
 RSI_EXIT = 50.0
 
@@ -56,6 +57,12 @@ def simulate_path(frame, forecasts, start, end, indicators=None):
         xgb_entry = (
             not position and regime_ok and rsi[day] < XGB_RSI_CAP
             and math.isfinite(forecast) and forecast > XGB_THRESHOLD
+            and day >= start + XGB_CONFIRMATIONS - 1
+            and all(
+                math.isfinite(float(forecasts[index]))
+                and float(forecasts[index]) > XGB_THRESHOLD
+                for index in range(day - XGB_CONFIRMATIONS + 1, day + 1)
+            )
         )
         exit_position = position and (
             (source == 'rsi' and rsi[day] > RSI_EXIT)
@@ -172,9 +179,9 @@ def run(output_path=None, data_path=DATASET):
         'protocol': {
             'name': 'RSI regime strategy with walk-forward XGBoost sensitivity entries',
             'rsi_entry': 'RSI14 below 30 and close above SMA200',
-            'xgboost_entry': 'walk-forward predicted return above 0.10%, RSI14 below 40, and close above SMA200',
+            'xgboost_entry': 'two consecutive positive walk-forward return forecasts, RSI14 below 45, and close above SMA200',
             'rsi_exit': 'RSI14 above 50',
-            'xgboost_exit': 'predicted return below zero or RSI14 above 55',
+            'xgboost_exit': 'predicted return below zero or RSI14 above 60',
             'xgboost_model': 'return target, 20-session OHLCV window, refit before each 63-session block',
             'signal_execution': 'complete day-t data; execute at day-(t+1) open',
             'position_policy': 'continuous positions; no artificial liquidation at chart checkpoints',

@@ -15,6 +15,6 @@ export interface NewsResponse {
 export interface BacktestPoint { date: string; strategy: number; baseline: number; }
 export interface BacktestResponse {
   period: { start: string; end: string }; folds: number; trades: number;
-  strategyReturn: number; baselineReturn: number; alpha: number; points: BacktestPoint[];
+  strategyReturn: number; baselineReturn: number; alpha: number; maxDrawdown: number; points: BacktestPoint[];
   coreAllocation?: number; strategyLabel?: string; evaluationStatus?: string;
 }

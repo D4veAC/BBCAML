@@ -12,6 +12,7 @@ class BacktestExportTests(unittest.TestCase):
             'strategy_label': 'RSI regime + XGBoost',
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
             'forward_trades': 2,
+            'max_drawdown': -0.08,
             'points': [
                 {'date': '2025-01-01', 'strategy': 1.0, 'baseline': 1.0},
                 {'date': '2025-06-30', 'strategy': 1.2, 'baseline': 1.1},
@@ -25,6 +26,7 @@ class BacktestExportTests(unittest.TestCase):
         self.assertAlmostEqual(result['strategyReturn'], 0.2)
         self.assertAlmostEqual(result['baselineReturn'], 0.1)
         self.assertEqual(result['folds'], 1)
+        self.assertEqual(result['maxDrawdown'], -0.08)
 
     def test_fold_returns_are_compounded_without_future_inputs(self):
         report = {
@@ -32,6 +34,7 @@ class BacktestExportTests(unittest.TestCase):
             'period': {'start': '2025-01-01', 'end': '2025-06-30'},
             'folds': 2,
             'forward_trades': 1,
+            'max_drawdown': -0.04,
             'fold_reports': [
                 {'end': '2025-03-31', 'forward': {'net_return': 0.0, 'trades': 0}, 'benchmark_return': 0.10},
                 {'end': '2025-06-30', 'forward': {'net_return': -0.02, 'trades': 1}, 'benchmark_return': 0.04},

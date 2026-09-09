@@ -25,6 +25,7 @@ def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'serv
             'strategyReturn': points[-1]['strategy'] - 1.0,
             'baselineReturn': points[-1]['baseline'] - 1.0,
             'alpha': points[-1]['strategy'] - points[-1]['baseline'],
+            'maxDrawdown': report['max_drawdown'],
             'points': points,
         }
         Path(destination).write_text(json.dumps(data, separators=(',', ':')), encoding='utf-8')
@@ -54,6 +55,7 @@ def export(source=ROOT / 'hybrid_strategy_report.json', destination=ROOT / 'serv
         'strategyReturn': strategy - 1.0,
         'baselineReturn': baseline - 1.0,
         'alpha': strategy - baseline,
+        'maxDrawdown': report['max_drawdown'],
         'points': points,
     }
     Path(destination).write_text(json.dumps(data, separators=(',', ':')), encoding='utf-8')

@@ -52,7 +52,7 @@ export default function BacktestSimulation() {
     <div className="simulation-stats">
       <div><span>{strategyLabel}</span><strong>{percent(current.strategy - 1)}</strong></div>
       <div><span>Buy &amp; hold</span><strong>{percent(current.baseline - 1)}</strong></div>
-      <div><span>Completed</span><strong>{Math.max(0, visible - 1)} / {data.folds}</strong></div>
+      <div><span>Max drawdown</span><strong>{percent(data.maxDrawdown)}</strong></div>
       <div><span>Trades</span><strong>{data.trades}</strong></div>
     </div>
     <div className="chart-wrap">
@@ -65,6 +65,6 @@ export default function BacktestSimulation() {
       </svg>
     </div>
     <div className="chart-legend"><span><i className="strategy-key" />{strategyLabel}</span><span><i className="baseline-key" />Buy &amp; hold</span><time>{current.date}</time></div>
-    <p className="simulation-meta">{data.period.start}—{data.period.end} · {data.folds} chronological forward folds · quarterly rebalance · fees and slippage included · exploratory</p>
+    <p className="simulation-meta">{data.period.start}—{data.period.end} · XGBoost refit every 63 sessions · next-open execution · fees and slippage included · exploratory</p>
   </section>;
 }
