@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseBacktest, parseMarketQuote, parseNews, parsePrediction, validInput } from './validation';
+import { idxPriceTick, nearestTradablePrice } from './price';
 const input = { open: 100, high: 110, low: 90, close: 105, volume: 0 };
 test('reject invalid and missing model prices', () => {
   for (const value of [{}, { prediction_price: null }, { prediction_price: NaN }, { prediction_price: -1 }]) assert.throws(() => parsePrediction(value));
@@ -34,4 +35,9 @@ test('backtest parser requires positive equity paths', () => {
     points: [{ date: '2020-01-01', strategy: 1, baseline: 1 }, { date: '2021-01-01', strategy: 1.1, baseline: 1.05 }] };
   assert.deepEqual(parseBacktest(value), value);
   assert.throws(() => parseBacktest({ ...value, points: [{ date: '', strategy: 0, baseline: 1 }] }));
+});
+test('IDX price display uses the valid tick for the reference price', () => {
+  assert.equal(idxPriceTick(6_300), 25);
+  assert.equal(nearestTradablePrice(6_300.32, 6_300), 6_300);
+  assert.equal(nearestTradablePrice(6_324, 6_300), 6_325);
 });
